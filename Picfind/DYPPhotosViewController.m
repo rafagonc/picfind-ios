@@ -12,17 +12,18 @@
 #import "DYPCollectionViewDatasourceProtocol.h"
 #import "UISearchBar+Toolbar.h"
 #import "RFQuiltLayout.h"
+#import "DYPAssetDatasourceDelegate.h"
 
-@interface DYPPhotosViewController ()
+@interface DYPPhotosViewController () <UICollectionViewDelegate, UISearchResultsUpdating, UISearchBarDelegate, DYPAssetDatasourceDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet RFQuiltLayout *quiltLayout;
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
 
+@property (weak, nonatomic) IBOutlet UIView *searchBarContentView;
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
 @property (setter=injected_asset:,readonly) id<DYPCollectionViewDatasourceProtocol> datasource;
@@ -42,25 +43,51 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    //setup collection view
-    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DYPAssetCell class]) bundle:nil] forCellWithReuseIdentifier:@"DYPAssetCell"];
-    self.quiltLayout.direction = UICollectionViewScrollDirectionVertical;
-    self.quiltLayout.blockPixels = CGSizeMake(100, 100);
-    self.quiltLayout.delegate = self.datasource;
+    //setups
+    [self setupCollectionView];
+    [self setupLayout];
+    [self setupSearchController];
+    [self setDefinesPresentationContext:YES];
     
-    //datasource
-    [self.datasource setData:[self.assetDataAccessObject recents]];
-    [self.collectionView setDataSource:self.datasource];
-    [self.collectionView setDelegate:self.datasource];
-    [self.collectionView reloadData];
-    
-    //search controller
-    [self.searchBar addToolbar];
-
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.translucent = NO;
+}
+-(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [self.searchController.searchBar setFrame:CGRectMake(0, 0, self.searchBarContentView.frame.size.width, self.searchBarContentView.frame.size.height)];
+}
+
+#pragma mark - setup
+-(void)setupCollectionView {
+    [self.collectionView registerClass:[UISearchBar class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"UISearchBar"];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DYPAssetCell class]) bundle:nil] forCellWithReuseIdentifier:@"DYPAssetCell"];
+    [self.datasource setData:[self.assetDataAccessObject recents]];
+    [self.collectionView setDataSource:self.datasource];
+    [self.collectionView setDelegate:self.datasource];
+    [self.collectionView reloadData];
+}
+-(void)setupLayout {
+    self.quiltLayout.direction = UICollectionViewScrollDirectionVertical;
+    self.quiltLayout.blockPixels = CGSizeMake(75, 75);
+    self.quiltLayout.delegate = (id<RFQuiltLayoutDelegate>)self.datasource;
+}
+-(void)setupSearchController {
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    self.searchController.searchResultsUpdater = self;
+    self.searchController.searchBar.delegate = self;
+    self.searchController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
+    [self.searchController.searchBar addToolbar];
+    [self.searchBarContentView addSubview:self.searchController.searchBar];
+    [self.searchController.searchBar setFrame:self.searchBarContentView.frame];
+
+}
+
+#pragma mark - delegates
+-(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+    
 }
 
 #pragma mark - dealloc

@@ -180,6 +180,7 @@
 		2ADBB9271C7C02320034B7D1 /* DYPCollectionViewDatasourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCollectionViewDatasourceProtocol.h; sourceTree = "<group>"; };
 		2ADBB9281C7C023D0034B7D1 /* DYPAssetDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDatasource.h; sourceTree = "<group>"; };
 		2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAssetDatasource.m; sourceTree = "<group>"; };
+		4421B2E21C7CD07100673C4F /* DYPAssetDatasourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDatasourceDelegate.h; sourceTree = "<group>"; };
 		7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -605,6 +606,7 @@
 			children = (
 				2ADBB9281C7C023D0034B7D1 /* DYPAssetDatasource.h */,
 				2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */,
+				4421B2E21C7CD07100673C4F /* DYPAssetDatasourceDelegate.h */,
 			);
 			name = "Asset Datasoruce";
 			sourceTree = "<group>";
@@ -700,6 +702,7 @@
 				TargetAttributes = {
 					2ADBB8741C7BF8B20034B7D1 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 8P5355PV9G;
 					};
 					2ADBB88D1C7BF8B20034B7D1 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1031,7 +1034,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "230bbf3f-c635-4a5b-9b04-a78d8ec72381";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1046,7 +1049,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "230bbf3f-c635-4a5b-9b04-a78d8ec72381";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -1060,7 +1063,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "230bbf3f-c635-4a5b-9b04-a78d8ec72381";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picfind.app/Picfind";
 			};
 			name = Debug;
@@ -1075,7 +1078,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "230bbf3f-c635-4a5b-9b04-a78d8ec72381";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picfind.app/Picfind";
 			};
 			name = Release;

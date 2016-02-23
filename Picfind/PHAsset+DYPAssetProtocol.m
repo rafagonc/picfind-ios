@@ -14,7 +14,7 @@
 
 -(void)fetchImage:(void (^)(UIImage *, NSDictionary *))callback {
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
-    [options setDeliveryMode:PHImageRequestOptionsDeliveryModeFastFormat];
+    [options setDeliveryMode:PHImageRequestOptionsDeliveryModeHighQualityFormat];
     [[PHImageManager defaultManager] requestImageForAsset:self targetSize:CGSizeMake(self.pixelWidth, self.pixelHeight) contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
         callback(result, info);
     }];

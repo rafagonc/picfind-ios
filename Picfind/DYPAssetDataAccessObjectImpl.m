@@ -13,10 +13,9 @@
 
 -(id<NSCollection>)recents {
     PHFetchOptions * options = [[PHFetchOptions alloc] init];
-    [options setFetchLimit:20];
-    [options setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]]];
+    [options setFetchLimit:8];
+    [options setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:NO]]];
     id<NSCollection> result = (id<NSCollection>)[PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
-    
     return result;
 }
 

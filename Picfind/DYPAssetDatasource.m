@@ -9,6 +9,7 @@
 #import "DYPAssetDatasource.h"
 #import "DYPAssetCell.h"
 #import "RFQuiltLayout.h"
+#import "DYPAssetDatasourceDelegate.h"
 
 @interface DYPAssetDatasource () <RFQuiltLayoutDelegate>
 
@@ -17,6 +18,8 @@
 @end
 
 @implementation DYPAssetDatasource
+
+@synthesize delegate;
 
 #pragma mark - getters and setters
 -(void)setData:(NSArray *)data {
@@ -28,6 +31,7 @@
 }
 
 #pragma mark - datasource
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
@@ -50,9 +54,11 @@
 -(CGSize)blockSizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGSize size;
     id<DYPAssetProtocol> asset = self.assets[indexPath.row];
-    size.width = 90;
-    size.height = 90;
-    NSLog(@"%d, %d", [asset pixelHeight], [asset pixelWidth]);
+    if ([asset pixelWidth] > [asset pixelHeight]) {
+        size = [UIScreen mainScreen].scale > 1 ? CGSizeMake(1.8, 1) : CGSizeMake(1.5, 1);
+    } else {
+        size = [UIScreen mainScreen].scale > 1 ? CGSizeMake(1, 2) : CGSizeMake(1, 1.5);
+    }
     return size;
 }
 

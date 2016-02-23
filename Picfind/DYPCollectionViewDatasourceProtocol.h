@@ -11,5 +11,6 @@
 @protocol DYPCollectionViewDatasourceProtocol <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic,strong) NSArray *data;
+@property (nonatomic,weak)   id delegate;
 
 @end
