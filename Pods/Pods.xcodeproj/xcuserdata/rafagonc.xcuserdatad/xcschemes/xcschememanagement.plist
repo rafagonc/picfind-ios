@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Depend-Depend.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Depend.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Picfind.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PicfindTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>19B7E936EAFA3B2AD017AB0A96352D46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>89DB946C715604D7C8C3F8A1301F608D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B6726DBB67BE2334A58853C37125262</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B24E0E02E9746BC60C12F9F7395259A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

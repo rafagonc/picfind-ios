@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0747AB66E14F09EE40ACCA3000EC7428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0BB62EC5563F90367A5CA0A6BCB202E7 /* DPInjectionPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A9FAA9A72D32EF2F708F9B77CC4EF /* DPInjectionPropertyDescriptor.m */; };
+		29D3624ED5C8596335025887F6EF360C /* DPInjectionDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DBE2292EF103AD7A2C5C00B1ACE6A1 /* DPInjectionDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C6A9D484D53F8FE942B7F38F8E25CEC /* Depend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB42BBBC02FF5D02A018BBC7C734CC21 /* Depend-dummy.m */; };
+		309F3B5F76FA6275F62DE5EB197CDC17 /* DPInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FF2886F605CCE2634FE47D3A00C36F /* DPInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		323981C6BF32746806571BCAA4C8A079 /* DPImplementationKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC66AAD4B2BF0D697F01F65CF7E01AC /* DPImplementationKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46E04DD49B3FE3EE59D8581BB9FFB10B /* DPRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 48EB378C6DFE170F86B7F4FA43CA52DB /* DPRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		683F29E15B40C0063A949045AF6EB7A5 /* DPInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DF8D960B618AB01988DE97DDED6AC /* DPInjector.m */; };
+		74E0A592CC6928B198C43317AEF82D04 /* DPRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6A3BF6DBC9DE67DFA70147A2DCB4C2 /* DPRegistry.m */; };
+		A650A00C283957E8587343BE2A1DA9CE /* DPImplementationKey.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7B34A1C605173DC606EBAA07B4F7B7 /* DPImplementationKey.m */; };
+		B3412AE5D9B1CC57401AD15F4908722B /* Pods-PicfindTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9F11981E703C9EE2CFA9CB2620BE1B /* Pods-PicfindTests-dummy.m */; };
+		BA927A6018F35197F74F77DBB8B697C4 /* DPCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5400BE2236504FE7A8BD7F7CB91255B2 /* DPCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD54BCC387003EF4AF6F68EDC231FAF6 /* DPInjectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85296968D3EF2F57E72C5EEE66900E /* DPInjectionDescriptor.m */; };
+		D7D8279D479194AA42F10825602F7F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		DBBB5D44E392287A00EA99702D9233AD /* DPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E1E7781918231B2A0D93FD1D7A7C53 /* DPCache.m */; };
+		DDA9F8F60655DCACAE1B1EA99A022E2B /* DPInjectionPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA38E73C01114F4929CB5A9462C0059A /* DPInjectionPropertyDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2EA97210924F8C4AEDE47A684194CE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		EC6839B5DD110F1C8EB8F687A86E2181 /* Pods-Picfind-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB1D1340B814F8F83D5663E9B22FF1 /* Pods-Picfind-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0406F5DA956C61828197FC4D3A4FF8F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19B7E936EAFA3B2AD017AB0A96352D46;
+			remoteInfo = "Depend-Depend";
+		};
+		898FC2C43C0334709C91E5C0B4C8B4FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24E0E02E9746BC60C12F9F7395259A7;
+			remoteInfo = Depend;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E8D45E85D741E3711CBBBDFCBE71EBC /* Pods-PicfindTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PicfindTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2C85296968D3EF2F57E72C5EEE66900E /* DPInjectionDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionDescriptor.m; path = Pod/Classes/DPInjectionDescriptor.m; sourceTree = "<group>"; };
+		32DCDA0D933355DC8B6C74D3EC55C4C8 /* Pods-Picfind-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Picfind-frameworks.sh"; sourceTree = "<group>"; };
+		3DC66AAD4B2BF0D697F01F65CF7E01AC /* DPImplementationKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPImplementationKey.h; path = Pod/Classes/DPImplementationKey.h; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		48EB378C6DFE170F86B7F4FA43CA52DB /* DPRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPRegistry.h; path = Pod/Classes/DPRegistry.h; sourceTree = "<group>"; };
+		4D6DF8D960B618AB01988DE97DDED6AC /* DPInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjector.m; path = Pod/Classes/DPInjector.m; sourceTree = "<group>"; };
+		5400BE2236504FE7A8BD7F7CB91255B2 /* DPCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPCache.h; path = Pod/Classes/DPCache.h; sourceTree = "<group>"; };
+		56739F7D028A58365ABE644BE51569F4 /* Pods-PicfindTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicfindTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		588BF76C1803C090744AA8380A419CB9 /* libPods-Picfind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picfind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		626F649E0446EC2150DE82D41DF3E6F0 /* Pods-PicfindTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicfindTests-resources.sh"; sourceTree = "<group>"; };
+		6358AB400083F8CB96758526FECEA11F /* libPods-PicfindTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PicfindTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CD1192D710E531013ED78A50390F5F /* liblibjpeg.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = liblibjpeg.a; path = ios/liblibjpeg.a; sourceTree = "<group>"; };
+		67178123EC95A0A4C9B00CDF9CCC55F1 /* Depend.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Depend.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CDFF2FD1D52FBD59E04E359C156AC38 /* Pods-Picfind-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Picfind-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D4D8926E523F6F7333B53A7AE1809D1 /* Pods-Picfind-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Picfind-acknowledgements.plist"; sourceTree = "<group>"; };
+		80BB1D1340B814F8F83D5663E9B22FF1 /* Pods-Picfind-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Picfind-dummy.m"; sourceTree = "<group>"; };
+		88675D13D68AB47AE2B2E580CA3B801A /* Pods-PicfindTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicfindTests-frameworks.sh"; sourceTree = "<group>"; };
+		970A9FAA9A72D32EF2F708F9B77CC4EF /* DPInjectionPropertyDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionPropertyDescriptor.m; path = Pod/Classes/DPInjectionPropertyDescriptor.m; sourceTree = "<group>"; };
+		98C67FBF2AFA6E11819355DCB3446E11 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
+		9AF27D9139964B63410C681F120FE339 /* Pods-Picfind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Picfind.release.xcconfig"; sourceTree = "<group>"; };
+		9C9A01B402498CF0974189039C28B6B9 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB6A3BF6DBC9DE67DFA70147A2DCB4C2 /* DPRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPRegistry.m; path = Pod/Classes/DPRegistry.m; sourceTree = "<group>"; };
+		AD68EE27A3AD8A8DB10302811DA065FE /* Pods-Picfind-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Picfind-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD7B34A1C605173DC606EBAA07B4F7B7 /* DPImplementationKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPImplementationKey.m; path = Pod/Classes/DPImplementationKey.m; sourceTree = "<group>"; };
+		C7DBE2292EF103AD7A2C5C00B1ACE6A1 /* DPInjectionDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionDescriptor.h; path = Pod/Classes/DPInjectionDescriptor.h; sourceTree = "<group>"; };
+		CB17970E393C9298DA6F5EED28BF48FE /* Depend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Depend-prefix.pch"; sourceTree = "<group>"; };
+		D1E1E7781918231B2A0D93FD1D7A7C53 /* DPCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPCache.m; path = Pod/Classes/DPCache.m; sourceTree = "<group>"; };
+		D5E6E6896CED3C11BE5C538BA1F2C1F6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = "<group>"; };
+		DB42BBBC02FF5D02A018BBC7C734CC21 /* Depend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Depend-dummy.m"; sourceTree = "<group>"; };
+		DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Depend.xcconfig; sourceTree = "<group>"; };
+		EB9F11981E703C9EE2CFA9CB2620BE1B /* Pods-PicfindTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PicfindTests-dummy.m"; sourceTree = "<group>"; };
+		F9FF2886F605CCE2634FE47D3A00C36F /* DPInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjector.h; path = Pod/Classes/DPInjector.h; sourceTree = "<group>"; };
+		FA38E73C01114F4929CB5A9462C0059A /* DPInjectionPropertyDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionPropertyDescriptor.h; path = Pod/Classes/DPInjectionPropertyDescriptor.h; sourceTree = "<group>"; };
+		FB62F7F9AB19F51A0566ED95EE7067A9 /* libDepend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDepend.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6E54B54BB6889A741BCC81225459EB /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		051F893AEA4C96B4DC883E265FC5D13E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D8279D479194AA42F10825602F7F44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D61D86B2308D36C190992798157EAD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A80CF5780A6B687A79CF20433494F5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2EA97210924F8C4AEDE47A684194CE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6386B832C2A7D5A023125210AEE2CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0747AB66E14F09EE40ACCA3000EC7428 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CD87D6EB956AADE29DEB18037ECA9A2 /* Depend */ = {
+			isa = PBXGroup;
+			children = (
+				5400BE2236504FE7A8BD7F7CB91255B2 /* DPCache.h */,
+				D1E1E7781918231B2A0D93FD1D7A7C53 /* DPCache.m */,
+				3DC66AAD4B2BF0D697F01F65CF7E01AC /* DPImplementationKey.h */,
+				BD7B34A1C605173DC606EBAA07B4F7B7 /* DPImplementationKey.m */,
+				C7DBE2292EF103AD7A2C5C00B1ACE6A1 /* DPInjectionDescriptor.h */,
+				2C85296968D3EF2F57E72C5EEE66900E /* DPInjectionDescriptor.m */,
+				FA38E73C01114F4929CB5A9462C0059A /* DPInjectionPropertyDescriptor.h */,
+				970A9FAA9A72D32EF2F708F9B77CC4EF /* DPInjectionPropertyDescriptor.m */,
+				F9FF2886F605CCE2634FE47D3A00C36F /* DPInjector.h */,
+				4D6DF8D960B618AB01988DE97DDED6AC /* DPInjector.m */,
+				48EB378C6DFE170F86B7F4FA43CA52DB /* DPRegistry.h */,
+				AB6A3BF6DBC9DE67DFA70147A2DCB4C2 /* DPRegistry.m */,
+				78EB0BF9EA2BE215F11BFB249F0197E3 /* Support Files */,
+			);
+			path = Depend;
+			sourceTree = "<group>";
+		};
+		25878F9F9B26138D154596B0D06EA53E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64CD1192D710E531013ED78A50390F5F /* liblibjpeg.a */,
+				D5E6E6896CED3C11BE5C538BA1F2C1F6 /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29AEE597220FF8A8F1F73158085EFAE8 /* Pods-PicfindTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E8D45E85D741E3711CBBBDFCBE71EBC /* Pods-PicfindTests-acknowledgements.markdown */,
+				56739F7D028A58365ABE644BE51569F4 /* Pods-PicfindTests-acknowledgements.plist */,
+				EB9F11981E703C9EE2CFA9CB2620BE1B /* Pods-PicfindTests-dummy.m */,
+				88675D13D68AB47AE2B2E580CA3B801A /* Pods-PicfindTests-frameworks.sh */,
+				626F649E0446EC2150DE82D41DF3E6F0 /* Pods-PicfindTests-resources.sh */,
+				9C9A01B402498CF0974189039C28B6B9 /* Pods-PicfindTests.debug.xcconfig */,
+				98C67FBF2AFA6E11819355DCB3446E11 /* Pods-PicfindTests.release.xcconfig */,
+			);
+			name = "Pods-PicfindTests";
+			path = "Target Support Files/Pods-PicfindTests";
+			sourceTree = "<group>";
+		};
+		3D9D88C35348A63063BE06672F019C01 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADC3CBDF6F315EECE14E8B7E583A2AF9 /* Pods-Picfind */,
+				29AEE597220FF8A8F1F73158085EFAE8 /* Pods-PicfindTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		78EB0BF9EA2BE215F11BFB249F0197E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */,
+				DB42BBBC02FF5D02A018BBC7C734CC21 /* Depend-dummy.m */,
+				CB17970E393C9298DA6F5EED28BF48FE /* Depend-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Depend";
+			sourceTree = "<group>";
+		};
+		7BCDEBC8875AE060291A6F6DDCDA343A /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				25878F9F9B26138D154596B0D06EA53E /* Frameworks */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				916B51A827D354EED986DA757134C792 /* Pods */,
+				941AD76120FFBB236BD790E70A71C502 /* Products */,
+				3D9D88C35348A63063BE06672F019C01 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		916B51A827D354EED986DA757134C792 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CD87D6EB956AADE29DEB18037ECA9A2 /* Depend */,
+				7BCDEBC8875AE060291A6F6DDCDA343A /* OpenCV */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		941AD76120FFBB236BD790E70A71C502 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67178123EC95A0A4C9B00CDF9CCC55F1 /* Depend.bundle */,
+				FB62F7F9AB19F51A0566ED95EE7067A9 /* libDepend.a */,
+				588BF76C1803C090744AA8380A419CB9 /* libPods-Picfind.a */,
+				6358AB400083F8CB96758526FECEA11F /* libPods-PicfindTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADC3CBDF6F315EECE14E8B7E583A2AF9 /* Pods-Picfind */ = {
+			isa = PBXGroup;
+			children = (
+				6CDFF2FD1D52FBD59E04E359C156AC38 /* Pods-Picfind-acknowledgements.markdown */,
+				6D4D8926E523F6F7333B53A7AE1809D1 /* Pods-Picfind-acknowledgements.plist */,
+				80BB1D1340B814F8F83D5663E9B22FF1 /* Pods-Picfind-dummy.m */,
+				32DCDA0D933355DC8B6C74D3EC55C4C8 /* Pods-Picfind-frameworks.sh */,
+				AD68EE27A3AD8A8DB10302811DA065FE /* Pods-Picfind-resources.sh */,
+				FD6E54B54BB6889A741BCC81225459EB /* Pods-Picfind.debug.xcconfig */,
+				9AF27D9139964B63410C681F120FE339 /* Pods-Picfind.release.xcconfig */,
+			);
+			name = "Pods-Picfind";
+			path = "Target Support Files/Pods-Picfind";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2357847E38A49103562CD4725FD22C7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA927A6018F35197F74F77DBB8B697C4 /* DPCache.h in Headers */,
+				323981C6BF32746806571BCAA4C8A079 /* DPImplementationKey.h in Headers */,
+				29D3624ED5C8596335025887F6EF360C /* DPInjectionDescriptor.h in Headers */,
+				DDA9F8F60655DCACAE1B1EA99A022E2B /* DPInjectionPropertyDescriptor.h in Headers */,
+				309F3B5F76FA6275F62DE5EB197CDC17 /* DPInjector.h in Headers */,
+				46E04DD49B3FE3EE59D8581BB9FFB10B /* DPRegistry.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		19B7E936EAFA3B2AD017AB0A96352D46 /* Depend-Depend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAE927B11CA219EE6F6AC1210AAE8793 /* Build configuration list for PBXNativeTarget "Depend-Depend" */;
+			buildPhases = (
+				0F84F5452B3FFA2CEF51CD15C29C1834 /* Sources */,
+				1D61D86B2308D36C190992798157EAD0 /* Frameworks */,
+				792F7190D337B33DA55334F4C613C577 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Depend-Depend";
+			productName = "Depend-Depend";
+			productReference = 67178123EC95A0A4C9B00CDF9CCC55F1 /* Depend.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		89DB946C715604D7C8C3F8A1301F608D /* Pods-PicfindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8BCFFE5C24EF0F677AFD8939B85F24D /* Build configuration list for PBXNativeTarget "Pods-PicfindTests" */;
+			buildPhases = (
+				235ADBC9DB2747E284826EF107C615F9 /* Sources */,
+				E6386B832C2A7D5A023125210AEE2CDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-PicfindTests";
+			productName = "Pods-PicfindTests";
+			productReference = 6358AB400083F8CB96758526FECEA11F /* libPods-PicfindTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9B6726DBB67BE2334A58853C37125262 /* Pods-Picfind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26CEB34DF3496961C7FB99437FD4B85 /* Build configuration list for PBXNativeTarget "Pods-Picfind" */;
+			buildPhases = (
+				B464EC38D8B41DEC970B197B0C7487C5 /* Sources */,
+				5A80CF5780A6B687A79CF20433494F5A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				752C73F6B2A52DB8DAA6C0F2F32A2FDD /* PBXTargetDependency */,
+			);
+			name = "Pods-Picfind";
+			productName = "Pods-Picfind";
+			productReference = 588BF76C1803C090744AA8380A419CB9 /* libPods-Picfind.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B24E0E02E9746BC60C12F9F7395259A7 /* Depend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 730765A08B00A89A0AA9F7CD7E254DEB /* Build configuration list for PBXNativeTarget "Depend" */;
+			buildPhases = (
+				542C96306099C508CB39ED0B905C6918 /* Sources */,
+				051F893AEA4C96B4DC883E265FC5D13E /* Frameworks */,
+				2357847E38A49103562CD4725FD22C7C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5865AE422B05482E840368A3AC08126F /* PBXTargetDependency */,
+			);
+			name = Depend;
+			productName = Depend;
+			productReference = FB62F7F9AB19F51A0566ED95EE7067A9 /* libDepend.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 941AD76120FFBB236BD790E70A71C502 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B24E0E02E9746BC60C12F9F7395259A7 /* Depend */,
+				19B7E936EAFA3B2AD017AB0A96352D46 /* Depend-Depend */,
+				9B6726DBB67BE2334A58853C37125262 /* Pods-Picfind */,
+				89DB946C715604D7C8C3F8A1301F608D /* Pods-PicfindTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		792F7190D337B33DA55334F4C613C577 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F84F5452B3FFA2CEF51CD15C29C1834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235ADBC9DB2747E284826EF107C615F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3412AE5D9B1CC57401AD15F4908722B /* Pods-PicfindTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542C96306099C508CB39ED0B905C6918 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6A9D484D53F8FE942B7F38F8E25CEC /* Depend-dummy.m in Sources */,
+				DBBB5D44E392287A00EA99702D9233AD /* DPCache.m in Sources */,
+				A650A00C283957E8587343BE2A1DA9CE /* DPImplementationKey.m in Sources */,
+				BD54BCC387003EF4AF6F68EDC231FAF6 /* DPInjectionDescriptor.m in Sources */,
+				0BB62EC5563F90367A5CA0A6BCB202E7 /* DPInjectionPropertyDescriptor.m in Sources */,
+				683F29E15B40C0063A949045AF6EB7A5 /* DPInjector.m in Sources */,
+				74E0A592CC6928B198C43317AEF82D04 /* DPRegistry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B464EC38D8B41DEC970B197B0C7487C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC6839B5DD110F1C8EB8F687A86E2181 /* Pods-Picfind-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5865AE422B05482E840368A3AC08126F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Depend-Depend";
+			target = 19B7E936EAFA3B2AD017AB0A96352D46 /* Depend-Depend */;
+			targetProxy = 0406F5DA956C61828197FC4D3A4FF8F8 /* PBXContainerItemProxy */;
+		};
+		752C73F6B2A52DB8DAA6C0F2F32A2FDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Depend;
+			target = B24E0E02E9746BC60C12F9F7395259A7 /* Depend */;
+			targetProxy = 898FC2C43C0334709C91E5C0B4C8B4FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1050187500721A88E03860E300757226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6E54B54BB6889A741BCC81225459EB /* Pods-Picfind.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		183C939DEAA67DB8C1DD08DD18F33697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Depend;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		4B7C62AAA3DE840A71F5A34369A0B000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Depend;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		4D0CC95123965D7A10379C79E4454E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Depend/Depend-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		74184AFC1E9061A0B497FF0ABFD43F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C9A01B402498CF0974189039C28B6B9 /* Pods-PicfindTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		840CA7DC1ECC054681F0FAE317679A50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C67FBF2AFA6E11819355DCB3446E11 /* Pods-PicfindTests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8983AE677D7454C06D8CDF6BA09AA6BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF27D9139964B63410C681F120FE339 /* Pods-Picfind.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4CC3702EEAD88C7BE38C1DAD0975E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Depend/Depend-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		730765A08B00A89A0AA9F7CD7E254DEB /* Build configuration list for PBXNativeTarget "Depend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0CC95123965D7A10379C79E4454E4C /* Debug */,
+				F4CC3702EEAD88C7BE38C1DAD0975E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8BCFFE5C24EF0F677AFD8939B85F24D /* Build configuration list for PBXNativeTarget "Pods-PicfindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74184AFC1E9061A0B497FF0ABFD43F8E /* Debug */,
+				840CA7DC1ECC054681F0FAE317679A50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAE927B11CA219EE6F6AC1210AAE8793 /* Build configuration list for PBXNativeTarget "Depend-Depend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B7C62AAA3DE840A71F5A34369A0B000 /* Debug */,
+				183C939DEAA67DB8C1DD08DD18F33697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26CEB34DF3496961C7FB99437FD4B85 /* Build configuration list for PBXNativeTarget "Pods-Picfind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1050187500721A88E03860E300757226 /* Debug */,
+				8983AE677D7454C06D8CDF6BA09AA6BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

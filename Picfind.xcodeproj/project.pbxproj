@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116801C7C02B000A45955 /* DYPAssetCell.m */; };
+		2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116881C7C030700A45955 /* UITextField+DoneButton.m */; };
+		2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11168B1C7C031000A45955 /* UITableViewCell+Clear.m */; };
+		2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11168E1C7C031600A45955 /* UISearchBar+Toolbar.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
 		2ADBB8881C7BF8B20034B7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8861C7BF8B20034B7D1 /* LaunchScreen.storyboard */; };
-		2ADBB8931C7BF8B20034B7D1 /* PicfindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8921C7BF8B20034B7D1 /* PicfindTests.m */; };
 		2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8A81C7BFB6E0034B7D1 /* DYPImageMatConverter.mm */; };
 		2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8AA1C7BFB6E0034B7D1 /* DYPMatImageConverter.mm */; };
 		2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8AC1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm */; };
@@ -53,6 +56,19 @@
 		2ADBB9041C7BFD550034B7D1 /* lbpcascade_silverware.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8DD1C7BFD550034B7D1 /* lbpcascade_silverware.xml */; };
 		2ADBB9051C7BFD550034B7D1 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8DE1C7BFD550034B7D1 /* readme.txt */; };
 		2ADBB9061C7BFD550034B7D1 /* trainingfaces_24-24.vec in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8E01C7BFD550034B7D1 /* trainingfaces_24-24.vec */; };
+		2ADBB90B1C7BFD920034B7D1 /* DYPTFaceRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9071C7BFD920034B7D1 /* DYPTFaceRecognizer.m */; };
+		2ADBB90C1C7BFD920034B7D1 /* DYPTDetectFaceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9081C7BFD920034B7D1 /* DYPTDetectFaceTest.m */; };
+		2ADBB90D1C7BFD920034B7D1 /* DYPTImageMatConversion.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9091C7BFD920034B7D1 /* DYPTImageMatConversion.mm */; };
+		2ADBB90E1C7BFD920034B7D1 /* DYPTMatImageCoversion.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB90A1C7BFD920034B7D1 /* DYPTMatImageCoversion.mm */; };
+		2ADBB9101C7BFD990034B7D1 /* Test.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB90F1C7BFD990034B7D1 /* Test.xcassets */; };
+		2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9121C7BFEA90034B7D1 /* DYPPhotosViewController.m */; };
+		2ADBB9151C7BFEA90034B7D1 /* DYPPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB9131C7BFEA90034B7D1 /* DYPPhotosViewController.xib */; };
+		2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9181C7BFF580034B7D1 /* DYPFaceDetector.mm */; };
+		2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB91B1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm */; };
+		2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9241C7C01ED0034B7D1 /* DYPDepedencyInjector.m */; };
+		2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */; };
+		49439DC3E9D5D1509965862A /* libPods-PicfindTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */; };
+		5F6025BF4BEC8840A676A8F0 /* libPods-Picfind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15363EF1C4928D68283B2555 /* libPods-Picfind.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +82,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PicfindTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15363EF1C4928D68283B2555 /* libPods-Picfind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picfind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A11167F1C7C02B000A45955 /* DYPAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetCell.h; sourceTree = "<group>"; };
+		2A1116801C7C02B000A45955 /* DYPAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAssetCell.m; sourceTree = "<group>"; };
+		2A1116871C7C030700A45955 /* UITextField+DoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DoneButton.h"; sourceTree = "<group>"; };
+		2A1116881C7C030700A45955 /* UITextField+DoneButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DoneButton.m"; sourceTree = "<group>"; };
+		2A11168A1C7C031000A45955 /* UITableViewCell+Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Clear.h"; sourceTree = "<group>"; };
+		2A11168B1C7C031000A45955 /* UITableViewCell+Clear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Clear.m"; sourceTree = "<group>"; };
+		2A11168D1C7C031600A45955 /* UISearchBar+Toolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Toolbar.h"; sourceTree = "<group>"; };
+		2A11168E1C7C031600A45955 /* UISearchBar+Toolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Toolbar.m"; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,7 +100,6 @@
 		2ADBB8871C7BF8B20034B7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ADBB8891C7BF8B20034B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ADBB88E1C7BF8B20034B7D1 /* PicfindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicfindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ADBB8921C7BF8B20034B7D1 /* PicfindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicfindTests.m; sourceTree = "<group>"; };
 		2ADBB8941C7BF8B20034B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ADBB8A71C7BFB6E0034B7D1 /* DYPImageMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPImageMatConverter.h; sourceTree = "<group>"; };
 		2ADBB8A81C7BFB6E0034B7D1 /* DYPImageMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPImageMatConverter.mm; sourceTree = "<group>"; };
@@ -120,6 +145,28 @@
 		2ADBB8DD1C7BFD550034B7D1 /* lbpcascade_silverware.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_silverware.xml; sourceTree = "<group>"; };
 		2ADBB8DE1C7BFD550034B7D1 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		2ADBB8E01C7BFD550034B7D1 /* trainingfaces_24-24.vec */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trainingfaces_24-24.vec"; sourceTree = "<group>"; };
+		2ADBB9071C7BFD920034B7D1 /* DYPTFaceRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPTFaceRecognizer.m; sourceTree = "<group>"; };
+		2ADBB9081C7BFD920034B7D1 /* DYPTDetectFaceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPTDetectFaceTest.m; sourceTree = "<group>"; };
+		2ADBB9091C7BFD920034B7D1 /* DYPTImageMatConversion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPTImageMatConversion.mm; sourceTree = "<group>"; };
+		2ADBB90A1C7BFD920034B7D1 /* DYPTMatImageCoversion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPTMatImageCoversion.mm; sourceTree = "<group>"; };
+		2ADBB90F1C7BFD990034B7D1 /* Test.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Test.xcassets; sourceTree = "<group>"; };
+		2ADBB9111C7BFEA90034B7D1 /* DYPPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPhotosViewController.h; sourceTree = "<group>"; };
+		2ADBB9121C7BFEA90034B7D1 /* DYPPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPhotosViewController.m; sourceTree = "<group>"; };
+		2ADBB9131C7BFEA90034B7D1 /* DYPPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPPhotosViewController.xib; sourceTree = "<group>"; };
+		2ADBB9171C7BFF580034B7D1 /* DYPFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceDetector.h; sourceTree = "<group>"; };
+		2ADBB9181C7BFF580034B7D1 /* DYPFaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPFaceDetector.mm; sourceTree = "<group>"; };
+		2ADBB91A1C7BFF5E0034B7D1 /* DYPFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceRecognizer.h; sourceTree = "<group>"; };
+		2ADBB91B1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPFaceRecognizer.mm; sourceTree = "<group>"; };
+		2ADBB9201C7C009D0034B7D1 /* DYPAssetProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetProtocol.h; sourceTree = "<group>"; };
+		2ADBB9231C7C01ED0034B7D1 /* DYPDepedencyInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPDepedencyInjector.h; sourceTree = "<group>"; };
+		2ADBB9241C7C01ED0034B7D1 /* DYPDepedencyInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPDepedencyInjector.m; sourceTree = "<group>"; };
+		2ADBB9271C7C02320034B7D1 /* DYPCollectionViewDatasourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCollectionViewDatasourceProtocol.h; sourceTree = "<group>"; };
+		2ADBB9281C7C023D0034B7D1 /* DYPAssetDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDatasource.h; sourceTree = "<group>"; };
+		2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAssetDatasource.m; sourceTree = "<group>"; };
+		7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
+		C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB61C256B4C34B2F41CFF8D8 /* Pods-Picfind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6025BF4BEC8840A676A8F0 /* libPods-Picfind.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,18 +182,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49439DC3E9D5D1509965862A /* libPods-PicfindTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28F72CBBE8E39EC1910BA646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15363EF1C4928D68283B2555 /* libPods-Picfind.a */,
+				0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A1116821C7C02B800A45955 /* Asset Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A11167F1C7C02B000A45955 /* DYPAssetCell.h */,
+				2A1116801C7C02B000A45955 /* DYPAssetCell.m */,
+			);
+			name = "Asset Cell";
+			sourceTree = "<group>";
+		};
+		2A1116901C7C035E00A45955 /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				2A11168D1C7C031600A45955 /* UISearchBar+Toolbar.h */,
+				2A11168E1C7C031600A45955 /* UISearchBar+Toolbar.m */,
+			);
+			name = UISearchBar;
+			sourceTree = "<group>";
+		};
+		2A1116911C7C036600A45955 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2A11168A1C7C031000A45955 /* UITableViewCell+Clear.h */,
+				2A11168B1C7C031000A45955 /* UITableViewCell+Clear.m */,
+			);
+			name = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		2A1116921C7C036F00A45955 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116871C7C030700A45955 /* UITextField+DoneButton.h */,
+				2A1116881C7C030700A45955 /* UITextField+DoneButton.m */,
+			);
+			name = UITextField;
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
 				2ADBB8771C7BF8B20034B7D1 /* Picfind */,
 				2ADBB8911C7BF8B20034B7D1 /* PicfindTests */,
 				2ADBB8761C7BF8B20034B7D1 /* Products */,
+				8574AE5B95E2C9B5FC61D3F2 /* Pods */,
+				28F72CBBE8E39EC1910BA646 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +257,10 @@
 		2ADBB8771C7BF8B20034B7D1 /* Picfind */ = {
 			isa = PBXGroup;
 			children = (
+				2ADBB9261C7C02240034B7D1 /* Datasources */,
+				2ADBB9221C7C01400034B7D1 /* Depedency Injection */,
+				2ADBB91F1C7C00920034B7D1 /* Models */,
+				2ADBB91E1C7C004B0034B7D1 /* Categories */,
 				2ADBB8A11C7BFAF70034B7D1 /* Custom Views */,
 				2ADBB8A01C7BFA790034B7D1 /* Cells */,
 				2ADBB89F1C7BFA730034B7D1 /* Protocols */,
@@ -188,7 +288,11 @@
 		2ADBB8911C7BF8B20034B7D1 /* PicfindTests */ = {
 			isa = PBXGroup;
 			children = (
-				2ADBB8921C7BF8B20034B7D1 /* PicfindTests.m */,
+				2ADBB90F1C7BFD990034B7D1 /* Test.xcassets */,
+				2ADBB9071C7BFD920034B7D1 /* DYPTFaceRecognizer.m */,
+				2ADBB9081C7BFD920034B7D1 /* DYPTDetectFaceTest.m */,
+				2ADBB9091C7BFD920034B7D1 /* DYPTImageMatConversion.mm */,
+				2ADBB90A1C7BFD920034B7D1 /* DYPTMatImageCoversion.mm */,
 				2ADBB8941C7BF8B20034B7D1 /* Info.plist */,
 			);
 			path = PicfindTests;
@@ -197,6 +301,7 @@
 		2ADBB89D1C7BFA600034B7D1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2ADBB9161C7BFEAC0034B7D1 /* Photos View Controller */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -204,8 +309,8 @@
 		2ADBB89E1C7BFA6C0034B7D1 /* General Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2ADBB8B41C7BFB990034B7D1 /* Fa */,
-				2ADBB8B31C7BFB950034B7D1 /* Face Detector */,
+				2ADBB8B41C7BFB990034B7D1 /* Recognizer */,
+				2ADBB8B31C7BFB950034B7D1 /* Detector */,
 				2ADBB8B21C7BFB8D0034B7D1 /* Conversion */,
 			);
 			name = "General Classes";
@@ -221,6 +326,7 @@
 		2ADBB8A01C7BFA790034B7D1 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2A1116821C7C02B800A45955 /* Asset Cell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -245,18 +351,22 @@
 			name = Conversion;
 			sourceTree = "<group>";
 		};
-		2ADBB8B31C7BFB950034B7D1 /* Face Detector */ = {
+		2ADBB8B31C7BFB950034B7D1 /* Detector */ = {
 			isa = PBXGroup;
 			children = (
+				2ADBB9171C7BFF580034B7D1 /* DYPFaceDetector.h */,
+				2ADBB9181C7BFF580034B7D1 /* DYPFaceDetector.mm */,
 			);
-			name = "Face Detector";
+			name = Detector;
 			sourceTree = "<group>";
 		};
-		2ADBB8B41C7BFB990034B7D1 /* Fa */ = {
+		2ADBB8B41C7BFB990034B7D1 /* Recognizer */ = {
 			isa = PBXGroup;
 			children = (
+				2ADBB91A1C7BFF5E0034B7D1 /* DYPFaceRecognizer.h */,
+				2ADBB91B1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm */,
 			);
-			name = Fa;
+			name = Recognizer;
 			sourceTree = "<group>";
 		};
 		2ADBB8B51C7BFD550034B7D1 /* data */ = {
@@ -344,6 +454,104 @@
 			path = vec_files;
 			sourceTree = "<group>";
 		};
+		2ADBB9161C7BFEAC0034B7D1 /* Photos View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB9111C7BFEA90034B7D1 /* DYPPhotosViewController.h */,
+				2ADBB9121C7BFEA90034B7D1 /* DYPPhotosViewController.m */,
+				2ADBB9131C7BFEA90034B7D1 /* DYPPhotosViewController.xib */,
+			);
+			name = "Photos View Controller";
+			sourceTree = "<group>";
+		};
+		2ADBB91E1C7C004B0034B7D1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116901C7C035E00A45955 /* UISearchBar */,
+				2A1116911C7C036600A45955 /* UITableViewCell */,
+				2A1116921C7C036F00A45955 /* UITextField */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		2ADBB91F1C7C00920034B7D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB9211C7C00A00034B7D1 /* Asset */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2ADBB9211C7C00A00034B7D1 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB9201C7C009D0034B7D1 /* DYPAssetProtocol.h */,
+			);
+			name = Asset;
+			sourceTree = "<group>";
+		};
+		2ADBB9221C7C01400034B7D1 /* Depedency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB9231C7C01ED0034B7D1 /* DYPDepedencyInjector.h */,
+				2ADBB9241C7C01ED0034B7D1 /* DYPDepedencyInjector.m */,
+			);
+			name = "Depedency Injection";
+			sourceTree = "<group>";
+		};
+		2ADBB9261C7C02240034B7D1 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB92E1C7C024B0034B7D1 /* Collection View */,
+			);
+			name = Datasources;
+			sourceTree = "<group>";
+		};
+		2ADBB92B1C7C023F0034B7D1 /* Asset Datasoruce */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB9281C7C023D0034B7D1 /* DYPAssetDatasource.h */,
+				2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */,
+			);
+			name = "Asset Datasoruce";
+			sourceTree = "<group>";
+		};
+		2ADBB92C1C7C02440034B7D1 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB92B1C7C023F0034B7D1 /* Asset Datasoruce */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2ADBB92D1C7C02480034B7D1 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB9271C7C02320034B7D1 /* DYPCollectionViewDatasourceProtocol.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2ADBB92E1C7C024B0034B7D1 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB92D1C7C02480034B7D1 /* Abstract */,
+				2ADBB92C1C7C02440034B7D1 /* Concrete */,
+			);
+			name = "Collection View";
+			sourceTree = "<group>";
+		};
+		8574AE5B95E2C9B5FC61D3F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */,
+				FB61C256B4C34B2F41CFF8D8 /* Pods-Picfind.release.xcconfig */,
+				7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */,
+				C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -351,9 +559,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ADBB8971C7BF8B20034B7D1 /* Build configuration list for PBXNativeTarget "Picfind" */;
 			buildPhases = (
+				12E82B3871FE62B3353E0EB7 /* Check Pods Manifest.lock */,
 				2ADBB8711C7BF8B20034B7D1 /* Sources */,
 				2ADBB8721C7BF8B20034B7D1 /* Frameworks */,
 				2ADBB8731C7BF8B20034B7D1 /* Resources */,
+				0CCEB6B79B8DBBA8D93CC616 /* Embed Pods Frameworks */,
+				056CB271BF1159DCE7DA31D5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -368,9 +579,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ADBB89A1C7BF8B20034B7D1 /* Build configuration list for PBXNativeTarget "PicfindTests" */;
 			buildPhases = (
+				3D50B44896BDE463DD45C24D /* Check Pods Manifest.lock */,
 				2ADBB88A1C7BF8B20034B7D1 /* Sources */,
 				2ADBB88B1C7BF8B20034B7D1 /* Frameworks */,
 				2ADBB88C1C7BF8B20034B7D1 /* Resources */,
+				64301AEB1C94E75B357B6EB8 /* Embed Pods Frameworks */,
+				2D483AF9FE9547DCC0059524 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -444,6 +658,7 @@
 				2ADBB9001C7BFD550034B7D1 /* hogcascade_pedestrians.xml in Resources */,
 				2ADBB8E41C7BFD550034B7D1 /* haarcascade_frontalcatface.xml in Resources */,
 				2ADBB8F51C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */,
+				2ADBB9151C7BFEA90034B7D1 /* DYPPhotosViewController.xib in Resources */,
 				2ADBB8E71C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */,
 				2ADBB8EF1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */,
 				2ADBB8EC1C7BFD550034B7D1 /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
@@ -471,21 +686,124 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADBB9101C7BFD990034B7D1 /* Test.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		056CB271BF1159DCE7DA31D5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picfind/Pods-Picfind-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0CCEB6B79B8DBBA8D93CC616 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picfind/Pods-Picfind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12E82B3871FE62B3353E0EB7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D483AF9FE9547DCC0059524 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D50B44896BDE463DD45C24D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64301AEB1C94E75B357B6EB8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2ADBB8711C7BF8B20034B7D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */,
+				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
+				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
 				2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */,
+				2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */,
 				2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */,
+				2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */,
 				2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */,
+				2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */,
+				2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */,
+				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
 				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
+				2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +811,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADBB8931C7BF8B20034B7D1 /* PicfindTests.m in Sources */,
+				2ADBB90E1C7BFD920034B7D1 /* DYPTMatImageCoversion.mm in Sources */,
+				2ADBB90C1C7BFD920034B7D1 /* DYPTDetectFaceTest.m in Sources */,
+				2ADBB90D1C7BFD920034B7D1 /* DYPTImageMatConversion.mm in Sources */,
+				2ADBB90B1C7BFD920034B7D1 /* DYPTFaceRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +924,7 @@
 		};
 		2ADBB8981C7BF8B20034B7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Picfind/Info.plist;
@@ -614,6 +936,7 @@
 		};
 		2ADBB8991C7BF8B20034B7D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB61C256B4C34B2F41CFF8D8 /* Pods-Picfind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Picfind/Info.plist;
@@ -625,6 +948,7 @@
 		};
 		2ADBB89B1C7BF8B20034B7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PicfindTests/Info.plist;
@@ -637,6 +961,7 @@
 		};
 		2ADBB89C1C7BF8B20034B7D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PicfindTests/Info.plist;
@@ -666,6 +991,7 @@
 				2ADBB8991C7BF8B20034B7D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ADBB89A1C7BF8B20034B7D1 /* Build configuration list for PBXNativeTarget "PicfindTests" */ = {
 			isa = XCConfigurationList;
@@ -674,6 +1000,7 @@
 				2ADBB89C1C7BF8B20034B7D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
