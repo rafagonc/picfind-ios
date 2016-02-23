@@ -16,6 +16,8 @@
 -(NSDate *)modificationDate;
 -(CLLocation *)location;
 -(BOOL)isFavorite;
+-(NSInteger)pixelWidth;
+-(NSInteger)pixelHeight;
 
 #pragma mark - fetching
 -(void)fetchImage:(void(^)(UIImage *image, NSDictionary *data))callback;

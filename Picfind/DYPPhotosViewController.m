@@ -11,12 +11,14 @@
 #import "DYPAssetCell.h"
 #import "DYPCollectionViewDatasourceProtocol.h"
 #import "UISearchBar+Toolbar.h"
+#import "RFQuiltLayout.h"
 
 @interface DYPPhotosViewController ()
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (weak, nonatomic) IBOutlet RFQuiltLayout *quiltLayout;
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
@@ -42,6 +44,9 @@
     
     //setup collection view
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DYPAssetCell class]) bundle:nil] forCellWithReuseIdentifier:@"DYPAssetCell"];
+    self.quiltLayout.direction = UICollectionViewScrollDirectionVertical;
+    self.quiltLayout.blockPixels = CGSizeMake(100, 100);
+    self.quiltLayout.delegate = self.datasource;
     
     //datasource
     [self.datasource setData:[self.assetDataAccessObject recents]];

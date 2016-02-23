@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYPPhotosViewController">
             <connections>
                 <outlet property="collectionView" destination="V4H-rf-Op5" id="f5L-mD-F2R"/>
+                <outlet property="quiltLayout" destination="ddP-jV-4Md" id="TcG-97-ac7"/>
                 <outlet property="searchBar" destination="j8C-I3-8uZ" id="nst-zh-Pwa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,7 +28,7 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="V4H-rf-Op5">
                     <rect key="frame" x="0.0" y="44" width="320" height="460"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="ddP-jV-4Md">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="ddP-jV-4Md" customClass="RFQuiltLayout">
                         <size key="itemSize" width="90" height="90"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

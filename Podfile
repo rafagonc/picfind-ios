@@ -7,6 +7,7 @@ target 'Picfind' do
 
 pod 'OpenCV', '~> 2.4'
 pod 'Depend'
+pod 'RFQuiltLayout'
 
 end
 

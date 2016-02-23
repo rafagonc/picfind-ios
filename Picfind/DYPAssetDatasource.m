@@ -8,8 +8,9 @@
 
 #import "DYPAssetDatasource.h"
 #import "DYPAssetCell.h"
+#import "RFQuiltLayout.h"
 
-@interface DYPAssetDatasource ()
+@interface DYPAssetDatasource () <RFQuiltLayoutDelegate>
 
 @property (nonatomic,strong) NSArray * assets;
 
@@ -45,5 +46,14 @@
     return cell;
 }
 
+#pragma mark - quilt layout
+-(CGSize)blockSizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGSize size;
+    id<DYPAssetProtocol> asset = self.assets[indexPath.row];
+    size.width = 90;
+    size.height = 90;
+    NSLog(@"%d, %d", [asset pixelHeight], [asset pixelWidth]);
+    return size;
+}
 
 @end

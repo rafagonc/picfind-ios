@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06CF7A2BD22BD1981B3631E40ED74614 /* RFQuiltLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A5B79DD957536B680637A78534EEB4 /* RFQuiltLayout.m */; };
 		0747AB66E14F09EE40ACCA3000EC7428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		0BB62EC5563F90367A5CA0A6BCB202E7 /* DPInjectionPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A9FAA9A72D32EF2F708F9B77CC4EF /* DPInjectionPropertyDescriptor.m */; };
-		29D3624ED5C8596335025887F6EF360C /* DPInjectionDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C7DBE2292EF103AD7A2C5C00B1ACE6A1 /* DPInjectionDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2C6A9D484D53F8FE942B7F38F8E25CEC /* Depend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB42BBBC02FF5D02A018BBC7C734CC21 /* Depend-dummy.m */; };
-		309F3B5F76FA6275F62DE5EB197CDC17 /* DPInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = F9FF2886F605CCE2634FE47D3A00C36F /* DPInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		323981C6BF32746806571BCAA4C8A079 /* DPImplementationKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC66AAD4B2BF0D697F01F65CF7E01AC /* DPImplementationKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46E04DD49B3FE3EE59D8581BB9FFB10B /* DPRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 48EB378C6DFE170F86B7F4FA43CA52DB /* DPRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		683F29E15B40C0063A949045AF6EB7A5 /* DPInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DF8D960B618AB01988DE97DDED6AC /* DPInjector.m */; };
-		74E0A592CC6928B198C43317AEF82D04 /* DPRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6A3BF6DBC9DE67DFA70147A2DCB4C2 /* DPRegistry.m */; };
-		A650A00C283957E8587343BE2A1DA9CE /* DPImplementationKey.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7B34A1C605173DC606EBAA07B4F7B7 /* DPImplementationKey.m */; };
+		0BB62EC5563F90367A5CA0A6BCB202E7 /* DPInjectionPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B1BF7945165A1E82E3E88ED3E003AB /* DPInjectionPropertyDescriptor.m */; };
+		29D3624ED5C8596335025887F6EF360C /* DPInjectionDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 325EB123C2C68D2F41774D9323C5AC70 /* DPInjectionDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C6A9D484D53F8FE942B7F38F8E25CEC /* Depend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF84D1E78A60DEA99499F85E5C305FC9 /* Depend-dummy.m */; };
+		309F3B5F76FA6275F62DE5EB197CDC17 /* DPInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 16255F4699B3B4470E1E6DEA207AE3B4 /* DPInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		323981C6BF32746806571BCAA4C8A079 /* DPImplementationKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 3013415563487F0079C2A9A70D8266E1 /* DPImplementationKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46E04DD49B3FE3EE59D8581BB9FFB10B /* DPRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B348A7EBE6244C24FB638A31532DC0 /* DPRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B60E132A34CA3A5442A2D369E042B39 /* RFQuiltLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E18EF91DDD795743581CD9219D3771 /* RFQuiltLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B7541349580DB16E5B05C36ACBA9C24 /* Pods-Picfind-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB1D1340B814F8F83D5663E9B22FF1 /* Pods-Picfind-dummy.m */; };
+		683F29E15B40C0063A949045AF6EB7A5 /* DPInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = C76D9773F2D50345AAD13AC243337BFB /* DPInjector.m */; };
+		69160F03A4B37C8DC47E082D1CF087CA /* RFQuiltLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D11B94B6DEB0422539EAF93525FAD /* RFQuiltLayout-dummy.m */; };
+		74E0A592CC6928B198C43317AEF82D04 /* DPRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DE1C14A2FD19695DBE1DC983FC7F77 /* DPRegistry.m */; };
+		A650A00C283957E8587343BE2A1DA9CE /* DPImplementationKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 6908391858EC0BD3661611C8CF0C56D4 /* DPImplementationKey.m */; };
 		B3412AE5D9B1CC57401AD15F4908722B /* Pods-PicfindTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9F11981E703C9EE2CFA9CB2620BE1B /* Pods-PicfindTests-dummy.m */; };
-		BA927A6018F35197F74F77DBB8B697C4 /* DPCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5400BE2236504FE7A8BD7F7CB91255B2 /* DPCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BD54BCC387003EF4AF6F68EDC231FAF6 /* DPInjectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C85296968D3EF2F57E72C5EEE66900E /* DPInjectionDescriptor.m */; };
+		B9BCBFF1C96504C65D1954472F4C134F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		BA927A6018F35197F74F77DBB8B697C4 /* DPCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BD624BF66BF42B0122A21B9144CEE193 /* DPCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD54BCC387003EF4AF6F68EDC231FAF6 /* DPInjectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 59609948258890CC646F9F33254CD50C /* DPInjectionDescriptor.m */; };
+		C5062CDB54BE6B9EDC17952D51710E36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		D7D8279D479194AA42F10825602F7F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		DBBB5D44E392287A00EA99702D9233AD /* DPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E1E7781918231B2A0D93FD1D7A7C53 /* DPCache.m */; };
-		DDA9F8F60655DCACAE1B1EA99A022E2B /* DPInjectionPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = FA38E73C01114F4929CB5A9462C0059A /* DPInjectionPropertyDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E2EA97210924F8C4AEDE47A684194CE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		EC6839B5DD110F1C8EB8F687A86E2181 /* Pods-Picfind-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB1D1340B814F8F83D5663E9B22FF1 /* Pods-Picfind-dummy.m */; };
+		DBBB5D44E392287A00EA99702D9233AD /* DPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 578413776B89E8F67B840BB03377A0A2 /* DPCache.m */; };
+		DDA9F8F60655DCACAE1B1EA99A022E2B /* DPInjectionPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 924CB385A8AEEF5124E80A5CAEED71BE /* DPInjectionPropertyDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,52 +39,65 @@
 			remoteGlobalIDString = 19B7E936EAFA3B2AD017AB0A96352D46;
 			remoteInfo = "Depend-Depend";
 		};
-		898FC2C43C0334709C91E5C0B4C8B4FB /* PBXContainerItemProxy */ = {
+		5229D5A487864CE78FCDC75439246BBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B24E0E02E9746BC60C12F9F7395259A7;
 			remoteInfo = Depend;
 		};
+		8BFF6E33E9604B12C41ECB4B92068E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE6CDC15BA4F2C226D7E6EB41CF423D6;
+			remoteInfo = RFQuiltLayout;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D9793790AC18FE716A5D5C2F34DCCC3 /* libPods-PicfindTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PicfindTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8D45E85D741E3711CBBBDFCBE71EBC /* Pods-PicfindTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PicfindTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2C85296968D3EF2F57E72C5EEE66900E /* DPInjectionDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionDescriptor.m; path = Pod/Classes/DPInjectionDescriptor.m; sourceTree = "<group>"; };
+		16255F4699B3B4470E1E6DEA207AE3B4 /* DPInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjector.h; path = Pod/Classes/DPInjector.h; sourceTree = "<group>"; };
+		17A5B79DD957536B680637A78534EEB4 /* RFQuiltLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RFQuiltLayout.m; path = RFQuiltLayout/RFQuiltLayout.m; sourceTree = "<group>"; };
+		2759F3BEAA80CAC62741F0EB6EF555F1 /* libDepend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDepend.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		276311C7DBCE0A3070F9595B65154113 /* RFQuiltLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RFQuiltLayout-prefix.pch"; sourceTree = "<group>"; };
+		3013415563487F0079C2A9A70D8266E1 /* DPImplementationKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPImplementationKey.h; path = Pod/Classes/DPImplementationKey.h; sourceTree = "<group>"; };
+		325EB123C2C68D2F41774D9323C5AC70 /* DPInjectionDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionDescriptor.h; path = Pod/Classes/DPInjectionDescriptor.h; sourceTree = "<group>"; };
 		32DCDA0D933355DC8B6C74D3EC55C4C8 /* Pods-Picfind-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Picfind-frameworks.sh"; sourceTree = "<group>"; };
-		3DC66AAD4B2BF0D697F01F65CF7E01AC /* DPImplementationKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPImplementationKey.h; path = Pod/Classes/DPImplementationKey.h; sourceTree = "<group>"; };
+		32DE1C14A2FD19695DBE1DC983FC7F77 /* DPRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPRegistry.m; path = Pod/Classes/DPRegistry.m; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		48EB378C6DFE170F86B7F4FA43CA52DB /* DPRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPRegistry.h; path = Pod/Classes/DPRegistry.h; sourceTree = "<group>"; };
-		4D6DF8D960B618AB01988DE97DDED6AC /* DPInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjector.m; path = Pod/Classes/DPInjector.m; sourceTree = "<group>"; };
-		5400BE2236504FE7A8BD7F7CB91255B2 /* DPCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPCache.h; path = Pod/Classes/DPCache.h; sourceTree = "<group>"; };
+		4C44A3BAF650253227703FA9ED1F5C1F /* Depend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Depend.xcconfig; sourceTree = "<group>"; };
 		56739F7D028A58365ABE644BE51569F4 /* Pods-PicfindTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicfindTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		588BF76C1803C090744AA8380A419CB9 /* libPods-Picfind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picfind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		578413776B89E8F67B840BB03377A0A2 /* DPCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPCache.m; path = Pod/Classes/DPCache.m; sourceTree = "<group>"; };
+		58B1BF7945165A1E82E3E88ED3E003AB /* DPInjectionPropertyDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionPropertyDescriptor.m; path = Pod/Classes/DPInjectionPropertyDescriptor.m; sourceTree = "<group>"; };
+		59609948258890CC646F9F33254CD50C /* DPInjectionDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionDescriptor.m; path = Pod/Classes/DPInjectionDescriptor.m; sourceTree = "<group>"; };
 		626F649E0446EC2150DE82D41DF3E6F0 /* Pods-PicfindTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicfindTests-resources.sh"; sourceTree = "<group>"; };
-		6358AB400083F8CB96758526FECEA11F /* libPods-PicfindTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PicfindTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		64CD1192D710E531013ED78A50390F5F /* liblibjpeg.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = liblibjpeg.a; path = ios/liblibjpeg.a; sourceTree = "<group>"; };
-		67178123EC95A0A4C9B00CDF9CCC55F1 /* Depend.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Depend.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		66737856E2D91E8F03E2A24D81DAA97F /* liblibjpeg.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = liblibjpeg.a; path = ios/liblibjpeg.a; sourceTree = "<group>"; };
+		66AACE8B9A9B95E7631F8434B93AF32B /* Depend.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Depend.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		67FD490B833E4BC68BC45BA42F4F68D6 /* Depend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Depend-prefix.pch"; sourceTree = "<group>"; };
+		6908391858EC0BD3661611C8CF0C56D4 /* DPImplementationKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPImplementationKey.m; path = Pod/Classes/DPImplementationKey.m; sourceTree = "<group>"; };
 		6CDFF2FD1D52FBD59E04E359C156AC38 /* Pods-Picfind-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Picfind-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6D4D8926E523F6F7333B53A7AE1809D1 /* Pods-Picfind-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Picfind-acknowledgements.plist"; sourceTree = "<group>"; };
+		76B348A7EBE6244C24FB638A31532DC0 /* DPRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPRegistry.h; path = Pod/Classes/DPRegistry.h; sourceTree = "<group>"; };
+		793D11B94B6DEB0422539EAF93525FAD /* RFQuiltLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RFQuiltLayout-dummy.m"; sourceTree = "<group>"; };
 		80BB1D1340B814F8F83D5663E9B22FF1 /* Pods-Picfind-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Picfind-dummy.m"; sourceTree = "<group>"; };
 		88675D13D68AB47AE2B2E580CA3B801A /* Pods-PicfindTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicfindTests-frameworks.sh"; sourceTree = "<group>"; };
-		970A9FAA9A72D32EF2F708F9B77CC4EF /* DPInjectionPropertyDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionPropertyDescriptor.m; path = Pod/Classes/DPInjectionPropertyDescriptor.m; sourceTree = "<group>"; };
+		924CB385A8AEEF5124E80A5CAEED71BE /* DPInjectionPropertyDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionPropertyDescriptor.h; path = Pod/Classes/DPInjectionPropertyDescriptor.h; sourceTree = "<group>"; };
 		98C67FBF2AFA6E11819355DCB3446E11 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
 		9AF27D9139964B63410C681F120FE339 /* Pods-Picfind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Picfind.release.xcconfig"; sourceTree = "<group>"; };
 		9C9A01B402498CF0974189039C28B6B9 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AB6A3BF6DBC9DE67DFA70147A2DCB4C2 /* DPRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPRegistry.m; path = Pod/Classes/DPRegistry.m; sourceTree = "<group>"; };
 		AD68EE27A3AD8A8DB10302811DA065FE /* Pods-Picfind-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Picfind-resources.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BD7B34A1C605173DC606EBAA07B4F7B7 /* DPImplementationKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPImplementationKey.m; path = Pod/Classes/DPImplementationKey.m; sourceTree = "<group>"; };
-		C7DBE2292EF103AD7A2C5C00B1ACE6A1 /* DPInjectionDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionDescriptor.h; path = Pod/Classes/DPInjectionDescriptor.h; sourceTree = "<group>"; };
-		CB17970E393C9298DA6F5EED28BF48FE /* Depend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Depend-prefix.pch"; sourceTree = "<group>"; };
-		D1E1E7781918231B2A0D93FD1D7A7C53 /* DPCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPCache.m; path = Pod/Classes/DPCache.m; sourceTree = "<group>"; };
-		D5E6E6896CED3C11BE5C538BA1F2C1F6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = "<group>"; };
-		DB42BBBC02FF5D02A018BBC7C734CC21 /* Depend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Depend-dummy.m"; sourceTree = "<group>"; };
-		DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Depend.xcconfig; sourceTree = "<group>"; };
+		BD624BF66BF42B0122A21B9144CEE193 /* DPCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPCache.h; path = Pod/Classes/DPCache.h; sourceTree = "<group>"; };
+		C21D2A6A6366D198A980F3DA2B2157F0 /* libPods-Picfind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picfind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45387076CF2340A27607502AF972FAC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = "<group>"; };
+		C76D9773F2D50345AAD13AC243337BFB /* DPInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjector.m; path = Pod/Classes/DPInjector.m; sourceTree = "<group>"; };
+		CF84D1E78A60DEA99499F85E5C305FC9 /* Depend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Depend-dummy.m"; sourceTree = "<group>"; };
+		E884A80322DA47231AB4D25592D8FAF2 /* libRFQuiltLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRFQuiltLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9F11981E703C9EE2CFA9CB2620BE1B /* Pods-PicfindTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PicfindTests-dummy.m"; sourceTree = "<group>"; };
-		F9FF2886F605CCE2634FE47D3A00C36F /* DPInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjector.h; path = Pod/Classes/DPInjector.h; sourceTree = "<group>"; };
-		FA38E73C01114F4929CB5A9462C0059A /* DPInjectionPropertyDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionPropertyDescriptor.h; path = Pod/Classes/DPInjectionPropertyDescriptor.h; sourceTree = "<group>"; };
-		FB62F7F9AB19F51A0566ED95EE7067A9 /* libDepend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDepend.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E18EF91DDD795743581CD9219D3771 /* RFQuiltLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RFQuiltLayout.h; path = RFQuiltLayout/RFQuiltLayout.h; sourceTree = "<group>"; };
+		FA5E3CF4E9A3073CD1719A7A9E85B2A3 /* RFQuiltLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RFQuiltLayout.xcconfig; sourceTree = "<group>"; };
 		FD6E54B54BB6889A741BCC81225459EB /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +110,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		16D64993CA86FB7004C2FAA09541500D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BCBFF1C96504C65D1954472F4C134F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D61D86B2308D36C190992798157EAD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,11 +125,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A80CF5780A6B687A79CF20433494F5A /* Frameworks */ = {
+		3D0F563BA018CE6E7B30B8284C4D307C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2EA97210924F8C4AEDE47A684194CE0 /* Foundation.framework in Frameworks */,
+				C5062CDB54BE6B9EDC17952D51710E36 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,33 +144,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CD87D6EB956AADE29DEB18037ECA9A2 /* Depend */ = {
+		05F3AAFF5976D006DA41E168778CA7BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5400BE2236504FE7A8BD7F7CB91255B2 /* DPCache.h */,
-				D1E1E7781918231B2A0D93FD1D7A7C53 /* DPCache.m */,
-				3DC66AAD4B2BF0D697F01F65CF7E01AC /* DPImplementationKey.h */,
-				BD7B34A1C605173DC606EBAA07B4F7B7 /* DPImplementationKey.m */,
-				C7DBE2292EF103AD7A2C5C00B1ACE6A1 /* DPInjectionDescriptor.h */,
-				2C85296968D3EF2F57E72C5EEE66900E /* DPInjectionDescriptor.m */,
-				FA38E73C01114F4929CB5A9462C0059A /* DPInjectionPropertyDescriptor.h */,
-				970A9FAA9A72D32EF2F708F9B77CC4EF /* DPInjectionPropertyDescriptor.m */,
-				F9FF2886F605CCE2634FE47D3A00C36F /* DPInjector.h */,
-				4D6DF8D960B618AB01988DE97DDED6AC /* DPInjector.m */,
-				48EB378C6DFE170F86B7F4FA43CA52DB /* DPRegistry.h */,
-				AB6A3BF6DBC9DE67DFA70147A2DCB4C2 /* DPRegistry.m */,
-				78EB0BF9EA2BE215F11BFB249F0197E3 /* Support Files */,
-			);
-			path = Depend;
-			sourceTree = "<group>";
-		};
-		25878F9F9B26138D154596B0D06EA53E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				64CD1192D710E531013ED78A50390F5F /* liblibjpeg.a */,
-				D5E6E6896CED3C11BE5C538BA1F2C1F6 /* opencv2.framework */,
+				66737856E2D91E8F03E2A24D81DAA97F /* liblibjpeg.a */,
+				C45387076CF2340A27607502AF972FAC /* opencv2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E042409C5B02E7601499638F86885BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C44A3BAF650253227703FA9ED1F5C1F /* Depend.xcconfig */,
+				CF84D1E78A60DEA99499F85E5C305FC9 /* Depend-dummy.m */,
+				67FD490B833E4BC68BC45BA42F4F68D6 /* Depend-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Depend";
 			sourceTree = "<group>";
 		};
 		29AEE597220FF8A8F1F73158085EFAE8 /* Pods-PicfindTests */ = {
@@ -172,23 +188,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		78EB0BF9EA2BE215F11BFB249F0197E3 /* Support Files */ = {
+		41631A24789281ABC35E821CFC9B5B07 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */,
-				DB42BBBC02FF5D02A018BBC7C734CC21 /* Depend-dummy.m */,
-				CB17970E393C9298DA6F5EED28BF48FE /* Depend-prefix.pch */,
+				66AACE8B9A9B95E7631F8434B93AF32B /* Depend.bundle */,
+				2759F3BEAA80CAC62741F0EB6EF555F1 /* libDepend.a */,
+				C21D2A6A6366D198A980F3DA2B2157F0 /* libPods-Picfind.a */,
+				0D9793790AC18FE716A5D5C2F34DCCC3 /* libPods-PicfindTests.a */,
+				E884A80322DA47231AB4D25592D8FAF2 /* libRFQuiltLayout.a */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Depend";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		7BCDEBC8875AE060291A6F6DDCDA343A /* OpenCV */ = {
+		6CEF810EE1FD2BCE21CE890F2FF2DA42 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				25878F9F9B26138D154596B0D06EA53E /* Frameworks */,
+				C4D23D1D653DEA4EE845C1B9E9C1C060 /* Depend */,
+				BC57087F317D0459D7BADC83E40C98B6 /* OpenCV */,
+				F11606ACFAE7B0770E8F0D41E0BF418C /* RFQuiltLayout */,
 			);
-			path = OpenCV;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		736481095CCF2A1C0BA46144012A5E9A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA5E3CF4E9A3073CD1719A7A9E85B2A3 /* RFQuiltLayout.xcconfig */,
+				793D11B94B6DEB0422539EAF93525FAD /* RFQuiltLayout-dummy.m */,
+				276311C7DBCE0A3070F9595B65154113 /* RFQuiltLayout-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RFQuiltLayout";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -196,30 +226,10 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				916B51A827D354EED986DA757134C792 /* Pods */,
-				941AD76120FFBB236BD790E70A71C502 /* Products */,
+				6CEF810EE1FD2BCE21CE890F2FF2DA42 /* Pods */,
+				41631A24789281ABC35E821CFC9B5B07 /* Products */,
 				3D9D88C35348A63063BE06672F019C01 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		916B51A827D354EED986DA757134C792 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0CD87D6EB956AADE29DEB18037ECA9A2 /* Depend */,
-				7BCDEBC8875AE060291A6F6DDCDA343A /* OpenCV */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		941AD76120FFBB236BD790E70A71C502 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				67178123EC95A0A4C9B00CDF9CCC55F1 /* Depend.bundle */,
-				FB62F7F9AB19F51A0566ED95EE7067A9 /* libDepend.a */,
-				588BF76C1803C090744AA8380A419CB9 /* libPods-Picfind.a */,
-				6358AB400083F8CB96758526FECEA11F /* libPods-PicfindTests.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ADC3CBDF6F315EECE14E8B7E583A2AF9 /* Pods-Picfind */ = {
@@ -245,12 +255,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BC57087F317D0459D7BADC83E40C98B6 /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				05F3AAFF5976D006DA41E168778CA7BB /* Frameworks */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C4D23D1D653DEA4EE845C1B9E9C1C060 /* Depend */ = {
+			isa = PBXGroup;
+			children = (
+				BD624BF66BF42B0122A21B9144CEE193 /* DPCache.h */,
+				578413776B89E8F67B840BB03377A0A2 /* DPCache.m */,
+				3013415563487F0079C2A9A70D8266E1 /* DPImplementationKey.h */,
+				6908391858EC0BD3661611C8CF0C56D4 /* DPImplementationKey.m */,
+				325EB123C2C68D2F41774D9323C5AC70 /* DPInjectionDescriptor.h */,
+				59609948258890CC646F9F33254CD50C /* DPInjectionDescriptor.m */,
+				924CB385A8AEEF5124E80A5CAEED71BE /* DPInjectionPropertyDescriptor.h */,
+				58B1BF7945165A1E82E3E88ED3E003AB /* DPInjectionPropertyDescriptor.m */,
+				16255F4699B3B4470E1E6DEA207AE3B4 /* DPInjector.h */,
+				C76D9773F2D50345AAD13AC243337BFB /* DPInjector.m */,
+				76B348A7EBE6244C24FB638A31532DC0 /* DPRegistry.h */,
+				32DE1C14A2FD19695DBE1DC983FC7F77 /* DPRegistry.m */,
+				1E042409C5B02E7601499638F86885BA /* Support Files */,
+			);
+			path = Depend;
+			sourceTree = "<group>";
+		};
+		F11606ACFAE7B0770E8F0D41E0BF418C /* RFQuiltLayout */ = {
+			isa = PBXGroup;
+			children = (
+				F6E18EF91DDD795743581CD9219D3771 /* RFQuiltLayout.h */,
+				17A5B79DD957536B680637A78534EEB4 /* RFQuiltLayout.m */,
+				736481095CCF2A1C0BA46144012A5E9A /* Support Files */,
+			);
+			path = RFQuiltLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +314,14 @@
 				DDA9F8F60655DCACAE1B1EA99A022E2B /* DPInjectionPropertyDescriptor.h in Headers */,
 				309F3B5F76FA6275F62DE5EB197CDC17 /* DPInjector.h in Headers */,
 				46E04DD49B3FE3EE59D8581BB9FFB10B /* DPRegistry.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09889DB4FC0F0246A1A6038C4AE05DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B60E132A34CA3A5442A2D369E042B39 /* RFQuiltLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +342,26 @@
 			);
 			name = "Depend-Depend";
 			productName = "Depend-Depend";
-			productReference = 67178123EC95A0A4C9B00CDF9CCC55F1 /* Depend.bundle */;
+			productReference = 66AACE8B9A9B95E7631F8434B93AF32B /* Depend.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		367056F909002D94DF1B2BEBC0A94609 /* Pods-Picfind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EEF8A823525CF6963728862F44F47C5 /* Build configuration list for PBXNativeTarget "Pods-Picfind" */;
+			buildPhases = (
+				D7291865397550C0587AA5734ECC3EB3 /* Sources */,
+				16D64993CA86FB7004C2FAA09541500D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A7D50D973E634268BD0A4190DDAE092 /* PBXTargetDependency */,
+				7582A744A408BC69CF23DF1FCCF1C18C /* PBXTargetDependency */,
+			);
+			name = "Pods-Picfind";
+			productName = "Pods-Picfind";
+			productReference = C21D2A6A6366D198A980F3DA2B2157F0 /* libPods-Picfind.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		89DB946C715604D7C8C3F8A1301F608D /* Pods-PicfindTests */ = {
 			isa = PBXNativeTarget;
@@ -302,24 +376,24 @@
 			);
 			name = "Pods-PicfindTests";
 			productName = "Pods-PicfindTests";
-			productReference = 6358AB400083F8CB96758526FECEA11F /* libPods-PicfindTests.a */;
+			productReference = 0D9793790AC18FE716A5D5C2F34DCCC3 /* libPods-PicfindTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9B6726DBB67BE2334A58853C37125262 /* Pods-Picfind */ = {
+		AE6CDC15BA4F2C226D7E6EB41CF423D6 /* RFQuiltLayout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E26CEB34DF3496961C7FB99437FD4B85 /* Build configuration list for PBXNativeTarget "Pods-Picfind" */;
+			buildConfigurationList = D6F77268EEFE673A9EE35CFA7287BA84 /* Build configuration list for PBXNativeTarget "RFQuiltLayout" */;
 			buildPhases = (
-				B464EC38D8B41DEC970B197B0C7487C5 /* Sources */,
-				5A80CF5780A6B687A79CF20433494F5A /* Frameworks */,
+				33AF63217125619746BCC4813DF85D30 /* Sources */,
+				3D0F563BA018CE6E7B30B8284C4D307C /* Frameworks */,
+				E09889DB4FC0F0246A1A6038C4AE05DC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				752C73F6B2A52DB8DAA6C0F2F32A2FDD /* PBXTargetDependency */,
 			);
-			name = "Pods-Picfind";
-			productName = "Pods-Picfind";
-			productReference = 588BF76C1803C090744AA8380A419CB9 /* libPods-Picfind.a */;
+			name = RFQuiltLayout;
+			productName = RFQuiltLayout;
+			productReference = E884A80322DA47231AB4D25592D8FAF2 /* libRFQuiltLayout.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		B24E0E02E9746BC60C12F9F7395259A7 /* Depend */ = {
@@ -337,7 +411,7 @@
 			);
 			name = Depend;
 			productName = Depend;
-			productReference = FB62F7F9AB19F51A0566ED95EE7067A9 /* libDepend.a */;
+			productReference = 2759F3BEAA80CAC62741F0EB6EF555F1 /* libDepend.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -357,14 +431,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 941AD76120FFBB236BD790E70A71C502 /* Products */;
+			productRefGroup = 41631A24789281ABC35E821CFC9B5B07 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B24E0E02E9746BC60C12F9F7395259A7 /* Depend */,
 				19B7E936EAFA3B2AD017AB0A96352D46 /* Depend-Depend */,
-				9B6726DBB67BE2334A58853C37125262 /* Pods-Picfind */,
+				367056F909002D94DF1B2BEBC0A94609 /* Pods-Picfind */,
 				89DB946C715604D7C8C3F8A1301F608D /* Pods-PicfindTests */,
+				AE6CDC15BA4F2C226D7E6EB41CF423D6 /* RFQuiltLayout */,
 			);
 		};
 /* End PBXProject section */
@@ -395,6 +470,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33AF63217125619746BCC4813DF85D30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69160F03A4B37C8DC47E082D1CF087CA /* RFQuiltLayout-dummy.m in Sources */,
+				06CF7A2BD22BD1981B3631E40ED74614 /* RFQuiltLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		542C96306099C508CB39ED0B905C6918 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,52 +493,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B464EC38D8B41DEC970B197B0C7487C5 /* Sources */ = {
+		D7291865397550C0587AA5734ECC3EB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6839B5DD110F1C8EB8F687A86E2181 /* Pods-Picfind-dummy.m in Sources */,
+				4B7541349580DB16E5B05C36ACBA9C24 /* Pods-Picfind-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0A7D50D973E634268BD0A4190DDAE092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Depend;
+			target = B24E0E02E9746BC60C12F9F7395259A7 /* Depend */;
+			targetProxy = 5229D5A487864CE78FCDC75439246BBC /* PBXContainerItemProxy */;
+		};
 		5865AE422B05482E840368A3AC08126F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Depend-Depend";
 			target = 19B7E936EAFA3B2AD017AB0A96352D46 /* Depend-Depend */;
 			targetProxy = 0406F5DA956C61828197FC4D3A4FF8F8 /* PBXContainerItemProxy */;
 		};
-		752C73F6B2A52DB8DAA6C0F2F32A2FDD /* PBXTargetDependency */ = {
+		7582A744A408BC69CF23DF1FCCF1C18C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Depend;
-			target = B24E0E02E9746BC60C12F9F7395259A7 /* Depend */;
-			targetProxy = 898FC2C43C0334709C91E5C0B4C8B4FB /* PBXContainerItemProxy */;
+			name = RFQuiltLayout;
+			target = AE6CDC15BA4F2C226D7E6EB41CF423D6 /* RFQuiltLayout */;
+			targetProxy = 8BFF6E33E9604B12C41ECB4B92068E27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1050187500721A88E03860E300757226 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD6E54B54BB6889A741BCC81225459EB /* Pods-Picfind.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
 		183C939DEAA67DB8C1DD08DD18F33697 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */;
+			baseConfigurationReference = 4C44A3BAF650253227703FA9ED1F5C1F /* Depend.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = Depend;
@@ -466,7 +539,7 @@
 		};
 		4B7C62AAA3DE840A71F5A34369A0B000 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */;
+			baseConfigurationReference = 4C44A3BAF650253227703FA9ED1F5C1F /* Depend.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = Depend;
@@ -478,7 +551,7 @@
 		};
 		4D0CC95123965D7A10379C79E4454E4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */;
+			baseConfigurationReference = 4C44A3BAF650253227703FA9ED1F5C1F /* Depend.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Depend/Depend-prefix.pch";
@@ -489,6 +562,23 @@
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4F6DB6D862F7578783BFA0A1A5C9926C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD6E54B54BB6889A741BCC81225459EB /* Pods-Picfind.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -514,23 +604,6 @@
 		840CA7DC1ECC054681F0FAE317679A50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98C67FBF2AFA6E11819355DCB3446E11 /* Pods-PicfindTests.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		8983AE677D7454C06D8CDF6BA09AA6BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AF27D9139964B63410C681F120FE339 /* Pods-Picfind.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -584,6 +657,23 @@
 			};
 			name = Debug;
 		};
+		A98D942096DE6D77B278C4229783F0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF27D9139964B63410C681F120FE339 /* Pods-Picfind.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -618,9 +708,45 @@
 			};
 			name = Release;
 		};
+		C94BAF5A59B2B715C11ACF6D2AE6FE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5E3CF4E9A3073CD1719A7A9E85B2A3 /* RFQuiltLayout.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RFQuiltLayout/RFQuiltLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D12E6A68B15576596902E68DAF430D70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5E3CF4E9A3073CD1719A7A9E85B2A3 /* RFQuiltLayout.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RFQuiltLayout/RFQuiltLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		F4CC3702EEAD88C7BE38C1DAD0975E2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDEE99003536EACBF40B86AB90ED184D /* Depend.xcconfig */;
+			baseConfigurationReference = 4C44A3BAF650253227703FA9ED1F5C1F /* Depend.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Depend/Depend-prefix.pch";
@@ -644,6 +770,15 @@
 			buildConfigurations = (
 				8D1534490D941DCA47C62AC4314182AF /* Debug */,
 				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EEF8A823525CF6963728862F44F47C5 /* Build configuration list for PBXNativeTarget "Pods-Picfind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F6DB6D862F7578783BFA0A1A5C9926C /* Debug */,
+				A98D942096DE6D77B278C4229783F0DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -675,11 +810,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E26CEB34DF3496961C7FB99437FD4B85 /* Build configuration list for PBXNativeTarget "Pods-Picfind" */ = {
+		D6F77268EEFE673A9EE35CFA7287BA84 /* Build configuration list for PBXNativeTarget "RFQuiltLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1050187500721A88E03860E300757226 /* Debug */,
-				8983AE677D7454C06D8CDF6BA09AA6BC /* Release */,
+				D12E6A68B15576596902E68DAF430D70 /* Debug */,
+				C94BAF5A59B2B715C11ACF6D2AE6FE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

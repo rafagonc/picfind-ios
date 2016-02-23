@@ -24,10 +24,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RFQuiltLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>19B7E936EAFA3B2AD017AB0A96352D46</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>367056F909002D94DF1B2BEBC0A94609</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,7 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9B6726DBB67BE2334A58853C37125262</key>
+		<key>AE6CDC15BA4F2C226D7E6EB41CF423D6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
