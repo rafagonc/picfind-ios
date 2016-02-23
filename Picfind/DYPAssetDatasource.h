@@ -6,8 +6,10 @@
 //  Copyright © 2016 Rafael Gonzalves. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "DYPCollectionViewDatasourceProtocol.h"
 
 @interface DYPAssetDatasource : NSObject
+
+<DYPCollectionViewDatasourceProtocol>
 
 @end

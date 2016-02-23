@@ -6,8 +6,10 @@
 //  Copyright © 2016 Rafael Gonzalves. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@protocol DYPCollectionViewDatasourceProtocol <NSObject>
+@protocol DYPCollectionViewDatasourceProtocol <UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic,strong) NSArray *data;
 
 @end

@@ -11,6 +11,11 @@
 		2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116881C7C030700A45955 /* UITextField+DoneButton.m */; };
 		2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11168B1C7C031000A45955 /* UITableViewCell+Clear.m */; };
 		2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A11168E1C7C031600A45955 /* UISearchBar+Toolbar.m */; };
+		2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116971C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m */; };
+		2A1116A21C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116A11C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m */; };
+		2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116A61C7C08EE00A45955 /* UIColor+DYP.m */; };
+		2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116AA1C7C08FE00A45955 /* UIFont+DYP.m */; };
+		2A1116B01C7C0DAF00A45955 /* DYPAssetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116AF1C7C0DAF00A45955 /* DYPAssetCell.xib */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -92,6 +97,18 @@
 		2A11168B1C7C031000A45955 /* UITableViewCell+Clear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Clear.m"; sourceTree = "<group>"; };
 		2A11168D1C7C031600A45955 /* UISearchBar+Toolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+Toolbar.h"; sourceTree = "<group>"; };
 		2A11168E1C7C031600A45955 /* UISearchBar+Toolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+Toolbar.m"; sourceTree = "<group>"; };
+		2A1116961C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAsset+DYPAssetProtocol.h"; sourceTree = "<group>"; };
+		2A1116971C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+DYPAssetProtocol.m"; sourceTree = "<group>"; };
+		2A11169E1C7C082100A45955 /* DYPAssetDataAccessObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDataAccessObject.h; sourceTree = "<group>"; };
+		2A1116A01C7C083100A45955 /* DYPAssetDataAccessObjectImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDataAccessObjectImpl.h; sourceTree = "<group>"; };
+		2A1116A11C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAssetDataAccessObjectImpl.m; sourceTree = "<group>"; };
+		2A1116A51C7C08EE00A45955 /* UIColor+DYP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DYP.h"; sourceTree = "<group>"; };
+		2A1116A61C7C08EE00A45955 /* UIColor+DYP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DYP.m"; sourceTree = "<group>"; };
+		2A1116A91C7C08FE00A45955 /* UIFont+DYP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+DYP.h"; sourceTree = "<group>"; };
+		2A1116AA1C7C08FE00A45955 /* UIFont+DYP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+DYP.m"; sourceTree = "<group>"; };
+		2A1116AD1C7C0C1700A45955 /* NSCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCollection.h; sourceTree = "<group>"; };
+		2A1116AE1C7C0CA200A45955 /* global.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = global.pch; sourceTree = "<group>"; };
+		2A1116AF1C7C0DAF00A45955 /* DYPAssetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPAssetCell.xib; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -203,6 +220,7 @@
 			children = (
 				2A11167F1C7C02B000A45955 /* DYPAssetCell.h */,
 				2A1116801C7C02B000A45955 /* DYPAssetCell.m */,
+				2A1116AF1C7C0DAF00A45955 /* DYPAssetCell.xib */,
 			);
 			name = "Asset Cell";
 			sourceTree = "<group>";
@@ -234,6 +252,75 @@
 			name = UITextField;
 			sourceTree = "<group>";
 		};
+		2A1116941C7C058700A45955 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2ADBB9201C7C009D0034B7D1 /* DYPAssetProtocol.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A1116951C7C05E300A45955 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116961C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.h */,
+				2A1116971C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A11169D1C7C080F00A45955 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116A41C7C083600A45955 /* Asset */,
+			);
+			name = DAO;
+			sourceTree = "<group>";
+		};
+		2A11169F1C7C082300A45955 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A11169E1C7C082100A45955 /* DYPAssetDataAccessObject.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A1116A31C7C083300A45955 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116A01C7C083100A45955 /* DYPAssetDataAccessObjectImpl.h */,
+				2A1116A11C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A1116A41C7C083600A45955 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				2A11169F1C7C082300A45955 /* Abstract */,
+				2A1116A31C7C083300A45955 /* Concrete */,
+			);
+			name = Asset;
+			sourceTree = "<group>";
+		};
+		2A1116A81C7C08F000A45955 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116A51C7C08EE00A45955 /* UIColor+DYP.h */,
+				2A1116A61C7C08EE00A45955 /* UIColor+DYP.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		2A1116AC1C7C090000A45955 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116A91C7C08FE00A45955 /* UIFont+DYP.h */,
+				2A1116AA1C7C08FE00A45955 /* UIFont+DYP.m */,
+			);
+			name = UIFont;
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -257,14 +344,15 @@
 		2ADBB8771C7BF8B20034B7D1 /* Picfind */ = {
 			isa = PBXGroup;
 			children = (
+				2A11169D1C7C080F00A45955 /* DAO */,
 				2ADBB9261C7C02240034B7D1 /* Datasources */,
 				2ADBB9221C7C01400034B7D1 /* Depedency Injection */,
+				2ADBB89E1C7BFA6C0034B7D1 /* General Classes */,
 				2ADBB91F1C7C00920034B7D1 /* Models */,
 				2ADBB91E1C7C004B0034B7D1 /* Categories */,
 				2ADBB8A11C7BFAF70034B7D1 /* Custom Views */,
 				2ADBB8A01C7BFA790034B7D1 /* Cells */,
 				2ADBB89F1C7BFA730034B7D1 /* Protocols */,
-				2ADBB89E1C7BFA6C0034B7D1 /* General Classes */,
 				2ADBB89D1C7BFA600034B7D1 /* View Controllers */,
 				2ADBB8781C7BF8B20034B7D1 /* Supporting Files */,
 			);
@@ -281,6 +369,7 @@
 				2ADBB8861C7BF8B20034B7D1 /* LaunchScreen.storyboard */,
 				2ADBB8891C7BF8B20034B7D1 /* Info.plist */,
 				2ADBB8791C7BF8B20034B7D1 /* main.m */,
+				2A1116AE1C7C0CA200A45955 /* global.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -319,6 +408,7 @@
 		2ADBB89F1C7BFA730034B7D1 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				2A1116AD1C7C0C1700A45955 /* NSCollection.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -470,6 +560,8 @@
 				2A1116901C7C035E00A45955 /* UISearchBar */,
 				2A1116911C7C036600A45955 /* UITableViewCell */,
 				2A1116921C7C036F00A45955 /* UITextField */,
+				2A1116A81C7C08F000A45955 /* UIColor */,
+				2A1116AC1C7C090000A45955 /* UIFont */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -485,7 +577,8 @@
 		2ADBB9211C7C00A00034B7D1 /* Asset */ = {
 			isa = PBXGroup;
 			children = (
-				2ADBB9201C7C009D0034B7D1 /* DYPAssetProtocol.h */,
+				2A1116951C7C05E300A45955 /* Concrete */,
+				2A1116941C7C058700A45955 /* Abstract */,
 			);
 			name = Asset;
 			sourceTree = "<group>";
@@ -648,6 +741,7 @@
 				2ADBB8FD1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */,
 				2ADBB8F01C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml in Resources */,
 				2ADBB8F31C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */,
+				2A1116B01C7C0DAF00A45955 /* DYPAssetCell.xib in Resources */,
 				2ADBB8E61C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */,
 				2ADBB8E91C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
 				2ADBB9021C7BFD550034B7D1 /* lbpcascade_frontalface.xml in Resources */,
@@ -797,12 +891,16 @@
 				2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */,
 				2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */,
 				2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */,
+				2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */,
+				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
 				2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */,
 				2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */,
 				2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */,
+				2A1116A21C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m in Sources */,
 				2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */,
 				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
 				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
+				2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */,
 				2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -927,10 +1025,13 @@
 			baseConfigurationReference = B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Gonzalves (A7R335TQR4)";
 				INFOPLIST_FILE = Picfind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.Picfind;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "230bbf3f-c635-4a5b-9b04-a78d8ec72381";
 			};
 			name = Debug;
 		};
@@ -939,10 +1040,13 @@
 			baseConfigurationReference = FB61C256B4C34B2F41CFF8D8 /* Pods-Picfind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Gonzalves (A7R335TQR4)";
 				INFOPLIST_FILE = Picfind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.Picfind;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "230bbf3f-c635-4a5b-9b04-a78d8ec72381";
 			};
 			name = Release;
 		};
@@ -951,10 +1055,12 @@
 			baseConfigurationReference = 7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREFIX_HEADER = Picfind/global.pch;
 				INFOPLIST_FILE = PicfindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.PicfindTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "230bbf3f-c635-4a5b-9b04-a78d8ec72381";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picfind.app/Picfind";
 			};
 			name = Debug;
@@ -964,10 +1070,12 @@
 			baseConfigurationReference = C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREFIX_HEADER = Picfind/global.pch;
 				INFOPLIST_FILE = PicfindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafael.PicfindTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "230bbf3f-c635-4a5b-9b04-a78d8ec72381";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Picfind.app/Picfind";
 			};
 			name = Release;

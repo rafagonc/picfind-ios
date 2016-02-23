@@ -6,8 +6,18 @@
 //  Copyright © 2016 Rafael Gonzalves. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import UIKit;
+@import CoreLocation;
 
 @protocol DYPAssetProtocol <NSObject>
+
+#pragma mark - properties
+-(NSDate *)creationDate;
+-(NSDate *)modificationDate;
+-(CLLocation *)location;
+-(BOOL)isFavorite;
+
+#pragma mark - fetching
+-(void)fetchImage:(void(^)(UIImage *image, NSDictionary *data))callback;
 
 @end

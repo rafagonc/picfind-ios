@@ -8,6 +8,24 @@
 
 #import "DYPAssetCell.h"
 
+@interface DYPAssetCell ()
+
+#pragma mark - ui
+@property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+
+@end
+
 @implementation DYPAssetCell
+
+-(void)setAsset:(id<DYPAssetProtocol>)asset {
+    _asset = asset;
+    [self.activityIndicator startAnimating];
+    [asset fetchImage:^(UIImage *image, NSDictionary *data) {
+        self.photoImageView.image = image;
+        [self.activityIndicator stopAnimating];
+    }];
+}
+
 
 @end

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LBc-b7-75o" customClass="DYPAssetCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8dh-oS-3Cp">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ibH-jd-LSJ">
+                        <rect key="frame" x="35" y="35" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="8dh-oS-3Cp" firstAttribute="leading" secondItem="LBc-b7-75o" secondAttribute="leading" id="4uf-Q2-Txr"/>
+                <constraint firstItem="ibH-jd-LSJ" firstAttribute="centerY" secondItem="LBc-b7-75o" secondAttribute="centerY" id="WQX-Uz-Gon"/>
+                <constraint firstAttribute="trailing" secondItem="8dh-oS-3Cp" secondAttribute="trailing" id="cIF-ph-oIl"/>
+                <constraint firstItem="ibH-jd-LSJ" firstAttribute="centerX" secondItem="LBc-b7-75o" secondAttribute="centerX" id="jyt-fE-dBi"/>
+                <constraint firstItem="8dh-oS-3Cp" firstAttribute="top" secondItem="LBc-b7-75o" secondAttribute="top" id="lhm-8o-6HK"/>
+                <constraint firstAttribute="bottom" secondItem="8dh-oS-3Cp" secondAttribute="bottom" id="pCm-pK-bms"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="ibH-jd-LSJ" id="zoF-Aa-ufH"/>
+                <outlet property="photoImageView" destination="8dh-oS-3Cp" id="4jg-QK-FuH"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="512"/>
+        </collectionViewCell>
+    </objects>
+</document>

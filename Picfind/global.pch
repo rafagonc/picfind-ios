@@ -1,0 +1,14 @@
+//
+//  global.pch
+//  Picfind
+//
+//  Created by Rafael Gonzalves on 2/23/16.
+//  Copyright © 2016 Rafael Gonzalves. All rights reserved.
+//
+
+#ifndef global_pch
+#define global_pch
+
+#import "NSCollection.h"
+
+#endif /* global_pch */

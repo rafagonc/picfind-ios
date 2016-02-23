@@ -7,6 +7,10 @@
 //
 
 #import "DYPPhotosViewController.h"
+#import "DYPAssetDataAccessObject.h"
+#import "DYPAssetCell.h"
+#import "DYPCollectionViewDatasourceProtocol.h"
+#import "UISearchBar+Toolbar.h"
 
 @interface DYPPhotosViewController ()
 
@@ -16,6 +20,10 @@
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
+
+#pragma mark - injected
+@property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
+@property (setter=injected_asset:,readonly) id<DYPCollectionViewDatasourceProtocol> datasource;
 
 @end
 
@@ -31,16 +39,28 @@
 #pragma mark - lifecycle
 -(void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    //setup collection view
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([DYPAssetCell class]) bundle:nil] forCellWithReuseIdentifier:@"DYPAssetCell"];
+    
+    //datasource
+    [self.datasource setData:[self.assetDataAccessObject recents]];
+    [self.collectionView setDataSource:self.datasource];
+    [self.collectionView setDelegate:self.datasource];
+    [self.collectionView reloadData];
+    
+    //search controller
+    [self.searchBar addToolbar];
+
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 #pragma mark - dealloc
 -(void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

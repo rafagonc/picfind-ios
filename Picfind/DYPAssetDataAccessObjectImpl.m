@@ -1,0 +1,23 @@
+//
+//  DYPAssetDataAccessObjectImpl.m
+//  Picfind
+//
+//  Created by Rafael Gonzalves on 2/23/16.
+//  Copyright © 2016 Rafael Gonzalves. All rights reserved.
+//
+
+#import "DYPAssetDataAccessObjectImpl.h"
+@import Photos;
+
+@implementation DYPAssetDataAccessObjectImpl
+
+-(id<NSCollection>)recents {
+    PHFetchOptions * options = [[PHFetchOptions alloc] init];
+    [options setFetchLimit:20];
+    [options setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]]];
+    id<NSCollection> result = (id<NSCollection>)[PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
+    
+    return result;
+}
+
+@end

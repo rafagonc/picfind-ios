@@ -1,5 +1,5 @@
 //
-//  DYPAssetCell.h
+//  UIFont+DYP.h
 //  Picfind
 //
 //  Created by Rafael Gonzalves on 2/23/16.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DYPAssetProtocol.h"
 
-@interface DYPAssetCell : UICollectionViewCell
-
-@property (nonatomic,weak) id<DYPAssetProtocol> asset;
+@interface UIFont (DYP)
 
 @end

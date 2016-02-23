@@ -7,13 +7,14 @@
 //
 
 #import "UITextField+DoneButton.h"
+#import "UIColor+DYP.h"
 
 @implementation UITextField (DoneButton)
 
 #pragma mark - methods
 -(void)addToolbar {
     UIToolbar *toolbar = [[UIToolbar alloc] init];
-//    [toolbar setTintColor:[UIColor red_redColor]];
+    [toolbar setTintColor:[UIColor dyp_redColor]];
     [toolbar sizeToFit];
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneAction:)];
     [toolbar setItems:@[doneButton]];

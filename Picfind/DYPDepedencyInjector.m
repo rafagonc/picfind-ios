@@ -7,11 +7,22 @@
 //
 
 #import "DYPDepedencyInjector.h"
+#import "DYPCollectionViewDatasourceProtocol.h"
+#import "DYPAssetDatasource.h"
+#import "DYPAssetDataAccessObject.h"
+#import "DYPAssetDataAccessObjectImpl.h"
+#import "Depend/DPRegistry.h"
 
 @implementation DYPDepedencyInjector
 
 +(void)registerImplementations {
     
+    //collection view datasoruce
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPAssetDatasource class] forProtocol:@protocol(DYPCollectionViewDatasourceProtocol) context:@"asset"];
+    
+    //dao
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPAssetDataAccessObjectImpl class] forProtocol:@protocol(DYPAssetDataAccessObject) context:nil];
+
 }
 
 @end

@@ -1,5 +1,5 @@
 //
-//  DYPAssetCell.h
+//  UIColor+DYP.h
 //  Picfind
 //
 //  Created by Rafael Gonzalves on 2/23/16.
@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DYPAssetProtocol.h"
 
-@interface DYPAssetCell : UICollectionViewCell
+@interface UIColor (DYP)
 
-@property (nonatomic,weak) id<DYPAssetProtocol> asset;
++(UIColor *)dyp_redColor;
 
 @end
