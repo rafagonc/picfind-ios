@@ -11,4 +11,6 @@
 
 #import "NSCollection.h"
 
+static NSString *const DYPErrorDomain = @"DYPErrorDomain";
+
 #endif /* global_pch */

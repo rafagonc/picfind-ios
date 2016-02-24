@@ -86,6 +86,16 @@
 		2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB91B1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm */; };
 		2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9241C7C01ED0034B7D1 /* DYPDepedencyInjector.m */; };
 		2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */; };
+		4421B2EE1C7E2B9F00673C4F /* DYPDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2ED1C7E2B9F00673C4F /* DYPDateCell.m */; };
+		4421B2F11C7E2BB100673C4F /* DYPDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B2F01C7E2BB100673C4F /* DYPDateCell.xib */; };
+		4421B2F71C7E2F5A00673C4F /* DYPPeriodFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2F61C7E2F5A00673C4F /* DYPPeriodFilter.m */; };
+		4421B2FC1C7E2F6900673C4F /* DYPLocationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2FB1C7E2F6900673C4F /* DYPLocationFilter.m */; };
+		4421B3051C7E3D2200673C4F /* DYPPeriodFilterValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3041C7E3D2200673C4F /* DYPPeriodFilterValidator.m */; };
+		4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3081C7E404300673C4F /* UIViewController+NotificationShow.m */; };
+		4421B30E1C7E406100673C4F /* SHNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B30C1C7E406100673C4F /* SHNotificationView.m */; };
+		4421B30F1C7E406100673C4F /* SHNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B30D1C7E406100673C4F /* SHNotificationView.xib */; };
+		4421B3171C7E447C00673C4F /* DYPLocationManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3161C7E447C00673C4F /* DYPLocationManagerImpl.m */; };
+		4421B31D1C7E475500673C4F /* MKMapView+Zoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B31C1C7E475500673C4F /* MKMapView+Zoom.m */; };
 		49439DC3E9D5D1509965862A /* libPods-PicfindTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */; };
 		5F6025BF4BEC8840A676A8F0 /* libPods-Picfind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15363EF1C4928D68283B2555 /* libPods-Picfind.a */; };
 /* End PBXBuildFile section */
@@ -217,6 +227,28 @@
 		2ADBB9281C7C023D0034B7D1 /* DYPAssetDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDatasource.h; sourceTree = "<group>"; };
 		2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAssetDatasource.m; sourceTree = "<group>"; };
 		4421B2E21C7CD07100673C4F /* DYPAssetDatasourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDatasourceDelegate.h; sourceTree = "<group>"; };
+		4421B2EC1C7E2B9F00673C4F /* DYPDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPDateCell.h; sourceTree = "<group>"; };
+		4421B2ED1C7E2B9F00673C4F /* DYPDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPDateCell.m; sourceTree = "<group>"; };
+		4421B2F01C7E2BB100673C4F /* DYPDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPDateCell.xib; sourceTree = "<group>"; };
+		4421B2F31C7E2EC600673C4F /* DYPFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFilter.h; sourceTree = "<group>"; };
+		4421B2F51C7E2F5A00673C4F /* DYPPeriodFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPeriodFilter.h; sourceTree = "<group>"; };
+		4421B2F61C7E2F5A00673C4F /* DYPPeriodFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPeriodFilter.m; sourceTree = "<group>"; };
+		4421B2FA1C7E2F6900673C4F /* DYPLocationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationFilter.h; sourceTree = "<group>"; };
+		4421B2FB1C7E2F6900673C4F /* DYPLocationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationFilter.m; sourceTree = "<group>"; };
+		4421B2FE1C7E3B8F00673C4F /* DYPFilterCreatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFilterCreatorDelegate.h; sourceTree = "<group>"; };
+		4421B3001C7E3CBB00673C4F /* DYPValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPValidation.h; sourceTree = "<group>"; };
+		4421B3031C7E3D2200673C4F /* DYPPeriodFilterValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPeriodFilterValidator.h; sourceTree = "<group>"; };
+		4421B3041C7E3D2200673C4F /* DYPPeriodFilterValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPeriodFilterValidator.m; sourceTree = "<group>"; };
+		4421B3071C7E404300673C4F /* UIViewController+NotificationShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NotificationShow.h"; sourceTree = "<group>"; };
+		4421B3081C7E404300673C4F /* UIViewController+NotificationShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NotificationShow.m"; sourceTree = "<group>"; };
+		4421B30B1C7E406100673C4F /* SHNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNotificationView.h; sourceTree = "<group>"; };
+		4421B30C1C7E406100673C4F /* SHNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNotificationView.m; sourceTree = "<group>"; };
+		4421B30D1C7E406100673C4F /* SHNotificationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNotificationView.xib; sourceTree = "<group>"; };
+		4421B3141C7E447300673C4F /* DYPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationManager.h; sourceTree = "<group>"; };
+		4421B3151C7E447C00673C4F /* DYPLocationManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationManagerImpl.h; sourceTree = "<group>"; };
+		4421B3161C7E447C00673C4F /* DYPLocationManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationManagerImpl.m; sourceTree = "<group>"; };
+		4421B31B1C7E475500673C4F /* MKMapView+Zoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Zoom.h"; sourceTree = "<group>"; };
+		4421B31C1C7E475500673C4F /* MKMapView+Zoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Zoom.m"; sourceTree = "<group>"; };
 		7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -310,12 +342,12 @@
 			name = Concrete;
 			sourceTree = "<group>";
 		};
-		2A11169D1C7C080F00A45955 /* DAO */ = {
+		2A11169D1C7C080F00A45955 /* Data Access Object */ = {
 			isa = PBXGroup;
 			children = (
 				2A1116A41C7C083600A45955 /* Asset */,
 			);
-			name = DAO;
+			name = "Data Access Object";
 			sourceTree = "<group>";
 		};
 		2A11169F1C7C082300A45955 /* Abstract */ = {
@@ -478,7 +510,8 @@
 		2ADBB8771C7BF8B20034B7D1 /* Picfind */ = {
 			isa = PBXGroup;
 			children = (
-				2A11169D1C7C080F00A45955 /* DAO */,
+				4421B2FF1C7E3CA900673C4F /* Validation */,
+				2A11169D1C7C080F00A45955 /* Data Access Object */,
 				2ADBB9261C7C02240034B7D1 /* Datasources */,
 				2ADBB9221C7C01400034B7D1 /* Depedency Injection */,
 				2ADBB89E1C7BFA6C0034B7D1 /* General Classes */,
@@ -539,6 +572,7 @@
 				2ADBB8B41C7BFB990034B7D1 /* Recognizer */,
 				2ADBB8B31C7BFB950034B7D1 /* Detector */,
 				2ADBB8B21C7BFB8D0034B7D1 /* Conversion */,
+				4421B31A1C7E448600673C4F /* Location Manager */,
 			);
 			name = "General Classes";
 			sourceTree = "<group>";
@@ -547,6 +581,7 @@
 			isa = PBXGroup;
 			children = (
 				2A1116AD1C7C0C1700A45955 /* NSCollection.h */,
+				4421B2FE1C7E3B8F00673C4F /* DYPFilterCreatorDelegate.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -557,6 +592,7 @@
 				2A1116821C7C02B800A45955 /* Asset Cell */,
 				2A1116BA1C7D431F00A45955 /* Filter Cell */,
 				2A1116C01C7D47AC00A45955 /* Photo Collection Cell */,
+				4421B2EF1C7E2BA400673C4F /* Date Cell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -564,6 +600,7 @@
 		2ADBB8A11C7BFAF70034B7D1 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				4421B3101C7E406300673C4F /* Notification View */,
 				2A1116B41C7D42CE00A45955 /* UIStaticTableView */,
 			);
 			name = "Custom Views";
@@ -698,11 +735,13 @@
 		2ADBB91E1C7C004B0034B7D1 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4421B30A1C7E404600673C4F /* UIViewController */,
 				2A1116901C7C035E00A45955 /* UISearchBar */,
 				2A1116911C7C036600A45955 /* UITableViewCell */,
 				2A1116921C7C036F00A45955 /* UITextField */,
 				2A1116A81C7C08F000A45955 /* UIColor */,
 				2A1116AC1C7C090000A45955 /* UIFont */,
+				4421B31E1C7E477E00673C4F /* MKMapView */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -710,6 +749,7 @@
 		2ADBB91F1C7C00920034B7D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4421B2F21C7E2EBB00673C4F /* Filter */,
 				2ADBB9211C7C00A00034B7D1 /* Asset */,
 			);
 			name = Models;
@@ -774,6 +814,148 @@
 				2ADBB92C1C7C02440034B7D1 /* Concrete */,
 			);
 			name = "Collection View";
+			sourceTree = "<group>";
+		};
+		4421B2EF1C7E2BA400673C4F /* Date Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4421B2EC1C7E2B9F00673C4F /* DYPDateCell.h */,
+				4421B2ED1C7E2B9F00673C4F /* DYPDateCell.m */,
+				4421B2F01C7E2BB100673C4F /* DYPDateCell.xib */,
+			);
+			name = "Date Cell";
+			sourceTree = "<group>";
+		};
+		4421B2F21C7E2EBB00673C4F /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				4421B2F41C7E2F4A00673C4F /* Abstract */,
+				4421B2F91C7E2F5F00673C4F /* Concrete */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
+		4421B2F41C7E2F4A00673C4F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4421B2F31C7E2EC600673C4F /* DYPFilter.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		4421B2F81C7E2F5C00673C4F /* Period */ = {
+			isa = PBXGroup;
+			children = (
+				4421B2F51C7E2F5A00673C4F /* DYPPeriodFilter.h */,
+				4421B2F61C7E2F5A00673C4F /* DYPPeriodFilter.m */,
+			);
+			name = Period;
+			sourceTree = "<group>";
+		};
+		4421B2F91C7E2F5F00673C4F /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				4421B2F81C7E2F5C00673C4F /* Period */,
+				4421B2FD1C7E2F6E00673C4F /* Location */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		4421B2FD1C7E2F6E00673C4F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4421B2FA1C7E2F6900673C4F /* DYPLocationFilter.h */,
+				4421B2FB1C7E2F6900673C4F /* DYPLocationFilter.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		4421B2FF1C7E3CA900673C4F /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3011C7E3CBD00673C4F /* Abstract */,
+				4421B3021C7E3D1000673C4F /* Concrete */,
+			);
+			name = Validation;
+			sourceTree = "<group>";
+		};
+		4421B3011C7E3CBD00673C4F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3001C7E3CBB00673C4F /* DYPValidation.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		4421B3021C7E3D1000673C4F /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3061C7E3D2500673C4F /* Period Filter */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		4421B3061C7E3D2500673C4F /* Period Filter */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3031C7E3D2200673C4F /* DYPPeriodFilterValidator.h */,
+				4421B3041C7E3D2200673C4F /* DYPPeriodFilterValidator.m */,
+			);
+			name = "Period Filter";
+			sourceTree = "<group>";
+		};
+		4421B30A1C7E404600673C4F /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3071C7E404300673C4F /* UIViewController+NotificationShow.h */,
+				4421B3081C7E404300673C4F /* UIViewController+NotificationShow.m */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
+		4421B3101C7E406300673C4F /* Notification View */ = {
+			isa = PBXGroup;
+			children = (
+				4421B30B1C7E406100673C4F /* SHNotificationView.h */,
+				4421B30C1C7E406100673C4F /* SHNotificationView.m */,
+				4421B30D1C7E406100673C4F /* SHNotificationView.xib */,
+			);
+			name = "Notification View";
+			sourceTree = "<group>";
+		};
+		4421B3181C7E447E00673C4F /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3151C7E447C00673C4F /* DYPLocationManagerImpl.h */,
+				4421B3161C7E447C00673C4F /* DYPLocationManagerImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		4421B3191C7E448100673C4F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3141C7E447300673C4F /* DYPLocationManager.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		4421B31A1C7E448600673C4F /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3191C7E448100673C4F /* Abstract */,
+				4421B3181C7E447E00673C4F /* Concrete */,
+			);
+			name = "Location Manager";
+			sourceTree = "<group>";
+		};
+		4421B31E1C7E477E00673C4F /* MKMapView */ = {
+			isa = PBXGroup;
+			children = (
+				4421B31B1C7E475500673C4F /* MKMapView+Zoom.h */,
+				4421B31C1C7E475500673C4F /* MKMapView+Zoom.m */,
+			);
+			name = MKMapView;
 			sourceTree = "<group>";
 		};
 		8574AE5B95E2C9B5FC61D3F2 /* Pods */ = {
@@ -883,8 +1065,10 @@
 				2ADBB9031C7BFD550034B7D1 /* lbpcascade_profileface.xml in Resources */,
 				2ADBB8E31C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 				2ADBB8FD1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */,
+				4421B30F1C7E406100673C4F /* SHNotificationView.xib in Resources */,
 				2ADBB8F01C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml in Resources */,
 				2ADBB8F31C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */,
+				4421B2F11C7E2BB100673C4F /* DYPDateCell.xib in Resources */,
 				2A1116B01C7C0DAF00A45955 /* DYPAssetCell.xib in Resources */,
 				2ADBB8E61C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */,
 				2ADBB8E91C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
@@ -1038,10 +1222,15 @@
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
 				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
 				2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */,
+				4421B3171C7E447C00673C4F /* DYPLocationManagerImpl.m in Sources */,
 				2A1116C41C7D4D1600A45955 /* DYPLocationFilterViewController.m in Sources */,
 				2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */,
 				2A1116BE1C7D47AA00A45955 /* DYPPhotoCollectionCell.m in Sources */,
+				4421B31D1C7E475500673C4F /* MKMapView+Zoom.m in Sources */,
 				2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */,
+				4421B3051C7E3D2200673C4F /* DYPPeriodFilterValidator.m in Sources */,
+				4421B2FC1C7E2F6900673C4F /* DYPLocationFilter.m in Sources */,
+				4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */,
 				2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */,
 				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
 				2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */,
@@ -1050,11 +1239,14 @@
 				2A1116A21C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m in Sources */,
 				2A1116B31C7D42CB00A45955 /* UIStaticTableView.m in Sources */,
 				2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */,
+				4421B30E1C7E406100673C4F /* SHNotificationView.m in Sources */,
 				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
+				4421B2F71C7E2F5A00673C4F /* DYPPeriodFilter.m in Sources */,
 				2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */,
 				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
 				2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */,
 				2A1116B81C7D431D00A45955 /* DYPFilterCell.m in Sources */,
+				4421B2EE1C7E2B9F00673C4F /* DYPDateCell.m in Sources */,
 				2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */,
 				2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */,
 			);

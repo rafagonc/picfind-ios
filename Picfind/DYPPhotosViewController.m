@@ -22,14 +22,16 @@
 #import "DYPPeriodFilterViewController.h"
 #import "DYPStartFaceRecognitionViewController.h"
 #import "DYPCustomizer.h"
+#import "DYPFilterCreatorDelegate.h"
 
-@interface DYPPhotosViewController () <UICollectionViewDelegate, UISearchResultsUpdating, UISearchBarDelegate, DYPAssetDatasourceDelegate>
+@interface DYPPhotosViewController () <UICollectionViewDelegate, UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
+@property (strong, nonatomic) NSMutableArray <id<DYPFilter>> * appliedFilters;
 
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
@@ -51,6 +53,7 @@
     [super viewDidLoad];
     
     //setups
+    self.appliedFilters = [@[] mutableCopy];
     [self setupTableView];
     [self setupSearchController];
     [self setDefinesPresentationContext:YES];
@@ -93,6 +96,7 @@
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     self.searchController.dimsBackgroundDuringPresentation = NO;
     self.searchController.searchResultsUpdater = self;
+    self.searchController.searchBar.placeholder = @"Quick search photos by location";
     self.searchController.searchBar.delegate = self;
     self.searchController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
     self.searchController.searchBar.tintColor = [UIColor dyp_redColor];
@@ -117,6 +121,9 @@
 #pragma mark - delegates
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     
+}
+-(void)source:(id)source didCreateFilter:(id<DYPFilter>)filter {
+    [self.appliedFilters addObject:filter];
 }
 
 #pragma mark - dealloc

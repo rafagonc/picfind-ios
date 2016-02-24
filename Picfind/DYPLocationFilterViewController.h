@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DYPFilterCreatorDelegate.h"
 
 @interface DYPLocationFilterViewController : UIViewController
+
+@property (nonatomic,weak) id<DYPFilterCreatorDelegate> delegate;
 
 @end

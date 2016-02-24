@@ -14,10 +14,17 @@
 #import "Depend/DPRegistry.h"
 #import "DYPCustomizer.h"
 #import "DYPNavigationBarCustomizer.h"
+#import "DYPValidation.h"
+#import "DYPPeriodFilterValidator.h"
+#import "DYPLocationManager.h"
+#import "DYPLocationManagerImpl.h"
 
 @implementation DYPDepedencyInjector
 
 +(void)registerImplementations {
+    
+    //location manager
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPLocationManagerImpl sharedManager] forProtocol:@protocol(DYPLocationManager) context:nil];
     
     //collection view datasoruce
     [[DPRegistry sharedRegistry] registerImplementation:[DYPAssetDatasource class] forProtocol:@protocol(DYPCollectionViewDatasourceProtocol) context:@"asset"];
@@ -27,6 +34,9 @@
     
     //customizer
     [[DPRegistry sharedRegistry] registerImplementation:[DYPNavigationBarCustomizer class] forProtocol:@protocol(DYPCustomizer) context:@"nav"];
+    
+    //validation
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPPeriodFilterValidator class] forProtocol:@protocol(DYPValidation) context:@"period"];
 
 }
 
