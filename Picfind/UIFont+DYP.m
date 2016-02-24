@@ -10,4 +10,11 @@
 
 @implementation UIFont (DYP)
 
++(UIFont *)avenirNextBoldWithSize:(CGFloat)size {
+    return [UIFont fontWithName:@"AvenirNext-DemiBold" size:size];
+}
++(UIFont *)avenirNextRegularWithSize:(CGFloat)size {
+    return [UIFont fontWithName:@"AvenirNext-Regular" size:size];
+}
+
 @end

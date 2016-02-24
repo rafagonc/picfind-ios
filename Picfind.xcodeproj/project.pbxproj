@@ -16,6 +16,20 @@
 		2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116A61C7C08EE00A45955 /* UIColor+DYP.m */; };
 		2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116AA1C7C08FE00A45955 /* UIFont+DYP.m */; };
 		2A1116B01C7C0DAF00A45955 /* DYPAssetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116AF1C7C0DAF00A45955 /* DYPAssetCell.xib */; };
+		2A1116B31C7D42CB00A45955 /* UIStaticTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116B11C7D42CB00A45955 /* UIStaticTableView.m */; };
+		2A1116B81C7D431D00A45955 /* DYPFilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116B61C7D431D00A45955 /* DYPFilterCell.m */; };
+		2A1116B91C7D431D00A45955 /* DYPFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116B71C7D431D00A45955 /* DYPFilterCell.xib */; };
+		2A1116BE1C7D47AA00A45955 /* DYPPhotoCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116BC1C7D47AA00A45955 /* DYPPhotoCollectionCell.m */; };
+		2A1116BF1C7D47AA00A45955 /* DYPPhotoCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116BD1C7D47AA00A45955 /* DYPPhotoCollectionCell.xib */; };
+		2A1116C41C7D4D1600A45955 /* DYPLocationFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116C21C7D4D1600A45955 /* DYPLocationFilterViewController.m */; };
+		2A1116C51C7D4D1600A45955 /* DYPLocationFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116C31C7D4D1600A45955 /* DYPLocationFilterViewController.xib */; };
+		2A1116CA1C7D4D2A00A45955 /* DYPPeriodFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116C81C7D4D2A00A45955 /* DYPPeriodFilterViewController.m */; };
+		2A1116CB1C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116C91C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib */; };
+		2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116CE1C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m */; };
+		2A1116D11C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116CF1C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.xib */; };
+		2A1116D41C7D506600A45955 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1116D31C7D506600A45955 /* MapKit.framework */; };
+		2A1116D61C7D506A00A45955 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1116D51C7D506A00A45955 /* CoreLocation.framework */; };
+		2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116DB1C7D50B100A45955 /* DYPNavigationBarCustomizer.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -109,6 +123,28 @@
 		2A1116AD1C7C0C1700A45955 /* NSCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCollection.h; sourceTree = "<group>"; };
 		2A1116AE1C7C0CA200A45955 /* global.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = global.pch; sourceTree = "<group>"; };
 		2A1116AF1C7C0DAF00A45955 /* DYPAssetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPAssetCell.xib; sourceTree = "<group>"; };
+		2A1116B11C7D42CB00A45955 /* UIStaticTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStaticTableView.m; sourceTree = "<group>"; };
+		2A1116B21C7D42CB00A45955 /* UIStaticTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStaticTableView.h; sourceTree = "<group>"; };
+		2A1116B51C7D431D00A45955 /* DYPFilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFilterCell.h; sourceTree = "<group>"; };
+		2A1116B61C7D431D00A45955 /* DYPFilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPFilterCell.m; sourceTree = "<group>"; };
+		2A1116B71C7D431D00A45955 /* DYPFilterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPFilterCell.xib; sourceTree = "<group>"; };
+		2A1116BB1C7D47AA00A45955 /* DYPPhotoCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPhotoCollectionCell.h; sourceTree = "<group>"; };
+		2A1116BC1C7D47AA00A45955 /* DYPPhotoCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPhotoCollectionCell.m; sourceTree = "<group>"; };
+		2A1116BD1C7D47AA00A45955 /* DYPPhotoCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPPhotoCollectionCell.xib; sourceTree = "<group>"; };
+		2A1116C11C7D4D1600A45955 /* DYPLocationFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationFilterViewController.h; sourceTree = "<group>"; };
+		2A1116C21C7D4D1600A45955 /* DYPLocationFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationFilterViewController.m; sourceTree = "<group>"; };
+		2A1116C31C7D4D1600A45955 /* DYPLocationFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPLocationFilterViewController.xib; sourceTree = "<group>"; };
+		2A1116C71C7D4D2A00A45955 /* DYPPeriodFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPeriodFilterViewController.h; sourceTree = "<group>"; };
+		2A1116C81C7D4D2A00A45955 /* DYPPeriodFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPeriodFilterViewController.m; sourceTree = "<group>"; };
+		2A1116C91C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPPeriodFilterViewController.xib; sourceTree = "<group>"; };
+		2A1116CD1C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPStartFaceRecognitionViewController.h; sourceTree = "<group>"; };
+		2A1116CE1C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPStartFaceRecognitionViewController.m; sourceTree = "<group>"; };
+		2A1116CF1C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPStartFaceRecognitionViewController.xib; sourceTree = "<group>"; };
+		2A1116D31C7D506600A45955 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2A1116D51C7D506A00A45955 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2A1116D81C7D509B00A45955 /* DYPCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCustomizer.h; sourceTree = "<group>"; };
+		2A1116DA1C7D50B100A45955 /* DYPNavigationBarCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNavigationBarCustomizer.h; sourceTree = "<group>"; };
+		2A1116DB1C7D50B100A45955 /* DYPNavigationBarCustomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPNavigationBarCustomizer.m; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,6 +228,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1116D61C7D506A00A45955 /* CoreLocation.framework in Frameworks */,
+				2A1116D41C7D506600A45955 /* MapKit.framework in Frameworks */,
 				5F6025BF4BEC8840A676A8F0 /* libPods-Picfind.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +248,8 @@
 		28F72CBBE8E39EC1910BA646 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A1116D51C7D506A00A45955 /* CoreLocation.framework */,
+				2A1116D31C7D506600A45955 /* MapKit.framework */,
 				15363EF1C4928D68283B2555 /* libPods-Picfind.a */,
 				0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */,
 			);
@@ -322,6 +362,99 @@
 			name = UIFont;
 			sourceTree = "<group>";
 		};
+		2A1116B41C7D42CE00A45955 /* UIStaticTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116B21C7D42CB00A45955 /* UIStaticTableView.h */,
+				2A1116B11C7D42CB00A45955 /* UIStaticTableView.m */,
+			);
+			name = UIStaticTableView;
+			sourceTree = "<group>";
+		};
+		2A1116BA1C7D431F00A45955 /* Filter Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116B51C7D431D00A45955 /* DYPFilterCell.h */,
+				2A1116B61C7D431D00A45955 /* DYPFilterCell.m */,
+				2A1116B71C7D431D00A45955 /* DYPFilterCell.xib */,
+			);
+			name = "Filter Cell";
+			sourceTree = "<group>";
+		};
+		2A1116C01C7D47AC00A45955 /* Photo Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116BB1C7D47AA00A45955 /* DYPPhotoCollectionCell.h */,
+				2A1116BC1C7D47AA00A45955 /* DYPPhotoCollectionCell.m */,
+				2A1116BD1C7D47AA00A45955 /* DYPPhotoCollectionCell.xib */,
+			);
+			name = "Photo Collection Cell";
+			sourceTree = "<group>";
+		};
+		2A1116C61C7D4D1800A45955 /* Location Filter View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116C11C7D4D1600A45955 /* DYPLocationFilterViewController.h */,
+				2A1116C21C7D4D1600A45955 /* DYPLocationFilterViewController.m */,
+				2A1116C31C7D4D1600A45955 /* DYPLocationFilterViewController.xib */,
+			);
+			name = "Location Filter View Controller";
+			sourceTree = "<group>";
+		};
+		2A1116CC1C7D4D2F00A45955 /* Period Filter View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116C71C7D4D2A00A45955 /* DYPPeriodFilterViewController.h */,
+				2A1116C81C7D4D2A00A45955 /* DYPPeriodFilterViewController.m */,
+				2A1116C91C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib */,
+			);
+			name = "Period Filter View Controller";
+			sourceTree = "<group>";
+		};
+		2A1116D21C7D4D9300A45955 /* Start Face Recognition View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116CD1C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.h */,
+				2A1116CE1C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m */,
+				2A1116CF1C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.xib */,
+			);
+			name = "Start Face Recognition View Controller";
+			sourceTree = "<group>";
+		};
+		2A1116D71C7D508F00A45955 /* Customizer */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116D91C7D509E00A45955 /* Abstract */,
+				2A1116DD1C7D50B500A45955 /* Concrete */,
+			);
+			name = Customizer;
+			sourceTree = "<group>";
+		};
+		2A1116D91C7D509E00A45955 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116D81C7D509B00A45955 /* DYPCustomizer.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A1116DD1C7D50B500A45955 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116DF1C7D50F000A45955 /* Navigation Bar */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A1116DF1C7D50F000A45955 /* Navigation Bar */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116DA1C7D50B100A45955 /* DYPNavigationBarCustomizer.h */,
+				2A1116DB1C7D50B100A45955 /* DYPNavigationBarCustomizer.m */,
+			);
+			name = "Navigation Bar";
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -392,6 +525,9 @@
 			isa = PBXGroup;
 			children = (
 				2ADBB9161C7BFEAC0034B7D1 /* Photos View Controller */,
+				2A1116C61C7D4D1800A45955 /* Location Filter View Controller */,
+				2A1116CC1C7D4D2F00A45955 /* Period Filter View Controller */,
+				2A1116D21C7D4D9300A45955 /* Start Face Recognition View Controller */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -399,6 +535,7 @@
 		2ADBB89E1C7BFA6C0034B7D1 /* General Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2A1116D71C7D508F00A45955 /* Customizer */,
 				2ADBB8B41C7BFB990034B7D1 /* Recognizer */,
 				2ADBB8B31C7BFB950034B7D1 /* Detector */,
 				2ADBB8B21C7BFB8D0034B7D1 /* Conversion */,
@@ -418,6 +555,8 @@
 			isa = PBXGroup;
 			children = (
 				2A1116821C7C02B800A45955 /* Asset Cell */,
+				2A1116BA1C7D431F00A45955 /* Filter Cell */,
+				2A1116C01C7D47AC00A45955 /* Photo Collection Cell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -425,6 +564,7 @@
 		2ADBB8A11C7BFAF70034B7D1 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2A1116B41C7D42CE00A45955 /* UIStaticTableView */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -739,6 +879,7 @@
 				2ADBB8E51C7BFD550034B7D1 /* haarcascade_frontalcatface_extended.xml in Resources */,
 				2ADBB8F91C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */,
 				2ADBB8F81C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
+				2A1116CB1C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib in Resources */,
 				2ADBB9031C7BFD550034B7D1 /* lbpcascade_profileface.xml in Resources */,
 				2ADBB8E31C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 				2ADBB8FD1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */,
@@ -765,14 +906,18 @@
 				2ADBB8FF1C7BFD550034B7D1 /* haarcascade_upperbody.xml in Resources */,
 				2ADBB8FA1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */,
 				2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */,
+				2A1116B91C7D431D00A45955 /* DYPFilterCell.xib in Resources */,
 				2ADBB8F61C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */,
 				2ADBB9051C7BFD550034B7D1 /* readme.txt in Resources */,
 				2ADBB8EB1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */,
 				2ADBB9041C7BFD550034B7D1 /* lbpcascade_silverware.xml in Resources */,
+				2A1116D11C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.xib in Resources */,
 				2ADBB9061C7BFD550034B7D1 /* trainingfaces_24-24.vec in Resources */,
 				2ADBB8E81C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				2A1116BF1C7D47AA00A45955 /* DYPPhotoCollectionCell.xib in Resources */,
 				2ADBB8FB1C7BFD550034B7D1 /* haarcascade_lowerbody.xml in Resources */,
 				2ADBB8E11C7BFD550034B7D1 /* CMakeLists.txt in Resources */,
+				2A1116C51C7D4D1600A45955 /* DYPLocationFilterViewController.xib in Resources */,
 				2ADBB8ED1C7BFD550034B7D1 /* haarcascade_lowerbody.xml in Resources */,
 				2ADBB8F71C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				2ADBB8EA1C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */,
@@ -887,12 +1032,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1116CA1C7D4D2A00A45955 /* DYPPeriodFilterViewController.m in Sources */,
 				2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */,
 				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
 				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
 				2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */,
+				2A1116C41C7D4D1600A45955 /* DYPLocationFilterViewController.m in Sources */,
 				2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */,
+				2A1116BE1C7D47AA00A45955 /* DYPPhotoCollectionCell.m in Sources */,
 				2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */,
 				2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */,
 				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
@@ -900,9 +1048,13 @@
 				2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */,
 				2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */,
 				2A1116A21C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m in Sources */,
+				2A1116B31C7D42CB00A45955 /* UIStaticTableView.m in Sources */,
 				2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */,
 				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
+				2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */,
 				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
+				2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */,
+				2A1116B81C7D431D00A45955 /* DYPFilterCell.m in Sources */,
 				2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */,
 				2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */,
 			);

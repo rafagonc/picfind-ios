@@ -12,6 +12,8 @@
 #import "DYPAssetDataAccessObject.h"
 #import "DYPAssetDataAccessObjectImpl.h"
 #import "Depend/DPRegistry.h"
+#import "DYPCustomizer.h"
+#import "DYPNavigationBarCustomizer.h"
 
 @implementation DYPDepedencyInjector
 
@@ -22,6 +24,9 @@
     
     //dao
     [[DPRegistry sharedRegistry] registerImplementation:[DYPAssetDataAccessObjectImpl class] forProtocol:@protocol(DYPAssetDataAccessObject) context:nil];
+    
+    //customizer
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPNavigationBarCustomizer class] forProtocol:@protocol(DYPCustomizer) context:@"nav"];
 
 }
 

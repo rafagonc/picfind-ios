@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "DYPAssetProtocol.h"
-
+#import "NSCollection.h"
 
 @protocol DYPAssetDataAccessObject <NSObject>
 
--(NSArray < id <DYPAssetProtocol> > *)recents;
+-(id<NSCollection>)recents;
 
 @end

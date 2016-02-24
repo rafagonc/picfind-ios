@@ -1,5 +1,5 @@
 //
-//  UIFont+DYP.h
+//  DYPCustomizer.h
 //  Picfind
 //
 //  Created by Rafael Gonzalves on 2/23/16.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIFont (DYP)
+@protocol DYPCustomizer <NSObject>
 
-+(UIFont *)avenirNextBoldWithSize:(CGFloat)size;
-+(UIFont *)avenirNextRegularWithSize:(CGFloat)size;
+-(void)customize:(UIView *)view;
 
 @end

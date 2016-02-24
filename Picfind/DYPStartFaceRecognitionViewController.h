@@ -1,5 +1,5 @@
 //
-//  UIFont+DYP.h
+//  DYPStartFaceRecognitionViewController.h
 //  Picfind
 //
 //  Created by Rafael Gonzalves on 2/23/16.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIFont (DYP)
-
-+(UIFont *)avenirNextBoldWithSize:(CGFloat)size;
-+(UIFont *)avenirNextRegularWithSize:(CGFloat)size;
+@interface DYPStartFaceRecognitionViewController : UIViewController
 
 @end

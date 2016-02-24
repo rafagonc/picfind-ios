@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYPLocationFilterViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yju-ST-hVt">
+                    <rect key="frame" x="0.0" y="44" width="320" height="460"/>
+                </mapView>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Mld-Lz-jif">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yju-ST-hVt" firstAttribute="top" secondItem="Mld-Lz-jif" secondAttribute="bottom" id="5ng-Os-QdG"/>
+                <constraint firstAttribute="bottom" secondItem="yju-ST-hVt" secondAttribute="bottom" id="F28-GJ-WLK"/>
+                <constraint firstItem="Mld-Lz-jif" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GNI-6T-9fk"/>
+                <constraint firstItem="Mld-Lz-jif" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OGe-4e-peD"/>
+                <constraint firstAttribute="trailing" secondItem="Mld-Lz-jif" secondAttribute="trailing" id="Tqk-My-TaL"/>
+                <constraint firstItem="yju-ST-hVt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uLH-II-VC1"/>
+                <constraint firstAttribute="trailing" secondItem="yju-ST-hVt" secondAttribute="trailing" id="w72-SQ-Qoi"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
