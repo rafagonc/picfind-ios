@@ -7,8 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYPLocationFilterViewController">
             <connections>
-                <outlet property="mapView" destination="yju-ST-hVt" id="rWK-GO-kCd"/>
-                <outlet property="searchBar" destination="Mld-Lz-jif" id="nyG-UU-2Mg"/>
+                <outlet property="tableView" destination="qEH-LD-eiA" id="hQo-sU-lSv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,74 +16,18 @@
             <rect key="frame" x="0.0" y="64" width="320" height="504"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yju-ST-hVt">
-                    <rect key="frame" x="0.0" y="200" width="320" height="304"/>
-                </mapView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4U-xe-0yr">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
-                    <subviews>
-                        <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Mld-Lz-jif">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="44" id="bmC-2l-e02"/>
-                            </constraints>
-                            <textInputTraits key="textInputTraits"/>
-                        </searchBar>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Range:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuV-42-TNR">
-                            <rect key="frame" x="8" y="52" width="48.5" height="20.5"/>
-                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njh-Ux-t0a">
-                            <rect key="frame" x="290" y="52" width="22" height="20.5"/>
-                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tGw-Oe-c6K">
-                            <rect key="frame" x="6" y="80" width="308" height="31"/>
-                            <color key="tintColor" red="0.78823529410000004" green="0.2784313725" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="30" id="3VZ-tu-9Ia"/>
-                            </constraints>
-                        </slider>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="749" text="Tap on the map to select a location on map. You can specify a radius to search photos taken on that spot." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghV-Bo-jqM">
-                            <rect key="frame" x="8" y="118" width="304" height="74"/>
-                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="qEH-LD-eiA" customClass="UIStaticTableView">
+                    <rect key="frame" x="0.0" y="15" width="320" height="489"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="Mld-Lz-jif" secondAttribute="trailing" id="2Au-35-2Kj"/>
-                        <constraint firstItem="njh-Ux-t0a" firstAttribute="top" secondItem="Mld-Lz-jif" secondAttribute="bottom" constant="8" id="Aic-Xs-42s"/>
-                        <constraint firstAttribute="bottom" secondItem="ghV-Bo-jqM" secondAttribute="bottom" constant="8" id="E7b-vc-9go"/>
-                        <constraint firstItem="Mld-Lz-jif" firstAttribute="top" secondItem="D4U-xe-0yr" secondAttribute="top" id="J7O-0q-FVN"/>
-                        <constraint firstItem="fuV-42-TNR" firstAttribute="leading" secondItem="D4U-xe-0yr" secondAttribute="leading" constant="8" id="JNQ-88-De3"/>
-                        <constraint firstItem="tGw-Oe-c6K" firstAttribute="leading" secondItem="D4U-xe-0yr" secondAttribute="leading" constant="8" id="Lk7-rX-w7d"/>
-                        <constraint firstItem="Mld-Lz-jif" firstAttribute="leading" secondItem="D4U-xe-0yr" secondAttribute="leading" id="QYX-YC-whO"/>
-                        <constraint firstAttribute="trailing" secondItem="ghV-Bo-jqM" secondAttribute="trailing" constant="8" id="aUB-vD-FGE"/>
-                        <constraint firstItem="ghV-Bo-jqM" firstAttribute="top" secondItem="tGw-Oe-c6K" secondAttribute="bottom" constant="8" id="aaP-pp-PRd"/>
-                        <constraint firstAttribute="height" constant="200" id="dCD-h5-XqE"/>
-                        <constraint firstItem="tGw-Oe-c6K" firstAttribute="top" secondItem="njh-Ux-t0a" secondAttribute="bottom" constant="8" id="h5O-ed-EYt"/>
-                        <constraint firstAttribute="trailing" secondItem="tGw-Oe-c6K" secondAttribute="trailing" constant="8" id="h8u-RJ-kNf"/>
-                        <constraint firstItem="fuV-42-TNR" firstAttribute="top" secondItem="Mld-Lz-jif" secondAttribute="bottom" constant="8" id="hA3-uM-Olp"/>
-                        <constraint firstAttribute="trailing" secondItem="njh-Ux-t0a" secondAttribute="trailing" constant="8" id="jIh-s5-eeL"/>
-                        <constraint firstItem="ghV-Bo-jqM" firstAttribute="leading" secondItem="D4U-xe-0yr" secondAttribute="leading" constant="8" id="xr0-Yh-JOZ"/>
-                    </constraints>
-                </view>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="D4U-xe-0yr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CCD-ff-TJg"/>
-                <constraint firstAttribute="bottom" secondItem="yju-ST-hVt" secondAttribute="bottom" id="F28-GJ-WLK"/>
-                <constraint firstAttribute="trailing" secondItem="D4U-xe-0yr" secondAttribute="trailing" id="eIk-bF-Fi3"/>
-                <constraint firstItem="yju-ST-hVt" firstAttribute="top" secondItem="D4U-xe-0yr" secondAttribute="bottom" id="pGB-Hm-2nb"/>
-                <constraint firstItem="yju-ST-hVt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uLH-II-VC1"/>
-                <constraint firstAttribute="trailing" secondItem="yju-ST-hVt" secondAttribute="trailing" id="w72-SQ-Qoi"/>
-                <constraint firstItem="D4U-xe-0yr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xt9-Py-tzB"/>
+                <constraint firstItem="qEH-LD-eiA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="1BP-F2-kPG"/>
+                <constraint firstAttribute="trailing" secondItem="qEH-LD-eiA" secondAttribute="trailing" id="Ibg-WH-HBL"/>
+                <constraint firstItem="qEH-LD-eiA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b55-o8-TfB"/>
+                <constraint firstAttribute="bottom" secondItem="qEH-LD-eiA" secondAttribute="bottom" id="pJj-Yr-yWQ"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

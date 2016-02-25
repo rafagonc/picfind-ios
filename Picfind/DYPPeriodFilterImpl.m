@@ -6,9 +6,9 @@
 //  Copyright © 2016 Rafael Gonzalves. All rights reserved.
 //
 
-#import "DYPPeriodFilter.h"
+#import "DYPPeriodFilterImpl.h"
 
-@implementation DYPPeriodFilter
+@implementation DYPPeriodFilterImpl
 
 #pragma mark - constructor
 -(instancetype)initWithFirstDate:(NSDate *)date andLastDate:(NSDate *)lastDate {

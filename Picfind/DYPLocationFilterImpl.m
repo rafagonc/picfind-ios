@@ -6,9 +6,9 @@
 //  Copyright © 2016 Rafael Gonzalves. All rights reserved.
 //
 
-#import "DYPLocationFilter.h"
+#import "DYPLocationFilterImpl.h"
 
-@implementation DYPLocationFilter
+@implementation DYPLocationFilterImpl
 
 #pragma mark - constructor
 -(instancetype)initWithLocation:(CLLocation *)location andRange:(NSInteger)range {
@@ -21,6 +21,17 @@
 #pragma mark - filter
 -(BOOL)analyze:(id<DYPAssetProtocol>)asset {
     return NO;
+}
+
+#pragma mark - annontation
+-(NSString *)title {
+    return @"Location";
+}
+-(NSString *)subtitle {
+    return @"Search for photos nearby";
+}
+-(CLLocationCoordinate2D)coordinate {
+    return self.location.coordinate;
 }
 
 @end

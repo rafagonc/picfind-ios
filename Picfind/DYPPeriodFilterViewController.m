@@ -9,9 +9,10 @@
 #import "DYPPeriodFilterViewController.h"
 #import "UIStaticTableView.h"
 #import "DYPDateCell.h"
-#import "DYPPeriodFilter.h"
 #import "DYPValidation.h"
+#import "DYPPeriodFilter.h"
 #import "UIViewController+NotificationShow.h"
+#import "DYPFilterFactory.h"
 
 @interface DYPPeriodFilterViewController ()
 
@@ -22,6 +23,7 @@
 
 #pragma mark - injected
 @property (setter=injected_period:,readonly) id<DYPValidation> periodValidator;
+@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
 
 @end
 
@@ -69,9 +71,7 @@
 
 #pragma mark - create
 -(id<DYPFilter>)createPeriodFilterWithError:(NSError **)error {
-    NSDate * start = [self.firstDateCell date];
-    NSDate * end = [self.lastDateCell date];
-    DYPPeriodFilter *periodFilter = [[DYPPeriodFilter alloc] initWithFirstDate:start andLastDate:end];
+    id<DYPFilter> periodFilter = [self.filterFactory periodFilterFrom:[self.firstDateCell date] to:[self.lastDateCell date]];
     if ([self.periodValidator validate:periodFilter error:error] == NO) {
         return nil;
     }
@@ -81,7 +81,7 @@
 #pragma mark - actions
 -(void)applyAction:(UIBarButtonItem *)item {
     NSError *error;
-    DYPPeriodFilter * periodFilter = [self createPeriodFilterWithError:&error];
+    id<DYPFilter> periodFilter = [self createPeriodFilterWithError:&error];
     if (error) {
         [self showNotificationWithType:SHNotificationViewTypeError withMessage:error.localizedDescription];
     } else {

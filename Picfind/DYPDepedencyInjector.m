@@ -18,6 +18,11 @@
 #import "DYPPeriodFilterValidator.h"
 #import "DYPLocationManager.h"
 #import "DYPLocationManagerImpl.h"
+#import "DYPFilterFactory.h"
+#import "DYPFilterFactoryImpl.h"
+#import "DYPMapViewDatasource.h"
+#import "DYPLocationFilterMapDatasource.h"
+#import "DYPLocationFilterValidator.h"
 
 @implementation DYPDepedencyInjector
 
@@ -37,6 +42,14 @@
     
     //validation
     [[DPRegistry sharedRegistry] registerImplementation:[DYPPeriodFilterValidator class] forProtocol:@protocol(DYPValidation) context:@"period"];
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPLocationFilterValidator class] forProtocol:@protocol(DYPValidation) context:@"location"];
+    
+    //factories
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPFilterFactoryImpl class] forProtocol:@protocol(DYPFilterFactory) context:nil];
+    
+    //map view delegate
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPLocationFilterMapDatasource class] forProtocol:@protocol(DYPMapViewDatasource) context:nil];
+
 
 }
 

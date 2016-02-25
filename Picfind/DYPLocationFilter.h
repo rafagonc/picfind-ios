@@ -2,24 +2,17 @@
 //  DYPLocationFilter.h
 //  Picfind
 //
-//  Created by Banco Santander Brasil on 2/24/16.
+//  Created by Banco Santander Brasil on 2/25/16.
 //  Copyright © 2016 Rafael Gonzalves. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
 #import "DYPFilter.h"
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface DYPLocationFilter : NSObject
+@protocol DYPLocationFilter <DYPFilter, MKAnnotation>
 
-<DYPFilter>
-
-#pragma mark - constructor
--(instancetype)init __attribute__ ((unavailable("use designated initializer")));
--(instancetype)initWithLocation:(CLLocation *)location andRange:(NSInteger)range;
-
-#pragma mark - properties
-@property (nonatomic,readonly) CLLocation * location;
-@property (nonatomic,readonly) NSInteger    range;
+-(CLLocation *)location;
+-(NSInteger)range;
 
 @end

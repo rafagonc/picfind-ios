@@ -1,16 +1,14 @@
 //
-//  DYPPeriodFilter.h
+//  DYPMapViewDatasource.h
 //  Picfind
 //
 //  Created by Banco Santander Brasil on 2/25/16.
 //  Copyright © 2016 Rafael Gonzalves. All rights reserved.
 //
 
-#import "DYPFilter.h"
+#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@protocol DYPPeriodFilter <DYPFilter>
-
--(NSDate *)from;
--(NSDate *)to;
+@protocol DYPMapViewDatasource <MKMapViewDelegate>
 
 @end

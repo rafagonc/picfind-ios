@@ -88,14 +88,24 @@
 		2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */; };
 		4421B2EE1C7E2B9F00673C4F /* DYPDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2ED1C7E2B9F00673C4F /* DYPDateCell.m */; };
 		4421B2F11C7E2BB100673C4F /* DYPDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B2F01C7E2BB100673C4F /* DYPDateCell.xib */; };
-		4421B2F71C7E2F5A00673C4F /* DYPPeriodFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2F61C7E2F5A00673C4F /* DYPPeriodFilter.m */; };
-		4421B2FC1C7E2F6900673C4F /* DYPLocationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2FB1C7E2F6900673C4F /* DYPLocationFilter.m */; };
+		4421B2F71C7E2F5A00673C4F /* DYPPeriodFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2F61C7E2F5A00673C4F /* DYPPeriodFilterImpl.m */; };
+		4421B2FC1C7E2F6900673C4F /* DYPLocationFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2FB1C7E2F6900673C4F /* DYPLocationFilterImpl.m */; };
 		4421B3051C7E3D2200673C4F /* DYPPeriodFilterValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3041C7E3D2200673C4F /* DYPPeriodFilterValidator.m */; };
 		4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3081C7E404300673C4F /* UIViewController+NotificationShow.m */; };
 		4421B30E1C7E406100673C4F /* SHNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B30C1C7E406100673C4F /* SHNotificationView.m */; };
 		4421B30F1C7E406100673C4F /* SHNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B30D1C7E406100673C4F /* SHNotificationView.xib */; };
 		4421B3171C7E447C00673C4F /* DYPLocationManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3161C7E447C00673C4F /* DYPLocationManagerImpl.m */; };
 		4421B31D1C7E475500673C4F /* MKMapView+Zoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B31C1C7E475500673C4F /* MKMapView+Zoom.m */; };
+		4421B3211C7F464100673C4F /* DYPMapCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3201C7F464100673C4F /* DYPMapCell.m */; };
+		4421B3231C7F464800673C4F /* DYPMapCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B3221C7F464800673C4F /* DYPMapCell.xib */; };
+		4421B32D1C7F467000673C4F /* DYPRangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B32B1C7F467000673C4F /* DYPRangeCell.m */; };
+		4421B32E1C7F467000673C4F /* DYPRangeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B32C1C7F467000673C4F /* DYPRangeCell.xib */; };
+		4421B3331C7F468000673C4F /* DYPMapSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3311C7F468000673C4F /* DYPMapSearchCell.m */; };
+		4421B3341C7F468000673C4F /* DYPMapSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B3321C7F468000673C4F /* DYPMapSearchCell.xib */; };
+		4421B3401C7F60B500673C4F /* DYPFilterFactoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B33F1C7F60B500673C4F /* DYPFilterFactoryImpl.m */; };
+		4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3481C7F6FF000673C4F /* DYPLocation.m */; };
+		4421B3511C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3501C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m */; };
+		4421B3571C7F91DC00673C4F /* DYPLocationFilterValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3561C7F91DC00673C4F /* DYPLocationFilterValidator.m */; };
 		49439DC3E9D5D1509965862A /* libPods-PicfindTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */; };
 		5F6025BF4BEC8840A676A8F0 /* libPods-Picfind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15363EF1C4928D68283B2555 /* libPods-Picfind.a */; };
 /* End PBXBuildFile section */
@@ -231,10 +241,10 @@
 		4421B2ED1C7E2B9F00673C4F /* DYPDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPDateCell.m; sourceTree = "<group>"; };
 		4421B2F01C7E2BB100673C4F /* DYPDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPDateCell.xib; sourceTree = "<group>"; };
 		4421B2F31C7E2EC600673C4F /* DYPFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFilter.h; sourceTree = "<group>"; };
-		4421B2F51C7E2F5A00673C4F /* DYPPeriodFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPeriodFilter.h; sourceTree = "<group>"; };
-		4421B2F61C7E2F5A00673C4F /* DYPPeriodFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPeriodFilter.m; sourceTree = "<group>"; };
-		4421B2FA1C7E2F6900673C4F /* DYPLocationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationFilter.h; sourceTree = "<group>"; };
-		4421B2FB1C7E2F6900673C4F /* DYPLocationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationFilter.m; sourceTree = "<group>"; };
+		4421B2F51C7E2F5A00673C4F /* DYPPeriodFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPeriodFilterImpl.h; sourceTree = "<group>"; };
+		4421B2F61C7E2F5A00673C4F /* DYPPeriodFilterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPeriodFilterImpl.m; sourceTree = "<group>"; };
+		4421B2FA1C7E2F6900673C4F /* DYPLocationFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationFilterImpl.h; sourceTree = "<group>"; };
+		4421B2FB1C7E2F6900673C4F /* DYPLocationFilterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationFilterImpl.m; sourceTree = "<group>"; };
 		4421B2FE1C7E3B8F00673C4F /* DYPFilterCreatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFilterCreatorDelegate.h; sourceTree = "<group>"; };
 		4421B3001C7E3CBB00673C4F /* DYPValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPValidation.h; sourceTree = "<group>"; };
 		4421B3031C7E3D2200673C4F /* DYPPeriodFilterValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPeriodFilterValidator.h; sourceTree = "<group>"; };
@@ -249,6 +259,27 @@
 		4421B3161C7E447C00673C4F /* DYPLocationManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationManagerImpl.m; sourceTree = "<group>"; };
 		4421B31B1C7E475500673C4F /* MKMapView+Zoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+Zoom.h"; sourceTree = "<group>"; };
 		4421B31C1C7E475500673C4F /* MKMapView+Zoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+Zoom.m"; sourceTree = "<group>"; };
+		4421B31F1C7F464100673C4F /* DYPMapCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPMapCell.h; sourceTree = "<group>"; };
+		4421B3201C7F464100673C4F /* DYPMapCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPMapCell.m; sourceTree = "<group>"; };
+		4421B3221C7F464800673C4F /* DYPMapCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPMapCell.xib; sourceTree = "<group>"; };
+		4421B32A1C7F467000673C4F /* DYPRangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPRangeCell.h; sourceTree = "<group>"; };
+		4421B32B1C7F467000673C4F /* DYPRangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPRangeCell.m; sourceTree = "<group>"; };
+		4421B32C1C7F467000673C4F /* DYPRangeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPRangeCell.xib; sourceTree = "<group>"; };
+		4421B3301C7F468000673C4F /* DYPMapSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPMapSearchCell.h; sourceTree = "<group>"; };
+		4421B3311C7F468000673C4F /* DYPMapSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPMapSearchCell.m; sourceTree = "<group>"; };
+		4421B3321C7F468000673C4F /* DYPMapSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPMapSearchCell.xib; sourceTree = "<group>"; };
+		4421B33D1C7F60AA00673C4F /* DYPFilterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFilterFactory.h; sourceTree = "<group>"; };
+		4421B33E1C7F60B500673C4F /* DYPFilterFactoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFilterFactoryImpl.h; sourceTree = "<group>"; };
+		4421B33F1C7F60B500673C4F /* DYPFilterFactoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPFilterFactoryImpl.m; sourceTree = "<group>"; };
+		4421B3441C7F637D00673C4F /* DYPPeriodFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPeriodFilter.h; sourceTree = "<group>"; };
+		4421B3461C7F63B800673C4F /* DYPLocationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationFilter.h; sourceTree = "<group>"; };
+		4421B3471C7F6FF000673C4F /* DYPLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocation.h; sourceTree = "<group>"; };
+		4421B3481C7F6FF000673C4F /* DYPLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocation.m; sourceTree = "<group>"; };
+		4421B34C1C7F718D00673C4F /* DYPMapViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPMapViewDatasource.h; sourceTree = "<group>"; };
+		4421B34F1C7F71BF00673C4F /* DYPLocationFilterMapDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationFilterMapDatasource.h; sourceTree = "<group>"; };
+		4421B3501C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationFilterMapDatasource.m; sourceTree = "<group>"; };
+		4421B3551C7F91DC00673C4F /* DYPLocationFilterValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationFilterValidator.h; sourceTree = "<group>"; };
+		4421B3561C7F91DC00673C4F /* DYPLocationFilterValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationFilterValidator.m; sourceTree = "<group>"; };
 		7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -510,6 +541,7 @@
 		2ADBB8771C7BF8B20034B7D1 /* Picfind */ = {
 			isa = PBXGroup;
 			children = (
+				4421B33C1C7F60A300673C4F /* Factories */,
 				4421B2FF1C7E3CA900673C4F /* Validation */,
 				2A11169D1C7C080F00A45955 /* Data Access Object */,
 				2ADBB9261C7C02240034B7D1 /* Datasources */,
@@ -593,6 +625,9 @@
 				2A1116BA1C7D431F00A45955 /* Filter Cell */,
 				2A1116C01C7D47AC00A45955 /* Photo Collection Cell */,
 				4421B2EF1C7E2BA400673C4F /* Date Cell */,
+				4421B3241C7F464B00673C4F /* Map Cell */,
+				4421B3351C7F468300673C4F /* Map Search Cell */,
+				4421B32F1C7F467200673C4F /* Range Cell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -751,6 +786,7 @@
 			children = (
 				4421B2F21C7E2EBB00673C4F /* Filter */,
 				2ADBB9211C7C00A00034B7D1 /* Asset */,
+				4421B34A1C7F6FF300673C4F /* Location */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -776,6 +812,7 @@
 		2ADBB9261C7C02240034B7D1 /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
+				4421B34B1C7F717C00673C4F /* Map View */,
 				2ADBB92E1C7C024B0034B7D1 /* Collection View */,
 			);
 			name = Datasources;
@@ -846,8 +883,8 @@
 		4421B2F81C7E2F5C00673C4F /* Period */ = {
 			isa = PBXGroup;
 			children = (
-				4421B2F51C7E2F5A00673C4F /* DYPPeriodFilter.h */,
-				4421B2F61C7E2F5A00673C4F /* DYPPeriodFilter.m */,
+				4421B3431C7F635A00673C4F /* Abstract */,
+				4421B3361C7F5FA400673C4F /* Concrete */,
 			);
 			name = Period;
 			sourceTree = "<group>";
@@ -864,8 +901,8 @@
 		4421B2FD1C7E2F6E00673C4F /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				4421B2FA1C7E2F6900673C4F /* DYPLocationFilter.h */,
-				4421B2FB1C7E2F6900673C4F /* DYPLocationFilter.m */,
+				4421B3451C7F63AF00673C4F /* Abstract */,
+				4421B3391C7F5FB700673C4F /* Concrete */,
 			);
 			name = Location;
 			sourceTree = "<group>";
@@ -891,6 +928,7 @@
 			isa = PBXGroup;
 			children = (
 				4421B3061C7E3D2500673C4F /* Period Filter */,
+				4421B3581C7F91E000673C4F /* Location Filter */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -956,6 +994,140 @@
 				4421B31C1C7E475500673C4F /* MKMapView+Zoom.m */,
 			);
 			name = MKMapView;
+			sourceTree = "<group>";
+		};
+		4421B3241C7F464B00673C4F /* Map Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4421B31F1C7F464100673C4F /* DYPMapCell.h */,
+				4421B3201C7F464100673C4F /* DYPMapCell.m */,
+				4421B3221C7F464800673C4F /* DYPMapCell.xib */,
+			);
+			name = "Map Cell";
+			sourceTree = "<group>";
+		};
+		4421B32F1C7F467200673C4F /* Range Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4421B32A1C7F467000673C4F /* DYPRangeCell.h */,
+				4421B32B1C7F467000673C4F /* DYPRangeCell.m */,
+				4421B32C1C7F467000673C4F /* DYPRangeCell.xib */,
+			);
+			name = "Range Cell";
+			sourceTree = "<group>";
+		};
+		4421B3351C7F468300673C4F /* Map Search Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3301C7F468000673C4F /* DYPMapSearchCell.h */,
+				4421B3311C7F468000673C4F /* DYPMapSearchCell.m */,
+				4421B3321C7F468000673C4F /* DYPMapSearchCell.xib */,
+			);
+			name = "Map Search Cell";
+			sourceTree = "<group>";
+		};
+		4421B3361C7F5FA400673C4F /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				4421B2F51C7E2F5A00673C4F /* DYPPeriodFilterImpl.h */,
+				4421B2F61C7E2F5A00673C4F /* DYPPeriodFilterImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		4421B3391C7F5FB700673C4F /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				4421B2FA1C7E2F6900673C4F /* DYPLocationFilterImpl.h */,
+				4421B2FB1C7E2F6900673C4F /* DYPLocationFilterImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		4421B33C1C7F60A300673C4F /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3411C7F62A600673C4F /* Abstract */,
+				4421B3421C7F62AC00673C4F /* Concrete */,
+			);
+			name = Factories;
+			sourceTree = "<group>";
+		};
+		4421B3411C7F62A600673C4F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4421B33D1C7F60AA00673C4F /* DYPFilterFactory.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		4421B3421C7F62AC00673C4F /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				4421B33E1C7F60B500673C4F /* DYPFilterFactoryImpl.h */,
+				4421B33F1C7F60B500673C4F /* DYPFilterFactoryImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		4421B3431C7F635A00673C4F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3441C7F637D00673C4F /* DYPPeriodFilter.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		4421B3451C7F63AF00673C4F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3461C7F63B800673C4F /* DYPLocationFilter.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		4421B34A1C7F6FF300673C4F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3471C7F6FF000673C4F /* DYPLocation.h */,
+				4421B3481C7F6FF000673C4F /* DYPLocation.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		4421B34B1C7F717C00673C4F /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				4421B34D1C7F71AC00673C4F /* Abstract */,
+				4421B34E1C7F71B000673C4F /* Concrete */,
+			);
+			name = "Map View";
+			sourceTree = "<group>";
+		};
+		4421B34D1C7F71AC00673C4F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4421B34C1C7F718D00673C4F /* DYPMapViewDatasource.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		4421B34E1C7F71B000673C4F /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				4421B34F1C7F71BF00673C4F /* DYPLocationFilterMapDatasource.h */,
+				4421B3501C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		4421B3581C7F91E000673C4F /* Location Filter */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3551C7F91DC00673C4F /* DYPLocationFilterValidator.h */,
+				4421B3561C7F91DC00673C4F /* DYPLocationFilterValidator.m */,
+			);
+			name = "Location Filter";
 			sourceTree = "<group>";
 		};
 		8574AE5B95E2C9B5FC61D3F2 /* Pods */ = {
@@ -1064,6 +1236,7 @@
 				2A1116CB1C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib in Resources */,
 				2ADBB9031C7BFD550034B7D1 /* lbpcascade_profileface.xml in Resources */,
 				2ADBB8E31C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				4421B3231C7F464800673C4F /* DYPMapCell.xib in Resources */,
 				2ADBB8FD1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */,
 				4421B30F1C7E406100673C4F /* SHNotificationView.xib in Resources */,
 				2ADBB8F01C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml in Resources */,
@@ -1099,7 +1272,9 @@
 				2ADBB9061C7BFD550034B7D1 /* trainingfaces_24-24.vec in Resources */,
 				2ADBB8E81C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				2A1116BF1C7D47AA00A45955 /* DYPPhotoCollectionCell.xib in Resources */,
+				4421B32E1C7F467000673C4F /* DYPRangeCell.xib in Resources */,
 				2ADBB8FB1C7BFD550034B7D1 /* haarcascade_lowerbody.xml in Resources */,
+				4421B3341C7F468000673C4F /* DYPMapSearchCell.xib in Resources */,
 				2ADBB8E11C7BFD550034B7D1 /* CMakeLists.txt in Resources */,
 				2A1116C51C7D4D1600A45955 /* DYPLocationFilterViewController.xib in Resources */,
 				2ADBB8ED1C7BFD550034B7D1 /* haarcascade_lowerbody.xml in Resources */,
@@ -1216,20 +1391,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4421B3211C7F464100673C4F /* DYPMapCell.m in Sources */,
 				2A1116CA1C7D4D2A00A45955 /* DYPPeriodFilterViewController.m in Sources */,
+				4421B3331C7F468000673C4F /* DYPMapSearchCell.m in Sources */,
 				2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */,
 				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
 				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
 				2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */,
 				4421B3171C7E447C00673C4F /* DYPLocationManagerImpl.m in Sources */,
+				4421B3401C7F60B500673C4F /* DYPFilterFactoryImpl.m in Sources */,
 				2A1116C41C7D4D1600A45955 /* DYPLocationFilterViewController.m in Sources */,
 				2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */,
 				2A1116BE1C7D47AA00A45955 /* DYPPhotoCollectionCell.m in Sources */,
 				4421B31D1C7E475500673C4F /* MKMapView+Zoom.m in Sources */,
 				2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */,
 				4421B3051C7E3D2200673C4F /* DYPPeriodFilterValidator.m in Sources */,
-				4421B2FC1C7E2F6900673C4F /* DYPLocationFilter.m in Sources */,
+				4421B2FC1C7E2F6900673C4F /* DYPLocationFilterImpl.m in Sources */,
+				4421B3571C7F91DC00673C4F /* DYPLocationFilterValidator.m in Sources */,
 				4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */,
 				2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */,
 				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
@@ -1241,12 +1420,15 @@
 				2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */,
 				4421B30E1C7E406100673C4F /* SHNotificationView.m in Sources */,
 				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
-				4421B2F71C7E2F5A00673C4F /* DYPPeriodFilter.m in Sources */,
+				4421B3511C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m in Sources */,
+				4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */,
+				4421B2F71C7E2F5A00673C4F /* DYPPeriodFilterImpl.m in Sources */,
 				2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */,
 				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
 				2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */,
 				2A1116B81C7D431D00A45955 /* DYPFilterCell.m in Sources */,
 				4421B2EE1C7E2B9F00673C4F /* DYPDateCell.m in Sources */,
+				4421B32D1C7F467000673C4F /* DYPRangeCell.m in Sources */,
 				2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */,
 				2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */,
 			);

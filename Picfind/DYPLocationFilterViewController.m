@@ -12,15 +12,23 @@
 #import "DYPLocationManager.h"
 #import "MKMapView+Zoom.h"
 #import "UISearchBar+Toolbar.h"
+#import "UIStaticTableView.h"
+#import "DYPMapCell.h"
+#import "DYPMapSearchCell.h"
+#import "DYPRangeCell.h"
+#import "DYPFilterFactory.h"
+#import "DYPValidation.h"
+#import "UIViewController+NotificationShow.h"
 
-@interface DYPLocationFilterViewController ()
+@interface DYPLocationFilterViewController () <DYPRangeCellDelegate, DYPMapSearchCellDelegate>
 
 #pragma mark - ui
-@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
+@property (weak, nonatomic) DYPMapCell * mapCell;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPLocationManager> locationManager;
+@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
+@property (setter=injected_location:,readonly) id<DYPValidation> locationValidator;
 
 @end
 
@@ -36,17 +44,63 @@
 #pragma mark - lifecycle
 -(void)viewDidLoad {
     [super viewDidLoad];
-    
-    //map vieew
-    [self.mapView setShowsUserLocation:YES];
-    [self.mapView setCenterCoordinate:[self.locationManager userLocation].coordinate animated:YES];
-    [self.mapView setRegion:MKCoordinateRegionMakeWithDistance([self.locationManager userLocation].coordinate, 40000, 40000)];
-    
-    //search bar
-    [self.searchBar addToolbar];
+    [self setTitle:@"Location Filter"];
+    [self createTableView];
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    UIBarButtonItem *applyItem = [[UIBarButtonItem alloc] initWithTitle:@"Apply" style:UIBarButtonItemStylePlain target:self action:@selector(applyAction:)];
+    [self.navigationItem setRightBarButtonItem:applyItem];
+}
+
+#pragma mark - table view
+-(void)createTableView {
+    UIStaticTableViewSection *section = [[UIStaticTableViewSection alloc] init];
+    [section setHeaderName:@"search a placemark or tap the map to set a location"];
+    
+    DYPMapSearchCell *mapSearchCell = [[DYPMapSearchCell alloc] init];
+    [mapSearchCell setDelegate:self];
+    [self.tableView addCell:mapSearchCell onSection:section];
+    
+    DYPMapCell *mapCell = [[DYPMapCell alloc] init];
+    [self.tableView addCell:mapCell onSection:section];
+    [self setMapCell:mapCell];
+    
+    DYPRangeCell *rangeCell = [[DYPRangeCell alloc] init];
+    rangeCell.delegate = self;
+    [self.tableView addCell:rangeCell onSection:section];
+    
+    [self.tableView addSection:section];
+}
+
+#pragma mark - cell delegate
+-(void)rangeCell:(DYPRangeCell *)rangeCell didChangeRangeSlider:(NSInteger)range {
+    [self.mapCell setRange:range];
+}
+-(void)mapSearchCell:(DYPMapSearchCell *)mapSearchCell didSearchForLocation:(CLLocation *)location {
+    [self.mapCell setSearchedLocation:location];
+}
+
+#pragma mark - create
+-(id<DYPFilter>)createLocationFilterWithError:(NSError **)error {
+    id<DYPFilter> locationFilter = [self.filterFactory locationFilterWith:[self.mapCell finalLocation] range:[self.mapCell range]];
+    if (![self.locationValidator validate:locationFilter error:error]) {
+        return nil;
+    }
+    return locationFilter;
+}
+
+#pragma mark - actions
+-(void)applyAction:(UIBarButtonItem *)item {
+    NSError *error;
+    id<DYPFilter> filter = [self createLocationFilterWithError:&error];
+    if (error) {
+        [self showNotificationWithType:SHNotificationViewTypeError withMessage:[error localizedDescription]];
+    } else {
+        [self.delegate source:self didCreateFilter:filter];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 #pragma mark - dealloc

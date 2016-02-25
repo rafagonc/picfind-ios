@@ -44,7 +44,6 @@
 #pragma mark - constructor
 -(instancetype)init {
     if (self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil]) {
-        
     } return self;
 }
 
