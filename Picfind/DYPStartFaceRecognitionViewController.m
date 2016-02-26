@@ -7,6 +7,7 @@
 //
 
 #import "DYPStartFaceRecognitionViewController.h"
+#import "DYPLiveScanViewController.h"
 
 @interface DYPStartFaceRecognitionViewController ()
 
@@ -21,12 +22,10 @@
     } return self;
 }
 
-#pragma mark - lifecycle
--(void)viewDidLoad {
-    [super viewDidLoad];
-}
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+#pragma mark - actions
+-(IBAction)startAction:(id)sender {
+    DYPLiveScanViewController *liveScan = [[DYPLiveScanViewController alloc] init];
+    [self.navigationController pushViewController:liveScan animated:YES];
 }
 
 #pragma mark - dealloc

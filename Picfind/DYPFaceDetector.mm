@@ -12,31 +12,25 @@
 
 using namespace cv;
 
-@interface DYPFaceDetector ()
-
-@property (nonatomic,strong) UIImage *image;
+@interface DYPFaceDetector () {
+    CascadeClassifier detector;
+}
 
 @end
 
 @implementation DYPFaceDetector
 
 #pragma mark - constructors
--(instancetype)initWithImage:(UIImage *)image {
+-(instancetype)init {
     if (self = [super init]) {
-        self.image = image;
+        [self load];
     } return self;
 }
 
 #pragma mark - methods
--(NSArray <NSValue *> *)detect {
-    if (self.image == nil) @throw [NSException exceptionWithName:@"DYPException" reason:@"image cannot be nil" userInfo:@{}];
-    NSString *faceCascadePath = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
-    const CFIndex CASCANDE_NAME_LEN = 2048;
-    char * CASCADE_NAME = (char *)malloc(CASCANDE_NAME_LEN);
-    CFStringGetFileSystemRepresentation((CFStringRef)faceCascadePath, CASCADE_NAME, CASCANDE_NAME_LEN);
-    CascadeClassifier detector;
-    detector.load(CASCADE_NAME);
-    Mat sourceVector = [DYPImageMatConverter matFromImage:self.image];
+-(NSArray <NSValue *> *)detectImage:(UIImage *)image {
+    if (image == nil) @throw [NSException exceptionWithName:@"DYPException" reason:@"image cannot be nil" userInfo:@{}];
+    Mat sourceVector = [DYPImageMatConverter matFromImage:image];
     std::vector<cv::Rect> faceRects;
     detector.detectMultiScale(sourceVector, faceRects);
     NSMutableArray <NSValue *> *rects = [@[] mutableCopy];
@@ -47,6 +41,26 @@ using namespace cv;
         [rects addObject:rectValue];
     }
     return rects;
+}
+-(NSArray <NSValue *> *)detectMat:(cv::Mat)sourceVector {
+    std::vector<cv::Rect> faceRects;
+    if (sourceVector.empty()) return @[];
+    detector.detectMultiScale(sourceVector, faceRects);
+    NSMutableArray <NSValue *> *rects = [@[] mutableCopy];
+    for (int i = 0; i < faceRects.size(); i++) {
+        cv::Rect rect = faceRects[i];
+        CGRect faceRect = CGRectMake(rect.x, rect.y, rect.width, rect.height);
+        NSValue *rectValue = [NSValue valueWithCGRect:faceRect];
+        [rects addObject:rectValue];
+    }
+    return rects;
+}
+-(void)load {
+    NSString *faceCascadePath = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
+    const CFIndex CASCANDE_NAME_LEN = 2048;
+    char * CASCADE_NAME = (char *)malloc(CASCANDE_NAME_LEN);
+    CFStringGetFileSystemRepresentation((CFStringRef)faceCascadePath, CASCADE_NAME, CASCANDE_NAME_LEN);
+    detector.load(CASCADE_NAME);
 }
 
 @end

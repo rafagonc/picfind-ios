@@ -23,6 +23,13 @@
     return NO;
 }
 
+#pragma mark - explain
+-(NSString *)explain {
+    MKDistanceFormatter *distanceFormatter = [[MKDistanceFormatter alloc] init];
+    [distanceFormatter setUnits:MKDistanceFormatterUnitsMetric];
+    return [NSString stringWithFormat:@"%.2f, %.2f; range: %@", self.location.coordinate.latitude, self.location.coordinate.longitude, [distanceFormatter stringFromDistance:self.range]];
+}
+
 #pragma mark - annontation
 -(NSString *)title {
     return @"Location";

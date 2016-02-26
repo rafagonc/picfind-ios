@@ -23,15 +23,20 @@
 #import "DYPStartFaceRecognitionViewController.h"
 #import "DYPCustomizer.h"
 #import "DYPFilterCreatorDelegate.h"
+#import "DYPLocationFilter.h"
+#import "DYPPeriodFilter.h"
+#import "DYPFilterCollection.h"
 
-@interface DYPPhotosViewController () <UICollectionViewDelegate, UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate>
+@interface DYPPhotosViewController () <UICollectionViewDelegate, UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate, DYPFilterCellDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
+@property (weak, nonatomic) DYPFilterCell *periodCell;
+@property (weak, nonatomic) DYPFilterCell *locationCell;
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
-@property (strong, nonatomic) NSMutableArray <id<DYPFilter>> * appliedFilters;
+@property (strong, nonatomic) DYPFilterCollection * appliedFilters;
 
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
@@ -52,7 +57,7 @@
     [super viewDidLoad];
     
     //setups
-    self.appliedFilters = [@[] mutableCopy];
+    self.appliedFilters = [[DYPFilterCollection alloc] init];
     [self setupTableView];
     [self setupSearchController];
     [self setDefinesPresentationContext:YES];
@@ -70,14 +75,19 @@
     [section setHeaderName:@"Filters"];
     
     DYPFilterCell *periodFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Period Filter"];
+    [periodFilter setDelegate:self];
     [periodFilter addTarget:self selector:@selector(periodFilterWasSelected:)];
     [self.tableView addCell:periodFilter onSection:section];
+    [self setPeriodCell:periodFilter];
     
     DYPFilterCell *locationFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Location Filter"];
+    [locationFilter setDelegate:self];
     [locationFilter addTarget:self selector:@selector(locationFilterWasSelected:)];
     [self.tableView addCell:locationFilter onSection:section];
+    [self setLocationCell:locationFilter];
     
     DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
+    [faceFilter setDelegate:self];
     [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
     [self.tableView addCell:faceFilter onSection:section];
     
@@ -105,11 +115,13 @@
 
 #pragma mark - actions
 -(void)periodFilterWasSelected:(DYPFilterCell *)cell {
-    DYPPeriodFilterViewController *period = [[DYPPeriodFilterViewController alloc] init];
+    DYPPeriodFilterViewController *period = [[DYPPeriodFilterViewController alloc] initWithPeriodFilter:(id<DYPPeriodFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPPeriodFilter)]];
+    [period setDelegate:self];
     [self.navigationController pushViewController:period animated:YES];
 }
 -(void)locationFilterWasSelected:(DYPFilterCell *)cell {
-    DYPLocationFilterViewController *location = [[DYPLocationFilterViewController alloc] init];
+    DYPLocationFilterViewController *location = [[DYPLocationFilterViewController alloc] initWithLocationFilter:(id<DYPLocationFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPLocationFilter)]];
+    [location setDelegate:self];
     [self.navigationController pushViewController:location animated:YES];
 }
 -(void)faceFilterWasSelected:(DYPFilterCell *)cell {
@@ -122,7 +134,15 @@
     
 }
 -(void)source:(id)source didCreateFilter:(id<DYPFilter>)filter {
-    [self.appliedFilters addObject:filter];
+    [self.appliedFilters addFilter:filter];
+    if ([filter conformsToProtocol:@protocol(DYPLocationFilter)]) {
+        [self.locationCell setFilter:filter];
+    } else if ([filter conformsToProtocol:@protocol(DYPPeriodFilter)]) {
+        [self.periodCell setFilter:filter];
+    }
+}
+-(void)filterCell:(DYPFilterCell *)cell didDeleteFilter:(id<DYPFilter>)filter {
+    [self.appliedFilters removeFilter:filter];
 }
 
 #pragma mark - dealloc

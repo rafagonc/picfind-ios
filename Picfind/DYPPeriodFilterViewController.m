@@ -10,9 +10,9 @@
 #import "UIStaticTableView.h"
 #import "DYPDateCell.h"
 #import "DYPValidation.h"
-#import "DYPPeriodFilter.h"
 #import "UIViewController+NotificationShow.h"
 #import "DYPFilterFactory.h"
+#import "DYPQuote.h"
 
 @interface DYPPeriodFilterViewController ()
 
@@ -20,10 +20,15 @@
 @property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
 @property (weak, nonatomic)          DYPDateCell * firstDateCell;
 @property (weak, nonatomic)          DYPDateCell * lastDateCell;
+@property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
 
+#pragma mark - properties
+@property (nonatomic,strong) id<DYPPeriodFilter> periodFilter;
+ 
 #pragma mark - injected
 @property (setter=injected_period:,readonly) id<DYPValidation> periodValidator;
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
+@property (setter=injected:,readonly) id<DYPQuote> quote;
 
 @end
 
@@ -35,11 +40,18 @@
         
     } return self;
 }
+-(instancetype)initWithPeriodFilter:(id<DYPPeriodFilter>)periodFilter {
+    self = [self init];
+    self.periodFilter = periodFilter;
+    return self;
+    
+}
 
 #pragma mark - lifecycle
 -(void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"Period Filter"];
+    [self.quoteLabel setText:[self.quote random]];
     [self createTableView];
 }
 -(void)viewWillAppear:(BOOL)animated {
@@ -59,10 +71,12 @@
     [section setHeaderName:@"Search photos in a specific period"];
     
     DYPDateCell *firstDateCell = [[DYPDateCell alloc] initWithPlaceholder:@"From"];
+    [firstDateCell setDate:[self.periodFilter from]];
     [self.tableView addCell:firstDateCell onSection:section];
     [self setFirstDateCell:firstDateCell];
     
     DYPDateCell *lastDateCell = [[DYPDateCell alloc] initWithPlaceholder:@"To"];
+    [lastDateCell setDate:[self.periodFilter to]];
     [self.tableView addCell:lastDateCell onSection:section];
     [self setLastDateCell:lastDateCell];
     

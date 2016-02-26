@@ -20,17 +20,36 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9J-HN-nyO">
+                        <rect key="frame" x="292" y="12" width="20" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Agh-VF-GA4"/>
+                        </constraints>
+                        <state key="normal" image="trash"/>
+                        <connections>
+                            <action selector="trashAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tzu-pK-zhJ"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="A9J-HN-nyO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="1Xq-5S-upd"/>
+                    <constraint firstAttribute="bottom" secondItem="A9J-HN-nyO" secondAttribute="bottom" constant="12" id="7Ld-bW-Wl4"/>
                     <constraint firstItem="DlD-u8-p0F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Bxe-lz-Mqt"/>
                     <constraint firstItem="DlD-u8-p0F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SpF-5d-nVX"/>
                     <constraint firstAttribute="trailing" secondItem="DlD-u8-p0F" secondAttribute="trailing" id="UTD-7J-bip"/>
                     <constraint firstAttribute="bottom" secondItem="DlD-u8-p0F" secondAttribute="bottom" id="YWZ-xU-mMw"/>
+                    <constraint firstAttribute="trailing" secondItem="A9J-HN-nyO" secondAttribute="trailing" constant="8" id="pLw-or-pFo"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="tintColor" red="0.78823529410000004" green="0.2784313725" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="filterLabel" destination="DlD-u8-p0F" id="yga-lK-23E"/>
+                <outlet property="trashButton" destination="A9J-HN-nyO" id="g1K-iv-nzo"/>
             </connections>
+            <point key="canvasLocation" x="210" y="511"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="trash" width="30" height="30"/>
+    </resources>
 </document>

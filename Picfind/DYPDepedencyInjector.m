@@ -23,6 +23,8 @@
 #import "DYPMapViewDatasource.h"
 #import "DYPLocationFilterMapDatasource.h"
 #import "DYPLocationFilterValidator.h"
+#import "DYPQuote.h"
+#import "DYPQuoteImpl.h"
 
 @implementation DYPDepedencyInjector
 
@@ -49,6 +51,9 @@
     
     //map view delegate
     [[DPRegistry sharedRegistry] registerImplementation:[DYPLocationFilterMapDatasource class] forProtocol:@protocol(DYPMapViewDatasource) context:nil];
+    
+    //othres
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPQuoteImpl class] forProtocol:@protocol(DYPQuote) context:nil];
 
 
 }

@@ -19,14 +19,20 @@
 #import "DYPFilterFactory.h"
 #import "DYPValidation.h"
 #import "UIViewController+NotificationShow.h"
+#import "DYPQuote.h"
 
 @interface DYPLocationFilterViewController () <DYPRangeCellDelegate, DYPMapSearchCellDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
 @property (weak, nonatomic) DYPMapCell * mapCell;
+@property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
+
+#pragma mark - properties
+@property (nonatomic,strong) id<DYPLocationFilter> locationFilter;
 
 #pragma mark - injected
+@property (setter=injected:,readonly) id<DYPQuote> quote;
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
 @property (setter=injected_location:,readonly) id<DYPValidation> locationValidator;
 
@@ -40,11 +46,17 @@
         
     } return self;
 }
+-(instancetype)initWithLocationFilter:(id<DYPLocationFilter>)locationFilter {
+    self = [self init];
+    _locationFilter = locationFilter;
+    return self;
+}
 
 #pragma mark - lifecycle
 -(void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:@"Location Filter"];
+    [self.quoteLabel setText:[self.quote random]];
     [self createTableView];
 }
 -(void)viewWillAppear:(BOOL)animated {
@@ -60,15 +72,18 @@
     [section setHeaderName:@"search a placemark or tap the map to set a location"];
     
     DYPMapSearchCell *mapSearchCell = [[DYPMapSearchCell alloc] init];
+    [mapSearchCell setLocationFilter:self.locationFilter];
     [mapSearchCell setDelegate:self];
     [self.tableView addCell:mapSearchCell onSection:section];
     
     DYPMapCell *mapCell = [[DYPMapCell alloc] init];
+    [mapCell setLocationFilter:self.locationFilter];
     [self.tableView addCell:mapCell onSection:section];
     [self setMapCell:mapCell];
     
     DYPRangeCell *rangeCell = [[DYPRangeCell alloc] init];
-    rangeCell.delegate = self;
+    [rangeCell setLocationFilter:self.locationFilter];
+    [rangeCell setDelegate:self];
     [self.tableView addCell:rangeCell onSection:section];
     
     [self.tableView addSection:section];

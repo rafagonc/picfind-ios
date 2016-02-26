@@ -23,4 +23,11 @@
     return NO;
 }
 
+#pragma mark - represent
+-(NSString *)explain {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    return [NSString stringWithFormat:@"%@ to %@", [dateFormatter stringFromDate:self.from], [dateFormatter stringFromDate:self.to]];
+}
+
 @end

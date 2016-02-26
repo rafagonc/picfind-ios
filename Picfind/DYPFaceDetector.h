@@ -8,15 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <opencv2/opencv.hpp>
 
 @interface DYPFaceDetector : NSObject
 
 #pragma mark - constructor
--(instancetype)init __attribute__((unavailable("init not available, use initWithImage")));
--(instancetype)initWithImage:(UIImage *)image;
+-(instancetype)init;
 
 #pragma mark - methods
--(NSArray <NSValue *> *)detect;
+-(NSArray <NSValue *> *)detectMat:(cv::Mat)sourceVector;
+-(NSArray <NSValue *> *)detectImage:(UIImage *)image;
 
 
 @end

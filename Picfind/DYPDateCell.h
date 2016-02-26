@@ -14,7 +14,7 @@
 -(instancetype)initWithPlaceholder:(NSString *)placeholder;
 
 #pragma mark - properties
-@property (nonatomic,readonly) NSDate *date;
+@property (nonatomic,strong) NSDate *date;
 
 
 @end

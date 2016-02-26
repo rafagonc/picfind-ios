@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "DYPFilterCreatorDelegate.h"
+#import "DYPPeriodFilter.h"
 
 @interface DYPPeriodFilterViewController : UIViewController
 
+#pragma mark - constructor
+-(instancetype)initWithPeriodFilter:(id<DYPPeriodFilter>)periodFilter;
+
+#pragma mark - properties
 @property (nonatomic,weak) id<DYPFilterCreatorDelegate> delegate;
 
 @end

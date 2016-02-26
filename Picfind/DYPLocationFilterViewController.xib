@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYPLocationFilterViewController">
             <connections>
+                <outlet property="quoteLabel" destination="9aM-JC-uaI" id="je0-ti-ixk"/>
                 <outlet property="tableView" destination="qEH-LD-eiA" id="hQo-sU-lSv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,6 +21,25 @@
                     <rect key="frame" x="0.0" y="15" width="320" height="489"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="lzT-nY-OQK">
+                        <rect key="frame" x="0.0" y="381.5" width="320" height="106"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aM-JC-uaI">
+                                <rect key="frame" x="20" y="8" width="280" height="90"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9aM-JC-uaI" firstAttribute="leading" secondItem="lzT-nY-OQK" secondAttribute="leading" constant="20" id="gIE-7F-MsU"/>
+                            <constraint firstAttribute="bottom" secondItem="9aM-JC-uaI" secondAttribute="bottom" constant="8" id="iih-tS-6fF"/>
+                            <constraint firstItem="9aM-JC-uaI" firstAttribute="top" secondItem="lzT-nY-OQK" secondAttribute="top" constant="8" id="lkm-BW-0rX"/>
+                            <constraint firstAttribute="trailing" secondItem="9aM-JC-uaI" secondAttribute="trailing" constant="20" id="zl4-Q3-Y3V"/>
+                        </constraints>
+                    </view>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

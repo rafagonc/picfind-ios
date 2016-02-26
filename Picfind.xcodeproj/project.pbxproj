@@ -106,6 +106,11 @@
 		4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3481C7F6FF000673C4F /* DYPLocation.m */; };
 		4421B3511C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3501C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m */; };
 		4421B3571C7F91DC00673C4F /* DYPLocationFilterValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3561C7F91DC00673C4F /* DYPLocationFilterValidator.m */; };
+		4421B35B1C808C2700673C4F /* DYPFilterCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B35A1C808C2700673C4F /* DYPFilterCollection.m */; };
+		4421B35E1C809A5800673C4F /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4421B35D1C809A5800673C4F /* quotes.json */; };
+		4421B3611C809B8E00673C4F /* DYPQuoteImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3601C809B8E00673C4F /* DYPQuoteImpl.m */; };
+		4421B3681C80BE0700673C4F /* DYPLiveScanViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3671C80BE0700673C4F /* DYPLiveScanViewController.mm */; };
+		4421B36B1C80BE1600673C4F /* DYPLiveScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B36A1C80BE1600673C4F /* DYPLiveScanViewController.xib */; };
 		49439DC3E9D5D1509965862A /* libPods-PicfindTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */; };
 		5F6025BF4BEC8840A676A8F0 /* libPods-Picfind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15363EF1C4928D68283B2555 /* libPods-Picfind.a */; };
 /* End PBXBuildFile section */
@@ -280,6 +285,15 @@
 		4421B3501C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationFilterMapDatasource.m; sourceTree = "<group>"; };
 		4421B3551C7F91DC00673C4F /* DYPLocationFilterValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLocationFilterValidator.h; sourceTree = "<group>"; };
 		4421B3561C7F91DC00673C4F /* DYPLocationFilterValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLocationFilterValidator.m; sourceTree = "<group>"; };
+		4421B3591C808C2700673C4F /* DYPFilterCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFilterCollection.h; sourceTree = "<group>"; };
+		4421B35A1C808C2700673C4F /* DYPFilterCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPFilterCollection.m; sourceTree = "<group>"; };
+		4421B35D1C809A5800673C4F /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		4421B35F1C809B8E00673C4F /* DYPQuoteImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPQuoteImpl.h; sourceTree = "<group>"; };
+		4421B3601C809B8E00673C4F /* DYPQuoteImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPQuoteImpl.m; sourceTree = "<group>"; };
+		4421B3631C809BB100673C4F /* DYPQuote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPQuote.h; sourceTree = "<group>"; };
+		4421B3661C80BE0700673C4F /* DYPLiveScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLiveScanViewController.h; sourceTree = "<group>"; };
+		4421B3671C80BE0700673C4F /* DYPLiveScanViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPLiveScanViewController.mm; sourceTree = "<group>"; };
+		4421B36A1C80BE1600673C4F /* DYPLiveScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPLiveScanViewController.xib; sourceTree = "<group>"; };
 		7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
 		C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -569,6 +583,7 @@
 				2ADBB8891C7BF8B20034B7D1 /* Info.plist */,
 				2ADBB8791C7BF8B20034B7D1 /* main.m */,
 				2A1116AE1C7C0CA200A45955 /* global.pch */,
+				4421B35D1C809A5800673C4F /* quotes.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -593,6 +608,7 @@
 				2A1116C61C7D4D1800A45955 /* Location Filter View Controller */,
 				2A1116CC1C7D4D2F00A45955 /* Period Filter View Controller */,
 				2A1116D21C7D4D9300A45955 /* Start Face Recognition View Controller */,
+				4421B3691C80BE0900673C4F /* Live Scan View Controller */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -605,6 +621,7 @@
 				2ADBB8B31C7BFB950034B7D1 /* Detector */,
 				2ADBB8B21C7BFB8D0034B7D1 /* Conversion */,
 				4421B31A1C7E448600673C4F /* Location Manager */,
+				4421B3621C809B9000673C4F /* Quote */,
 			);
 			name = "General Classes";
 			sourceTree = "<group>";
@@ -787,6 +804,7 @@
 				4421B2F21C7E2EBB00673C4F /* Filter */,
 				2ADBB9211C7C00A00034B7D1 /* Asset */,
 				4421B34A1C7F6FF300673C4F /* Location */,
+				4421B35C1C808C2900673C4F /* Filter Collection */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -1130,6 +1148,51 @@
 			name = "Location Filter";
 			sourceTree = "<group>";
 		};
+		4421B35C1C808C2900673C4F /* Filter Collection */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3591C808C2700673C4F /* DYPFilterCollection.h */,
+				4421B35A1C808C2700673C4F /* DYPFilterCollection.m */,
+			);
+			name = "Filter Collection";
+			sourceTree = "<group>";
+		};
+		4421B3621C809B9000673C4F /* Quote */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3641C809C4300673C4F /* Concrete */,
+				4421B3651C809C4700673C4F /* Abstract */,
+			);
+			name = Quote;
+			sourceTree = "<group>";
+		};
+		4421B3641C809C4300673C4F /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				4421B35F1C809B8E00673C4F /* DYPQuoteImpl.h */,
+				4421B3601C809B8E00673C4F /* DYPQuoteImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		4421B3651C809C4700673C4F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3631C809BB100673C4F /* DYPQuote.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		4421B3691C80BE0900673C4F /* Live Scan View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4421B3661C80BE0700673C4F /* DYPLiveScanViewController.h */,
+				4421B3671C80BE0700673C4F /* DYPLiveScanViewController.mm */,
+				4421B36A1C80BE1600673C4F /* DYPLiveScanViewController.xib */,
+			);
+			name = "Live Scan View Controller";
+			sourceTree = "<group>";
+		};
 		8574AE5B95E2C9B5FC61D3F2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1260,12 +1323,14 @@
 				2ADBB8F41C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 				2ADBB8EE1C7BFD550034B7D1 /* haarcascade_profileface.xml in Resources */,
 				2ADBB8F21C7BFD550034B7D1 /* haarcascade_upperbody.xml in Resources */,
+				4421B35E1C809A5800673C4F /* quotes.json in Resources */,
 				2ADBB8FF1C7BFD550034B7D1 /* haarcascade_upperbody.xml in Resources */,
 				2ADBB8FA1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */,
 				2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */,
 				2A1116B91C7D431D00A45955 /* DYPFilterCell.xib in Resources */,
 				2ADBB8F61C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */,
 				2ADBB9051C7BFD550034B7D1 /* readme.txt in Resources */,
+				4421B36B1C80BE1600673C4F /* DYPLiveScanViewController.xib in Resources */,
 				2ADBB8EB1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */,
 				2ADBB9041C7BFD550034B7D1 /* lbpcascade_silverware.xml in Resources */,
 				2A1116D11C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.xib in Resources */,
@@ -1419,7 +1484,9 @@
 				2A1116B31C7D42CB00A45955 /* UIStaticTableView.m in Sources */,
 				2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */,
 				4421B30E1C7E406100673C4F /* SHNotificationView.m in Sources */,
+				4421B35B1C808C2700673C4F /* DYPFilterCollection.m in Sources */,
 				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
+				4421B3611C809B8E00673C4F /* DYPQuoteImpl.m in Sources */,
 				4421B3511C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m in Sources */,
 				4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */,
 				4421B2F71C7E2F5A00673C4F /* DYPPeriodFilterImpl.m in Sources */,
@@ -1427,6 +1494,7 @@
 				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
 				2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */,
 				2A1116B81C7D431D00A45955 /* DYPFilterCell.m in Sources */,
+				4421B3681C80BE0700673C4F /* DYPLiveScanViewController.mm in Sources */,
 				4421B2EE1C7E2B9F00673C4F /* DYPDateCell.m in Sources */,
 				4421B32D1C7F467000673C4F /* DYPRangeCell.m in Sources */,
 				2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */,

@@ -35,10 +35,7 @@
 
 #pragma mark - actions
 -(void)datePicked:(UIDatePicker *)picker {
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateStyle:NSDateFormatterMediumStyle];
-    [self.dateTextField setText:[formatter stringFromDate:picker.date]];
-    self._date = picker.date;
+    self.date = picker.date;
 }
 
 #pragma mark - overrides
@@ -50,6 +47,15 @@
 #pragma mark - getters
 -(NSDate *)date {
     return self._date;
+}
+-(void)setDate:(NSDate *)date {
+    __date = date;
+    if (date) {
+        self.datePicker.date = date;
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateStyle:NSDateFormatterMediumStyle];
+        [self.dateTextField setText:[formatter stringFromDate:date]];
+    }
 }
 
 @end

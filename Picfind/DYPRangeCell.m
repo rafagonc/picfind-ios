@@ -23,22 +23,33 @@
 -(instancetype)init {
     self = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] firstObject];
     if (self) {
+        [self didSetRange:300];
     } return self;
 }
 
 #pragma mark - setters
 -(void)setLocationFilter:(id<DYPLocationFilter>)locationFilter {
     _locationFilter = locationFilter;
-    [self.slider setValue:(float)[locationFilter range] animated:YES];
+    if (locationFilter) {
+        [self.slider setValue:(float)[locationFilter range] animated:YES];
+        [self didSetRange:(NSInteger)[locationFilter range]];
+    } else {
+        [self didSetRange:300];
+    }
 }
 
 #pragma mark - actions
 -(IBAction)sliderChanged:(UISlider *)sender {
+    [self didSetRange:(NSInteger)sender.value];
+    [self.delegate rangeCell:self didChangeRangeSlider:(NSInteger)sender.value];
+}
+
+#pragma mark - methods
+-(void)didSetRange:(NSInteger)range {
     MKDistanceFormatter *distanceFormatter = [[MKDistanceFormatter alloc] init];
     [distanceFormatter setUnits:MKDistanceFormatterUnitsMetric];
-    NSString * distance = [distanceFormatter stringFromDistance:(CLLocationDistance)sender.value];
+    NSString * distance = [distanceFormatter stringFromDistance:(CLLocationDistance)range];
     [self.rangeLabel setText:distance];
-    [self.delegate rangeCell:self didChangeRangeSlider:(NSInteger)sender.value];
 }
 
 @end

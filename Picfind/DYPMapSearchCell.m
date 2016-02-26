@@ -33,6 +33,7 @@
 -(void)textFieldDidEndEditing:(UITextField *)textField {
     [self.activityIndicator startAnimating];
     CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    if (self.searchTextField.text.length == 0) return;
     [geocoder geocodeAddressString:self.searchTextField.text completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
         [self.activityIndicator stopAnimating];
         CLPlacemark *placemark = [placemarks firstObject];

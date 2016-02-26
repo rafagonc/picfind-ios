@@ -48,9 +48,12 @@
 -(void)setLocationFilter:(id<DYPLocationFilter>)locationFilter {
     _locationFilter = locationFilter;
     if (locationFilter) {
+        [self setRange:[_locationFilter range]];
         [self.mapView setCenterCoordinate:[locationFilter location].coordinate animated:YES];
         [self.mapView setRegion:MKCoordinateRegionMakeWithDistance([locationFilter location].coordinate, 40000, 40000)];
+        [self addAnnonForCoordinate:[locationFilter location].coordinate];
     } else {
+        [self setRange:300];
         [self.mapView setCenterCoordinate:[self.locationManager userLocation].coordinate animated:YES];
         [self.mapView setRegion:MKCoordinateRegionMakeWithDistance([self.locationManager userLocation].coordinate, 40000, 40000)];
     }
