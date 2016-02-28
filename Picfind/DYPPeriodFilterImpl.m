@@ -7,6 +7,7 @@
 //
 
 #import "DYPPeriodFilterImpl.h"
+#import "NSDate+Escort.h"
 
 @implementation DYPPeriodFilterImpl
 
@@ -20,7 +21,7 @@
 
 #pragma mark - analyze
 -(BOOL)analyze:(id<DYPAssetProtocol>)asset {
-    return NO;
+    return [self.from isEarlierThanOrEqualDate:[asset creationDate]] && [self.to isLaterThanOrEqualDate:[asset creationDate]];
 }
 
 #pragma mark - represent

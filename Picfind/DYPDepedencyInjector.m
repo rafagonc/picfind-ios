@@ -25,6 +25,8 @@
 #import "DYPLocationFilterValidator.h"
 #import "DYPQuote.h"
 #import "DYPQuoteImpl.h"
+#import "DYPAssetSearch.h"
+#import "DYPAssetSearchImpl.h"
 
 @implementation DYPDepedencyInjector
 
@@ -54,6 +56,8 @@
     
     //othres
     [[DPRegistry sharedRegistry] registerImplementation:[DYPQuoteImpl class] forProtocol:@protocol(DYPQuote) context:nil];
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPAssetSearchImpl class] forProtocol:@protocol(DYPAssetSearch) context:nil];
+
 
 
 }

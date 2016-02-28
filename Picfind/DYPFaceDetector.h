@@ -18,6 +18,6 @@
 #pragma mark - methods
 -(NSArray <NSValue *> *)detectMat:(cv::Mat)sourceVector;
 -(NSArray <NSValue *> *)detectImage:(UIImage *)image;
-
+-(NSArray <NSValue *> *)detectWithCIFeature:(UIImage *)image;
 
 @end

@@ -30,6 +30,11 @@
 		2A1116D41C7D506600A45955 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1116D31C7D506600A45955 /* MapKit.framework */; };
 		2A1116D61C7D506A00A45955 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A1116D51C7D506A00A45955 /* CoreLocation.framework */; };
 		2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116DB1C7D50B100A45955 /* DYPNavigationBarCustomizer.m */; };
+		2A1116E21C83818500A45955 /* DYPAssetSearchImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116E11C83818500A45955 /* DYPAssetSearchImpl.m */; };
+		2A1116E91C8386CD00A45955 /* DYPResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116E81C8386CD00A45955 /* DYPResultsViewController.m */; };
+		2A1116EB1C8386D800A45955 /* DYPResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116EA1C8386D800A45955 /* DYPResultsViewController.xib */; };
+		2A1116F21C8395CA00A45955 /* UIViewController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F11C8395CA00A45955 /* UIViewController+Loading.m */; };
+		2A1116F51C8395F100A45955 /* SHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F31C8395F100A45955 /* SHLoadingView.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -170,6 +175,16 @@
 		2A1116D81C7D509B00A45955 /* DYPCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCustomizer.h; sourceTree = "<group>"; };
 		2A1116DA1C7D50B100A45955 /* DYPNavigationBarCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNavigationBarCustomizer.h; sourceTree = "<group>"; };
 		2A1116DB1C7D50B100A45955 /* DYPNavigationBarCustomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPNavigationBarCustomizer.m; sourceTree = "<group>"; };
+		2A1116E01C83818500A45955 /* DYPAssetSearchImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetSearchImpl.h; sourceTree = "<group>"; };
+		2A1116E11C83818500A45955 /* DYPAssetSearchImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAssetSearchImpl.m; sourceTree = "<group>"; };
+		2A1116E41C8381D500A45955 /* DYPAssetSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetSearch.h; sourceTree = "<group>"; };
+		2A1116E71C8386CD00A45955 /* DYPResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPResultsViewController.h; sourceTree = "<group>"; };
+		2A1116E81C8386CD00A45955 /* DYPResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPResultsViewController.m; sourceTree = "<group>"; };
+		2A1116EA1C8386D800A45955 /* DYPResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPResultsViewController.xib; sourceTree = "<group>"; };
+		2A1116F01C8395CA00A45955 /* UIViewController+Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Loading.h"; sourceTree = "<group>"; };
+		2A1116F11C8395CA00A45955 /* UIViewController+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Loading.m"; sourceTree = "<group>"; };
+		2A1116F31C8395F100A45955 /* SHLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLoadingView.m; sourceTree = "<group>"; };
+		2A1116F41C8395F100A45955 /* SHLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLoadingView.h; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -532,6 +547,51 @@
 			name = "Navigation Bar";
 			sourceTree = "<group>";
 		};
+		2A1116E31C83818800A45955 /* Asset Search */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116E51C8381D800A45955 /* Abstract */,
+				2A1116E61C8381DD00A45955 /* Concrete */,
+			);
+			name = "Asset Search";
+			sourceTree = "<group>";
+		};
+		2A1116E51C8381D800A45955 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116E41C8381D500A45955 /* DYPAssetSearch.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A1116E61C8381DD00A45955 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116E01C83818500A45955 /* DYPAssetSearchImpl.h */,
+				2A1116E11C83818500A45955 /* DYPAssetSearchImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A1116EC1C83878400A45955 /* Results View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116E71C8386CD00A45955 /* DYPResultsViewController.h */,
+				2A1116E81C8386CD00A45955 /* DYPResultsViewController.m */,
+				2A1116EA1C8386D800A45955 /* DYPResultsViewController.xib */,
+			);
+			name = "Results View Controller";
+			sourceTree = "<group>";
+		};
+		2A1116F61C8395F700A45955 /* Loading View */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116F31C8395F100A45955 /* SHLoadingView.m */,
+				2A1116F41C8395F100A45955 /* SHLoadingView.h */,
+			);
+			name = "Loading View";
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +669,7 @@
 				2A1116CC1C7D4D2F00A45955 /* Period Filter View Controller */,
 				2A1116D21C7D4D9300A45955 /* Start Face Recognition View Controller */,
 				4421B3691C80BE0900673C4F /* Live Scan View Controller */,
+				2A1116EC1C83878400A45955 /* Results View Controller */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -652,6 +713,7 @@
 		2ADBB8A11C7BFAF70034B7D1 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				2A1116F61C8395F700A45955 /* Loading View */,
 				4421B3101C7E406300673C4F /* Notification View */,
 				2A1116B41C7D42CE00A45955 /* UIStaticTableView */,
 			);
@@ -665,8 +727,8 @@
 				2ADBB8AA1C7BFB6E0034B7D1 /* DYPMatImageConverter.mm */,
 				2ADBB8AB1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.h */,
 				2ADBB8AC1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm */,
-				2ADBB8A81C7BFB6E0034B7D1 /* DYPImageMatConverter.mm */,
 				2ADBB8A91C7BFB6E0034B7D1 /* DYPMatImageConverter.h */,
+				2ADBB8A81C7BFB6E0034B7D1 /* DYPImageMatConverter.mm */,
 			);
 			name = Conversion;
 			sourceTree = "<group>";
@@ -805,6 +867,7 @@
 				2ADBB9211C7C00A00034B7D1 /* Asset */,
 				4421B34A1C7F6FF300673C4F /* Location */,
 				4421B35C1C808C2900673C4F /* Filter Collection */,
+				2A1116E31C83818800A45955 /* Asset Search */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -963,6 +1026,8 @@
 		4421B30A1C7E404600673C4F /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2A1116F01C8395CA00A45955 /* UIViewController+Loading.h */,
+				2A1116F11C8395CA00A45955 /* UIViewController+Loading.m */,
 				4421B3071C7E404300673C4F /* UIViewController+NotificationShow.h */,
 				4421B3081C7E404300673C4F /* UIViewController+NotificationShow.m */,
 			);
@@ -1331,6 +1396,7 @@
 				2ADBB8F61C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */,
 				2ADBB9051C7BFD550034B7D1 /* readme.txt in Resources */,
 				4421B36B1C80BE1600673C4F /* DYPLiveScanViewController.xib in Resources */,
+				2A1116EB1C8386D800A45955 /* DYPResultsViewController.xib in Resources */,
 				2ADBB8EB1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */,
 				2ADBB9041C7BFD550034B7D1 /* lbpcascade_silverware.xml in Resources */,
 				2A1116D11C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.xib in Resources */,
@@ -1459,6 +1525,7 @@
 				4421B3211C7F464100673C4F /* DYPMapCell.m in Sources */,
 				2A1116CA1C7D4D2A00A45955 /* DYPPeriodFilterViewController.m in Sources */,
 				4421B3331C7F468000673C4F /* DYPMapSearchCell.m in Sources */,
+				2A1116F21C8395CA00A45955 /* UIViewController+Loading.m in Sources */,
 				2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */,
 				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
@@ -1469,15 +1536,18 @@
 				2A1116C41C7D4D1600A45955 /* DYPLocationFilterViewController.m in Sources */,
 				2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */,
 				2A1116BE1C7D47AA00A45955 /* DYPPhotoCollectionCell.m in Sources */,
+				2A1116E91C8386CD00A45955 /* DYPResultsViewController.m in Sources */,
 				4421B31D1C7E475500673C4F /* MKMapView+Zoom.m in Sources */,
 				2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */,
 				4421B3051C7E3D2200673C4F /* DYPPeriodFilterValidator.m in Sources */,
 				4421B2FC1C7E2F6900673C4F /* DYPLocationFilterImpl.m in Sources */,
 				4421B3571C7F91DC00673C4F /* DYPLocationFilterValidator.m in Sources */,
+				2A1116F51C8395F100A45955 /* SHLoadingView.m in Sources */,
 				4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */,
 				2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */,
 				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
 				2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */,
+				2A1116E21C83818500A45955 /* DYPAssetSearchImpl.m in Sources */,
 				2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */,
 				2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */,
 				2A1116A21C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m in Sources */,

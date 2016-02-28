@@ -8,7 +8,6 @@
 
 #import "DYPAssetDatasource.h"
 #import "DYPAssetCell.h"
-#import "RFQuiltLayout.h"
 #import "DYPAssetDatasourceDelegate.h"
 
 @interface DYPAssetDatasource ()

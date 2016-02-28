@@ -55,8 +55,19 @@ using namespace cv;
     }
     return rects;
 }
+-(NSArray <NSValue *> *)detectWithCIFeature:(UIImage *)image {
+    CIContext *context = [CIContext contextWithOptions:@{}];
+    CIDetector *ciDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:context options:@{}];
+    NSArray *features = [ciDetector featuresInImage:image.CIImage];
+    NSMutableArray <NSValue *> *rects = [@[] mutableCopy];
+    for (CIFeature *feature in features) {
+        [rects addObject:[NSValue valueWithCGRect:feature.bounds]];
+    }
+    return rects;
+}
+
 -(void)load {
-    NSString *faceCascadePath = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
+    NSString *faceCascadePath = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_default" ofType:@"xml"];
     const CFIndex CASCANDE_NAME_LEN = 2048;
     char * CASCADE_NAME = (char *)malloc(CASCANDE_NAME_LEN);
     CFStringGetFileSystemRepresentation((CFStringRef)faceCascadePath, CASCADE_NAME, CASCANDE_NAME_LEN);

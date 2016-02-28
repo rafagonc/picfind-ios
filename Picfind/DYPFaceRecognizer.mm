@@ -8,7 +8,7 @@
 
 #import "DYPFaceRecognizer.h"
 #import <opencv2/core/core.hpp>
-#import <opencv2/contrib/contrib.hpp>
+//#import <opencv2/contrib/contrib.hpp>
 #import <opencv2/highgui/highgui.hpp>
 #import "DYPImageMatConverter.h"
 #import "DYPNumberArrayVectorConverter.h"

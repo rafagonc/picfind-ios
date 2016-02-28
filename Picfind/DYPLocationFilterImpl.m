@@ -20,7 +20,9 @@
 
 #pragma mark - filter
 -(BOOL)analyze:(id<DYPAssetProtocol>)asset {
-    return NO;
+    if ([asset location] == nil) return NO;
+    CGFloat distanceFromPointToAsset = [[self location] distanceFromLocation:[asset location]];
+    return self.range >= distanceFromPointToAsset;
 }
 
 #pragma mark - explain

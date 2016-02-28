@@ -14,17 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LLARingSpinnerView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NSDate-Escort.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Picfind.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-PicfindTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>RFQuiltLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>367056F909002D94DF1B2BEBC0A94609</key>
+		<key>56C88F63B278DCDA3A2D605B7267045C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE6CDC15BA4F2C226D7E6EB41CF423D6</key>
+		<key>B01165957F6776098D23847D32BABA74</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>B24E0E02E9746BC60C12F9F7395259A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7D65D34D9350085E1B8CC62F36E0F44</key>
 		<dict>
 			<key>primary</key>
 			<true/>

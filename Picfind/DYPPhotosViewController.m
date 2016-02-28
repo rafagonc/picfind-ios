@@ -11,7 +11,6 @@
 #import "DYPAssetCell.h"
 #import "DYPCollectionViewDatasourceProtocol.h"
 #import "UISearchBar+Toolbar.h"
-#import "RFQuiltLayout.h"
 #import "DYPAssetDatasourceDelegate.h"
 #import "UIStaticTableView.h"
 #import "DYPFilterCell.h"
@@ -26,8 +25,9 @@
 #import "DYPLocationFilter.h"
 #import "DYPPeriodFilter.h"
 #import "DYPFilterCollection.h"
+#import "DYPResultsViewController.h"
 
-@interface DYPPhotosViewController () <UICollectionViewDelegate, UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate, DYPFilterCellDelegate>
+@interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate, DYPFilterCellDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
@@ -67,6 +67,9 @@
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.translucent = NO;
     [self.navigationBarCustomizer customize:self.navigationController.navigationBar];
+    
+    UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithTitle:@"Search" style:UIBarButtonItemStylePlain target:self action:@selector(searchAction:)];
+    [self.navigationItem setRightBarButtonItem:searchButton];
 }
 
 #pragma mark - setup
@@ -143,6 +146,12 @@
 }
 -(void)filterCell:(DYPFilterCell *)cell didDeleteFilter:(id<DYPFilter>)filter {
     [self.appliedFilters removeFilter:filter];
+}
+
+#pragma mark - actions
+-(IBAction)searchAction:(id)sender {
+    DYPResultsViewController *results = [[DYPResultsViewController alloc] initWithCollection:self.appliedFilters];
+    [self.navigationController pushViewController:results animated:YES];
 }
 
 #pragma mark - dealloc
