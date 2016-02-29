@@ -19,13 +19,14 @@
 #import "DYPPhotoCollectionCell.h"
 #import "DYPLocationFilterViewController.h"
 #import "DYPPeriodFilterViewController.h"
-#import "DYPStartFaceRecognitionViewController.h"
+#import "DYPLiveScanViewController.h"
 #import "DYPCustomizer.h"
 #import "DYPFilterCreatorDelegate.h"
 #import "DYPLocationFilter.h"
 #import "DYPPeriodFilter.h"
 #import "DYPFilterCollection.h"
 #import "DYPResultsViewController.h"
+#import "DYPFaceRecognizerFilter.h"
 
 @interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate, DYPFilterCellDelegate>
 
@@ -33,6 +34,7 @@
 @property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
 @property (weak, nonatomic) DYPFilterCell *periodCell;
 @property (weak, nonatomic) DYPFilterCell *locationCell;
+@property (weak, nonatomic) DYPFilterCell *faceRecognizerCell;
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
@@ -93,6 +95,7 @@
     [faceFilter setDelegate:self];
     [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
     [self.tableView addCell:faceFilter onSection:section];
+    [self setFaceRecognizerCell:faceFilter];
     
     UIStaticTableViewSection *recentsSection = [[UIStaticTableViewSection alloc] init];
     [recentsSection setHeaderName:@"Recents"];
@@ -128,8 +131,9 @@
     [self.navigationController pushViewController:location animated:YES];
 }
 -(void)faceFilterWasSelected:(DYPFilterCell *)cell {
-    DYPStartFaceRecognitionViewController *start = [[DYPStartFaceRecognitionViewController alloc] init];
-    [self.navigationController pushViewController:start animated:YES];
+    DYPLiveScanViewController *liveScan = [[DYPLiveScanViewController alloc] init];
+    [liveScan setDelegate:self];
+    [self.navigationController pushViewController:liveScan animated:YES];
 }
 
 #pragma mark - delegates
@@ -142,6 +146,8 @@
         [self.locationCell setFilter:filter];
     } else if ([filter conformsToProtocol:@protocol(DYPPeriodFilter)]) {
         [self.periodCell setFilter:filter];
+    } else if ([filter conformsToProtocol:@protocol(DYPFaceRecognizerFilter)]) {
+        [self.faceRecognizerCell setFilter:filter];
     }
 }
 -(void)filterCell:(DYPFilterCell *)cell didDeleteFilter:(id<DYPFilter>)filter {

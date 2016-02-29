@@ -19,11 +19,12 @@
 }
 
 #pragma mark - filter
--(BOOL)analyze:(id<DYPAssetProtocol>)asset {
-    if ([asset location] == nil) return NO;
+-(void)analyze:(id<DYPAssetProtocol>)asset isElegible:(void (^)())isElegibleCallback {
+    if ([asset location] == nil) return;
     CGFloat distanceFromPointToAsset = [[self location] distanceFromLocation:[asset location]];
-    return self.range >= distanceFromPointToAsset;
+    if (self.range >= distanceFromPointToAsset) isElegibleCallback();
 }
+
 
 #pragma mark - explain
 -(NSString *)explain {

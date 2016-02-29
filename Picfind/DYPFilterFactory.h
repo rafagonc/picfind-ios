@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DYPFilter.h"
+#import "DYPPeriodFilter.h"
+#import "DYPLocationFilter.h"
+#import "DYPFaceRecognizerFilter.h"
 
 @protocol DYPFilterFactory <NSObject>
 
--(id<DYPFilter>)periodFilterFrom:(NSDate *)startDate to:(NSDate *)endDate;
--(id<DYPFilter>)locationFilterWith:(CLLocation *)location range:(NSInteger)range;
+-(id<DYPPeriodFilter>)periodFilterFrom:(NSDate *)startDate to:(NSDate *)endDate;
+-(id<DYPLocationFilter>)locationFilterWith:(CLLocation *)location range:(NSInteger)range;
+-(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images;
 
 @end

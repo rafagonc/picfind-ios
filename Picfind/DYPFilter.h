@@ -12,7 +12,7 @@
 @protocol DYPFilter <NSObject>
 
 #pragma mark - photo analysis
--(BOOL)analyze:(id<DYPAssetProtocol>)asset;
+-(void)analyze:(id<DYPAssetProtocol>)asset isElegible:(void(^)())isElegible;
 
 #pragma mark - representation
 -(NSString *)explain;

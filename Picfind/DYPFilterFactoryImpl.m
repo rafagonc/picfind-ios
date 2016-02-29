@@ -9,15 +9,21 @@
 #import "DYPFilterFactoryImpl.h"
 #import "DYPLocationFilterImpl.h"
 #import "DYPPeriodFilterImpl.h"
+#import "DYPFaceRecognizerFilterImpl.h"
 
 @implementation DYPFilterFactoryImpl
 
 #pragma mark - creation
--(id<DYPFilter>)locationFilterWith:(CLLocation *)location range:(NSInteger)range {
+-(id<DYPLocationFilter>)locationFilterWith:(CLLocation *)location range:(NSInteger)range {
     return [[DYPLocationFilterImpl alloc] initWithLocation:location andRange:range];
 }
--(id<DYPFilter>)periodFilterFrom:(NSDate *)startDate to:(NSDate *)endDate {
+-(id<DYPPeriodFilter>)periodFilterFrom:(NSDate *)startDate to:(NSDate *)endDate {
     return [[DYPPeriodFilterImpl alloc] initWithFirstDate:startDate andLastDate:endDate];
+}
+-(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images {
+    DYPFaceRecognizerFilterImpl *fr = [[DYPFaceRecognizerFilterImpl alloc] init];
+    [fr setPredictable:images];
+    return fr;
 }
 
 @end

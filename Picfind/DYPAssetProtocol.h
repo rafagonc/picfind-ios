@@ -6,8 +6,8 @@
 //  Copyright © 2016 Rafael Gonzalves. All rights reserved.
 //
 
-@import UIKit;
-@import CoreLocation;
+#import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @protocol DYPAssetProtocol <NSObject>
 

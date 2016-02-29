@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DYPFilterCreatorDelegate.h"
 
 @interface DYPLiveScanViewController : UIViewController
+
+#pragma mark - properties
+@property (nonatomic,weak) id<DYPFilterCreatorDelegate> delegate;
 
 @end

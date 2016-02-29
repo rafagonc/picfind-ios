@@ -20,8 +20,8 @@
 }
 
 #pragma mark - analyze
--(BOOL)analyze:(id<DYPAssetProtocol>)asset {
-    return [self.from isEarlierThanOrEqualDate:[asset creationDate]] && [self.to isLaterThanOrEqualDate:[asset creationDate]];
+-(void)analyze:(id<DYPAssetProtocol>)asset isElegible:(void (^)())isElegible {
+    if ([self.from isEarlierThanOrEqualDate:[asset creationDate]] && [self.to isLaterThanOrEqualDate:[asset creationDate]]) isElegible();
 }
 
 #pragma mark - represent

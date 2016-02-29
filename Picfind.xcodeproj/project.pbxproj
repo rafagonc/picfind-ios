@@ -35,6 +35,7 @@
 		2A1116EB1C8386D800A45955 /* DYPResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116EA1C8386D800A45955 /* DYPResultsViewController.xib */; };
 		2A1116F21C8395CA00A45955 /* UIViewController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F11C8395CA00A45955 /* UIViewController+Loading.m */; };
 		2A1116F51C8395F100A45955 /* SHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F31C8395F100A45955 /* SHLoadingView.m */; };
+		2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -185,6 +186,9 @@
 		2A1116F11C8395CA00A45955 /* UIViewController+Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Loading.m"; sourceTree = "<group>"; };
 		2A1116F31C8395F100A45955 /* SHLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLoadingView.m; sourceTree = "<group>"; };
 		2A1116F41C8395F100A45955 /* SHLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLoadingView.h; sourceTree = "<group>"; };
+		2A1116F71C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceRecognizerFilterImpl.h; sourceTree = "<group>"; };
+		2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPFaceRecognizerFilterImpl.m; sourceTree = "<group>"; };
+		2A1116FA1C83C7BD00A45955 /* DYPFaceRecognizerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceRecognizerFilter.h; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -592,6 +596,32 @@
 			name = "Loading View";
 			sourceTree = "<group>";
 		};
+		2A1116FB1C83C81C00A45955 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116FA1C83C7BD00A45955 /* DYPFaceRecognizerFilter.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A1116FC1C83C82100A45955 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116F71C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.h */,
+				2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A1116FD1C83C82500A45955 /* Face Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				2A1116FC1C83C82100A45955 /* Concrete */,
+				2A1116FB1C83C81C00A45955 /* Abstract */,
+			);
+			name = "Face Recognition";
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -975,6 +1005,7 @@
 			children = (
 				4421B2F81C7E2F5C00673C4F /* Period */,
 				4421B2FD1C7E2F6E00673C4F /* Location */,
+				2A1116FD1C83C82500A45955 /* Face Recognition */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -1558,6 +1589,7 @@
 				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
 				4421B3611C809B8E00673C4F /* DYPQuoteImpl.m in Sources */,
 				4421B3511C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m in Sources */,
+				2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m in Sources */,
 				4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */,
 				4421B2F71C7E2F5A00673C4F /* DYPPeriodFilterImpl.m in Sources */,
 				2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */,

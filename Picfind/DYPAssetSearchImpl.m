@@ -25,13 +25,10 @@
         NSMutableArray *assets = [[NSMutableArray alloc] init];
         [result enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             id<DYPAssetProtocol> asset = (id<DYPAssetProtocol>)obj;
-            BOOL isEligible = YES;;
-            for (id<DYPFilter> filter in collection) {
-                if ([filter analyze:asset] == NO) {
-                    isEligible = NO;
-                }
-            }
-            if (isEligible) [assets addObject:asset];
+            for (id<DYPFilter> filter in collection)
+                [filter analyze:asset isElegible:^{
+                    [assets addObject:asset];
+                }];
         }];
         dispatch_sync(dispatch_get_main_queue(), ^{
             callback(assets);
