@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYPLiveScanViewController">
             <connections>
+                <outlet property="imageView" destination="bvx-pY-X4E" id="ZZf-sS-Cfg"/>
                 <outlet property="view" destination="iN0-l3-epB" id="TNT-1O-KkV"/>
             </connections>
         </placeholder>
@@ -14,7 +15,20 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="64" width="320" height="504"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvx-pY-X4E">
+                    <rect key="frame" x="40" y="332" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="MQx-Bx-rPp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bvx-pY-X4E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="NKU-dm-2tw"/>
+                <constraint firstAttribute="bottom" secondItem="bvx-pY-X4E" secondAttribute="bottom" constant="44" id="ccJ-VL-DjI"/>
+                <constraint firstItem="bvx-pY-X4E" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ylE-UA-ZAp"/>
+            </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>

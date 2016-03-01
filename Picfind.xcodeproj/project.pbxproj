@@ -35,7 +35,9 @@
 		2A1116EB1C8386D800A45955 /* DYPResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1116EA1C8386D800A45955 /* DYPResultsViewController.xib */; };
 		2A1116F21C8395CA00A45955 /* UIViewController+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F11C8395CA00A45955 /* UIViewController+Loading.m */; };
 		2A1116F51C8395F100A45955 /* SHLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F31C8395F100A45955 /* SHLoadingView.m */; };
-		2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m */; };
+		2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm */; };
+		2A46890D1C85388400BD2D3A /* DYPFaceCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A46890C1C85388400BD2D3A /* DYPFaceCropper.m */; };
+		2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4689101C853E6500BD2D3A /* UIImage+Crop.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -187,8 +189,12 @@
 		2A1116F31C8395F100A45955 /* SHLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLoadingView.m; sourceTree = "<group>"; };
 		2A1116F41C8395F100A45955 /* SHLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLoadingView.h; sourceTree = "<group>"; };
 		2A1116F71C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceRecognizerFilterImpl.h; sourceTree = "<group>"; };
-		2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPFaceRecognizerFilterImpl.m; sourceTree = "<group>"; };
+		2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPFaceRecognizerFilterImpl.mm; sourceTree = "<group>"; };
 		2A1116FA1C83C7BD00A45955 /* DYPFaceRecognizerFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceRecognizerFilter.h; sourceTree = "<group>"; };
+		2A46890B1C85388400BD2D3A /* DYPFaceCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceCropper.h; sourceTree = "<group>"; };
+		2A46890C1C85388400BD2D3A /* DYPFaceCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPFaceCropper.m; sourceTree = "<group>"; };
+		2A46890F1C853E6500BD2D3A /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
+		2A4689101C853E6500BD2D3A /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -608,7 +614,7 @@
 			isa = PBXGroup;
 			children = (
 				2A1116F71C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.h */,
-				2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m */,
+				2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -620,6 +626,24 @@
 				2A1116FB1C83C81C00A45955 /* Abstract */,
 			);
 			name = "Face Recognition";
+			sourceTree = "<group>";
+		};
+		2A46890E1C853B3600BD2D3A /* Cropper */ = {
+			isa = PBXGroup;
+			children = (
+				2A46890B1C85388400BD2D3A /* DYPFaceCropper.h */,
+				2A46890C1C85388400BD2D3A /* DYPFaceCropper.m */,
+			);
+			name = Cropper;
+			sourceTree = "<group>";
+		};
+		2A4689121C853E7900BD2D3A /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				2A4689101C853E6500BD2D3A /* UIImage+Crop.m */,
+				2A46890F1C853E6500BD2D3A /* UIImage+Crop.h */,
+			);
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 		2ADBB86C1C7BF8B20034B7D1 = {
@@ -713,6 +737,7 @@
 				2ADBB8B21C7BFB8D0034B7D1 /* Conversion */,
 				4421B31A1C7E448600673C4F /* Location Manager */,
 				4421B3621C809B9000673C4F /* Quote */,
+				2A46890E1C853B3600BD2D3A /* Cropper */,
 			);
 			name = "General Classes";
 			sourceTree = "<group>";
@@ -886,6 +911,7 @@
 				2A1116A81C7C08F000A45955 /* UIColor */,
 				2A1116AC1C7C090000A45955 /* UIFont */,
 				4421B31E1C7E477E00673C4F /* MKMapView */,
+				2A4689121C853E7900BD2D3A /* UIImage */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -1563,6 +1589,7 @@
 				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
 				2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */,
 				4421B3171C7E447C00673C4F /* DYPLocationManagerImpl.m in Sources */,
+				2A46890D1C85388400BD2D3A /* DYPFaceCropper.m in Sources */,
 				4421B3401C7F60B500673C4F /* DYPFilterFactoryImpl.m in Sources */,
 				2A1116C41C7D4D1600A45955 /* DYPLocationFilterViewController.m in Sources */,
 				2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */,
@@ -1579,6 +1606,7 @@
 				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
 				2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */,
 				2A1116E21C83818500A45955 /* DYPAssetSearchImpl.m in Sources */,
+				2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */,
 				2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */,
 				2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */,
 				2A1116A21C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m in Sources */,
@@ -1589,7 +1617,7 @@
 				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
 				4421B3611C809B8E00673C4F /* DYPQuoteImpl.m in Sources */,
 				4421B3511C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m in Sources */,
-				2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.m in Sources */,
+				2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm in Sources */,
 				4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */,
 				4421B2F71C7E2F5A00673C4F /* DYPPeriodFilterImpl.m in Sources */,
 				2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */,
@@ -1726,6 +1754,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Gonzalves (A7R335TQR4)";
+				GCC_PREFIX_HEADER = Picfind/global.pch;
 				INFOPLIST_FILE = Picfind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;
@@ -1741,6 +1770,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rafael Gonzalves (A7R335TQR4)";
+				GCC_PREFIX_HEADER = Picfind/global.pch;
 				INFOPLIST_FILE = Picfind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafagonc.Picfind;

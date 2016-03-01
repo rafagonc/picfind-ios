@@ -20,9 +20,9 @@
 -(id<DYPPeriodFilter>)periodFilterFrom:(NSDate *)startDate to:(NSDate *)endDate {
     return [[DYPPeriodFilterImpl alloc] initWithFirstDate:startDate andLastDate:endDate];
 }
--(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images {
+-(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images andRects:(NSArray *)rects {
     DYPFaceRecognizerFilterImpl *fr = [[DYPFaceRecognizerFilterImpl alloc] init];
-    [fr setPredictable:images];
+    [fr setPredictable:images andRects:rects];
     return fr;
 }
 

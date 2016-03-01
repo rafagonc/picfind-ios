@@ -12,6 +12,7 @@
 #import <opencv2/highgui/highgui.hpp>
 #import "DYPImageMatConverter.h"
 #import "DYPNumberArrayVectorConverter.h"
+#import "DYPFaceCropper.h"
 
 using namespace cv;
 using namespace std;
@@ -32,8 +33,13 @@ using namespace std;
 }
 
 #pragma mark - training
--(void)train:(NSArray<UIImage *> *)images andLabels:(NSArray<NSNumber *> *)labels {
-    vector<Mat> images_converted = [DYPImageMatConverter matVectorFromImageArray:images];
+-(void)train:(NSArray<UIImage *> *)images andRects:(NSArray <NSValue *> *)rects andLabels:(NSArray<NSNumber *> *)labels {
+    NSMutableArray *croppedFaceImages = [@[] mutableCopy];
+    [images enumerateObjectsUsingBlock:^(UIImage * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        DYPFaceCropper *cropper = [[DYPFaceCropper alloc] initWithImage:obj andFaceRect:[rects[idx] CGRectValue]];
+        [croppedFaceImages addObject:[cropper face]];
+    }];
+    vector<Mat> images_converted = [DYPImageMatConverter matVectorFromImageArray:croppedFaceImages];
     vector<int> labels_converted = [DYPNumberArrayVectorConverter int_vectorFromNumberArray:labels];
     fr->train(images_converted, labels_converted);
 }

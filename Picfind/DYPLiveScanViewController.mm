@@ -16,6 +16,7 @@
 #import "DYPImageMatConverter.h"
 #import "DYPFaceRecognizerFilter.h"
 #import "DYPFilterFactory.h"
+#import "DYPFaceCropper.h"
 
 @interface DYPLiveScanViewController () <AVCaptureVideoDataOutputSampleBufferDelegate> {
     UIImage * current;
@@ -31,6 +32,8 @@
 
 #pragma mark - ui
 @property (nonatomic,strong) NSMutableArray * images;
+@property (nonatomic,strong) NSMutableArray * rects;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 #pragma mark - injceted
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
@@ -44,6 +47,7 @@
     if (self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil]) {
         queue = dispatch_queue_create("com.rafagonc.face.detection", DISPATCH_QUEUE_SERIAL);
         self.images = [[NSMutableArray alloc] init];
+        self.rects = [[NSMutableArray alloc] init];
     } return self;
 }
 
@@ -110,18 +114,23 @@
 -(void)runFaceDetection {
     @synchronized(current) {
         NSArray *faces = [self.faceDetector detectWithCIFeature:current];
-        if (faces.count == 1) [self.images addObject:current];
-        if (self.images.count == 10) {
-            [session stopRunning];
-            [self.delegate source:self didCreateFilter:[self faceRecognizerFilterWithImages:[self.images copy]]];
-            [self.navigationController popToRootViewControllerAnimated:YES];
-        }
+        if (faces.count == 1) {
+            [self.rects addObject:faces[0]];
+            DYPFaceCropper *faceCropper = [[DYPFaceCropper alloc] initWithImage:current andFaceRect:[faces[0] CGRectValue]];
+            self.imageView.image = [faceCropper face];
+            [self.images addObject:current];
+//        if (self.images.count == 10) {
+//            [session stopRunning];
+//            [self.delegate source:self didCreateFilter:[self.filterFactory faceRecognizerFilterWithImages:self.images andRects:self.rects]];
+//            [self.navigationController popToRootViewControllerAnimated:YES];
+//        }
+    }
     }
 }
 
 #pragma mark - creating
--(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray <UIImage *> *)images {
-    return [self.filterFactory faceRecognizerFilterWithImages:images];
+-(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray <UIImage *> *)images andRects:(NSArray *)rects {
+    return [self.filterFactory faceRecognizerFilterWithImages:images andRects:rects];
 }
 
 #pragma mark - dealloc

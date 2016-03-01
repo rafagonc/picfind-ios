@@ -8,6 +8,7 @@
 
 #import "DYPFaceRecognizerFilterImpl.h"
 #import "DYPFaceRecognizer.h"
+#import "DYPFaceDetector.h"
 
 @interface DYPFaceRecognizerFilterImpl ()
 
@@ -18,20 +19,22 @@
 @implementation DYPFaceRecognizerFilterImpl
 
 #pragma mark - setters
--(void)setPredictable:(NSArray *)images {
+-(void)setPredictable:(NSArray *)images andRects:(NSArray *)rects {
     _faceRecognizer = [[DYPFaceRecognizer alloc] init];
     NSMutableArray *labels = [@[] mutableCopy];
     for (int i = 0; i < images.count; i++) [labels addObject:@1];
-    [_faceRecognizer train:images andLabels:labels];
+    [_faceRecognizer train:images andRects:rects andLabels:labels];
 }
 
 #pragma mark - filter
 -(void)analyze:(id<DYPAssetProtocol>)asset isElegible:(void (^)())isElegible {
-    [asset fetchImage:^(UIImage *image, NSDictionary *data) {
-        if ([_faceRecognizer predict:image] > 0) {
-            isElegible();
-        }
-    }];
+    @autoreleasepool {
+        [asset fetchImage:^(UIImage *image, NSDictionary *data) {
+            if ([_faceRecognizer predict:image] > 0) {
+                isElegible();
+            }
+        }];
+    }
 }
 
 -(NSString *)explain {

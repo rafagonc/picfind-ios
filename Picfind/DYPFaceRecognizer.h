@@ -15,7 +15,7 @@
 -(instancetype)init;
 
 #pragma mark - methods
--(void)train:(NSArray < UIImage * > *)images andLabels:(NSArray <NSNumber *> *)labels;
+-(void)train:(NSArray<UIImage *> *)images andRects:(NSArray <NSValue *> *)rects andLabels:(NSArray<NSNumber *> *)labels ;
 
 #pragma mark - predict
 -(int)predict:(UIImage *)image;

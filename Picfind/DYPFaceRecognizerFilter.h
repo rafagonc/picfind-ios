@@ -10,6 +10,6 @@
 
 @protocol DYPFaceRecognizerFilter <DYPFilter>
 
--(void)setPredictable:(NSArray *)images;
+-(void)setPredictable:(NSArray *)images andRects:(NSArray *)rects;
 
 @end

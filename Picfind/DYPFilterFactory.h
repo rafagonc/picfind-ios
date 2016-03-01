@@ -15,6 +15,6 @@
 
 -(id<DYPPeriodFilter>)periodFilterFrom:(NSDate *)startDate to:(NSDate *)endDate;
 -(id<DYPLocationFilter>)locationFilterWith:(CLLocation *)location range:(NSInteger)range;
--(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images;
+-(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images andRects:(NSArray *)rects;
 
 @end
