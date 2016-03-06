@@ -8,12 +8,15 @@
 
 #import "DYPNavigationBarCustomizer.h"
 #import "UIColor+DYP.h"
+#import "UIFont+DYP.h"
 
 @implementation DYPNavigationBarCustomizer
 
 -(void)customize:(UIView *)view {
     UINavigationBar *bar = (UINavigationBar *)view;
     bar.tintColor = [UIColor dyp_redColor];
+    
+    [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont avenirNextBoldWithSize:19.0f]}];
 }
 
 @end

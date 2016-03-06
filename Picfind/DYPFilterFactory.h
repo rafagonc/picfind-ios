@@ -10,11 +10,13 @@
 #import "DYPPeriodFilter.h"
 #import "DYPLocationFilter.h"
 #import "DYPFaceRecognizerFilter.h"
+#import "DYPNameFilter.h"
 
 @protocol DYPFilterFactory <NSObject>
 
 -(id<DYPPeriodFilter>)periodFilterFrom:(NSDate *)startDate to:(NSDate *)endDate;
 -(id<DYPLocationFilter>)locationFilterWith:(CLLocation *)location range:(NSInteger)range;
 -(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images andRects:(NSArray *)rects;
+-(id<DYPNameFilter>)nameFilterForName:(NSString *)name;
 
 @end

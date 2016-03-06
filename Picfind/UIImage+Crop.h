@@ -11,5 +11,6 @@
 @interface UIImage (Crop)
 
 -(UIImage *)crop:(CGRect)rect;
+-(UIImage *)resize:(CGSize)newSize;
 
 @end

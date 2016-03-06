@@ -13,6 +13,6 @@
 
 static NSString *const DYPErrorDomain = @"DYPErrorDomain";
 
-#define kCGRectFaceSize = CGSizeMake(100,100)
+#define kCGRectFaceSize CGSizeMake(150,150)
 
 #endif /* global_pch */

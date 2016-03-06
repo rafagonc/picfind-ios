@@ -38,6 +38,7 @@
 		2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A1116F81C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm */; };
 		2A46890D1C85388400BD2D3A /* DYPFaceCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A46890C1C85388400BD2D3A /* DYPFaceCropper.m */; };
 		2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4689101C853E6500BD2D3A /* UIImage+Crop.m */; };
+		2A4F81871C8BCB70004FE9DA /* DYPNameFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F81861C8BCB70004FE9DA /* DYPNameFilterImpl.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -195,6 +196,9 @@
 		2A46890C1C85388400BD2D3A /* DYPFaceCropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPFaceCropper.m; sourceTree = "<group>"; };
 		2A46890F1C853E6500BD2D3A /* UIImage+Crop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Crop.h"; sourceTree = "<group>"; };
 		2A4689101C853E6500BD2D3A /* UIImage+Crop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Crop.m"; sourceTree = "<group>"; };
+		2A4F81851C8BCB70004FE9DA /* DYPNameFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNameFilterImpl.h; sourceTree = "<group>"; };
+		2A4F81861C8BCB70004FE9DA /* DYPNameFilterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPNameFilterImpl.m; sourceTree = "<group>"; };
+		2A4F81891C8BCB86004FE9DA /* DYPNameFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNameFilter.h; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -619,13 +623,13 @@
 			name = Concrete;
 			sourceTree = "<group>";
 		};
-		2A1116FD1C83C82500A45955 /* Face Recognition */ = {
+		2A1116FD1C83C82500A45955 /* Face */ = {
 			isa = PBXGroup;
 			children = (
 				2A1116FC1C83C82100A45955 /* Concrete */,
 				2A1116FB1C83C81C00A45955 /* Abstract */,
 			);
-			name = "Face Recognition";
+			name = Face;
 			sourceTree = "<group>";
 		};
 		2A46890E1C853B3600BD2D3A /* Cropper */ = {
@@ -644,6 +648,32 @@
 				2A46890F1C853E6500BD2D3A /* UIImage+Crop.h */,
 			);
 			name = UIImage;
+			sourceTree = "<group>";
+		};
+		2A4F81881C8BCB72004FE9DA /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F81851C8BCB70004FE9DA /* DYPNameFilterImpl.h */,
+				2A4F81861C8BCB70004FE9DA /* DYPNameFilterImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A4F818A1C8BCB8A004FE9DA /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F81891C8BCB86004FE9DA /* DYPNameFilter.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A4F818B1C8BCB92004FE9DA /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F81881C8BCB72004FE9DA /* Concrete */,
+				2A4F818A1C8BCB8A004FE9DA /* Abstract */,
+			);
+			name = Name;
 			sourceTree = "<group>";
 		};
 		2ADBB86C1C7BF8B20034B7D1 = {
@@ -1031,7 +1061,8 @@
 			children = (
 				4421B2F81C7E2F5C00673C4F /* Period */,
 				4421B2FD1C7E2F6E00673C4F /* Location */,
-				2A1116FD1C83C82500A45955 /* Face Recognition */,
+				2A1116FD1C83C82500A45955 /* Face */,
+				2A4F818B1C8BCB92004FE9DA /* Name */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -1604,6 +1635,7 @@
 				4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */,
 				2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */,
 				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
+				2A4F81871C8BCB70004FE9DA /* DYPNameFilterImpl.m in Sources */,
 				2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */,
 				2A1116E21C83818500A45955 /* DYPAssetSearchImpl.m in Sources */,
 				2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */,

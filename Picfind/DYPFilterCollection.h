@@ -22,5 +22,6 @@
 -(void)addFilter:(id<DYPFilter>)filter;
 -(void)removeFilter:(id<DYPFilter>)filter;
 -(id<DYPFilter>)filterWithProtocol:(Protocol *)protocol;
+-(void)clean;
 
 @end

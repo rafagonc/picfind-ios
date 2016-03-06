@@ -23,7 +23,6 @@ using namespace cv;
 #pragma mark - constructors
 -(instancetype)init {
     if (self = [super init]) {
-        [self load];
     } return self;
 }
 
@@ -59,6 +58,16 @@ using namespace cv;
     CIContext *context = [CIContext contextWithOptions:@{}];
     CIDetector *ciDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:context options:@{}];
     NSArray *features = [ciDetector featuresInImage:image.CIImage];
+    NSMutableArray <NSValue *> *rects = [@[] mutableCopy];
+    for (CIFeature *feature in features) {
+        [rects addObject:[NSValue valueWithCGRect:feature.bounds]];
+    }
+    return rects;
+}
+-(NSArray <NSValue *> *)detectWithCIFeatureFromCGImage:(UIImage *)image {
+    CIContext *context = [CIContext contextWithOptions:@{}];
+    CIDetector *ciDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:context options:@{}];
+    NSArray *features = [ciDetector featuresInImage:[[CIImage alloc] initWithCGImage:image.CGImage]];
     NSMutableArray <NSValue *> *rects = [@[] mutableCopy];
     for (CIFeature *feature in features) {
         [rects addObject:[NSValue valueWithCGRect:feature.bounds]];

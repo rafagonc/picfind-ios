@@ -11,6 +11,7 @@
 #import "DYPAssetSearch.h"
 #import "DYPCollectionViewDatasourceProtocol.h"
 #import "UIViewController+Loading.h"
+#import "DYPAssetCell.h"
 
 @interface DYPResultsViewController ()
 
@@ -22,7 +23,7 @@
 
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPAssetSearch> search;
-@property (setter=injected:,readonly) id<DYPCollectionViewDatasourceProtocol> datasource;
+@property (setter=injected_asset:,readonly) id<DYPCollectionViewDatasourceProtocol> datasource;
 
 @end
 
@@ -39,6 +40,8 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.collectionView registerClass:[DYPAssetCell class] forCellWithReuseIdentifier:@"DYPAssetCell"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"DYPAssetCell" bundle:nil] forCellWithReuseIdentifier:@"DYPAssetCell"];
     [self.collectionView setDataSource:self.datasource];
     [self.collectionView setDelegate:self.datasource];
     [self.collectionView reloadData];

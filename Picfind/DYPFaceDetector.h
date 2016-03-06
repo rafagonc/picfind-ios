@@ -19,5 +19,6 @@
 -(NSArray <NSValue *> *)detectMat:(cv::Mat)sourceVector;
 -(NSArray <NSValue *> *)detectImage:(UIImage *)image;
 -(NSArray <NSValue *> *)detectWithCIFeature:(UIImage *)image;
+-(NSArray <NSValue *> *)detectWithCIFeatureFromCGImage:(UIImage *)image ;
 
 @end

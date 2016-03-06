@@ -9,6 +9,8 @@
 #import "DYPFaceCropper.h"
 #import "UIImage+Crop.h"
 
+static CGFloat const kAmplifiedRectMultiplierFactor = 0.3;
+
 @interface DYPFaceCropper ()
 
 #pragma mark - properties
@@ -29,7 +31,11 @@
 
 #pragma mark - crop
 -(UIImage *)face {
-    UIImage *image = [self.image crop:self.faceRect];
+    CGFloat amplifiedWidth = self.faceRect.size.width * kAmplifiedRectMultiplierFactor;
+    CGFloat amplifiedHeight = self.faceRect.size.height * kAmplifiedRectMultiplierFactor;
+    CGRect amplified = CGRectMake(self.faceRect.origin.x - amplifiedWidth/2, self.faceRect.origin.y - amplifiedHeight/2, self.faceRect.size.width + amplifiedWidth, self.faceRect.size.height + amplifiedHeight);
+    UIImage *image = [self.image crop:amplified];
+    image = [image resize:kCGRectFaceSize];
     return image;
 }
 

@@ -34,12 +34,7 @@ using namespace std;
 
 #pragma mark - training
 -(void)train:(NSArray<UIImage *> *)images andRects:(NSArray <NSValue *> *)rects andLabels:(NSArray<NSNumber *> *)labels {
-    NSMutableArray *croppedFaceImages = [@[] mutableCopy];
-    [images enumerateObjectsUsingBlock:^(UIImage * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        DYPFaceCropper *cropper = [[DYPFaceCropper alloc] initWithImage:obj andFaceRect:[rects[idx] CGRectValue]];
-        [croppedFaceImages addObject:[cropper face]];
-    }];
-    vector<Mat> images_converted = [DYPImageMatConverter matVectorFromImageArray:croppedFaceImages];
+    vector<Mat> images_converted = [DYPImageMatConverter matVectorFromImageArray:images];
     vector<int> labels_converted = [DYPNumberArrayVectorConverter int_vectorFromNumberArray:labels];
     fr->train(images_converted, labels_converted);
 }

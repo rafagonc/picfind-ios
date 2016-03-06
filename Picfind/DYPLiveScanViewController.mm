@@ -19,7 +19,7 @@
 #import "DYPFaceCropper.h"
 
 @interface DYPLiveScanViewController () <AVCaptureVideoDataOutputSampleBufferDelegate> {
-    UIImage * current;
+    CIImage * current;
     dispatch_queue_t queue;
     AVCaptureSession *session;
     AVCaptureVideoDataOutput *video;
@@ -63,10 +63,7 @@
     AVCaptureDevice *inputDevice = [self frontCamera];
     NSError *error;
     AVCaptureDeviceInput *deviceInput = [AVCaptureDeviceInput deviceInputWithDevice:inputDevice error:&error];
-    
-    if ([session canAddInput:deviceInput]) {
-        [session addInput:deviceInput];
-    }
+    if ([session canAddInput:deviceInput])[session addInput:deviceInput];
     
     AVCaptureVideoPreviewLayer *previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:session];
     CALayer *rootLayer = [[self view] layer];
@@ -75,13 +72,16 @@
     
     video = [[AVCaptureVideoDataOutput alloc] init];
     [video setSampleBufferDelegate:self queue:queue];
-    
     [session addOutput:video];
-    
     [session startRunning];
     
     [self performSelector:@selector(start) withObject:nil afterDelay:3];
     
+}
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.timer invalidate];
+    [self setTimer:nil];
 }
 -(AVCaptureDevice *)frontCamera {
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
@@ -106,25 +106,28 @@
 -(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
     CVImageBufferRef o = CMSampleBufferGetImageBuffer(sampleBuffer);
     CIImage *ciimage = [CIImage imageWithCVImageBuffer:o];
-    UIImage *image = [UIImage imageWithCIImage:ciimage];
-    current = image;
+    current = ciimage;
 }
 
 #pragma mark - scheduled
 -(void)runFaceDetection {
     @synchronized(current) {
-        NSArray *faces = [self.faceDetector detectWithCIFeature:current];
+        CIContext *context = [CIContext contextWithOptions:@{}];
+        UIImage *faceDetecting = [UIImage imageWithCIImage:current];
+        NSArray *faces = [self.faceDetector detectWithCIFeature:faceDetecting];
         if (faces.count == 1) {
             [self.rects addObject:faces[0]];
-            DYPFaceCropper *faceCropper = [[DYPFaceCropper alloc] initWithImage:current andFaceRect:[faces[0] CGRectValue]];
-            self.imageView.image = [faceCropper face];
-            [self.images addObject:current];
-//        if (self.images.count == 10) {
-//            [session stopRunning];
-//            [self.delegate source:self didCreateFilter:[self.filterFactory faceRecognizerFilterWithImages:self.images andRects:self.rects]];
-//            [self.navigationController popToRootViewControllerAnimated:YES];
-//        }
-    }
+            DYPFaceCropper *faceCropper = [[DYPFaceCropper alloc] initWithImage:[UIImage imageWithCGImage:[context createCGImage:current fromRect:[current extent]]] andFaceRect:[faces[0] CGRectValue]];
+            [self.images addObject:[faceCropper face]];
+        }
+        if (self.images.count == 10) {
+            [session stopRunning];
+            [self.timer invalidate];
+            [self setTimer:nil];
+            [video setSampleBufferDelegate:nil queue:nil];
+            [self.delegate source:self didCreateFilter:[self.filterFactory faceRecognizerFilterWithImages:self.images andRects:self.rects]];
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        }
     }
 }
 

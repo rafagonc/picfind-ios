@@ -25,14 +25,21 @@
         NSMutableArray *assets = [[NSMutableArray alloc] init];
         [result enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             id<DYPAssetProtocol> asset = (id<DYPAssetProtocol>)obj;
+            __block NSUInteger count = 0;
             for (id<DYPFilter> filter in collection)
                 [filter analyze:asset isElegible:^{
-                    [assets addObject:asset];
+                    count++;
+                    if (count == [collection count]) {
+                        [assets addObject:asset];
+                    }
                 }];
+            if (result.count == idx + 1) {
+                dispatch_sync(dispatch_get_main_queue(), ^{
+                    callback(assets);
+                });
+            }
         }];
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            callback(assets);
-        });
+
     });
 }
 

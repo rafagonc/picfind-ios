@@ -27,6 +27,8 @@
 #import "DYPFilterCollection.h"
 #import "DYPResultsViewController.h"
 #import "DYPFaceRecognizerFilter.h"
+#import "DYPNameFilter.h"
+#import "DYPFilterFactoryImpl.h"
 
 @interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate, DYPFilterCellDelegate>
 
@@ -41,6 +43,7 @@
 @property (strong, nonatomic) DYPFilterCollection * appliedFilters;
 
 #pragma mark - injected
+@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
 @property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
 @property (setter=injected_nav:,readonly) id<DYPCustomizer> navigationBarCustomizer;
 
@@ -57,6 +60,8 @@
 #pragma mark - lifecycle
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setTitle:@"Picfind"];
     
     //setups
     self.appliedFilters = [[DYPFilterCollection alloc] init];
@@ -91,11 +96,11 @@
     [self.tableView addCell:locationFilter onSection:section];
     [self setLocationCell:locationFilter];
     
-    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
-    [faceFilter setDelegate:self];
-    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
-    [self.tableView addCell:faceFilter onSection:section];
-    [self setFaceRecognizerCell:faceFilter];
+//    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
+//    [faceFilter setDelegate:self];
+//    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
+//    [self.tableView addCell:faceFilter onSection:section];
+//    [self setFaceRecognizerCell:faceFilter];
     
     UIStaticTableViewSection *recentsSection = [[UIStaticTableViewSection alloc] init];
     [recentsSection setHeaderName:@"Recents"];
@@ -139,6 +144,13 @@
 #pragma mark - delegates
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     
+}
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    [self.appliedFilters clean];
+    id<DYPNameFilter> nameFilter = [self.filterFactory nameFilterForName:searchBar.text];
+    [self.appliedFilters addFilter:nameFilter];
+    DYPResultsViewController *results = [[DYPResultsViewController alloc] initWithCollection:self.appliedFilters];
+    [self.navigationController pushViewController:results animated:YES];
 }
 -(void)source:(id)source didCreateFilter:(id<DYPFilter>)filter {
     [self.appliedFilters addFilter:filter];

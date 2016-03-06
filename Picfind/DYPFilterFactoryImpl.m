@@ -10,6 +10,7 @@
 #import "DYPLocationFilterImpl.h"
 #import "DYPPeriodFilterImpl.h"
 #import "DYPFaceRecognizerFilterImpl.h"
+#import "DYPNameFilterImpl.h"
 
 @implementation DYPFilterFactoryImpl
 
@@ -24,6 +25,9 @@
     DYPFaceRecognizerFilterImpl *fr = [[DYPFaceRecognizerFilterImpl alloc] init];
     [fr setPredictable:images andRects:rects];
     return fr;
+}
+-(id<DYPNameFilter>)nameFilterForName:(NSString *)name {
+    return [[DYPNameFilterImpl alloc] initWithName:name];
 }
 
 @end

@@ -51,6 +51,9 @@
     }
     [self.backingArray removeObject:toDelete];
 }
+-(void)clean {
+    [self.backingArray removeAllObjects];
+}
 
 #pragma mark - find
 -(id<DYPFilter>)filterWithProtocol:(Protocol *)protocol {
