@@ -12,8 +12,10 @@
 #import "DYPCollectionViewDatasourceProtocol.h"
 #import "UIViewController+Loading.h"
 #import "DYPAssetCell.h"
+#import "DYPAssetDatasourceDelegate.h"
+#import "DYPImageViewController.h"
 
-@interface DYPResultsViewController ()
+@interface DYPResultsViewController () <DYPAssetDatasourceDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -40,6 +42,9 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setTitle:@"Results"];
+    
+    [self.datasource setDelegate:self];
     [self.collectionView registerClass:[DYPAssetCell class] forCellWithReuseIdentifier:@"DYPAssetCell"];
     [self.collectionView registerNib:[UINib nibWithNibName:@"DYPAssetCell" bundle:nil] forCellWithReuseIdentifier:@"DYPAssetCell"];
     [self.collectionView setDataSource:self.datasource];
@@ -50,6 +55,12 @@
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+}
+
+#pragma mark - datasource
+-(void)datasource:(id<DYPCollectionViewDatasourceProtocol>)datasource wantsToCheckOutPicture:(id<DYPAssetProtocol>)asset {
+    DYPImageViewController *imageViewController = [[DYPImageViewController alloc] initWithAsset:asset];
+    [self.navigationController pushViewController:imageViewController animated:YES];
 }
 
 #pragma mark - methods

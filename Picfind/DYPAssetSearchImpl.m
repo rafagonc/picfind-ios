@@ -9,10 +9,11 @@
 #import "DYPAssetSearchImpl.h"
 #import "DYPFilterCollection.h"
 #import "DYPAssetProtocol.h"
-
-@import Photos;
+#import "DYPAssetDataAccessObject.h"
 
 @interface DYPAssetSearchImpl ()
+
+@property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
 
 @end
 
@@ -21,8 +22,8 @@
 #pragma mark - assets
 -(void)assetsWithFilterCollection:(DYPFilterCollection *)collection callback:(void(^)(NSArray <id<DYPAssetProtocol>> * assets))callback {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        PHFetchResult *result = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:nil];
-        NSMutableArray *assets = [[NSMutableArray alloc] init];
+               NSMutableArray *assets = [[NSMutableArray alloc] init];
+        NSArray *result = (NSArray *)[self.assetDataAccessObject all];
         [result enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             id<DYPAssetProtocol> asset = (id<DYPAssetProtocol>)obj;
             __block NSUInteger count = 0;

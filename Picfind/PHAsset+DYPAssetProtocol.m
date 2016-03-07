@@ -19,5 +19,12 @@
         callback(result, info);
     }];
 }
+-(void)fetchHighQualityImage:(void (^)(UIImage *, NSDictionary *))callback {
+    PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
+    [options setDeliveryMode:PHImageRequestOptionsDeliveryModeHighQualityFormat];
+    [[PHImageManager defaultManager] requestImageForAsset:self targetSize:CGSizeMake(self.pixelWidth, self.pixelHeight) contentMode:PHImageContentModeAspectFit options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
+        callback(result, info);
+    }];
+}
 
 @end

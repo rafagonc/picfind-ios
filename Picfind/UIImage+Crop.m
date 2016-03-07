@@ -12,10 +12,17 @@
 
 #pragma mark - image
 -(UIImage *)crop:(CGRect)rect {
-    CGImageRef imageRef = CGImageCreateWithImageInRect([self CGImage], rect);
-    UIImage *result = [UIImage imageWithCGImage:imageRef scale:self.scale orientation:self.imageOrientation];
-    CGImageRelease(imageRef);
-    return result;
+//    CGImageRef imageRef = CGImageCreateWithImageInRect([self CGImage], rect);
+//    UIImage *result = [UIImage imageWithCGImage:imageRef scale:self.scale orientation:self.imageOrientation];
+//    CGImageRelease(imageRef);
+//    return result;
+    CIVector *cropRect = [CIVector vectorWithCGRect:rect];
+    CIFilter *cropFilter = [CIFilter filterWithName:@"CICrop"];
+    [cropFilter setValue:[CIImage imageWithCGImage:[self CGImage]] forKey:@"inputImage"];
+    [cropFilter setValue:cropRect forKey:@"inputRectangle"];
+    CIImage *croppedImage = [cropFilter valueForKey:@"outputImage"];
+    UIImage *image = [UIImage imageWithCGImage:[[CIContext contextWithOptions:@{}] createCGImage:croppedImage fromRect:rect]];
+    return image;
 }
 -(UIImage *)resize:(CGSize)newSize {
     CGFloat scale = [[UIScreen mainScreen]scale];

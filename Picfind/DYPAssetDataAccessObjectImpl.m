@@ -18,5 +18,13 @@
     id<NSCollection> result = (id<NSCollection>)[PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:options];
     return result;
 }
+-(id<NSCollection>)all {
+    PHFetchResult *result = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:nil];
+    return result;
+}
+
+-(void)createAlbumWithAssets:(id<NSCollection>)assets andName:(NSString *)name {
+    PHCollectionListChangeRequest *changeRequest = [PHCollectionListChangeRequest creationRequestForCollectionListWithTitle:name];;
+}
 
 @end

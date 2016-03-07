@@ -21,5 +21,6 @@
 
 #pragma mark - fetching
 -(void)fetchImage:(void(^)(UIImage *image, NSDictionary *data))callback;
+-(void)fetchHighQualityImage:(void(^)(UIImage *image, NSDictionary *data))callback;
 
 @end

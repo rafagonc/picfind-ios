@@ -13,5 +13,7 @@
 @protocol DYPAssetDataAccessObject <NSObject>
 
 -(id<NSCollection>)recents;
+-(id<NSCollection>)all;
+-(void)createAlbumWithAssets:(id<NSCollection>)assets;
 
 @end

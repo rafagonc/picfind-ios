@@ -18,4 +18,6 @@
 -(void)startFullLoading;
 -(void)stopFullLoading;
 
+-(void)startBlackFullLoading;
+
 @end

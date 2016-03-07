@@ -29,6 +29,7 @@
 #import "DYPFaceRecognizerFilter.h"
 #import "DYPNameFilter.h"
 #import "DYPFilterFactoryImpl.h"
+#import "DYPImageViewController.h"
 
 @interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate, DYPFilterCellDelegate>
 
@@ -96,11 +97,11 @@
     [self.tableView addCell:locationFilter onSection:section];
     [self setLocationCell:locationFilter];
     
-//    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
-//    [faceFilter setDelegate:self];
-//    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
-//    [self.tableView addCell:faceFilter onSection:section];
-//    [self setFaceRecognizerCell:faceFilter];
+    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
+    [faceFilter setDelegate:self];
+    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
+    [self.tableView addCell:faceFilter onSection:section];
+    [self setFaceRecognizerCell:faceFilter];
     
     UIStaticTableViewSection *recentsSection = [[UIStaticTableViewSection alloc] init];
     [recentsSection setHeaderName:@"Recents"];
@@ -116,7 +117,7 @@
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
     self.searchController.dimsBackgroundDuringPresentation = NO;
     self.searchController.searchResultsUpdater = self;
-    self.searchController.searchBar.placeholder = @"Quick search photos by location";
+    self.searchController.searchBar.placeholder = @"Search by name Ex: IMG_0001";
     self.searchController.searchBar.delegate = self;
     self.searchController.searchBar.searchBarStyle = UISearchBarStyleMinimal;
     self.searchController.searchBar.tintColor = [UIColor dyp_redColor];

@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "DYPCollectionViewDatasourceProtocol.h"
+#import "DYPAssetProtocol.h"
+#import "DYPCollectionViewDatasourceProtocol.h"
 
 @protocol DYPAssetDatasourceDelegate <NSObject>
 
+-(void)datasource:(id<DYPCollectionViewDatasourceProtocol>)datasource wantsToCheckOutPicture:(id<DYPAssetProtocol>)asset;
 
 @end

@@ -19,7 +19,10 @@
 
 #pragma mark - filter
 -(void)analyze:(id<DYPAssetProtocol>)asset isElegible:(void (^)())isElegible {
-    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"_filename BEGINSWITH[cd] %@", _name];
+    if ([predicate evaluateWithObject:asset]) {
+        isElegible();
+    }
 }
 -(NSString *)explain {
     return @"";

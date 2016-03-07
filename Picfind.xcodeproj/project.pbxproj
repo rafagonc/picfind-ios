@@ -39,6 +39,8 @@
 		2A46890D1C85388400BD2D3A /* DYPFaceCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A46890C1C85388400BD2D3A /* DYPFaceCropper.m */; };
 		2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4689101C853E6500BD2D3A /* UIImage+Crop.m */; };
 		2A4F81871C8BCB70004FE9DA /* DYPNameFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F81861C8BCB70004FE9DA /* DYPNameFilterImpl.m */; };
+		2A4F818E1C8D16F9004FE9DA /* DYPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F818D1C8D16F8004FE9DA /* DYPImageViewController.m */; };
+		2A4F81901C8D1704004FE9DA /* DYPImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F818F1C8D1703004FE9DA /* DYPImageViewController.xib */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -199,6 +201,9 @@
 		2A4F81851C8BCB70004FE9DA /* DYPNameFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNameFilterImpl.h; sourceTree = "<group>"; };
 		2A4F81861C8BCB70004FE9DA /* DYPNameFilterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPNameFilterImpl.m; sourceTree = "<group>"; };
 		2A4F81891C8BCB86004FE9DA /* DYPNameFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNameFilter.h; sourceTree = "<group>"; };
+		2A4F818C1C8D16F8004FE9DA /* DYPImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPImageViewController.h; sourceTree = "<group>"; };
+		2A4F818D1C8D16F8004FE9DA /* DYPImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPImageViewController.m; sourceTree = "<group>"; };
+		2A4F818F1C8D1703004FE9DA /* DYPImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPImageViewController.xib; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -676,6 +681,16 @@
 			name = Name;
 			sourceTree = "<group>";
 		};
+		2A4F81911C8D1706004FE9DA /* Image View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F818C1C8D16F8004FE9DA /* DYPImageViewController.h */,
+				2A4F818D1C8D16F8004FE9DA /* DYPImageViewController.m */,
+				2A4F818F1C8D1703004FE9DA /* DYPImageViewController.xib */,
+			);
+			name = "Image View Controller";
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -754,6 +769,7 @@
 				2A1116D21C7D4D9300A45955 /* Start Face Recognition View Controller */,
 				4421B3691C80BE0900673C4F /* Live Scan View Controller */,
 				2A1116EC1C83878400A45955 /* Results View Controller */,
+				2A4F81911C8D1706004FE9DA /* Image View Controller */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1446,6 +1462,7 @@
 			files = (
 				2ADBB8F11C7BFD550034B7D1 /* haarcascade_smile.xml in Resources */,
 				2ADBB8FC1C7BFD550034B7D1 /* haarcascade_profileface.xml in Resources */,
+				2A4F81901C8D1704004FE9DA /* DYPImageViewController.xib in Resources */,
 				2ADBB8E51C7BFD550034B7D1 /* haarcascade_frontalcatface_extended.xml in Resources */,
 				2ADBB8F91C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */,
 				2ADBB8F81C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
@@ -1652,6 +1669,7 @@
 				2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm in Sources */,
 				4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */,
 				4421B2F71C7E2F5A00673C4F /* DYPPeriodFilterImpl.m in Sources */,
+				2A4F818E1C8D16F9004FE9DA /* DYPImageViewController.m in Sources */,
 				2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */,
 				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
 				2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */,

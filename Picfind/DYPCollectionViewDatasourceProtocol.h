@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol DYPCollectionViewDatasourceProtocol <UICollectionViewDataSource, UICollectionViewDelegate>
+@protocol DYPCollectionViewDatasourceProtocol <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic,strong) NSArray *data;
 @property (nonatomic,weak)   id delegate;

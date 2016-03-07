@@ -19,6 +19,12 @@
     [self.view addSubview:self.loadingView];
     [self.loadingView startAnimating];
 }
+-(void)startBlackFullLoading {
+    self.loadingView = [[SHLoadingView alloc] init];
+    self.loadingView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:self.loadingView];
+    [self.loadingView startAnimating];
+}
 -(void)stopFullLoading {
     [self.loadingView stopAnimatingWithCompletion:nil];
     [self.view bringSubviewToFront:self.loadingView];

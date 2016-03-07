@@ -29,7 +29,9 @@
 }
 
 #pragma mark - datasource
-
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(50, 50);
+}
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
@@ -39,13 +41,12 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellId = @"DYPAssetCell";
     DYPAssetCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
-    if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([DYPAssetCell class]) owner:self options:nil] firstObject];
-    }
-    
     cell.asset = self.assets[indexPath.row];
-    
     return cell;
+}
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    DYPAssetCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    [self.delegate datasource:self wantsToCheckOutPicture:cell.asset];;
 }
 
 
