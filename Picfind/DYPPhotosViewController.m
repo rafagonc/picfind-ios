@@ -30,6 +30,7 @@
 #import "DYPNameFilter.h"
 #import "DYPFilterFactoryImpl.h"
 #import "DYPImageViewController.h"
+#import "UIViewController+NotificationShow.h"
 
 @interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate, DYPFilterCellDelegate>
 
@@ -97,11 +98,11 @@
     [self.tableView addCell:locationFilter onSection:section];
     [self setLocationCell:locationFilter];
     
-    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
-    [faceFilter setDelegate:self];
-    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
-    [self.tableView addCell:faceFilter onSection:section];
-    [self setFaceRecognizerCell:faceFilter];
+//    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
+//    [faceFilter setDelegate:self];
+//    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
+//    [self.tableView addCell:faceFilter onSection:section];
+//    [self setFaceRecognizerCell:faceFilter];
     
     UIStaticTableViewSection *recentsSection = [[UIStaticTableViewSection alloc] init];
     [recentsSection setHeaderName:@"Recents"];
@@ -169,6 +170,10 @@
 
 #pragma mark - actions
 -(IBAction)searchAction:(id)sender {
+    if (self.appliedFilters.count == 0) {
+        [self showNotificationWithType:SHNotificationViewTypeError withMessage:@"Apply some filters before searching"];
+        return;
+    }
     DYPResultsViewController *results = [[DYPResultsViewController alloc] initWithCollection:self.appliedFilters];
     [self.navigationController pushViewController:results animated:YES];
 }

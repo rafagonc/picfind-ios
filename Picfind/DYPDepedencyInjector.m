@@ -27,6 +27,7 @@
 #import "DYPQuoteImpl.h"
 #import "DYPAssetSearch.h"
 #import "DYPAssetSearchImpl.h"
+#import "DYPPhotoLibaryValidator.h"
 
 @implementation DYPDepedencyInjector
 
@@ -46,6 +47,7 @@
     
     //validation
     [[DPRegistry sharedRegistry] registerImplementation:[DYPPeriodFilterValidator class] forProtocol:@protocol(DYPValidation) context:@"period"];
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPPhotoLibaryValidator class] forProtocol:@protocol(DYPValidation) context:@"photo"];
     [[DPRegistry sharedRegistry] registerImplementation:[DYPLocationFilterValidator class] forProtocol:@protocol(DYPValidation) context:@"location"];
     
     //factories

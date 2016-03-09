@@ -20,11 +20,23 @@
 }
 -(id<NSCollection>)all {
     PHFetchResult *result = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:nil];
-    return result;
+    return (id<NSCollection>)result;
 }
 
--(void)createAlbumWithAssets:(id<NSCollection>)assets andName:(NSString *)name {
-    PHCollectionListChangeRequest *changeRequest = [PHCollectionListChangeRequest creationRequestForCollectionListWithTitle:name];;
+-(void)createAlbumWithAssets:(id<NSCollection>)assets andName:(NSString *)name callback:(void(^)(BOOL success,NSError * error))callback {
+    PHPhotoLibrary *photoLibrary = [PHPhotoLibrary sharedPhotoLibrary];
+    if ([PHPhotoLibrary authorizationStatus] == PHAuthorizationStatusAuthorized) {
+        [photoLibrary performChanges:^{
+            PHAssetCollectionChangeRequest *changeRequest = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:name];
+            [changeRequest addAssets:assets];
+        } completionHandler:^(BOOL success, NSError * _Nullable photoError) {
+            if (photoError) callback(NO, photoError);
+            else callback(YES, nil);
+        }];
+    } else {
+        callback(NO, [NSError errorWithDomain:DYPErrorDomain code:101 userInfo:@{NSLocalizedDescriptionKey : @"Photo library isnt available"}]);
+    }
 }
+
 
 @end

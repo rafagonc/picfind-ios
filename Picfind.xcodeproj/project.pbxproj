@@ -41,6 +41,11 @@
 		2A4F81871C8BCB70004FE9DA /* DYPNameFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F81861C8BCB70004FE9DA /* DYPNameFilterImpl.m */; };
 		2A4F818E1C8D16F9004FE9DA /* DYPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F818D1C8D16F8004FE9DA /* DYPImageViewController.m */; };
 		2A4F81901C8D1704004FE9DA /* DYPImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F818F1C8D1703004FE9DA /* DYPImageViewController.xib */; };
+		2A4F81C91C90C2A9004FE9DA /* DYPCreateNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F81C71C90C2A9004FE9DA /* DYPCreateNameViewController.m */; };
+		2A4F81CA1C90C2A9004FE9DA /* DYPCreateNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F81C81C90C2A9004FE9DA /* DYPCreateNameViewController.xib */; };
+		2A4F81CF1C90C3C1004FE9DA /* DYPNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F81CD1C90C3C1004FE9DA /* DYPNameCell.m */; };
+		2A4F81D01C90C3C1004FE9DA /* DYPNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F81CE1C90C3C1004FE9DA /* DYPNameCell.xib */; };
+		2A943F971C90E86D00C4796A /* DYPPhotoLibaryValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -204,6 +209,14 @@
 		2A4F818C1C8D16F8004FE9DA /* DYPImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPImageViewController.h; sourceTree = "<group>"; };
 		2A4F818D1C8D16F8004FE9DA /* DYPImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPImageViewController.m; sourceTree = "<group>"; };
 		2A4F818F1C8D1703004FE9DA /* DYPImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPImageViewController.xib; sourceTree = "<group>"; };
+		2A4F81C61C90C2A9004FE9DA /* DYPCreateNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCreateNameViewController.h; sourceTree = "<group>"; };
+		2A4F81C71C90C2A9004FE9DA /* DYPCreateNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPCreateNameViewController.m; sourceTree = "<group>"; };
+		2A4F81C81C90C2A9004FE9DA /* DYPCreateNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPCreateNameViewController.xib; sourceTree = "<group>"; };
+		2A4F81CC1C90C3C1004FE9DA /* DYPNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNameCell.h; sourceTree = "<group>"; };
+		2A4F81CD1C90C3C1004FE9DA /* DYPNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPNameCell.m; sourceTree = "<group>"; };
+		2A4F81CE1C90C3C1004FE9DA /* DYPNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPNameCell.xib; sourceTree = "<group>"; };
+		2A943F951C90E86D00C4796A /* DYPPhotoLibaryValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPhotoLibaryValidator.h; sourceTree = "<group>"; };
+		2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPhotoLibaryValidator.m; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -691,6 +704,35 @@
 			name = "Image View Controller";
 			sourceTree = "<group>";
 		};
+		2A4F81CB1C90C2AB004FE9DA /* Create Name View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F81C61C90C2A9004FE9DA /* DYPCreateNameViewController.h */,
+				2A4F81C71C90C2A9004FE9DA /* DYPCreateNameViewController.m */,
+				2A4F81C81C90C2A9004FE9DA /* DYPCreateNameViewController.xib */,
+			);
+			name = "Create Name View Controller";
+			sourceTree = "<group>";
+		};
+		2A4F81D11C90C3C4004FE9DA /* Name Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F81CC1C90C3C1004FE9DA /* DYPNameCell.h */,
+				2A4F81CD1C90C3C1004FE9DA /* DYPNameCell.m */,
+				2A4F81CE1C90C3C1004FE9DA /* DYPNameCell.xib */,
+			);
+			name = "Name Cell";
+			sourceTree = "<group>";
+		};
+		2A943F981C90E87100C4796A /* Photo Library */ = {
+			isa = PBXGroup;
+			children = (
+				2A943F951C90E86D00C4796A /* DYPPhotoLibaryValidator.h */,
+				2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */,
+			);
+			name = "Photo Library";
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -770,6 +812,7 @@
 				4421B3691C80BE0900673C4F /* Live Scan View Controller */,
 				2A1116EC1C83878400A45955 /* Results View Controller */,
 				2A4F81911C8D1706004FE9DA /* Image View Controller */,
+				2A4F81CB1C90C2AB004FE9DA /* Create Name View Controller */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -807,6 +850,7 @@
 				4421B3241C7F464B00673C4F /* Map Cell */,
 				4421B3351C7F468300673C4F /* Map Search Cell */,
 				4421B32F1C7F467200673C4F /* Range Cell */,
+				2A4F81D11C90C3C4004FE9DA /* Name Cell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1114,6 +1158,7 @@
 			children = (
 				4421B3061C7E3D2500673C4F /* Period Filter */,
 				4421B3581C7F91E000673C4F /* Location Filter */,
+				2A943F981C90E87100C4796A /* Photo Library */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -1464,6 +1509,7 @@
 				2ADBB8FC1C7BFD550034B7D1 /* haarcascade_profileface.xml in Resources */,
 				2A4F81901C8D1704004FE9DA /* DYPImageViewController.xib in Resources */,
 				2ADBB8E51C7BFD550034B7D1 /* haarcascade_frontalcatface_extended.xml in Resources */,
+				2A4F81CA1C90C2A9004FE9DA /* DYPCreateNameViewController.xib in Resources */,
 				2ADBB8F91C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */,
 				2ADBB8F81C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
 				2A1116CB1C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib in Resources */,
@@ -1483,6 +1529,7 @@
 				2ADBB8E21C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */,
 				2ADBB8881C7BF8B20034B7D1 /* LaunchScreen.storyboard in Resources */,
 				2ADBB8FE1C7BFD550034B7D1 /* haarcascade_smile.xml in Resources */,
+				2A4F81D01C90C3C1004FE9DA /* DYPNameCell.xib in Resources */,
 				2ADBB9001C7BFD550034B7D1 /* hogcascade_pedestrians.xml in Resources */,
 				2ADBB8E41C7BFD550034B7D1 /* haarcascade_frontalcatface.xml in Resources */,
 				2ADBB8F51C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */,
@@ -1635,6 +1682,7 @@
 				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
 				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
+				2A4F81C91C90C2A9004FE9DA /* DYPCreateNameViewController.m in Sources */,
 				2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */,
 				4421B3171C7E447C00673C4F /* DYPLocationManagerImpl.m in Sources */,
 				2A46890D1C85388400BD2D3A /* DYPFaceCropper.m in Sources */,
@@ -1652,7 +1700,9 @@
 				4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */,
 				2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */,
 				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
+				2A4F81CF1C90C3C1004FE9DA /* DYPNameCell.m in Sources */,
 				2A4F81871C8BCB70004FE9DA /* DYPNameFilterImpl.m in Sources */,
+				2A943F971C90E86D00C4796A /* DYPPhotoLibaryValidator.m in Sources */,
 				2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */,
 				2A1116E21C83818500A45955 /* DYPAssetSearchImpl.m in Sources */,
 				2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */,

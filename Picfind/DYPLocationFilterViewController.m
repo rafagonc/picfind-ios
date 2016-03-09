@@ -35,6 +35,7 @@
 @property (setter=injected:,readonly) id<DYPQuote> quote;
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
 @property (setter=injected_location:,readonly) id<DYPValidation> locationValidator;
+@property (setter=injected_photo:,readonly) id<DYPValidation> photoValidator;
 
 @end
 
@@ -101,6 +102,9 @@
 -(id<DYPFilter>)createLocationFilterWithError:(NSError **)error {
     id<DYPFilter> locationFilter = [self.filterFactory locationFilterWith:[self.mapCell finalLocation] range:[self.mapCell range]];
     if (![self.locationValidator validate:locationFilter error:error]) {
+        return nil;
+    }
+    if (![self.photoValidator validate:locationFilter error:error]) {
         return nil;
     }
     return locationFilter;

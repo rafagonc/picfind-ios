@@ -80,8 +80,7 @@
 }
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [self.timer invalidate];
-    [self setTimer:nil];
+    [self stopEverything];
 }
 -(AVCaptureDevice *)frontCamera {
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
@@ -120,15 +119,18 @@
             DYPFaceCropper *faceCropper = [[DYPFaceCropper alloc] initWithImage:[UIImage imageWithCGImage:[context createCGImage:current fromRect:[current extent]]] andFaceRect:[faces[0] CGRectValue]];
             [self.images addObject:[faceCropper face]];
         }
-        if (self.images.count == 10) {
-            [session stopRunning];
-            [self.timer invalidate];
-            [self setTimer:nil];
-            [video setSampleBufferDelegate:nil queue:nil];
+        if (self.images.count == 15) {
+            [self stopEverything];
             [self.delegate source:self didCreateFilter:[self.filterFactory faceRecognizerFilterWithImages:self.images andRects:self.rects]];
             [self.navigationController popToRootViewControllerAnimated:YES];
         }
     }
+}
+-(void)stopEverything {
+    [session stopRunning];
+    [self.timer invalidate];
+    [self setTimer:nil];
+    [video setSampleBufferDelegate:nil queue:nil];
 }
 
 #pragma mark - creating

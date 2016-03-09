@@ -29,6 +29,7 @@
 @property (setter=injected_period:,readonly) id<DYPValidation> periodValidator;
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
 @property (setter=injected:,readonly) id<DYPQuote> quote;
+@property (setter=injected_photo:,readonly) id<DYPValidation> photoValidator;
 
 @end
 
@@ -87,6 +88,9 @@
 -(id<DYPFilter>)createPeriodFilterWithError:(NSError **)error {
     id<DYPFilter> periodFilter = [self.filterFactory periodFilterFrom:[self.firstDateCell date] to:[self.lastDateCell date]];
     if ([self.periodValidator validate:periodFilter error:error] == NO) {
+        return nil;
+    }
+    if (![self.photoValidator validate:periodFilter error:error]) {
         return nil;
     }
     return periodFilter;

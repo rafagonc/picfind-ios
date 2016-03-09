@@ -12,8 +12,11 @@
 
 @protocol DYPAssetDataAccessObject <NSObject>
 
+#pragma mark - read
 -(id<NSCollection>)recents;
 -(id<NSCollection>)all;
--(void)createAlbumWithAssets:(id<NSCollection>)assets;
+
+#pragma mark - create
+-(void)createAlbumWithAssets:(id<NSCollection>)assets andName:(NSString *)name callback:(void(^)(BOOL success,NSError * error))callback;
 
 @end

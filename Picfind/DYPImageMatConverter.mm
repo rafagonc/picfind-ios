@@ -75,7 +75,7 @@
 +(std::vector<cv::Mat>)matVectorFromImageArray:(NSArray <UIImage *> *)images {
     std::vector<cv::Mat> matVector;
     for (UIImage *image in images) {
-        matVector.push_back([DYPImageMatConverter matFromImage:image]);
+        matVector.push_back([DYPImageMatConverter grayMatFromImage:image]);
     }
     return matVector;
 }

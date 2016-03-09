@@ -45,7 +45,7 @@
     return cell;
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    DYPAssetCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    DYPAssetCell *cell = (DYPAssetCell *)[collectionView cellForItemAtIndexPath:indexPath];
     [self.delegate datasource:self wantsToCheckOutPicture:cell.asset];;
 }
 

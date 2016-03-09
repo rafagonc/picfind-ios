@@ -14,6 +14,8 @@
 #import "DYPAssetCell.h"
 #import "DYPAssetDatasourceDelegate.h"
 #import "DYPImageViewController.h"
+#import "DYPAssetDataAccessObject.h"
+#import "DYPCreateNameViewController.h"
 
 @interface DYPResultsViewController () <DYPAssetDatasourceDelegate>
 
@@ -24,6 +26,7 @@
 @property (weak, nonatomic) DYPFilterCollection *collection;
 
 #pragma mark - injected
+@property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
 @property (setter=injected:,readonly) id<DYPAssetSearch> search;
 @property (setter=injected_asset:,readonly) id<DYPCollectionViewDatasourceProtocol> datasource;
 
@@ -55,6 +58,9 @@
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addAction:)];
+    [self.navigationItem setRightBarButtonItem:addButton];
 }
 
 #pragma mark - datasource
@@ -72,6 +78,12 @@
         [welf.collectionView reloadData];
         [welf stopFullLoading];
     }];
+}
+
+#pragma mark - actions
+-(void)addAction:(UIBarButtonItem *)item {
+    DYPCreateNameViewController *create = [[DYPCreateNameViewController alloc] initWithAssets:(id<NSCollection>)self.datasource.data];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:create] animated:YES completion:nil];
 }
 
 #pragma mark - dealloc

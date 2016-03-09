@@ -28,7 +28,7 @@ using namespace std;
 #pragma mark - constructor
 -(instancetype)init {
     if (self = [super init]) {
-        fr = createEigenFaceRecognizer();
+        fr = createLBPHFaceRecognizer();
     } return self;
 }
 
@@ -42,7 +42,7 @@ using namespace std;
 #pragma mark - predict
 -(int)predict:(UIImage *)image {
     Mat mat = [DYPImageMatConverter grayMatFromImage:image];
-    int label;
+    int label = -1;
     double confidence;
     fr->predict(mat, label, confidence);
     return label;

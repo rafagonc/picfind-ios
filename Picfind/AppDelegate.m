@@ -11,6 +11,8 @@
 #import "Depend/DPInjector.h"
 #import "DYPDepedencyInjector.h"
 
+@import Photos;
+
 @interface AppDelegate ()
 
 @end
