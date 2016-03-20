@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DYPFilterCreatorDelegate.h"
+#import "DYPFilterCell.h"
+#import "DYPFilterCollection.h"
 
-@interface DYPPhotosViewController : UIViewController
+@interface DYPPhotosViewController : UIViewController <DYPFilterCreatorDelegate, DYPFilterCellDelegate>
+
+#pragma mark - properties
+@property (strong, nonatomic) DYPFilterCollection * appliedFilters;
 
 @end

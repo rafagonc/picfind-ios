@@ -27,7 +27,12 @@
 #import "DYPQuoteImpl.h"
 #import "DYPAssetSearch.h"
 #import "DYPAssetSearchImpl.h"
+#import "DYPCollectionDataAccessObject.h"
+#import "DYPCollectionDataAccessObjectImpl.h"
 #import "DYPPhotoLibaryValidator.h"
+#import "DYPAlbumTableViewDatasource.h"
+#import "DYPTableViewDatasource.h"
+#import "DYPAlbumValidator.h"
 
 @implementation DYPDepedencyInjector
 
@@ -39,8 +44,13 @@
     //collection view datasoruce
     [[DPRegistry sharedRegistry] registerImplementation:[DYPAssetDatasource class] forProtocol:@protocol(DYPCollectionViewDatasourceProtocol) context:@"asset"];
     
+    //table view datasource
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPAlbumTableViewDatasource class] forProtocol:@protocol(DYPTableViewDatasource) context:@"collection"];
+    
     //dao
     [[DPRegistry sharedRegistry] registerImplementation:[DYPAssetDataAccessObjectImpl class] forProtocol:@protocol(DYPAssetDataAccessObject) context:nil];
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPCollectionDataAccessObjectImpl class] forProtocol:@protocol(DYPCollectionDataAccessObject) context:nil];
+
     
     //customizer
     [[DPRegistry sharedRegistry] registerImplementation:[DYPNavigationBarCustomizer class] forProtocol:@protocol(DYPCustomizer) context:@"nav"];
@@ -48,6 +58,7 @@
     //validation
     [[DPRegistry sharedRegistry] registerImplementation:[DYPPeriodFilterValidator class] forProtocol:@protocol(DYPValidation) context:@"period"];
     [[DPRegistry sharedRegistry] registerImplementation:[DYPPhotoLibaryValidator class] forProtocol:@protocol(DYPValidation) context:@"photo"];
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPAlbumValidator class] forProtocol:@protocol(DYPValidation) context:@"album"];
     [[DPRegistry sharedRegistry] registerImplementation:[DYPLocationFilterValidator class] forProtocol:@protocol(DYPValidation) context:@"location"];
     
     //factories

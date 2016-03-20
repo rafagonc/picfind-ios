@@ -31,8 +31,9 @@
 #import "DYPFilterFactoryImpl.h"
 #import "DYPImageViewController.h"
 #import "UIViewController+NotificationShow.h"
+#import "DYPPhotosViewController+Transitions.h"
 
-@interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate, DYPFilterCreatorDelegate, DYPFilterCellDelegate>
+@interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
@@ -42,7 +43,6 @@
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
-@property (strong, nonatomic) DYPFilterCollection * appliedFilters;
 
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
@@ -98,6 +98,12 @@
     [self.tableView addCell:locationFilter onSection:section];
     [self setLocationCell:locationFilter];
     
+    DYPFilterCell *albumFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Album Filter"];
+    [albumFilter setDelegate:self];
+    [albumFilter addTarget:self selector:@selector(albumFilterWasSelected:)];
+    [self.tableView addCell:albumFilter onSection:section];
+    [self setLocationCell:albumFilter];
+    
 //    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
 //    [faceFilter setDelegate:self];
 //    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
@@ -124,23 +130,6 @@
     self.searchController.searchBar.tintColor = [UIColor dyp_redColor];
     [self.searchController.searchBar addToolbar];
     [self.tableView setTableHeaderView:self.searchController.searchBar];
-}
-
-#pragma mark - actions
--(void)periodFilterWasSelected:(DYPFilterCell *)cell {
-    DYPPeriodFilterViewController *period = [[DYPPeriodFilterViewController alloc] initWithPeriodFilter:(id<DYPPeriodFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPPeriodFilter)]];
-    [period setDelegate:self];
-    [self.navigationController pushViewController:period animated:YES];
-}
--(void)locationFilterWasSelected:(DYPFilterCell *)cell {
-    DYPLocationFilterViewController *location = [[DYPLocationFilterViewController alloc] initWithLocationFilter:(id<DYPLocationFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPLocationFilter)]];
-    [location setDelegate:self];
-    [self.navigationController pushViewController:location animated:YES];
-}
--(void)faceFilterWasSelected:(DYPFilterCell *)cell {
-    DYPLiveScanViewController *liveScan = [[DYPLiveScanViewController alloc] init];
-    [liveScan setDelegate:self];
-    [self.navigationController pushViewController:liveScan animated:YES];
 }
 
 #pragma mark - delegates

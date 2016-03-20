@@ -46,6 +46,16 @@
 		2A4F81CF1C90C3C1004FE9DA /* DYPNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F81CD1C90C3C1004FE9DA /* DYPNameCell.m */; };
 		2A4F81D01C90C3C1004FE9DA /* DYPNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F81CE1C90C3C1004FE9DA /* DYPNameCell.xib */; };
 		2A943F971C90E86D00C4796A /* DYPPhotoLibaryValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */; };
+		2A943FB11C9DFE9A00C4796A /* DYPAlbumFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FB01C9DFE9A00C4796A /* DYPAlbumFilterImpl.m */; };
+		2A943FBA1C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FB91C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m */; };
+		2A943FC01C9E02C600C4796A /* DYPAlbumFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FBF1C9E02C600C4796A /* DYPAlbumFilterViewController.m */; };
+		2A943FC21C9E02CF00C4796A /* DYPAlbumFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A943FC11C9E02CF00C4796A /* DYPAlbumFilterViewController.xib */; };
+		2A943FC61C9E031000C4796A /* PHAssetCollection+DYPCollectionAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FC51C9E031000C4796A /* PHAssetCollection+DYPCollectionAdapter.m */; };
+		2A943FCC1C9E064E00C4796A /* DYPPhotosViewController+Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FCB1C9E064E00C4796A /* DYPPhotosViewController+Transitions.m */; };
+		2A943FD31C9E075500C4796A /* DYPAlbumTableViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FD21C9E075500C4796A /* DYPAlbumTableViewDatasource.m */; };
+		2A943FD71C9E083800C4796A /* DYPAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FD61C9E083800C4796A /* DYPAlbumCell.m */; };
+		2A943FDA1C9E0D1800C4796A /* DYPAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A943FD91C9E0D1800C4796A /* DYPAlbumCell.xib */; };
+		2A943FDE1C9F25EA00C4796A /* DYPAlbumValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FDD1C9F25EA00C4796A /* DYPAlbumValidator.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -217,6 +227,29 @@
 		2A4F81CE1C90C3C1004FE9DA /* DYPNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPNameCell.xib; sourceTree = "<group>"; };
 		2A943F951C90E86D00C4796A /* DYPPhotoLibaryValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPhotoLibaryValidator.h; sourceTree = "<group>"; };
 		2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPhotoLibaryValidator.m; sourceTree = "<group>"; };
+		2A943FAF1C9DFE9A00C4796A /* DYPAlbumFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumFilterImpl.h; sourceTree = "<group>"; };
+		2A943FB01C9DFE9A00C4796A /* DYPAlbumFilterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAlbumFilterImpl.m; sourceTree = "<group>"; };
+		2A943FB41C9DFF2500C4796A /* DYPAlbumFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumFilter.h; sourceTree = "<group>"; };
+		2A943FB61C9DFFA200C4796A /* DYPCollectionDataAccessObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCollectionDataAccessObject.h; sourceTree = "<group>"; };
+		2A943FB81C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCollectionDataAccessObjectImpl.h; sourceTree = "<group>"; };
+		2A943FB91C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPCollectionDataAccessObjectImpl.m; sourceTree = "<group>"; };
+		2A943FBE1C9E02C600C4796A /* DYPAlbumFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumFilterViewController.h; sourceTree = "<group>"; };
+		2A943FBF1C9E02C600C4796A /* DYPAlbumFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAlbumFilterViewController.m; sourceTree = "<group>"; };
+		2A943FC11C9E02CF00C4796A /* DYPAlbumFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPAlbumFilterViewController.xib; sourceTree = "<group>"; };
+		2A943FC41C9E031000C4796A /* PHAssetCollection+DYPCollectionAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAssetCollection+DYPCollectionAdapter.h"; sourceTree = "<group>"; };
+		2A943FC51C9E031000C4796A /* PHAssetCollection+DYPCollectionAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAssetCollection+DYPCollectionAdapter.m"; sourceTree = "<group>"; };
+		2A943FC91C9E033700C4796A /* DYPCollectionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCollectionProtocol.h; sourceTree = "<group>"; };
+		2A943FCA1C9E064E00C4796A /* DYPPhotosViewController+Transitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DYPPhotosViewController+Transitions.h"; sourceTree = "<group>"; };
+		2A943FCB1C9E064E00C4796A /* DYPPhotosViewController+Transitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DYPPhotosViewController+Transitions.m"; sourceTree = "<group>"; };
+		2A943FCE1C9E071000C4796A /* DYPTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPTableViewDatasource.h; sourceTree = "<group>"; };
+		2A943FD11C9E075500C4796A /* DYPAlbumTableViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumTableViewDatasource.h; sourceTree = "<group>"; };
+		2A943FD21C9E075500C4796A /* DYPAlbumTableViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAlbumTableViewDatasource.m; sourceTree = "<group>"; };
+		2A943FD51C9E083800C4796A /* DYPAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumCell.h; sourceTree = "<group>"; };
+		2A943FD61C9E083800C4796A /* DYPAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAlbumCell.m; sourceTree = "<group>"; };
+		2A943FD91C9E0D1800C4796A /* DYPAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPAlbumCell.xib; sourceTree = "<group>"; };
+		2A943FDB1C9E162E00C4796A /* DYPAlbumTableViewDatasourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumTableViewDatasourceDelegate.h; sourceTree = "<group>"; };
+		2A943FDC1C9F25EA00C4796A /* DYPAlbumValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumValidator.h; sourceTree = "<group>"; };
+		2A943FDD1C9F25EA00C4796A /* DYPAlbumValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAlbumValidator.m; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -438,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				2A1116A41C7C083600A45955 /* Asset */,
+				2A943FBC1C9E008F00C4796A /* Collection */,
 			);
 			name = "Data Access Object";
 			sourceTree = "<group>";
@@ -733,6 +767,148 @@
 			name = "Photo Library";
 			sourceTree = "<group>";
 		};
+		2A943FB21C9DFE9D00C4796A /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FB51C9DFF4000C4796A /* Abstract */,
+				2A943FB31C9DFEFB00C4796A /* Concrete */,
+			);
+			name = Album;
+			sourceTree = "<group>";
+		};
+		2A943FB31C9DFEFB00C4796A /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FAF1C9DFE9A00C4796A /* DYPAlbumFilterImpl.h */,
+				2A943FB01C9DFE9A00C4796A /* DYPAlbumFilterImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A943FB51C9DFF4000C4796A /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FB41C9DFF2500C4796A /* DYPAlbumFilter.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A943FB71C9E007900C4796A /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FB61C9DFFA200C4796A /* DYPCollectionDataAccessObject.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A943FBB1C9E008C00C4796A /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FB81C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.h */,
+				2A943FB91C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A943FBC1C9E008F00C4796A /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FB71C9E007900C4796A /* Abstract */,
+				2A943FBB1C9E008C00C4796A /* Concrete */,
+			);
+			name = Collection;
+			sourceTree = "<group>";
+		};
+		2A943FBD1C9E02AA00C4796A /* Album Filter View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FBE1C9E02C600C4796A /* DYPAlbumFilterViewController.h */,
+				2A943FBF1C9E02C600C4796A /* DYPAlbumFilterViewController.m */,
+				2A943FC11C9E02CF00C4796A /* DYPAlbumFilterViewController.xib */,
+			);
+			name = "Album Filter View Controller";
+			sourceTree = "<group>";
+		};
+		2A943FC31C9E02FB00C4796A /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FC81C9E032500C4796A /* Abstract */,
+				2A943FC71C9E032000C4796A /* Concrete */,
+			);
+			name = Collection;
+			sourceTree = "<group>";
+		};
+		2A943FC71C9E032000C4796A /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FC41C9E031000C4796A /* PHAssetCollection+DYPCollectionAdapter.h */,
+				2A943FC51C9E031000C4796A /* PHAssetCollection+DYPCollectionAdapter.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A943FC81C9E032500C4796A /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FC91C9E033700C4796A /* DYPCollectionProtocol.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A943FCD1C9E070300C4796A /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FD01C9E073800C4796A /* Concrete */,
+				2A943FCF1C9E073000C4796A /* Abstract */,
+			);
+			name = "Table View";
+			sourceTree = "<group>";
+		};
+		2A943FCF1C9E073000C4796A /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FCE1C9E071000C4796A /* DYPTableViewDatasource.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A943FD01C9E073800C4796A /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FD41C9E075B00C4796A /* Album */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A943FD41C9E075B00C4796A /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FD11C9E075500C4796A /* DYPAlbumTableViewDatasource.h */,
+				2A943FD21C9E075500C4796A /* DYPAlbumTableViewDatasource.m */,
+				2A943FDB1C9E162E00C4796A /* DYPAlbumTableViewDatasourceDelegate.h */,
+			);
+			name = Album;
+			sourceTree = "<group>";
+		};
+		2A943FD81C9E083B00C4796A /* Album Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FD51C9E083800C4796A /* DYPAlbumCell.h */,
+				2A943FD61C9E083800C4796A /* DYPAlbumCell.m */,
+				2A943FD91C9E0D1800C4796A /* DYPAlbumCell.xib */,
+			);
+			name = "Album Cell";
+			sourceTree = "<group>";
+		};
+		2A943FDF1C9F25ED00C4796A /* Album Filter */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FDC1C9F25EA00C4796A /* DYPAlbumValidator.h */,
+				2A943FDD1C9F25EA00C4796A /* DYPAlbumValidator.m */,
+			);
+			name = "Album Filter";
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -809,6 +985,7 @@
 				2A1116C61C7D4D1800A45955 /* Location Filter View Controller */,
 				2A1116CC1C7D4D2F00A45955 /* Period Filter View Controller */,
 				2A1116D21C7D4D9300A45955 /* Start Face Recognition View Controller */,
+				2A943FBD1C9E02AA00C4796A /* Album Filter View Controller */,
 				4421B3691C80BE0900673C4F /* Live Scan View Controller */,
 				2A1116EC1C83878400A45955 /* Results View Controller */,
 				2A4F81911C8D1706004FE9DA /* Image View Controller */,
@@ -851,6 +1028,7 @@
 				4421B3351C7F468300673C4F /* Map Search Cell */,
 				4421B32F1C7F467200673C4F /* Range Cell */,
 				2A4F81D11C90C3C4004FE9DA /* Name Cell */,
+				2A943FD81C9E083B00C4796A /* Album Cell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -987,6 +1165,8 @@
 				2ADBB9111C7BFEA90034B7D1 /* DYPPhotosViewController.h */,
 				2ADBB9121C7BFEA90034B7D1 /* DYPPhotosViewController.m */,
 				2ADBB9131C7BFEA90034B7D1 /* DYPPhotosViewController.xib */,
+				2A943FCA1C9E064E00C4796A /* DYPPhotosViewController+Transitions.h */,
+				2A943FCB1C9E064E00C4796A /* DYPPhotosViewController+Transitions.m */,
 			);
 			name = "Photos View Controller";
 			sourceTree = "<group>";
@@ -1009,6 +1189,7 @@
 		2ADBB91F1C7C00920034B7D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2A943FC31C9E02FB00C4796A /* Collection */,
 				4421B2F21C7E2EBB00673C4F /* Filter */,
 				2ADBB9211C7C00A00034B7D1 /* Asset */,
 				4421B34A1C7F6FF300673C4F /* Location */,
@@ -1039,6 +1220,7 @@
 		2ADBB9261C7C02240034B7D1 /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
+				2A943FCD1C9E070300C4796A /* Table View */,
 				4421B34B1C7F717C00673C4F /* Map View */,
 				2ADBB92E1C7C024B0034B7D1 /* Collection View */,
 			);
@@ -1123,6 +1305,7 @@
 				4421B2FD1C7E2F6E00673C4F /* Location */,
 				2A1116FD1C83C82500A45955 /* Face */,
 				2A4F818B1C8BCB92004FE9DA /* Name */,
+				2A943FB21C9DFE9D00C4796A /* Album */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -1159,6 +1342,7 @@
 				4421B3061C7E3D2500673C4F /* Period Filter */,
 				4421B3581C7F91E000673C4F /* Location Filter */,
 				2A943F981C90E87100C4796A /* Photo Library */,
+				2A943FDF1C9F25ED00C4796A /* Album Filter */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -1512,12 +1696,14 @@
 				2A4F81CA1C90C2A9004FE9DA /* DYPCreateNameViewController.xib in Resources */,
 				2ADBB8F91C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */,
 				2ADBB8F81C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
+				2A943FDA1C9E0D1800C4796A /* DYPAlbumCell.xib in Resources */,
 				2A1116CB1C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib in Resources */,
 				2ADBB9031C7BFD550034B7D1 /* lbpcascade_profileface.xml in Resources */,
 				2ADBB8E31C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 				4421B3231C7F464800673C4F /* DYPMapCell.xib in Resources */,
 				2ADBB8FD1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */,
 				4421B30F1C7E406100673C4F /* SHNotificationView.xib in Resources */,
+				2A943FC21C9E02CF00C4796A /* DYPAlbumFilterViewController.xib in Resources */,
 				2ADBB8F01C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml in Resources */,
 				2ADBB8F31C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */,
 				4421B2F11C7E2BB100673C4F /* DYPDateCell.xib in Resources */,
@@ -1681,6 +1867,7 @@
 				2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */,
 				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
+				2A943FB11C9DFE9A00C4796A /* DYPAlbumFilterImpl.m in Sources */,
 				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
 				2A4F81C91C90C2A9004FE9DA /* DYPCreateNameViewController.m in Sources */,
 				2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */,
@@ -1694,12 +1881,14 @@
 				4421B31D1C7E475500673C4F /* MKMapView+Zoom.m in Sources */,
 				2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */,
 				4421B3051C7E3D2200673C4F /* DYPPeriodFilterValidator.m in Sources */,
+				2A943FC61C9E031000C4796A /* PHAssetCollection+DYPCollectionAdapter.m in Sources */,
 				4421B2FC1C7E2F6900673C4F /* DYPLocationFilterImpl.m in Sources */,
 				4421B3571C7F91DC00673C4F /* DYPLocationFilterValidator.m in Sources */,
 				2A1116F51C8395F100A45955 /* SHLoadingView.m in Sources */,
 				4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */,
 				2A1116981C7C05EF00A45955 /* PHAsset+DYPAssetProtocol.m in Sources */,
 				2A1116AB1C7C08FE00A45955 /* UIFont+DYP.m in Sources */,
+				2A943FD31C9E075500C4796A /* DYPAlbumTableViewDatasource.m in Sources */,
 				2A4F81CF1C90C3C1004FE9DA /* DYPNameCell.m in Sources */,
 				2A4F81871C8BCB70004FE9DA /* DYPNameFilterImpl.m in Sources */,
 				2A943F971C90E86D00C4796A /* DYPPhotoLibaryValidator.m in Sources */,
@@ -1707,8 +1896,10 @@
 				2A1116E21C83818500A45955 /* DYPAssetSearchImpl.m in Sources */,
 				2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */,
 				2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */,
+				2A943FBA1C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m in Sources */,
 				2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */,
 				2A1116A21C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m in Sources */,
+				2A943FDE1C9F25EA00C4796A /* DYPAlbumValidator.m in Sources */,
 				2A1116B31C7D42CB00A45955 /* UIStaticTableView.m in Sources */,
 				2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */,
 				4421B30E1C7E406100673C4F /* SHNotificationView.m in Sources */,
@@ -1719,15 +1910,18 @@
 				2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm in Sources */,
 				4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */,
 				4421B2F71C7E2F5A00673C4F /* DYPPeriodFilterImpl.m in Sources */,
+				2A943FD71C9E083800C4796A /* DYPAlbumCell.m in Sources */,
 				2A4F818E1C8D16F9004FE9DA /* DYPImageViewController.m in Sources */,
 				2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */,
 				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
+				2A943FC01C9E02C600C4796A /* DYPAlbumFilterViewController.m in Sources */,
 				2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */,
 				2A1116B81C7D431D00A45955 /* DYPFilterCell.m in Sources */,
 				4421B3681C80BE0700673C4F /* DYPLiveScanViewController.mm in Sources */,
 				4421B2EE1C7E2B9F00673C4F /* DYPDateCell.m in Sources */,
 				4421B32D1C7F467000673C4F /* DYPRangeCell.m in Sources */,
 				2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */,
+				2A943FCC1C9E064E00C4796A /* DYPPhotosViewController+Transitions.m in Sources */,
 				2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

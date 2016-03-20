@@ -16,7 +16,5 @@
 -(id<NSCollection>)recents;
 -(id<NSCollection>)all;
 
-#pragma mark - create
--(void)createAlbumWithAssets:(id<NSCollection>)assets andName:(NSString *)name callback:(void(^)(BOOL success,NSError * error))callback;
 
 @end

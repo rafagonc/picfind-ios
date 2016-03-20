@@ -11,6 +11,7 @@
 #import "DYPPeriodFilterImpl.h"
 #import "DYPFaceRecognizerFilterImpl.h"
 #import "DYPNameFilterImpl.h"
+#import "DYPAlbumFilterImpl.h"
 
 @implementation DYPFilterFactoryImpl
 
@@ -28,6 +29,9 @@
 }
 -(id<DYPNameFilter>)nameFilterForName:(NSString *)name {
     return [[DYPNameFilterImpl alloc] initWithName:name];
+}
+-(id<DYPAlbumFilter>)albumFilterForAlbums:(id<NSCollection>)albums {
+    return [[DYPAlbumFilterImpl alloc] initWithAlbums:albums];;
 }
 
 @end

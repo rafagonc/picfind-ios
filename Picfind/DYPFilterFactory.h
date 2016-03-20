@@ -11,6 +11,7 @@
 #import "DYPLocationFilter.h"
 #import "DYPFaceRecognizerFilter.h"
 #import "DYPNameFilter.h"
+#import "DYPAlbumFilter.h"
 
 @protocol DYPFilterFactory <NSObject>
 
@@ -18,5 +19,6 @@
 -(id<DYPLocationFilter>)locationFilterWith:(CLLocation *)location range:(NSInteger)range;
 -(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images andRects:(NSArray *)rects;
 -(id<DYPNameFilter>)nameFilterForName:(NSString *)name;
+-(id<DYPAlbumFilter>)albumFilterForAlbums:(id<NSCollection>)albums;
 
 @end

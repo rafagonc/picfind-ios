@@ -12,6 +12,7 @@
 #import "DYPAssetDataAccessObject.h"
 #import "UIViewController+NotificationShow.h"
 #import "DYPCustomizer.h"
+#import "DYPCollectionDataAccessObject.h"
 
 @interface DYPCreateNameViewController ()
 
@@ -24,6 +25,7 @@
 
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
+@property (setter=injected:,readonly) id<DYPCollectionDataAccessObject> collectionDataAccessObject;
 @property (setter=injected_nav:,readonly) id<DYPCustomizer> navigationBarCustomizer;
 
 @end
@@ -67,7 +69,7 @@
 }
 -(void)createAction:(UIBarButtonItem *)create {
     if ([self.nameCell name].length > 0) {
-        [self.assetDataAccessObject createAlbumWithAssets:self.assets andName:[self.nameCell name] callback:^(BOOL success, NSError *error) {
+        [self.collectionDataAccessObject createAlbumWithAssets:self.assets andName:[self.nameCell name] callback:^(BOOL success, NSError *error) {
             if (success) {
                 [self dismissViewControllerAnimated:YES completion:nil];
             } else {
