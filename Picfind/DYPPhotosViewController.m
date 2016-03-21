@@ -120,11 +120,11 @@
     [self.tableView addCell:faceCountFilter onSection:section];
     [self setFaceCountCell:faceCountFilter];
     
-    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition Filter"];
-    [faceFilter setDelegate:self];
-    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
-    [self.tableView addCell:faceFilter onSection:section];
-    [self setFaceRecognizerCell:faceFilter];
+//    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition Filter"];
+//    [faceFilter setDelegate:self];
+//    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
+//    [self.tableView addCell:faceFilter onSection:section];
+//    [self setFaceRecognizerCell:faceFilter];
     
     UIStaticTableViewSection *recentsSection = [[UIStaticTableViewSection alloc] init];
     [recentsSection setHeaderName:@"Recents"];

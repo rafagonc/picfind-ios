@@ -62,6 +62,7 @@
 		2A943FEF1C9F879900C4796A /* DYPFaceCountFilterImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FEE1C9F879900C4796A /* DYPFaceCountFilterImpl.mm */; };
 		2A943FF71C9F8A5F00C4796A /* DYPFaceCountFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FF51C9F8A5F00C4796A /* DYPFaceCountFilterViewController.m */; };
 		2A943FF81C9F8A5F00C4796A /* DYPFaceCountFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A943FF61C9F8A5F00C4796A /* DYPFaceCountFilterViewController.xib */; };
+		2A943FFC1C9FA61100C4796A /* RGNavigationBarProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FFB1C9FA61100C4796A /* RGNavigationBarProgressView.m */; };
 		2ADBB87A1C7BF8B20034B7D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8791C7BF8B20034B7D1 /* main.m */; };
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
@@ -268,6 +269,8 @@
 		2A943FF41C9F8A5F00C4796A /* DYPFaceCountFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceCountFilterViewController.h; sourceTree = "<group>"; };
 		2A943FF51C9F8A5F00C4796A /* DYPFaceCountFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPFaceCountFilterViewController.m; sourceTree = "<group>"; };
 		2A943FF61C9F8A5F00C4796A /* DYPFaceCountFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPFaceCountFilterViewController.xib; sourceTree = "<group>"; };
+		2A943FFA1C9FA61100C4796A /* RGNavigationBarProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGNavigationBarProgressView.h; sourceTree = "<group>"; };
+		2A943FFB1C9FA61100C4796A /* RGNavigationBarProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGNavigationBarProgressView.m; sourceTree = "<group>"; };
 		2ADBB8751C7BF8B20034B7D1 /* Picfind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picfind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8791C7BF8B20034B7D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -999,6 +1002,15 @@
 			name = "Face Count Filter View Controller";
 			sourceTree = "<group>";
 		};
+		2A943FFD1C9FA61300C4796A /* Navigation Bar Progress */ = {
+			isa = PBXGroup;
+			children = (
+				2A943FFA1C9FA61100C4796A /* RGNavigationBarProgressView.h */,
+				2A943FFB1C9FA61100C4796A /* RGNavigationBarProgressView.m */,
+			);
+			name = "Navigation Bar Progress";
+			sourceTree = "<group>";
+		};
 		2ADBB86C1C7BF8B20034B7D1 = {
 			isa = PBXGroup;
 			children = (
@@ -1131,6 +1143,7 @@
 				2A1116F61C8395F700A45955 /* Loading View */,
 				4421B3101C7E406300673C4F /* Notification View */,
 				2A1116B41C7D42CE00A45955 /* UIStaticTableView */,
+				2A943FFD1C9FA61300C4796A /* Navigation Bar Progress */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -1962,6 +1975,7 @@
 				4421B3331C7F468000673C4F /* DYPMapSearchCell.m in Sources */,
 				2A1116F21C8395CA00A45955 /* UIViewController+Loading.m in Sources */,
 				2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */,
+				2A943FFC1C9FA61100C4796A /* RGNavigationBarProgressView.m in Sources */,
 				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2A943FE91C9F7D0300C4796A /* DYPFavoriteFilterViewController.m in Sources */,
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,

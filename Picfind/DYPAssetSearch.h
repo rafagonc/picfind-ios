@@ -12,6 +12,6 @@
 @protocol DYPAssetSearch <NSObject>
 
 #pragma mark - methods
--(void)assetsWithFilterCollection:(DYPFilterCollection *)collection callback:(void(^)(NSArray <id<DYPAssetProtocol>> * assets))callback;
+-(void)assetsWithFilterCollection:(DYPFilterCollection *)collection callback:(void(^)(NSArray <id<DYPAssetProtocol>> * assets))callback progress:(void(^)(CGFloat progress))progress_callback ;
 
 @end

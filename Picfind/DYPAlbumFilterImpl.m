@@ -33,7 +33,7 @@
 -(NSString *)explain {
     NSMutableString *albums = [@"" mutableCopy];
     for (id<DYPCollectionProtocol> collection in self.albums) {
-        [albums appendString:[collection isEqual:self.albums] ? [NSString stringWithFormat:@"%@", [collection name]] : [NSString stringWithFormat:@"%@, ", [collection name]]];
+        [albums appendString:[collection isEqual:[self.albums lastObject]] ? [NSString stringWithFormat:@"%@", [collection name]] : [NSString stringWithFormat:@"%@, ", [collection name]]];
     }
     return [albums copy];
 }
