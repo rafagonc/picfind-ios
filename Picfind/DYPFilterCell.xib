@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlD-u8-p0F">
-                        <rect key="frame" x="8" y="0.0" width="312" height="43.5"/>
+                        <rect key="frame" x="8" y="0.0" width="274" height="43.5"/>
                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                     <constraint firstAttribute="bottom" secondItem="A9J-HN-nyO" secondAttribute="bottom" constant="12" id="7Ld-bW-Wl4"/>
                     <constraint firstItem="DlD-u8-p0F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Bxe-lz-Mqt"/>
                     <constraint firstItem="DlD-u8-p0F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SpF-5d-nVX"/>
-                    <constraint firstAttribute="trailing" secondItem="DlD-u8-p0F" secondAttribute="trailing" id="UTD-7J-bip"/>
+                    <constraint firstAttribute="trailing" secondItem="DlD-u8-p0F" secondAttribute="trailing" constant="38" id="UTD-7J-bip"/>
                     <constraint firstAttribute="bottom" secondItem="DlD-u8-p0F" secondAttribute="bottom" id="YWZ-xU-mMw"/>
                     <constraint firstAttribute="trailing" secondItem="A9J-HN-nyO" secondAttribute="trailing" constant="8" id="pLw-or-pFo"/>
                 </constraints>

@@ -13,6 +13,7 @@
 
 static NSString *const DYPErrorDomain = @"DYPErrorDomain";
 
+#define kMyPredictLabel 5
 #define kCGRectFaceSize CGSizeMake(150,150)
 
 #endif /* global_pch */

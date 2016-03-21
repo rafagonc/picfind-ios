@@ -22,9 +22,19 @@
 #pragma mark - setters
 -(void)setPredictable:(NSArray *)images andRects:(NSArray *)rects {
     _faceRecognizer = [[DYPFaceRecognizer alloc] init];
+    NSMutableArray *images_m = [images mutableCopy];
     NSMutableArray *labels = [@[] mutableCopy];
-    for (int i = 0; i < images.count; i++) [labels addObject:@2];
-    [_faceRecognizer train:images andRects:rects andLabels:labels];
+    for (int i = 0; i < images.count; i++) [labels addObject:@(kMyPredictLabel)];
+    
+    //pask
+    [images_m addObject:[UIImage imageNamed:@"pask_face"]];
+    [labels addObject:@3];
+    
+    [images_m addObject:[UIImage imageNamed:@"tato_face"]];
+    [labels addObject:@4];
+    
+    [_faceRecognizer train:[images_m copy] andRects:rects andLabels:labels];
+    
 }
 
 #pragma mark - filter
@@ -35,7 +45,8 @@
             for (NSValue *rect in faces) {
                 CGRect rectValue = [rect CGRectValue];
                 UIImage *faceImage = [[[DYPFaceCropper alloc] initWithImage:image andFaceRect:rectValue] face];
-                if ([_faceRecognizer predict:faceImage] == 2) {
+                NSInteger predict = [_faceRecognizer predict:faceImage];
+                if (predict == kMyPredictLabel) {
                     isElegible();
                     break;
                 }

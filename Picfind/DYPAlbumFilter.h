@@ -11,4 +11,6 @@
 
 @protocol DYPAlbumFilter <DYPFilter>
 
+-(id<NSCollection>)albums;
+
 @end

@@ -14,5 +14,6 @@
 
 -(void)datasource:(id<DYPTableViewDatasource>)datasource didSelectAlbums:(id<NSCollection>)collection;
 -(NSString *)titleForAlbumDatasource:(id<DYPTableViewDatasource>)datasource;
+-(id<NSCollection>)albumsSelectedForDatasource:(id<DYPTableViewDatasource>)tableView;
 
 @end

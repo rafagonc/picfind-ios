@@ -37,9 +37,12 @@
 }
 
 #pragma mark - select
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wundeclared-selector"
 -(void)selected {
     [self.target performSelector:self.selector withObject:self];
 }
+#pragma GCC diagnostic pop
 
 #pragma mark - setters
 -(void)setFilter:(id<DYPFilter>)filter {

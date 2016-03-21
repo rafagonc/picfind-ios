@@ -14,11 +14,13 @@
 #import "DYPAlbumFilter.h"
 #import "UIViewController+NotificationShow.h"
 #import "DYPValidation.h"
+#import "DYPQuote.h"
 
 @interface DYPAlbumFilterViewController () <DYPAlbumTableViewDatasourceDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
 
 #pragma mark - properties
 @property (nonatomic,strong) id<NSCollection> albums;
@@ -28,6 +30,7 @@
 @property (setter=injected:,readonly) id<DYPCollectionDataAccessObject> colletionDataAccessObject;
 @property (setter=injected_album:,readonly) id<DYPValidation> albumValidator;
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
+@property (setter=injected:,readonly) id<DYPQuote> quote;
 
 @end
 
@@ -39,16 +42,23 @@
         
     } return self;
 }
+-(instancetype)initWithAlbumFilter:(id<DYPAlbumFilter>)albumFilter {
+    if (self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil]) {
+        self.albums = [albumFilter albums];
+    } return self;
+}
 
 #pragma mark - lifecycle
 -(void)viewDidLoad {
     [super viewDidLoad];
+    [self setTitle:@"Album Filter"];
     
     [self.datasource setData:(NSArray *)[self.colletionDataAccessObject all]];
     [self.datasource setDelegate:self];
     [self.tableView setDataSource:self.datasource];
     [self.tableView setDelegate:self.datasource];
     [self.tableView reloadData];
+    [self.quoteLabel setText:[self.quote random]];
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -63,6 +73,9 @@
 }
 -(NSString *)titleForAlbumDatasource:(id<DYPTableViewDatasource>)datasource {
     return @"Choose the albums that you wanna search.";
+}
+-(id<NSCollection>)albumsSelectedForDatasource:(id<DYPTableViewDatasource>)tableView {
+    return self.albums;
 }
 
 #pragma mark - actions

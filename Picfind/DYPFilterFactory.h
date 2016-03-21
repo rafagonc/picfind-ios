@@ -12,6 +12,8 @@
 #import "DYPFaceRecognizerFilter.h"
 #import "DYPNameFilter.h"
 #import "DYPAlbumFilter.h"
+#import "DYPFavoriteFilter.h"
+#import "DYPFaceCountFilter.h"
 
 @protocol DYPFilterFactory <NSObject>
 
@@ -20,5 +22,7 @@
 -(id<DYPFaceRecognizerFilter>)faceRecognizerFilterWithImages:(NSArray *)images andRects:(NSArray *)rects;
 -(id<DYPNameFilter>)nameFilterForName:(NSString *)name;
 -(id<DYPAlbumFilter>)albumFilterForAlbums:(id<NSCollection>)albums;
+-(id<DYPFavoriteFilter>)favoriteFilterWithType:(DYPFavoriteFilterType)type;
+-(id<DYPFaceCountFilter>)faceCountFilterWithCount:(NSInteger)count;
 
 @end

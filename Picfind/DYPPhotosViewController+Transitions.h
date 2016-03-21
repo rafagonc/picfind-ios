@@ -15,5 +15,7 @@
 -(void)locationFilterWasSelected:(DYPFilterCell *)cell;
 -(void)faceFilterWasSelected:(DYPFilterCell *)cell;
 -(void)albumFilterWasSelected:(DYPFilterCell *)cell;
+-(void)favoriteFilterWasSelected:(DYPFilterCell *)cell;
+-(void)faceCountFilterWasSelected:(DYPFilterCell *)cell;
 
 @end

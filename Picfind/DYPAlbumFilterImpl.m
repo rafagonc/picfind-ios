@@ -11,8 +11,6 @@
 
 @interface DYPAlbumFilterImpl ()
 
-@property (nonatomic,strong) id<NSCollection> albums;
-
 @end
 
 @implementation DYPAlbumFilterImpl
@@ -33,7 +31,11 @@
     }
 }
 -(NSString *)explain {
-    return @"";
+    NSMutableString *albums = [@"" mutableCopy];
+    for (id<DYPCollectionProtocol> collection in self.albums) {
+        [albums appendString:[collection isEqual:self.albums] ? [NSString stringWithFormat:@"%@", [collection name]] : [NSString stringWithFormat:@"%@, ", [collection name]]];
+    }
+    return [albums copy];
 }
 
 @end

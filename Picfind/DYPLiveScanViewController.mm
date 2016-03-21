@@ -119,7 +119,7 @@
             DYPFaceCropper *faceCropper = [[DYPFaceCropper alloc] initWithImage:[UIImage imageWithCGImage:[context createCGImage:current fromRect:[current extent]]] andFaceRect:[faces[0] CGRectValue]];
             [self.images addObject:[faceCropper face]];
         }
-        if (self.images.count == 15) {
+        if (self.images.count == 1) {
             [self stopEverything];
             [self.delegate source:self didCreateFilter:[self.filterFactory faceRecognizerFilterWithImages:self.images andRects:self.rects]];
             [self.navigationController popToRootViewControllerAnimated:YES];

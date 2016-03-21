@@ -47,6 +47,10 @@
     if (!cell) {
         cell = [[DYPAlbumCell alloc] init];
     }
+    
+    id<NSCollection> selecteds = [self.delegate albumsSelectedForDatasource:self];
+    cell.accessoryType = [selecteds containsObject:[self.albums objectAtIndex:indexPath.row]] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+    cell.choosed = [selecteds containsObject:[self.albums objectAtIndex:indexPath.row]];
     cell.collection = [self.albums objectAtIndex:indexPath.row];
     return cell;
 }

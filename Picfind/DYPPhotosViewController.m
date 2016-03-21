@@ -32,6 +32,7 @@
 #import "DYPImageViewController.h"
 #import "UIViewController+NotificationShow.h"
 #import "DYPPhotosViewController+Transitions.h"
+#import "DYPFaceCountFilter.h"
 
 @interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate>
 
@@ -40,6 +41,9 @@
 @property (weak, nonatomic) DYPFilterCell *periodCell;
 @property (weak, nonatomic) DYPFilterCell *locationCell;
 @property (weak, nonatomic) DYPFilterCell *faceRecognizerCell;
+@property (weak, nonatomic) DYPFilterCell *albumCell;
+@property (weak, nonatomic) DYPFilterCell *favoriteCell;
+@property (weak, nonatomic) DYPFilterCell *faceCountCell;
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
@@ -102,13 +106,25 @@
     [albumFilter setDelegate:self];
     [albumFilter addTarget:self selector:@selector(albumFilterWasSelected:)];
     [self.tableView addCell:albumFilter onSection:section];
-    [self setLocationCell:albumFilter];
+    [self setAlbumCell:albumFilter];
     
-//    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition"];
-//    [faceFilter setDelegate:self];
-//    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
-//    [self.tableView addCell:faceFilter onSection:section];
-//    [self setFaceRecognizerCell:faceFilter];
+    DYPFilterCell *favoriteFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Favorite Filter"];
+    [favoriteFilter setDelegate:self];
+    [favoriteFilter addTarget:self selector:@selector(favoriteFilterWasSelected:)];
+    [self.tableView addCell:favoriteFilter onSection:section];
+    [self setFavoriteCell:favoriteFilter];
+    
+    DYPFilterCell *faceCountFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Number Of Faces Filter"];
+    [faceCountFilter setDelegate:self];
+    [faceCountFilter addTarget:self selector:@selector(faceCountFilterWasSelected:)];
+    [self.tableView addCell:faceCountFilter onSection:section];
+    [self setFaceCountCell:faceCountFilter];
+    
+    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition Filter"];
+    [faceFilter setDelegate:self];
+    [faceFilter addTarget:self selector:@selector(faceFilterWasSelected:)];
+    [self.tableView addCell:faceFilter onSection:section];
+    [self setFaceRecognizerCell:faceFilter];
     
     UIStaticTableViewSection *recentsSection = [[UIStaticTableViewSection alloc] init];
     [recentsSection setHeaderName:@"Recents"];
@@ -151,6 +167,12 @@
         [self.periodCell setFilter:filter];
     } else if ([filter conformsToProtocol:@protocol(DYPFaceRecognizerFilter)]) {
         [self.faceRecognizerCell setFilter:filter];
+    } else if ([filter conformsToProtocol:@protocol(DYPAlbumFilter)]) {
+        [self.albumCell setFilter:filter];
+    } else if ([filter conformsToProtocol:@protocol(DYPFavoriteFilter)]) {
+        [self.favoriteCell setFilter:filter];
+    } else if ([filter conformsToProtocol:@protocol(DYPFaceCountFilter)]) {
+        [self.faceCountCell setFilter:filter];
     }
 }
 -(void)filterCell:(DYPFilterCell *)cell didDeleteFilter:(id<DYPFilter>)filter {

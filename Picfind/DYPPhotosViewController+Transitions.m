@@ -13,6 +13,8 @@
 #import "DYPLocationFilter.h"
 #import "DYPPeriodFilter.h"
 #import "DYPAlbumFilterViewController.h"
+#import "DYPFavoriteFilterViewController.h"
+#import "DYPFaceCountFilterViewController.h"
 
 @implementation DYPPhotosViewController (Transitions)
 
@@ -33,9 +35,19 @@
     [self.navigationController pushViewController:liveScan animated:YES];
 }
 -(void)albumFilterWasSelected:(DYPFilterCell *)cell         {
-    DYPAlbumFilterViewController *filter = [[DYPAlbumFilterViewController alloc] init];
+    DYPAlbumFilterViewController *filter = [[DYPAlbumFilterViewController alloc] initWithAlbumFilter:(id<DYPAlbumFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPAlbumFilter)]];
     [filter setDelegate:self];
     [self.navigationController pushViewController:filter animated:YES];
+}
+-(void)favoriteFilterWasSelected:(DYPFilterCell *)cell {
+    DYPFavoriteFilterViewController *favorite = [[DYPFavoriteFilterViewController alloc] initWithFavorite:(id<DYPFavoriteFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPFavoriteFilter)]];
+    [favorite setDelegate:self];
+    [self.navigationController pushViewController:favorite animated:YES];
+}
+-(void)faceCountFilterWasSelected:(DYPFilterCell *)cell {
+    DYPFaceCountFilterViewController *faceCount = [[DYPFaceCountFilterViewController alloc] initWithFaceCount:(id<DYPFaceCountFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPFaceCountFilter)]];
+    [faceCount setDelegate:self];
+    [self.navigationController pushViewController:faceCount animated:YES];
 }
 
 @end

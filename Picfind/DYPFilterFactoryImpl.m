@@ -12,6 +12,8 @@
 #import "DYPFaceRecognizerFilterImpl.h"
 #import "DYPNameFilterImpl.h"
 #import "DYPAlbumFilterImpl.h"
+#import "DYPFavoriteFilterImpl.h"
+#import "DYPFaceCountFilterImpl.h"
 
 @implementation DYPFilterFactoryImpl
 
@@ -32,6 +34,12 @@
 }
 -(id<DYPAlbumFilter>)albumFilterForAlbums:(id<NSCollection>)albums {
     return [[DYPAlbumFilterImpl alloc] initWithAlbums:albums];;
+}
+-(id<DYPFavoriteFilter>)favoriteFilterWithType:(DYPFavoriteFilterType)type {
+    return [[DYPFavoriteFilterImpl alloc] initWithType:type];
+}
+-(id<DYPFaceCountFilter>)faceCountFilterWithCount:(NSInteger)count {
+    return [[DYPFaceCountFilterImpl alloc] initWithCount:count];
 }
 
 @end

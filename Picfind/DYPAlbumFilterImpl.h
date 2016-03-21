@@ -16,4 +16,7 @@
 #pragma mark - constructor
 -(instancetype)initWithAlbums:(id<NSCollection>)albums;
 
+#pragma mark - properties
+@property (nonatomic,strong) id<NSCollection> albums;
+
 @end
