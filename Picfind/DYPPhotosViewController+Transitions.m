@@ -16,6 +16,7 @@
 #import "DYPFavoriteFilterViewController.h"
 #import "DYPFaceCountFilterViewController.h"
 #import "DYPLuminosityFilterViewController.h"
+#import "DYPLuminosityFilter.h"
 
 @implementation DYPPhotosViewController (Transitions)
 
@@ -51,7 +52,7 @@
     [self.navigationController pushViewController:faceCount animated:YES];
 }
 -(void)luminosityFilterWasSelected:(DYPFilterCell *)cell {
-    DYPLuminosityFilterViewController *lum = [[DYPLuminosityFilterViewController alloc] init];
+    DYPLuminosityFilterViewController *lum = [[DYPLuminosityFilterViewController alloc] initWithInitialValue:[(id<DYPLuminosityFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPLuminosityFilter)] initialValue] andFinalValue:[(id<DYPLuminosityFilter>)[self.appliedFilters filterWithProtocol:@protocol(DYPLuminosityFilter)] finalValue]];
     [lum setDelegate:self];
     [self.navigationController pushViewController:lum animated:YES];
 }

@@ -39,8 +39,8 @@
 }
 -(instancetype)initWithInitialValue:(CGFloat)initialValue andFinalValue:(CGFloat)finalValue {
     if (self = [super init]) {
-        self.initialValue = initialValue;
-        self.finalValue = finalValue;
+        self.initialValue = initialValue ? initialValue : 0.2;
+        self.finalValue = finalValue ? finalValue : 0.6;
     } return self;
 }
 
