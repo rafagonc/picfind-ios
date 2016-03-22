@@ -25,7 +25,7 @@
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLf-DH-SS4">
-                    <rect key="frame" x="0.0" y="460" width="320" height="44"/>
+                    <rect key="frame" x="-1" y="461" width="322" height="44"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="67H-1T-VRH"/>
@@ -41,11 +41,11 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="TLf-DH-SS4" secondAttribute="bottom" id="0Dr-8P-Q6r"/>
-                <constraint firstItem="TLf-DH-SS4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KYw-N4-2HI"/>
+                <constraint firstAttribute="bottom" secondItem="TLf-DH-SS4" secondAttribute="bottom" constant="-1" id="0Dr-8P-Q6r"/>
+                <constraint firstItem="TLf-DH-SS4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-1" id="KYw-N4-2HI"/>
                 <constraint firstAttribute="trailing" secondItem="5NR-T5-hzC" secondAttribute="trailing" constant="8" id="SQw-vZ-C1X"/>
                 <constraint firstItem="5NR-T5-hzC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ZOt-DT-vQI"/>
-                <constraint firstAttribute="trailing" secondItem="TLf-DH-SS4" secondAttribute="trailing" id="q2x-NN-6XC"/>
+                <constraint firstAttribute="trailing" secondItem="TLf-DH-SS4" secondAttribute="trailing" constant="-1" id="q2x-NN-6XC"/>
                 <constraint firstItem="5NR-T5-hzC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="rdJ-cH-FR7"/>
                 <constraint firstAttribute="bottom" secondItem="5NR-T5-hzC" secondAttribute="bottom" constant="8" id="wds-Df-fb4"/>
             </constraints>
