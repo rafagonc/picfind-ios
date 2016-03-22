@@ -24,6 +24,8 @@
 #import "DYPLocationFilterMapDatasource.h"
 #import "DYPLocationFilterValidator.h"
 #import "DYPQuote.h"
+#import "DYPHelpAttributedString.h"
+#import "DYPHelpAttributedStringImpl.h"
 #import "DYPQuoteImpl.h"
 #import "DYPAssetSearch.h"
 #import "DYPAssetSearchImpl.h"
@@ -33,6 +35,7 @@
 #import "DYPAlbumTableViewDatasource.h"
 #import "DYPTableViewDatasource.h"
 #import "DYPAlbumValidator.h"
+#import "DYPPriorityAssetSearchImpl.h"
 
 @implementation DYPDepedencyInjector
 
@@ -69,7 +72,9 @@
     
     //othres
     [[DPRegistry sharedRegistry] registerImplementation:[DYPQuoteImpl class] forProtocol:@protocol(DYPQuote) context:nil];
-    [[DPRegistry sharedRegistry] registerImplementation:[DYPAssetSearchImpl class] forProtocol:@protocol(DYPAssetSearch) context:nil];
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPPriorityAssetSearchImpl class] forProtocol:@protocol(DYPAssetSearch) context:nil];
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPHelpAttributedStringImpl class] forProtocol:@protocol(DYPHelpAttributedString) context:nil];
+
 
 
 

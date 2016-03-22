@@ -28,7 +28,10 @@
 -(NSString *)explain {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-    return [NSString stringWithFormat:@"%@ to %@", [dateFormatter stringFromDate:self.from], [dateFormatter stringFromDate:self.to]];
+    return [NSString stringWithFormat:@"📅 %@ to %@", [dateFormatter stringFromDate:self.from], [dateFormatter stringFromDate:self.to]];
+}
+-(DYPFilterPriority)priority {
+    return DYPFilterPriorityFast;
 }
 
 @end

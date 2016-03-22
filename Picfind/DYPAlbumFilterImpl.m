@@ -31,11 +31,14 @@
     }
 }
 -(NSString *)explain {
-    NSMutableString *albums = [@"" mutableCopy];
+    NSMutableString *albums = [@"📕 " mutableCopy];
     for (id<DYPCollectionProtocol> collection in self.albums) {
         [albums appendString:[collection isEqual:[self.albums lastObject]] ? [NSString stringWithFormat:@"%@", [collection name]] : [NSString stringWithFormat:@"%@, ", [collection name]]];
     }
     return [albums copy];
+}
+-(DYPFilterPriority)priority {
+    return DYPFilterPriorityFast;
 }
 
 @end

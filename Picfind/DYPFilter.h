@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "DYPAssetProtocol.h"
 
+typedef NS_ENUM(NSUInteger, DYPFilterPriority) {
+    DYPFilterPriorityFast = 2,
+    DYPFilterPrioritySlow = 1,
+};
+
 @protocol DYPFilter <NSObject>
 
 #pragma mark - photo analysis
@@ -16,5 +21,9 @@
 
 #pragma mark - representation
 -(NSString *)explain;
+
+#pragma mark - priority
+-(DYPFilterPriority)priority;
+
 
 @end

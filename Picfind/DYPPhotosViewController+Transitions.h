@@ -17,5 +17,6 @@
 -(void)albumFilterWasSelected:(DYPFilterCell *)cell;
 -(void)favoriteFilterWasSelected:(DYPFilterCell *)cell;
 -(void)faceCountFilterWasSelected:(DYPFilterCell *)cell;
+-(void)luminosityFilterWasSelected:(DYPFilterCell *)cell;
 
 @end

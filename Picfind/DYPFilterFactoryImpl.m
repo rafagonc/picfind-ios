@@ -14,6 +14,7 @@
 #import "DYPAlbumFilterImpl.h"
 #import "DYPFavoriteFilterImpl.h"
 #import "DYPFaceCountFilterImpl.h"
+#import "DYPLuminosityFilterImpl.h"
 
 @implementation DYPFilterFactoryImpl
 
@@ -40,6 +41,9 @@
 }
 -(id<DYPFaceCountFilter>)faceCountFilterWithCount:(NSInteger)count {
     return [[DYPFaceCountFilterImpl alloc] initWithCount:count];
+}
+-(id<DYPLuminosityFilter>)luminosityFilterWithInitialValue:(CGFloat)initialValue andFinalValue:(CGFloat)finalValue {
+    return [[DYPLuminosityFilterImpl alloc] initWithInitialValue:initialValue andFinalValue:finalValue];
 }
 
 @end

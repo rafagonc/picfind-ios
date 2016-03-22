@@ -34,17 +34,19 @@
 -(NSString *)explain {
     switch (self.type) {
         case DYPFavoriteFilterTypeAllFavs:
-            return @"All Photos";
+            return @"Include all pictures";
             break;
         case DYPFavoriteFilterTypeNoFavs:
-            return @"No Favorite Pictures";
+            return @"Does not include ❤️ pictures";
             break;
-            
         case DYPFavoriteFilterTypeYesFavs:
-            return @"Just Favorite Pictures";
+            return @"Include only ❤️ pictures";
             break;
     }
     return @"";
+}
+-(DYPFilterPriority)priority {
+    return DYPFilterPriorityFast;
 }
 
 @end

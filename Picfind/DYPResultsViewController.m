@@ -86,7 +86,7 @@
         [welf stopFullLoading];
         [welf.progressView stop];
     } progress:^(CGFloat progress) {
-        [self.progressView setPercentage:progress];
+        [welf.progressView setPercentage:progress];
     }];
 }
 

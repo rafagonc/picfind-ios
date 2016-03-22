@@ -29,13 +29,28 @@
 #pragma mark - filter
 -(void)analyze:(id<DYPAssetProtocol>)asset isElegible:(void (^)())isElegible {
     __weak typeof(self) welf = self;
-    [asset fetchImage:^(UIImage *image, NSDictionary *data) {
-        NSArray *faceCount = [welf.detector detectWithCIFeatureFromCGImage:image];
-        if (faceCount.count == welf.count) isElegible();
-    }];
+    dispatch_queue_t current = dispatch_get_current_queue();
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        [asset fetchImage:^(UIImage *image, NSDictionary *data) {
+            NSArray *faceCount = [welf.detector detectWithCIFeatureFromCGImage:image];
+            if (faceCount.count >= welf.count) {
+                dispatch_sync(current, ^{
+                    isElegible();
+                });
+            }
+            image = nil;
+        }];
+    });
 }
 -(NSString *)explain {
-    return [NSString stringWithFormat:@"%lu faces in the pic.", self.count];
+    NSMutableString *string = [[NSMutableString alloc] initWithString:@">= "];
+    for (int i = 0; i < self.count; i++) {
+        [string appendString:@"👨🏻"];
+    }
+    return [string copy];
+}
+-(DYPFilterPriority)priority {
+    return DYPFilterPrioritySlow;
 }
 
 @end

@@ -57,5 +57,8 @@
 -(NSString *)explain {
     return @"👦🏽";
 }
+-(DYPFilterPriority)priority {
+    return DYPFilterPrioritySlow;
+}
 
 @end

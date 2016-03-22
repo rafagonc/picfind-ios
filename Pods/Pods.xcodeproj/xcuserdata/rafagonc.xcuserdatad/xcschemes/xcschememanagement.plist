@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MARKRangeSlider-MARKRangeSlider.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MARKRangeSlider.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>NSDate-Escort.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,6 +47,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>01EC59B8FAEBAE07ABB06B427B2FE3DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>19B7E936EAFA3B2AD017AB0A96352D46</key>
 		<dict>
 			<key>primary</key>
@@ -47,17 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>76BF404E284C8F8D1E18EF96D7E71F10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>89DB946C715604D7C8C3F8A1301F608D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B01165957F6776098D23847D32BABA74</key>
+		<key>B24E0E02E9746BC60C12F9F7395259A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B24E0E02E9746BC60C12F9F7395259A7</key>
+		<key>B7C640ADF58DE43A08839940EFFCAF7B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

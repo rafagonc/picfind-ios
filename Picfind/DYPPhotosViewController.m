@@ -33,6 +33,8 @@
 #import "UIViewController+NotificationShow.h"
 #import "DYPPhotosViewController+Transitions.h"
 #import "DYPFaceCountFilter.h"
+#import "DYPHelpViewController.h"
+#import "DYPLuminosityFilter.h"
 
 @interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate>
 
@@ -44,6 +46,8 @@
 @property (weak, nonatomic) DYPFilterCell *albumCell;
 @property (weak, nonatomic) DYPFilterCell *favoriteCell;
 @property (weak, nonatomic) DYPFilterCell *faceCountCell;
+@property (weak, nonatomic) DYPFilterCell *luminosityCell;
+
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
@@ -83,6 +87,9 @@
     
     UIBarButtonItem *searchButton = [[UIBarButtonItem alloc] initWithTitle:@"Search" style:UIBarButtonItemStylePlain target:self action:@selector(searchAction:)];
     [self.navigationItem setRightBarButtonItem:searchButton];
+    
+    UIBarButtonItem *helpButton = [[UIBarButtonItem alloc] initWithTitle:@"Help" style:UIBarButtonItemStylePlain target:self action:@selector(helpAction:)];
+    [self.navigationItem setLeftBarButtonItem:helpButton];
 }
 
 #pragma mark - setup
@@ -90,35 +97,41 @@
     UIStaticTableViewSection *section = [[UIStaticTableViewSection alloc] init];
     [section setHeaderName:@"Filters"];
     
-    DYPFilterCell *periodFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Period Filter"];
+    DYPFilterCell *periodFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply period filter"];
     [periodFilter setDelegate:self];
     [periodFilter addTarget:self selector:@selector(periodFilterWasSelected:)];
     [self.tableView addCell:periodFilter onSection:section];
     [self setPeriodCell:periodFilter];
     
-    DYPFilterCell *locationFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Location Filter"];
+    DYPFilterCell *locationFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply location filter"];
     [locationFilter setDelegate:self];
     [locationFilter addTarget:self selector:@selector(locationFilterWasSelected:)];
     [self.tableView addCell:locationFilter onSection:section];
     [self setLocationCell:locationFilter];
     
-    DYPFilterCell *albumFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Album Filter"];
+    DYPFilterCell *albumFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply album filter"];
     [albumFilter setDelegate:self];
     [albumFilter addTarget:self selector:@selector(albumFilterWasSelected:)];
     [self.tableView addCell:albumFilter onSection:section];
     [self setAlbumCell:albumFilter];
     
-    DYPFilterCell *favoriteFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Favorite Filter"];
+    DYPFilterCell *favoriteFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply favorite filter"];
     [favoriteFilter setDelegate:self];
     [favoriteFilter addTarget:self selector:@selector(favoriteFilterWasSelected:)];
     [self.tableView addCell:favoriteFilter onSection:section];
     [self setFavoriteCell:favoriteFilter];
     
-    DYPFilterCell *faceCountFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Number Of Faces Filter"];
+    DYPFilterCell *faceCountFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply number of faces filter"];
     [faceCountFilter setDelegate:self];
     [faceCountFilter addTarget:self selector:@selector(faceCountFilterWasSelected:)];
     [self.tableView addCell:faceCountFilter onSection:section];
     [self setFaceCountCell:faceCountFilter];
+    
+    DYPFilterCell *luminosityFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply luminosity filter"];
+    [luminosityFilter setDelegate:self];
+    [luminosityFilter addTarget:self selector:@selector(luminosityFilterWasSelected:)];
+    [self.tableView addCell:luminosityFilter onSection:section];
+    [self setLuminosityCell:luminosityFilter];
     
 //    DYPFilterCell *faceFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply Face Recognition Filter"];
 //    [faceFilter setDelegate:self];
@@ -173,6 +186,8 @@
         [self.favoriteCell setFilter:filter];
     } else if ([filter conformsToProtocol:@protocol(DYPFaceCountFilter)]) {
         [self.faceCountCell setFilter:filter];
+    } else if ([filter conformsToProtocol:@protocol(DYPLuminosityFilter)]) {
+        [self.luminosityCell setFilter:filter];
     }
 }
 -(void)filterCell:(DYPFilterCell *)cell didDeleteFilter:(id<DYPFilter>)filter {
@@ -187,6 +202,10 @@
     }
     DYPResultsViewController *results = [[DYPResultsViewController alloc] initWithCollection:self.appliedFilters];
     [self.navigationController pushViewController:results animated:YES];
+}
+-(IBAction)helpAction:(id)sender {
+    DYPHelpViewController *help = [[DYPHelpViewController alloc] init];
+    [self presentViewController:help animated:YES completion:nil];
 }
 
 #pragma mark - dealloc

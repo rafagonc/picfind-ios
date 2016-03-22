@@ -79,7 +79,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
-    cell.textLabel.text = [[self.countArray objectAtIndex:indexPath.row] isEqualToNumber:@(0)] ? @"Any" : [NSString stringWithFormat:@"%@", self.countArray[indexPath.row]];
+    cell.textLabel.text = [[self.countArray objectAtIndex:indexPath.row] isEqualToNumber:@(0)] ? @"Any" : [NSString stringWithFormat:@">= %@", self.countArray[indexPath.row]];
     cell.accessoryType = [self.countSelected integerValue] == [self.countArray[indexPath.row] integerValue] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
     cell.tintColor = [UIColor dyp_redColor];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;

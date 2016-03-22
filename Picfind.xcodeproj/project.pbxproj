@@ -45,6 +45,20 @@
 		2A4F81CA1C90C2A9004FE9DA /* DYPCreateNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F81C81C90C2A9004FE9DA /* DYPCreateNameViewController.xib */; };
 		2A4F81CF1C90C3C1004FE9DA /* DYPNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F81CD1C90C3C1004FE9DA /* DYPNameCell.m */; };
 		2A4F81D01C90C3C1004FE9DA /* DYPNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F81CE1C90C3C1004FE9DA /* DYPNameCell.xib */; };
+		2A91CE321CA0DACA00BFF4D6 /* DYPPriorityAssetSearchImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE311CA0DACA00BFF4D6 /* DYPPriorityAssetSearchImpl.m */; };
+		2A91CE3B1CA0EB0600BFF4D6 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE341CA0EB0600BFF4D6 /* UIImage+Alpha.m */; };
+		2A91CE3C1CA0EB0600BFF4D6 /* UIImage+Pixels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE361CA0EB0600BFF4D6 /* UIImage+Pixels.m */; };
+		2A91CE3D1CA0EB0600BFF4D6 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE381CA0EB0600BFF4D6 /* UIImage+Resize.m */; };
+		2A91CE3E1CA0EB0600BFF4D6 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE3A1CA0EB0600BFF4D6 /* UIImage+RoundedCorner.m */; };
+		2A91CE411CA0EB3000BFF4D6 /* DYPLuminosityFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE401CA0EB3000BFF4D6 /* DYPLuminosityFilterViewController.m */; };
+		2A91CE431CA0ECA800BFF4D6 /* DYPLuminosityFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91CE421CA0ECA800BFF4D6 /* DYPLuminosityFilterViewController.xib */; };
+		2A91CE471CA0ED8500BFF4D6 /* DYPLuminosityFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE461CA0ED8500BFF4D6 /* DYPLuminosityFilterImpl.m */; };
+		2A91CE4E1CA0F24E00BFF4D6 /* DYPLuminosityRangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE4D1CA0F24E00BFF4D6 /* DYPLuminosityRangeCell.m */; };
+		2A91CE511CA0F26300BFF4D6 /* DYPLuminosityRangeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91CE501CA0F26300BFF4D6 /* DYPLuminosityRangeCell.xib */; };
+		2A91CE541CA1048200BFF4D6 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE531CA1048200BFF4D6 /* UIImage+Color.m */; };
+		2A91CE571CA106A100BFF4D6 /* DYPHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE561CA106A100BFF4D6 /* DYPHelpViewController.m */; };
+		2A91CE591CA106B700BFF4D6 /* DYPHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A91CE581CA106B700BFF4D6 /* DYPHelpViewController.xib */; };
+		2A91CE5D1CA10AC900BFF4D6 /* DYPHelpAttributedStringImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE5C1CA10AC900BFF4D6 /* DYPHelpAttributedStringImpl.m */; };
 		2A943F971C90E86D00C4796A /* DYPPhotoLibaryValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */; };
 		2A943FB11C9DFE9A00C4796A /* DYPAlbumFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FB01C9DFE9A00C4796A /* DYPAlbumFilterImpl.m */; };
 		2A943FBA1C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FB91C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m */; };
@@ -232,6 +246,33 @@
 		2A4F81CC1C90C3C1004FE9DA /* DYPNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNameCell.h; sourceTree = "<group>"; };
 		2A4F81CD1C90C3C1004FE9DA /* DYPNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPNameCell.m; sourceTree = "<group>"; };
 		2A4F81CE1C90C3C1004FE9DA /* DYPNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPNameCell.xib; sourceTree = "<group>"; };
+		2A91CE301CA0DACA00BFF4D6 /* DYPPriorityAssetSearchImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPriorityAssetSearchImpl.h; sourceTree = "<group>"; };
+		2A91CE311CA0DACA00BFF4D6 /* DYPPriorityAssetSearchImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPriorityAssetSearchImpl.m; sourceTree = "<group>"; };
+		2A91CE331CA0EB0600BFF4D6 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		2A91CE341CA0EB0600BFF4D6 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		2A91CE351CA0EB0600BFF4D6 /* UIImage+Pixels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Pixels.h"; sourceTree = "<group>"; };
+		2A91CE361CA0EB0600BFF4D6 /* UIImage+Pixels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Pixels.m"; sourceTree = "<group>"; };
+		2A91CE371CA0EB0600BFF4D6 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		2A91CE381CA0EB0600BFF4D6 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		2A91CE391CA0EB0600BFF4D6 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		2A91CE3A1CA0EB0600BFF4D6 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		2A91CE3F1CA0EB3000BFF4D6 /* DYPLuminosityFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLuminosityFilterViewController.h; sourceTree = "<group>"; };
+		2A91CE401CA0EB3000BFF4D6 /* DYPLuminosityFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLuminosityFilterViewController.m; sourceTree = "<group>"; };
+		2A91CE421CA0ECA800BFF4D6 /* DYPLuminosityFilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPLuminosityFilterViewController.xib; sourceTree = "<group>"; };
+		2A91CE451CA0ED8500BFF4D6 /* DYPLuminosityFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLuminosityFilterImpl.h; sourceTree = "<group>"; };
+		2A91CE461CA0ED8500BFF4D6 /* DYPLuminosityFilterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLuminosityFilterImpl.m; sourceTree = "<group>"; };
+		2A91CE481CA0ED8C00BFF4D6 /* DYPLuminosityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLuminosityFilter.h; sourceTree = "<group>"; };
+		2A91CE4C1CA0F24E00BFF4D6 /* DYPLuminosityRangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLuminosityRangeCell.h; sourceTree = "<group>"; };
+		2A91CE4D1CA0F24E00BFF4D6 /* DYPLuminosityRangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPLuminosityRangeCell.m; sourceTree = "<group>"; };
+		2A91CE501CA0F26300BFF4D6 /* DYPLuminosityRangeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPLuminosityRangeCell.xib; sourceTree = "<group>"; };
+		2A91CE521CA1048200BFF4D6 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		2A91CE531CA1048200BFF4D6 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		2A91CE551CA106A100BFF4D6 /* DYPHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPHelpViewController.h; sourceTree = "<group>"; };
+		2A91CE561CA106A100BFF4D6 /* DYPHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPHelpViewController.m; sourceTree = "<group>"; };
+		2A91CE581CA106B700BFF4D6 /* DYPHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPHelpViewController.xib; sourceTree = "<group>"; };
+		2A91CE5B1CA10AC900BFF4D6 /* DYPHelpAttributedStringImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPHelpAttributedStringImpl.h; sourceTree = "<group>"; };
+		2A91CE5C1CA10AC900BFF4D6 /* DYPHelpAttributedStringImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPHelpAttributedStringImpl.m; sourceTree = "<group>"; };
+		2A91CE5E1CA10AE300BFF4D6 /* DYPHelpAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPHelpAttributedString.h; sourceTree = "<group>"; };
 		2A943F951C90E86D00C4796A /* DYPPhotoLibaryValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPhotoLibaryValidator.h; sourceTree = "<group>"; };
 		2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPhotoLibaryValidator.m; sourceTree = "<group>"; };
 		2A943FAF1C9DFE9A00C4796A /* DYPAlbumFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumFilterImpl.h; sourceTree = "<group>"; };
@@ -656,6 +697,8 @@
 			children = (
 				2A1116E01C83818500A45955 /* DYPAssetSearchImpl.h */,
 				2A1116E11C83818500A45955 /* DYPAssetSearchImpl.m */,
+				2A91CE301CA0DACA00BFF4D6 /* DYPPriorityAssetSearchImpl.h */,
+				2A91CE311CA0DACA00BFF4D6 /* DYPPriorityAssetSearchImpl.m */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -719,6 +762,16 @@
 			children = (
 				2A4689101C853E6500BD2D3A /* UIImage+Crop.m */,
 				2A46890F1C853E6500BD2D3A /* UIImage+Crop.h */,
+				2A91CE331CA0EB0600BFF4D6 /* UIImage+Alpha.h */,
+				2A91CE341CA0EB0600BFF4D6 /* UIImage+Alpha.m */,
+				2A91CE351CA0EB0600BFF4D6 /* UIImage+Pixels.h */,
+				2A91CE361CA0EB0600BFF4D6 /* UIImage+Pixels.m */,
+				2A91CE371CA0EB0600BFF4D6 /* UIImage+Resize.h */,
+				2A91CE381CA0EB0600BFF4D6 /* UIImage+Resize.m */,
+				2A91CE391CA0EB0600BFF4D6 /* UIImage+RoundedCorner.h */,
+				2A91CE3A1CA0EB0600BFF4D6 /* UIImage+RoundedCorner.m */,
+				2A91CE521CA1048200BFF4D6 /* UIImage+Color.h */,
+				2A91CE531CA1048200BFF4D6 /* UIImage+Color.m */,
 			);
 			name = UIImage;
 			sourceTree = "<group>";
@@ -777,6 +830,88 @@
 				2A4F81CE1C90C3C1004FE9DA /* DYPNameCell.xib */,
 			);
 			name = "Name Cell";
+			sourceTree = "<group>";
+		};
+		2A91CE441CA0ECBF00BFF4D6 /* Luminosity Filter View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE3F1CA0EB3000BFF4D6 /* DYPLuminosityFilterViewController.h */,
+				2A91CE401CA0EB3000BFF4D6 /* DYPLuminosityFilterViewController.m */,
+				2A91CE421CA0ECA800BFF4D6 /* DYPLuminosityFilterViewController.xib */,
+			);
+			name = "Luminosity Filter View Controller";
+			sourceTree = "<group>";
+		};
+		2A91CE491CA0ED8F00BFF4D6 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE481CA0ED8C00BFF4D6 /* DYPLuminosityFilter.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A91CE4A1CA0ED9600BFF4D6 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE451CA0ED8500BFF4D6 /* DYPLuminosityFilterImpl.h */,
+				2A91CE461CA0ED8500BFF4D6 /* DYPLuminosityFilterImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A91CE4B1CA0ED9C00BFF4D6 /* Luminosity */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE4A1CA0ED9600BFF4D6 /* Concrete */,
+				2A91CE491CA0ED8F00BFF4D6 /* Abstract */,
+			);
+			name = Luminosity;
+			sourceTree = "<group>";
+		};
+		2A91CE4F1CA0F25100BFF4D6 /* Luminosity Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE4C1CA0F24E00BFF4D6 /* DYPLuminosityRangeCell.h */,
+				2A91CE4D1CA0F24E00BFF4D6 /* DYPLuminosityRangeCell.m */,
+				2A91CE501CA0F26300BFF4D6 /* DYPLuminosityRangeCell.xib */,
+			);
+			name = "Luminosity Cell";
+			sourceTree = "<group>";
+		};
+		2A91CE5A1CA106BA00BFF4D6 /* Help View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE551CA106A100BFF4D6 /* DYPHelpViewController.h */,
+				2A91CE561CA106A100BFF4D6 /* DYPHelpViewController.m */,
+				2A91CE581CA106B700BFF4D6 /* DYPHelpViewController.xib */,
+			);
+			name = "Help View Controller";
+			sourceTree = "<group>";
+		};
+		2A91CE5F1CA10B2F00BFF4D6 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE5B1CA10AC900BFF4D6 /* DYPHelpAttributedStringImpl.h */,
+				2A91CE5C1CA10AC900BFF4D6 /* DYPHelpAttributedStringImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A91CE601CA10B3400BFF4D6 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE5E1CA10AE300BFF4D6 /* DYPHelpAttributedString.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A91CE611CA10B3800BFF4D6 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE5F1CA10B2F00BFF4D6 /* Concrete */,
+				2A91CE601CA10B3400BFF4D6 /* Abstract */,
+			);
+			name = Help;
 			sourceTree = "<group>";
 		};
 		2A943F981C90E87100C4796A /* Photo Library */ = {
@@ -1094,6 +1229,8 @@
 				2A1116EC1C83878400A45955 /* Results View Controller */,
 				2A4F81911C8D1706004FE9DA /* Image View Controller */,
 				2A4F81CB1C90C2AB004FE9DA /* Create Name View Controller */,
+				2A91CE441CA0ECBF00BFF4D6 /* Luminosity Filter View Controller */,
+				2A91CE5A1CA106BA00BFF4D6 /* Help View Controller */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -1108,6 +1245,7 @@
 				4421B31A1C7E448600673C4F /* Location Manager */,
 				4421B3621C809B9000673C4F /* Quote */,
 				2A46890E1C853B3600BD2D3A /* Cropper */,
+				2A91CE611CA10B3800BFF4D6 /* Help */,
 			);
 			name = "General Classes";
 			sourceTree = "<group>";
@@ -1133,6 +1271,7 @@
 				4421B32F1C7F467200673C4F /* Range Cell */,
 				2A4F81D11C90C3C4004FE9DA /* Name Cell */,
 				2A943FD81C9E083B00C4796A /* Album Cell */,
+				2A91CE4F1CA0F25100BFF4D6 /* Luminosity Cell */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1413,6 +1552,7 @@
 				2A943FB21C9DFE9D00C4796A /* Album */,
 				2A943FE61C9F7AA800C4796A /* Favorite */,
 				2A943FF31C9F87D800C4796A /* Face Count */,
+				2A91CE4B1CA0ED9C00BFF4D6 /* Luminosity */,
 			);
 			name = Concrete;
 			sourceTree = "<group>";
@@ -1817,9 +1957,11 @@
 				4421B2F11C7E2BB100673C4F /* DYPDateCell.xib in Resources */,
 				2A1116B01C7C0DAF00A45955 /* DYPAssetCell.xib in Resources */,
 				2ADBB8E61C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */,
+				2A91CE591CA106B700BFF4D6 /* DYPHelpViewController.xib in Resources */,
 				2ADBB8E91C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
 				2ADBB9021C7BFD550034B7D1 /* lbpcascade_frontalface.xml in Resources */,
 				2ADBB9011C7BFD550034B7D1 /* lbpcascade_frontalcatface.xml in Resources */,
+				2A91CE511CA0F26300BFF4D6 /* DYPLuminosityRangeCell.xib in Resources */,
 				2ADBB8E21C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */,
 				2ADBB8881C7BF8B20034B7D1 /* LaunchScreen.storyboard in Resources */,
 				2ADBB8FE1C7BFD550034B7D1 /* haarcascade_smile.xml in Resources */,
@@ -1837,6 +1979,7 @@
 				4421B35E1C809A5800673C4F /* quotes.json in Resources */,
 				2ADBB8FF1C7BFD550034B7D1 /* haarcascade_upperbody.xml in Resources */,
 				2ADBB8FA1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */,
+				2A91CE431CA0ECA800BFF4D6 /* DYPLuminosityFilterViewController.xib in Resources */,
 				2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */,
 				2A1116B91C7D431D00A45955 /* DYPFilterCell.xib in Resources */,
 				2ADBB8F61C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */,
@@ -1972,13 +2115,16 @@
 				4421B3211C7F464100673C4F /* DYPMapCell.m in Sources */,
 				2A943FE21C9F7A7300C4796A /* DYPFavoriteFilterImpl.m in Sources */,
 				2A1116CA1C7D4D2A00A45955 /* DYPPeriodFilterViewController.m in Sources */,
+				2A91CE571CA106A100BFF4D6 /* DYPHelpViewController.m in Sources */,
 				4421B3331C7F468000673C4F /* DYPMapSearchCell.m in Sources */,
 				2A1116F21C8395CA00A45955 /* UIViewController+Loading.m in Sources */,
 				2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */,
 				2A943FFC1C9FA61100C4796A /* RGNavigationBarProgressView.m in Sources */,
 				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2A943FE91C9F7D0300C4796A /* DYPFavoriteFilterViewController.m in Sources */,
+				2A91CE321CA0DACA00BFF4D6 /* DYPPriorityAssetSearchImpl.m in Sources */,
 				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
+				2A91CE3E1CA0EB0600BFF4D6 /* UIImage+RoundedCorner.m in Sources */,
 				2A943FB11C9DFE9A00C4796A /* DYPAlbumFilterImpl.m in Sources */,
 				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
 				2A4F81C91C90C2A9004FE9DA /* DYPCreateNameViewController.m in Sources */,
@@ -1986,6 +2132,7 @@
 				4421B3171C7E447C00673C4F /* DYPLocationManagerImpl.m in Sources */,
 				2A46890D1C85388400BD2D3A /* DYPFaceCropper.m in Sources */,
 				4421B3401C7F60B500673C4F /* DYPFilterFactoryImpl.m in Sources */,
+				2A91CE3B1CA0EB0600BFF4D6 /* UIImage+Alpha.m in Sources */,
 				2A1116C41C7D4D1600A45955 /* DYPLocationFilterViewController.m in Sources */,
 				2A11168F1C7C031600A45955 /* UISearchBar+Toolbar.m in Sources */,
 				2A943FEF1C9F879900C4796A /* DYPFaceCountFilterImpl.mm in Sources */,
@@ -1996,6 +2143,7 @@
 				4421B3051C7E3D2200673C4F /* DYPPeriodFilterValidator.m in Sources */,
 				2A943FC61C9E031000C4796A /* PHAssetCollection+DYPCollectionAdapter.m in Sources */,
 				4421B2FC1C7E2F6900673C4F /* DYPLocationFilterImpl.m in Sources */,
+				2A91CE541CA1048200BFF4D6 /* UIImage+Color.m in Sources */,
 				4421B3571C7F91DC00673C4F /* DYPLocationFilterValidator.m in Sources */,
 				2A1116F51C8395F100A45955 /* SHLoadingView.m in Sources */,
 				4421B3091C7E404300673C4F /* UIViewController+NotificationShow.m in Sources */,
@@ -2008,6 +2156,7 @@
 				2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */,
 				2A1116E21C83818500A45955 /* DYPAssetSearchImpl.m in Sources */,
 				2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */,
+				2A91CE3D1CA0EB0600BFF4D6 /* UIImage+Resize.m in Sources */,
 				2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */,
 				2A943FBA1C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m in Sources */,
 				2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */,
@@ -2016,9 +2165,11 @@
 				2A1116B31C7D42CB00A45955 /* UIStaticTableView.m in Sources */,
 				2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */,
 				4421B30E1C7E406100673C4F /* SHNotificationView.m in Sources */,
+				2A91CE471CA0ED8500BFF4D6 /* DYPLuminosityFilterImpl.m in Sources */,
 				4421B35B1C808C2700673C4F /* DYPFilterCollection.m in Sources */,
 				2A11168C1C7C031000A45955 /* UITableViewCell+Clear.m in Sources */,
 				4421B3611C809B8E00673C4F /* DYPQuoteImpl.m in Sources */,
+				2A91CE5D1CA10AC900BFF4D6 /* DYPHelpAttributedStringImpl.m in Sources */,
 				4421B3511C7F71BF00673C4F /* DYPLocationFilterMapDatasource.m in Sources */,
 				2A1116F91C83C7AE00A45955 /* DYPFaceRecognizerFilterImpl.mm in Sources */,
 				4421B3491C7F6FF000673C4F /* DYPLocation.m in Sources */,
@@ -2030,13 +2181,16 @@
 				2A943FC01C9E02C600C4796A /* DYPAlbumFilterViewController.m in Sources */,
 				2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */,
 				2A1116B81C7D431D00A45955 /* DYPFilterCell.m in Sources */,
+				2A91CE411CA0EB3000BFF4D6 /* DYPLuminosityFilterViewController.m in Sources */,
 				4421B3681C80BE0700673C4F /* DYPLiveScanViewController.mm in Sources */,
 				4421B2EE1C7E2B9F00673C4F /* DYPDateCell.m in Sources */,
 				4421B32D1C7F467000673C4F /* DYPRangeCell.m in Sources */,
+				2A91CE4E1CA0F24E00BFF4D6 /* DYPLuminosityRangeCell.m in Sources */,
 				2A943FF71C9F8A5F00C4796A /* DYPFaceCountFilterViewController.m in Sources */,
 				2A1116A71C7C08EE00A45955 /* UIColor+DYP.m in Sources */,
 				2A943FCC1C9E064E00C4796A /* DYPPhotosViewController+Transitions.m in Sources */,
 				2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */,
+				2A91CE3C1CA0EB0600BFF4D6 /* UIImage+Pixels.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

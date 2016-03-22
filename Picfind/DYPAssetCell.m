@@ -7,6 +7,7 @@
 //
 
 #import "DYPAssetCell.h"
+#import "UIImage+Color.h"
 
 @interface DYPAssetCell ()
 
@@ -23,6 +24,7 @@
     [self.activityIndicator startAnimating];
     if (!self.photoImageView.image) {
         [asset fetchImage:^(UIImage *image, NSDictionary *data) {
+            NSLog(@"%@",[image averageColor]);
             self.photoImageView.image = image;
             [self.activityIndicator stopAnimating];
         }];

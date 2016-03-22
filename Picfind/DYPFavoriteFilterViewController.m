@@ -53,9 +53,9 @@
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
     
-    self.data = @{@"All Photos" : @(DYPFavoriteFilterTypeAllFavs),
-                  @"Just Favorite Photos" : @(DYPFavoriteFilterTypeYesFavs),
-                  @"No Favorite Photos" : @(DYPFavoriteFilterTypeNoFavs)};
+    self.data = @{@"Include all pictures" : @(DYPFavoriteFilterTypeAllFavs),
+                  @"Include only favorite pictures" : @(DYPFavoriteFilterTypeYesFavs),
+                  @"Does not include favorite pictures" : @(DYPFavoriteFilterTypeNoFavs)};
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

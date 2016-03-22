@@ -14,6 +14,7 @@
 #import "DYPAlbumFilter.h"
 #import "DYPFavoriteFilter.h"
 #import "DYPFaceCountFilter.h"
+#import "DYPLuminosityFilter.h"
 
 @protocol DYPFilterFactory <NSObject>
 
@@ -24,5 +25,6 @@
 -(id<DYPAlbumFilter>)albumFilterForAlbums:(id<NSCollection>)albums;
 -(id<DYPFavoriteFilter>)favoriteFilterWithType:(DYPFavoriteFilterType)type;
 -(id<DYPFaceCountFilter>)faceCountFilterWithCount:(NSInteger)count;
+-(id<DYPLuminosityFilter>)luminosityFilterWithInitialValue:(CGFloat)initialValue andFinalValue:(CGFloat)finalValue;
 
 @end

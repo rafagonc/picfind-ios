@@ -30,7 +30,10 @@
 -(NSString *)explain {
     MKDistanceFormatter *distanceFormatter = [[MKDistanceFormatter alloc] init];
     [distanceFormatter setUnits:MKDistanceFormatterUnitsMetric];
-    return [NSString stringWithFormat:@"%.2f, %.2f; range: %@", self.location.coordinate.latitude, self.location.coordinate.longitude, [distanceFormatter stringFromDistance:self.range]];
+    return [NSString stringWithFormat:@"🏔 %.2f, %.2f; range: %@", self.location.coordinate.latitude, self.location.coordinate.longitude, [distanceFormatter stringFromDistance:self.range]];
+}
+-(DYPFilterPriority)priority {
+    return DYPFilterPriorityFast;
 }
 
 #pragma mark - annontation

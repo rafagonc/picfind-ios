@@ -27,5 +27,8 @@
 -(NSString *)explain {
     return @"";
 }
+-(DYPFilterPriority)priority {
+    return DYPFilterPriorityFast;
+}
 
 @end
