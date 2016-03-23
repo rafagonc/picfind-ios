@@ -8,9 +8,10 @@
 
 #import "DYPPhotoCollectionCell.h"
 #import "DYPCollectionViewDatasourceProtocol.h"
+#import "DYPAssetDatasourceDelegate.h"
 #import "DYPAssetCell.h"
 
-@interface DYPPhotoCollectionCell ()
+@interface DYPPhotoCollectionCell () <DYPAssetDatasourceDelegate>
 
 #pragma mark - ui
 @property (nonatomic,weak) IBOutlet UICollectionView *collectionView;
@@ -37,7 +38,13 @@
 -(void)setAssets:(id<NSCollection>)assets {
     _assets = assets;
     [self.datasource setData:(NSArray *)assets];
+    [self.datasource setDelegate:self];
     [self.collectionView reloadData];
+}
+
+#pragma mark - delegate
+-(void)datasource:(id<DYPCollectionViewDatasourceProtocol>)datasource wantsToCheckOutPicture:(id<DYPAssetProtocol>)asset {
+    [self.delegate cell:self wantsToCheckOutPicture:asset];
 }
 
 @end

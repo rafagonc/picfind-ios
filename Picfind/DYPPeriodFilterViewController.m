@@ -69,7 +69,7 @@
 #pragma mark - table view
 -(void)createTableView {
     UIStaticTableViewSection *section = [[UIStaticTableViewSection alloc] init];
-    [section setHeaderName:@"Search photos in a specific period"];
+    [section setHeaderName:@"Set the period which you think the photo was taken."];
     
     DYPDateCell *firstDateCell = [[DYPDateCell alloc] initWithPlaceholder:@"From"];
     [firstDateCell setDate:[self.periodFilter from]];

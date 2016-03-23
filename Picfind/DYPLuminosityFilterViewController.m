@@ -67,6 +67,7 @@
     
     DYPLuminosityRangeCell *rangeCell = [[DYPLuminosityRangeCell alloc] init];
     [rangeCell setDelegate:self];
+    [rangeCell setInitialRange:self.initialValue andFinalRange:self.finalValue];
     [self.tableView addCell:rangeCell onSection:section];
     
     [self.tableView addSection:section];

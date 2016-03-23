@@ -10,6 +10,7 @@
 #import "DYPPhotosViewController.h"
 #import "Depend/DPInjector.h"
 #import "DYPDepedencyInjector.h"
+#import <AdColony/AdColony.h>
 
 @import Photos;
 
@@ -21,6 +22,12 @@
 
 #pragma mark - application delegate
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [AdColony configureWithAppID:@"app7f5112f31bb44e7e91"
+                         zoneIDs:@[@"vz84659a7599c24beb88"]
+                        delegate:nil
+                         logging:YES];
+    
     [DPInjector inject];
     [DYPDepedencyInjector registerImplementations];
     

@@ -35,7 +35,11 @@
 #import "DYPAlbumTableViewDatasource.h"
 #import "DYPTableViewDatasource.h"
 #import "DYPAlbumValidator.h"
+#import "DYPShare.h"
+#import "DYPFacebookShareImpl.h"
 #import "DYPPriorityAssetSearchImpl.h"
+#import "DYPShareFactory.h"
+#import "DYPShareFactoryImpl.h"
 
 @implementation DYPDepedencyInjector
 
@@ -66,6 +70,7 @@
     
     //factories
     [[DPRegistry sharedRegistry] registerImplementation:[DYPFilterFactoryImpl class] forProtocol:@protocol(DYPFilterFactory) context:nil];
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPShareFactoryImpl class] forProtocol:@protocol(DYPShareFactory) context:nil];
     
     //map view delegate
     [[DPRegistry sharedRegistry] registerImplementation:[DYPLocationFilterMapDatasource class] forProtocol:@protocol(DYPMapViewDatasource) context:nil];

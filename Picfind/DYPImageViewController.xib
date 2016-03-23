@@ -7,7 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYPImageViewController">
             <connections>
-                <outlet property="imageView" destination="ok7-dm-fc5" id="W85-yT-554"/>
+                <outlet property="imageView" destination="g89-hN-R7h" id="QbO-hC-wQ7"/>
+                <outlet property="scrollView" destination="QSb-JN-hFd" id="EbW-Fa-WG0"/>
                 <outlet property="view" destination="iN0-l3-epB" id="8Vf-OI-ibk"/>
             </connections>
         </placeholder>
@@ -16,20 +17,34 @@
             <rect key="frame" x="0.0" y="64" width="320" height="504"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ok7-dm-fc5">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSb-JN-hFd">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                </imageView>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g89-hN-R7h">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="g89-hN-R7h" firstAttribute="centerY" secondItem="QSb-JN-hFd" secondAttribute="centerY" id="Hiy-Q4-T1b"/>
+                        <constraint firstItem="g89-hN-R7h" firstAttribute="leading" secondItem="QSb-JN-hFd" secondAttribute="leading" id="VHe-NK-Ooe"/>
+                        <constraint firstAttribute="trailing" secondItem="g89-hN-R7h" secondAttribute="trailing" id="VJs-Bj-2uP"/>
+                        <constraint firstAttribute="bottom" secondItem="g89-hN-R7h" secondAttribute="bottom" id="hNV-Tp-Jf4"/>
+                        <constraint firstItem="g89-hN-R7h" firstAttribute="centerX" secondItem="QSb-JN-hFd" secondAttribute="centerX" id="sSh-jk-0L5"/>
+                        <constraint firstItem="g89-hN-R7h" firstAttribute="top" secondItem="QSb-JN-hFd" secondAttribute="top" id="swe-pH-3bR"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ok7-dm-fc5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IPP-Vm-MGu"/>
-                <constraint firstAttribute="trailing" secondItem="ok7-dm-fc5" secondAttribute="trailing" id="L3w-yY-AGw"/>
-                <constraint firstItem="ok7-dm-fc5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VGm-e9-NoV"/>
-                <constraint firstAttribute="bottom" secondItem="ok7-dm-fc5" secondAttribute="bottom" id="r5K-6a-SaJ"/>
+                <constraint firstAttribute="trailing" secondItem="QSb-JN-hFd" secondAttribute="trailing" id="Ofk-Ek-4jm"/>
+                <constraint firstItem="QSb-JN-hFd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PJV-wU-D0r"/>
+                <constraint firstAttribute="bottom" secondItem="QSb-JN-hFd" secondAttribute="bottom" id="YqJ-VL-1Ky"/>
+                <constraint firstItem="QSb-JN-hFd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wIk-Oc-pc3"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="345" y="295"/>
         </view>
     </objects>
 </document>

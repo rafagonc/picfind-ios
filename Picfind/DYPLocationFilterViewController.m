@@ -70,7 +70,7 @@
 #pragma mark - table view
 -(void)createTableView {
     UIStaticTableViewSection *section = [[UIStaticTableViewSection alloc] init];
-    [section setHeaderName:@"search a placemark or tap the map to set a location"];
+    [section setHeaderName:@"tap on the map and set a range which you think the photo was taken. Using the search can help moving to a specific location faster."];
     
     DYPMapSearchCell *mapSearchCell = [[DYPMapSearchCell alloc] init];
     [mapSearchCell setLocationFilter:self.locationFilter];

@@ -13,6 +13,7 @@
 #pragma mark - ui
 @property (nonatomic,weak) IBOutlet UILabel *filterLabel;
 @property (weak, nonatomic) IBOutlet UIButton *trashButton;
+@property (weak, nonatomic) IBOutlet UILabel *velLabel;
 
 #pragma mark - properties
 @property (nonatomic,weak) id target;
@@ -33,6 +34,8 @@
         [self.trashButton setImage:[[UIImage imageNamed:@"trash"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
         [self.trashButton setTintColor:[UIColor lightGrayColor]];
         [self.trashButton setHidden:1];
+        self.velLabel.text = self.vel;
+
     } return self;
 }
 
@@ -50,6 +53,14 @@
     [self.filterLabel setText:filter ? [filter explain] : self.filterText];
     self.accessoryType = filter ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryDisclosureIndicator;
     self.trashButton.hidden = (filter == nil);
+    
+    
+}
+
+#pragma makr - setters
+-(void)setVel:(NSString *)vel {
+    _vel = vel;
+    self.velLabel.text = vel;
 }
 
 #pragma mark - action

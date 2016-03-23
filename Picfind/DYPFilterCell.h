@@ -24,6 +24,7 @@
 #pragma mark - properties
 @property (nonatomic,weak) id<DYPFilter> filter;
 @property (nonatomic,weak) id<DYPFilterCellDelegate> delegate;
+@property (nonatomic,strong) NSString * vel;
 
 #pragma mark - action
 -(void)addTarget:(id)target selector:(SEL)selector;

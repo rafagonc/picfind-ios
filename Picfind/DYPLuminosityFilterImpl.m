@@ -38,7 +38,7 @@
     }];
 }
 -(NSString *)explain {
-    return [NSString stringWithFormat:@"☀️ %.2f - %.2f 🌚", self.initialValue, self.finalValue];
+    return [NSString stringWithFormat:@"🌗 %.2f - %.2f", self.initialValue, self.finalValue];
 }
 -(DYPFilterPriority)priority {
     return DYPFilterPrioritySlow;

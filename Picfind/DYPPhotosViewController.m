@@ -35,8 +35,13 @@
 #import "DYPFaceCountFilter.h"
 #import "DYPHelpViewController.h"
 #import "DYPLuminosityFilter.h"
+#import "DYPImageViewController.h"
+#import <AdColony/AdColony.h>
 
-@interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate>
+#define kVelocityFastString @"fast"
+#define kVelocitySlowString @"slow"
+
+@interface DYPPhotosViewController () <UISearchResultsUpdating, UISearchBarDelegate, DYPPhotoCollectionCellDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UIStaticTableView *tableView;
@@ -47,10 +52,11 @@
 @property (weak, nonatomic) DYPFilterCell *favoriteCell;
 @property (weak, nonatomic) DYPFilterCell *faceCountCell;
 @property (weak, nonatomic) DYPFilterCell *luminosityCell;
-
+@property (weak, nonatomic) UIImageView *navBarImage;
 
 #pragma mark - properties
 @property (strong, nonatomic) UISearchController *searchController;
+@property (strong, nonatomic) id<DYPNameFilter> appliableNameFilter;
 
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
@@ -71,8 +77,6 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setTitle:@"Picfind"];
-    
     //setups
     self.appliedFilters = [[DYPFilterCollection alloc] init];
     [self setupTableView];
@@ -90,45 +94,66 @@
     
     UIBarButtonItem *helpButton = [[UIBarButtonItem alloc] initWithTitle:@"Help" style:UIBarButtonItemStylePlain target:self action:@selector(helpAction:)];
     [self.navigationItem setLeftBarButtonItem:helpButton];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"p"]];
+    imageView.contentMode = UIViewContentModeScaleAspectFit;
+    imageView.frame = CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 15, [UIApplication sharedApplication].statusBarFrame.size.height/2, 25, 25);
+    [self.navigationController.navigationBar addSubview:imageView];
+    [self setNavBarImage:imageView];
+}
+-(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navBarImage removeFromSuperview];
+}
+-(void)viewWillLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.navBarImage.frame = CGRectMake([UIScreen mainScreen].bounds.size.width/2 - 15, [UIApplication sharedApplication].statusBarFrame.size.height/2, 25, 25);
+
 }
 
 #pragma mark - setup
 -(void)setupTableView {
     UIStaticTableViewSection *section = [[UIStaticTableViewSection alloc] init];
-    [section setHeaderName:@"Filters"];
+    [section setHeaderName:@"search by"];
     
-    DYPFilterCell *periodFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply period filter"];
+    DYPFilterCell *periodFilter = [[DYPFilterCell alloc] initWithFilterText:@"Period"];
     [periodFilter setDelegate:self];
+    [periodFilter setVel:kVelocityFastString];
     [periodFilter addTarget:self selector:@selector(periodFilterWasSelected:)];
     [self.tableView addCell:periodFilter onSection:section];
     [self setPeriodCell:periodFilter];
     
-    DYPFilterCell *locationFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply location filter"];
+    DYPFilterCell *locationFilter = [[DYPFilterCell alloc] initWithFilterText:@"Location"];
     [locationFilter setDelegate:self];
+    [locationFilter setVel:kVelocityFastString];
     [locationFilter addTarget:self selector:@selector(locationFilterWasSelected:)];
     [self.tableView addCell:locationFilter onSection:section];
     [self setLocationCell:locationFilter];
     
-    DYPFilterCell *albumFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply album filter"];
+    DYPFilterCell *albumFilter = [[DYPFilterCell alloc] initWithFilterText:@"Album"];
     [albumFilter setDelegate:self];
+    [albumFilter setVel:kVelocityFastString];
     [albumFilter addTarget:self selector:@selector(albumFilterWasSelected:)];
     [self.tableView addCell:albumFilter onSection:section];
     [self setAlbumCell:albumFilter];
     
-    DYPFilterCell *favoriteFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply favorite filter"];
+    DYPFilterCell *favoriteFilter = [[DYPFilterCell alloc] initWithFilterText:@"Favorite"];
     [favoriteFilter setDelegate:self];
+    [favoriteFilter setVel:kVelocityFastString];
     [favoriteFilter addTarget:self selector:@selector(favoriteFilterWasSelected:)];
     [self.tableView addCell:favoriteFilter onSection:section];
     [self setFavoriteCell:favoriteFilter];
     
-    DYPFilterCell *faceCountFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply number of faces filter"];
+    DYPFilterCell *faceCountFilter = [[DYPFilterCell alloc] initWithFilterText:@"Faces"];
     [faceCountFilter setDelegate:self];
+    [faceCountFilter setVel:kVelocitySlowString];
     [faceCountFilter addTarget:self selector:@selector(faceCountFilterWasSelected:)];
     [self.tableView addCell:faceCountFilter onSection:section];
     [self setFaceCountCell:faceCountFilter];
     
-    DYPFilterCell *luminosityFilter = [[DYPFilterCell alloc] initWithFilterText:@"Apply luminosity filter"];
+    DYPFilterCell *luminosityFilter = [[DYPFilterCell alloc] initWithFilterText:@"Luminosity"];
     [luminosityFilter setDelegate:self];
+    [luminosityFilter setVel:kVelocitySlowString];
     [luminosityFilter addTarget:self selector:@selector(luminosityFilterWasSelected:)];
     [self.tableView addCell:luminosityFilter onSection:section];
     [self setLuminosityCell:luminosityFilter];
@@ -144,6 +169,7 @@
     
     DYPPhotoCollectionCell *photosCell = [[DYPPhotoCollectionCell alloc] init];
     [photosCell setAssets:[self.assetDataAccessObject recents]];
+    [photosCell setDelegate:self];
     [self.tableView addCell:photosCell onSection:recentsSection];
     
     [self.tableView addSection:section];
@@ -169,8 +195,12 @@
     [self.appliedFilters clean];
     id<DYPNameFilter> nameFilter = [self.filterFactory nameFilterForName:searchBar.text];
     [self.appliedFilters addFilter:nameFilter];
+    [self setAppliableNameFilter:nameFilter];
     DYPResultsViewController *results = [[DYPResultsViewController alloc] initWithCollection:self.appliedFilters];
     [self.navigationController pushViewController:results animated:YES];
+}
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [self.appliedFilters removeFilter:self.appliableNameFilter];
 }
 -(void)source:(id)source didCreateFilter:(id<DYPFilter>)filter {
     [self.appliedFilters addFilter:filter];
@@ -193,9 +223,14 @@
 -(void)filterCell:(DYPFilterCell *)cell didDeleteFilter:(id<DYPFilter>)filter {
     [self.appliedFilters removeFilter:filter];
 }
+-(void)cell:(DYPPhotoCollectionCell *)cell wantsToCheckOutPicture:(id<DYPAssetProtocol>)asset {
+    DYPImageViewController *imageViewer = [[DYPImageViewController alloc] initWithAsset:asset];
+    [self.navigationController pushViewController:imageViewer animated:YES];
+}
 
 #pragma mark - actions
 -(IBAction)searchAction:(id)sender {
+    [AdColony playVideoAdForZone:@"vz84659a7599c24beb88" withDelegate:nil];
     if (self.appliedFilters.count == 0) {
         [self showNotificationWithType:SHNotificationViewTypeError withMessage:@"Apply some filters before searching"];
         return;

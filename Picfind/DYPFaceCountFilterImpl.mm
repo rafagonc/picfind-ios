@@ -43,7 +43,7 @@
     });
 }
 -(NSString *)explain {
-    NSMutableString *string = [[NSMutableString alloc] initWithString:@">= "];
+    NSMutableString *string = [[NSMutableString alloc] initWithString:@""];
     for (int i = 0; i < self.count; i++) {
         [string appendString:@"👨🏻"];
     }

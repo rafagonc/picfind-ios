@@ -35,6 +35,7 @@
     [super viewDidLoad];
     
     self.textView.attributedText = [self.help help];
+    [self.textView scrollRangeToVisible:NSMakeRange(0, 1)];
     
     self.helpButton.layer.borderColor = [UIColor dyp_redColor].CGColor;
     self.helpButton.layer.borderWidth = 1;

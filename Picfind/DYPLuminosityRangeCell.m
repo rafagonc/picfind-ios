@@ -49,5 +49,10 @@
     self.leftValueLabel.text = [NSString stringWithFormat:@"%.2f",[rangeSlider leftValue]];
     [self.delegate cell:self changedInitialValueTo:[rangeSlider leftValue] andFinalValueTo:[rangeSlider rightValue]];
 }
+-(void)setInitialRange:(CGFloat)initalRange andFinalRange:(CGFloat)finalRange {
+    [self.rangeSlider setLeftValue:initalRange rightValue:finalRange];
+    self.rightValueLabel.text = [NSString stringWithFormat:@"%.2f",[self.rangeSlider rightValue]];
+    self.leftValueLabel.text = [NSString stringWithFormat:@"%.2f",[self.rangeSlider leftValue]];
+}
 
 @end

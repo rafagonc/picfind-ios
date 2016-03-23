@@ -8,15 +8,20 @@
 
 #import "DYPImageViewController.h"
 #import "DYPAssetProtocol.h"
+#import "DYPShareFactory.h"
 #import "UIViewController+Loading.h"
 
-@interface DYPImageViewController ()
+@interface DYPImageViewController () <UIActionSheetDelegate>
 
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 #pragma mark - properties
 @property (nonatomic,strong) id<DYPAssetProtocol> asset;
+
+#pragma mark - injected
+@property (setter=injected:,readonly) id<DYPShareFactory> shareFactory;
 
 @end
 
@@ -32,6 +37,7 @@
 #pragma mark - lifecycle
 -(void)viewDidLoad {
     [super viewDidLoad];
+    [self.scrollView setMaximumZoomScale:10.f];
     [self setTitle:@"Photo"];
     [self startBlackFullLoading];
     [self.asset fetchHighQualityImage:^(UIImage *image, NSDictionary *data) {
@@ -41,6 +47,26 @@
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareAction:)];
+    [self.navigationItem setRightBarButtonItem:shareButton];
+}
+
+#pragma mark - actions
+-(void)shareAction:(UIBarButtonItem *)item {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:@"Share" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Facebook", @"Twiiter", @"Mail", nil];
+    [actionSheet showInView:self.view];
+}
+
+#pragma mark - delegate
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 2) {
+        [[self.shareFactory shareForType:DYPShareTypeMail] share:self.imageView.image from:self];
+    } else if (buttonIndex == 1) {
+        [[self.shareFactory shareForType:DYPShareTypeTwitter] share:self.imageView.image from:self];
+    } else if (buttonIndex == 0) {
+        [[self.shareFactory shareForType:DYPShareTypeFacebook] share:self.imageView.image from:self];
+    }
 }
 
 #pragma mark - dealloc

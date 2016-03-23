@@ -17,5 +17,6 @@
 @interface DYPLuminosityRangeCell : UITableViewCell
 
 @property (nonatomic,weak) id<DYPLuminosityRangeCellDelegate> delegate;
+-(void)setInitialRange:(CGFloat)initalRange andFinalRange:(CGFloat)finalRange;
 
 @end

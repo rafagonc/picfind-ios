@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
+#import <Photos/Photos.h>
 @protocol DYPAssetProtocol <NSObject>
 
 #pragma mark - properties
@@ -22,5 +23,6 @@
 #pragma mark - fetching
 -(void)fetchImage:(void(^)(UIImage *image, NSDictionary *data))callback;
 -(void)fetchHighQualityImage:(void(^)(UIImage *image, NSDictionary *data))callback;
+-(void)fetchLivePhoto:(void(^)(PHLivePhoto *p))callback;
 
 @end

@@ -15,13 +15,28 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlD-u8-p0F">
-                        <rect key="frame" x="8" y="0.0" width="274" height="43.5"/>
+                        <rect key="frame" x="8" y="0.0" width="34.5" height="43.5"/>
                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="slow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHC-sz-0DE">
+                        <rect key="frame" x="278" y="14.5" width="42" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="pd8-R5-6PG"/>
+                            <constraint firstAttribute="width" constant="42" id="ypH-Jj-vMi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pd8-R5-6PG"/>
+                            </mask>
+                        </variation>
+                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9J-HN-nyO">
-                        <rect key="frame" x="292" y="12" width="20" height="19.5"/>
+                        <rect key="frame" x="250" y="12" width="20" height="19.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="Agh-VF-GA4"/>
                         </constraints>
@@ -33,18 +48,20 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="A9J-HN-nyO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="1Xq-5S-upd"/>
+                    <constraint firstItem="LHC-sz-0DE" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" id="1cg-Du-DTd"/>
                     <constraint firstAttribute="bottom" secondItem="A9J-HN-nyO" secondAttribute="bottom" constant="12" id="7Ld-bW-Wl4"/>
                     <constraint firstItem="DlD-u8-p0F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Bxe-lz-Mqt"/>
                     <constraint firstItem="DlD-u8-p0F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SpF-5d-nVX"/>
-                    <constraint firstAttribute="trailing" secondItem="DlD-u8-p0F" secondAttribute="trailing" constant="38" id="UTD-7J-bip"/>
                     <constraint firstAttribute="bottom" secondItem="DlD-u8-p0F" secondAttribute="bottom" id="YWZ-xU-mMw"/>
-                    <constraint firstAttribute="trailing" secondItem="A9J-HN-nyO" secondAttribute="trailing" constant="8" id="pLw-or-pFo"/>
+                    <constraint firstItem="LHC-sz-0DE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i2O-M4-5jS"/>
+                    <constraint firstItem="LHC-sz-0DE" firstAttribute="leading" secondItem="A9J-HN-nyO" secondAttribute="trailing" constant="8" id="pNT-qe-mOl"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="tintColor" red="0.78823529410000004" green="0.2784313725" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="filterLabel" destination="DlD-u8-p0F" id="yga-lK-23E"/>
                 <outlet property="trashButton" destination="A9J-HN-nyO" id="g1K-iv-nzo"/>
+                <outlet property="velLabel" destination="LHC-sz-0DE" id="P0x-8q-ZTt"/>
             </connections>
             <point key="canvasLocation" x="210" y="511"/>
         </tableViewCell>

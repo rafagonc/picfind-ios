@@ -26,5 +26,10 @@
         callback(result, info);
     }];
 }
+-(void)fetchLivePhoto:(void(^)(PHLivePhoto *p))callback {
+    [[PHImageManager defaultManager] requestLivePhotoForAsset:self targetSize:CGSizeMake(self.pixelWidth, self.pixelHeight) contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(PHLivePhoto * _Nullable livePhoto, NSDictionary * _Nullable info) {
+        callback(livePhoto);
+    }];
+}
 
 @end

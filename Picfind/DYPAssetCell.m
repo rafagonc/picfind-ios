@@ -22,16 +22,10 @@
 -(void)setAsset:(id<DYPAssetProtocol>)asset {
     _asset = asset;
     [self.activityIndicator startAnimating];
-    if (!self.photoImageView.image) {
         [asset fetchImage:^(UIImage *image, NSDictionary *data) {
-            NSLog(@"%@",[image averageColor]);
             self.photoImageView.image = image;
             [self.activityIndicator stopAnimating];
         }];
-    } else {
-        [self.activityIndicator stopAnimating];
-        
-    }
 }
 
 @end
