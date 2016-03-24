@@ -40,6 +40,8 @@
 #import "DYPPriorityAssetSearchImpl.h"
 #import "DYPShareFactory.h"
 #import "DYPShareFactoryImpl.h"
+#import "DYPAd.h"
+#import "DYPAdImpl.h"
 
 @implementation DYPDepedencyInjector
 
@@ -79,9 +81,7 @@
     [[DPRegistry sharedRegistry] registerImplementation:[DYPQuoteImpl class] forProtocol:@protocol(DYPQuote) context:nil];
     [[DPRegistry sharedRegistry] registerImplementation:[DYPPriorityAssetSearchImpl class] forProtocol:@protocol(DYPAssetSearch) context:nil];
     [[DPRegistry sharedRegistry] registerImplementation:[DYPHelpAttributedStringImpl class] forProtocol:@protocol(DYPHelpAttributedString) context:nil];
-
-
-
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPAdImpl class] forProtocol:@protocol(DYPAd) context:nil];
 
 }
 

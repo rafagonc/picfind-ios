@@ -13,6 +13,7 @@
 @interface DYPMailShareImpl () <MFMailComposeViewControllerDelegate>
 
 @property (nonatomic,weak) UIViewController *vc;
+@property (nonatomic,strong) MFMailComposeViewController *mail_vc;
 
 @end
 
@@ -24,6 +25,7 @@
     [emailShareController setSubject:@"Share Image"];
     [emailShareController addAttachmentData:UIImageJPEGRepresentation(image, 1) mimeType:@"image/jpeg" fileName:@"image.jpeg"];
     if (emailShareController) [vc presentViewController:emailShareController animated:YES completion:nil];
+    [self setMail_vc:emailShareController];
 }
 
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {

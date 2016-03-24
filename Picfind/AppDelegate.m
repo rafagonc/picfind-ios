@@ -11,6 +11,8 @@
 #import "Depend/DPInjector.h"
 #import "DYPDepedencyInjector.h"
 #import <AdColony/AdColony.h>
+#import <Fabric/Fabric.h>
+#import <Answers/Answers.h>
 
 @import Photos;
 
@@ -30,6 +32,8 @@
     
     [DPInjector inject];
     [DYPDepedencyInjector registerImplementations];
+    
+    [Fabric with:@[[Answers class]]];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setBackgroundColor:[UIColor whiteColor]];

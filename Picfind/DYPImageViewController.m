@@ -19,6 +19,7 @@
 
 #pragma mark - properties
 @property (nonatomic,strong) id<DYPAssetProtocol> asset;
+@property (strong, nonatomic) id<DYPShare> share;
 
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPShareFactory> shareFactory;
@@ -61,11 +62,14 @@
 #pragma mark - delegate
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 2) {
-        [[self.shareFactory shareForType:DYPShareTypeMail] share:self.imageView.image from:self];
+        self.share = [self.shareFactory shareForType:DYPShareTypeMail];
+        [self.share share:self.imageView.image from:self];
     } else if (buttonIndex == 1) {
-        [[self.shareFactory shareForType:DYPShareTypeTwitter] share:self.imageView.image from:self];
+        self.share = [self.shareFactory shareForType:DYPShareTypeTwitter];
+        [self.share share:self.imageView.image from:self];
     } else if (buttonIndex == 0) {
-        [[self.shareFactory shareForType:DYPShareTypeFacebook] share:self.imageView.image from:self];
+        self.share = [self.shareFactory shareForType:DYPShareTypeFacebook];
+        [self.share share:self.imageView.image from:self];
     }
 }
 

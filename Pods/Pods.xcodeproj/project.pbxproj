@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01DB4D1FE7C7A3E7329A5BFD994FA75E /* LLARingSpinnerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4CE2F7C0D74D3AB6A8893F160EC4EE /* LLARingSpinnerView-dummy.m */; };
+		01DB4D1FE7C7A3E7329A5BFD994FA75E /* LLARingSpinnerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B300F623724E4833651F66AC04F759D8 /* LLARingSpinnerView-dummy.m */; };
 		03FEA1BC8AADDE2FF3A8C4F8C883D9C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
 		0747AB66E14F09EE40ACCA3000EC7428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		0BB62EC5563F90367A5CA0A6BCB202E7 /* DPInjectionPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AC8C25714E0CDF656976B90CC28EAA /* DPInjectionPropertyDescriptor.m */; };
-		186C96130C34C720FA217AF09E0AFE44 /* MARKRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88841FE385AAC6D001F7E98F691AF1CC /* MARKRangeSlider-dummy.m */; };
-		25A73B6F6C14247CF3201002CBE88175 /* NSDate+Escort.h in Headers */ = {isa = PBXBuildFile; fileRef = 634DCC28773704267A7F2C3A86795184 /* NSDate+Escort.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29D3624ED5C8596335025887F6EF360C /* DPInjectionDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = E2787AC8D7302DF792A94A8F135EA9E8 /* DPInjectionDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2C6A9D484D53F8FE942B7F38F8E25CEC /* Depend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F68E373D60A2FD79FB7F93E079EA3A3 /* Depend-dummy.m */; };
+		0BB62EC5563F90367A5CA0A6BCB202E7 /* DPInjectionPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8768920D52E5706BC1E52195E0B02E4D /* DPInjectionPropertyDescriptor.m */; };
+		186C96130C34C720FA217AF09E0AFE44 /* MARKRangeSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBDFC95729B168E49BD9FDF31D4406 /* MARKRangeSlider-dummy.m */; };
+		25A73B6F6C14247CF3201002CBE88175 /* NSDate+Escort.h in Headers */ = {isa = PBXBuildFile; fileRef = DEFD14245EB4FF2BCCB58F3E1AF31F33 /* NSDate+Escort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29D3624ED5C8596335025887F6EF360C /* DPInjectionDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 674DFD81F8319B8F5F02DEB33F1835FF /* DPInjectionDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C6A9D484D53F8FE942B7F38F8E25CEC /* Depend-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4B307E70E959E0C350102D90B683EC /* Depend-dummy.m */; };
 		2FA37E58A841394F7E39BCCFEFA5D3AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		309F3B5F76FA6275F62DE5EB197CDC17 /* DPInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 61D443386B3C3F727D31C812F0E7F908 /* DPInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		323981C6BF32746806571BCAA4C8A079 /* DPImplementationKey.h in Headers */ = {isa = PBXBuildFile; fileRef = EAC1EEAC676125C172845147B5476F64 /* DPImplementationKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		393BD95FAFF57F5392697D34BFB9ADC1 /* rangeSliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = C669889D9CE92019D9F89672CE9AB3F4 /* rangeSliderThumb.png */; };
-		394F8C214E29F6ECC5E7146A3CFFCDA4 /* rangeSliderTrackRange.png in Resources */ = {isa = PBXBuildFile; fileRef = 83696945AB118CCCF8D4FE6043A3A869 /* rangeSliderTrackRange.png */; };
-		438678125F17C13C855FA2F7E84ABD19 /* rangeSliderThumb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 695F69A732857404E217D4A3633549D0 /* rangeSliderThumb@3x.png */; };
-		46E04DD49B3FE3EE59D8581BB9FFB10B /* DPRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 136EAB628239B1280312725248857D86 /* DPRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309F3B5F76FA6275F62DE5EB197CDC17 /* DPInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 1055D7A483867633A31E0AD44DF65838 /* DPInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		323981C6BF32746806571BCAA4C8A079 /* DPImplementationKey.h in Headers */ = {isa = PBXBuildFile; fileRef = FA00F5FFB7A1B8E7872935EFDE3D09DB /* DPImplementationKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		393BD95FAFF57F5392697D34BFB9ADC1 /* rangeSliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AD24871B32099B1C0E4AABF79F4928 /* rangeSliderThumb.png */; };
+		394F8C214E29F6ECC5E7146A3CFFCDA4 /* rangeSliderTrackRange.png in Resources */ = {isa = PBXBuildFile; fileRef = C2B31AB220535705DF8D552FAF092A8B /* rangeSliderTrackRange.png */; };
+		438678125F17C13C855FA2F7E84ABD19 /* rangeSliderThumb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35314B83D88B6B57376069033D076B45 /* rangeSliderThumb@3x.png */; };
+		46E04DD49B3FE3EE59D8581BB9FFB10B /* DPRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EB2A7CB2D6B603716039432EC69CF1 /* DPRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		470555D21DBDE3746FD63C20688AFEF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		4B32FCB1F84364DB5B0B7C6F50E9A8B7 /* LLARingSpinnerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9E70D564D94686B61D9C63D72A7C91 /* LLARingSpinnerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		562EF056469494D2035C288668D54BF1 /* MARKRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1CE9127E8A103F756F178AD2A5E565 /* MARKRangeSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		683F29E15B40C0063A949045AF6EB7A5 /* DPInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2055A97B6A4295E454E38DCD29F7DBB4 /* DPInjector.m */; };
-		74E0A592CC6928B198C43317AEF82D04 /* DPRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 398EB71E8B74471A76074DF540E567EE /* DPRegistry.m */; };
-		7788C3AFB02BF36BE16A6FFF5D0E5E8E /* NSDate+Escort.m in Sources */ = {isa = PBXBuildFile; fileRef = 395114DF482E428E936B7C7EE2C77F23 /* NSDate+Escort.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		78F38798EF862471D0EA0D92E68DA22A /* rangeSliderThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B51D8BC1E8D78110A483685609D0F70E /* rangeSliderThumb@2x.png */; };
-		86BE522BEE4C2C207F2C99FF93B50789 /* rangeSliderTrack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA6C80F7626BEF9B431E80231FCD5279 /* rangeSliderTrack@3x.png */; };
+		4B32FCB1F84364DB5B0B7C6F50E9A8B7 /* LLARingSpinnerView.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD4B6EBEEF7EE03F1D86FD7227C21EE /* LLARingSpinnerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		562EF056469494D2035C288668D54BF1 /* MARKRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = A80A8F9B239E9CFF844C469B2AD9594D /* MARKRangeSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		683F29E15B40C0063A949045AF6EB7A5 /* DPInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAABD2E7795CE7E9CD55F975F9C3A82 /* DPInjector.m */; };
+		74E0A592CC6928B198C43317AEF82D04 /* DPRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE360BDD6654C9676DB22482DF3D40A /* DPRegistry.m */; };
+		7788C3AFB02BF36BE16A6FFF5D0E5E8E /* NSDate+Escort.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A7200AAC04CC090BF206579BD8686B /* NSDate+Escort.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		78F38798EF862471D0EA0D92E68DA22A /* rangeSliderThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EEB749AFF4CB1906C7F4CD7C9FBAF68 /* rangeSliderThumb@2x.png */; };
+		86BE522BEE4C2C207F2C99FF93B50789 /* rangeSliderTrack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A31EE3FC67B8ACD55B93887198E5C6 /* rangeSliderTrack@3x.png */; };
 		893A7634B37B480A0453F1A45011ACFB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */; };
-		8E672D7FA6947D7D1A38E6A60BCE894A /* rangeSliderTrackRange@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E610D12817E62768B6FDC2290ECF9293 /* rangeSliderTrackRange@3x.png */; };
-		8F70BFCE3709086E373174349C4FEAFA /* rangeSliderTrack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC90BC09050451FDAF1D6EF16910E6B /* rangeSliderTrack@2x.png */; };
+		8E672D7FA6947D7D1A38E6A60BCE894A /* rangeSliderTrackRange@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36559D124C760A6B9861189D12CE33CE /* rangeSliderTrackRange@3x.png */; };
+		8F70BFCE3709086E373174349C4FEAFA /* rangeSliderTrack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12377C4CCDF303878DA798DDFB2A04B2 /* rangeSliderTrack@2x.png */; };
 		A09530D7D627F60EE4AEDA9F003C02AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		A650A00C283957E8587343BE2A1DA9CE /* DPImplementationKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B1F0BB8F69430049AF1473A5569F3 /* DPImplementationKey.m */; };
-		AAB33296F25A8E4FEAF395EBFB85F926 /* MARKRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 602EEE58993160D954D3516167643E2D /* MARKRangeSlider.m */; };
+		A650A00C283957E8587343BE2A1DA9CE /* DPImplementationKey.m in Sources */ = {isa = PBXBuildFile; fileRef = D00817E2129BCAE568B7DAF40C1EE3F5 /* DPImplementationKey.m */; };
+		AAB33296F25A8E4FEAF395EBFB85F926 /* MARKRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9C1B65E203FF221D8A1F4756FA71D8 /* MARKRangeSlider.m */; };
 		B3412AE5D9B1CC57401AD15F4908722B /* Pods-PicfindTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9F11981E703C9EE2CFA9CB2620BE1B /* Pods-PicfindTests-dummy.m */; };
-		B67E79F6C3C5A325B320776C3DD3E0D2 /* LLARingSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9056530425BA4ADA3E18BCA58928E1A0 /* LLARingSpinnerView.m */; };
-		BA927A6018F35197F74F77DBB8B697C4 /* DPCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 451E8564E0CC359A14190470B490D02F /* DPCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BD54BCC387003EF4AF6F68EDC231FAF6 /* DPInjectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 061010EA050AC3B316431027BAC4F476 /* DPInjectionDescriptor.m */; };
+		B67E79F6C3C5A325B320776C3DD3E0D2 /* LLARingSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C0B7D387DDBB41188645FCFC28B512 /* LLARingSpinnerView.m */; };
+		BA927A6018F35197F74F77DBB8B697C4 /* DPCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F551F45083637F692882D58A53669A /* DPCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD54BCC387003EF4AF6F68EDC231FAF6 /* DPInjectionDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D20137391F3204B766B3F40F7E9D7035 /* DPInjectionDescriptor.m */; };
 		C9C4E76E1CBCB1449CF04FA265ED65F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		CEBE681086EE2BED06013118E22F6713 /* NSDate-Escort-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D04D6EF4C2F743754A4BA869B0A7D1 /* NSDate-Escort-dummy.m */; };
+		CEBE681086EE2BED06013118E22F6713 /* NSDate-Escort-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE6C5AA4F1104BB0E7D9D64CF3142B7 /* NSDate-Escort-dummy.m */; };
 		D6C190E3C1567BF10DA076819CC67967 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */; };
 		D7D8279D479194AA42F10825602F7F44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */; };
-		DBBB5D44E392287A00EA99702D9233AD /* DPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 877F263A35E1CD14BFE878D516F90351 /* DPCache.m */; };
-		DDA9F8F60655DCACAE1B1EA99A022E2B /* DPInjectionPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3008D6D2E5359E201728ACF6CFEAC24C /* DPInjectionPropertyDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DBBB5D44E392287A00EA99702D9233AD /* DPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B86ADD76A470E4843B1163E7CD11A729 /* DPCache.m */; };
+		DDA9F8F60655DCACAE1B1EA99A022E2B /* DPInjectionPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A6252316E687F35A32C3448D581255 /* DPInjectionPropertyDescriptor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E301AD45C3341AFD97A3AF827DEBB9F1 /* Pods-Picfind-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BB1D1340B814F8F83D5663E9B22FF1 /* Pods-Picfind-dummy.m */; };
-		E82EF095712AE023B03960784EB1B8EA /* rangeSliderTrackRange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97EFB2AE0390F5D7E66ECF2566D16F58 /* rangeSliderTrackRange@2x.png */; };
-		F0CE86B328282117A448A44F9AFA7BB1 /* rangeSliderTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BF0CBE77E476926628AA667235F2D50 /* rangeSliderTrack.png */; };
+		E82EF095712AE023B03960784EB1B8EA /* rangeSliderTrackRange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4C8B6D5D61A61879B100FBFC6A3DF2 /* rangeSliderTrackRange@2x.png */; };
+		F0CE86B328282117A448A44F9AFA7BB1 /* rangeSliderTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = F2C7AA25F6FD688F0DD0B756CC0B4DD6 /* rangeSliderTrack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,73 +97,75 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		061010EA050AC3B316431027BAC4F476 /* DPInjectionDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionDescriptor.m; path = Pod/Classes/DPInjectionDescriptor.m; sourceTree = "<group>"; };
 		0E8D45E85D741E3711CBBBDFCBE71EBC /* Pods-PicfindTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PicfindTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		136EAB628239B1280312725248857D86 /* DPRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPRegistry.h; path = Pod/Classes/DPRegistry.h; sourceTree = "<group>"; };
+		1055D7A483867633A31E0AD44DF65838 /* DPInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjector.h; path = Pod/Classes/DPInjector.h; sourceTree = "<group>"; };
+		12377C4CCDF303878DA798DDFB2A04B2 /* rangeSliderTrack@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderTrack@2x.png"; path = "Resources/rangeSliderTrack@2x.png"; sourceTree = "<group>"; };
 		16B8AB19B8AB53AD61ADB22D9F9DA7E8 /* Depend.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Depend.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BF0CBE77E476926628AA667235F2D50 /* rangeSliderTrack.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = rangeSliderTrack.png; path = Resources/rangeSliderTrack.png; sourceTree = "<group>"; };
-		2055A97B6A4295E454E38DCD29F7DBB4 /* DPInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjector.m; path = Pod/Classes/DPInjector.m; sourceTree = "<group>"; };
 		23B3C2F7A60189AA38D256A0120B8730 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		2B37B5D66B4D9F9A4A1D0511A33D460E /* libMARKRangeSlider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMARKRangeSlider.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F68E373D60A2FD79FB7F93E079EA3A3 /* Depend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Depend-dummy.m"; sourceTree = "<group>"; };
-		3008D6D2E5359E201728ACF6CFEAC24C /* DPInjectionPropertyDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionPropertyDescriptor.h; path = Pod/Classes/DPInjectionPropertyDescriptor.h; sourceTree = "<group>"; };
-		32D8C254055694FFCDEC2710212CC5FC /* Depend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Depend-prefix.pch"; sourceTree = "<group>"; };
+		2EE6C5AA4F1104BB0E7D9D64CF3142B7 /* NSDate-Escort-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate-Escort-dummy.m"; sourceTree = "<group>"; };
 		32DCDA0D933355DC8B6C74D3EC55C4C8 /* Pods-Picfind-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Picfind-frameworks.sh"; sourceTree = "<group>"; };
-		395114DF482E428E936B7C7EE2C77F23 /* NSDate+Escort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Escort.m"; path = "NSDate-Escort/NSDate+Escort.m"; sourceTree = "<group>"; };
-		398EB71E8B74471A76074DF540E567EE /* DPRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPRegistry.m; path = Pod/Classes/DPRegistry.m; sourceTree = "<group>"; };
-		3A156C8F16E4AE36B0DB5E2EAF8B663E /* MARKRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MARKRangeSlider-prefix.pch"; sourceTree = "<group>"; };
-		3C1CE9127E8A103F756F178AD2A5E565 /* MARKRangeSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MARKRangeSlider.h; path = Source/MARKRangeSlider.h; sourceTree = "<group>"; };
-		451E8564E0CC359A14190470B490D02F /* DPCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPCache.h; path = Pod/Classes/DPCache.h; sourceTree = "<group>"; };
-		4B4B1F0BB8F69430049AF1473A5569F3 /* DPImplementationKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPImplementationKey.m; path = Pod/Classes/DPImplementationKey.m; sourceTree = "<group>"; };
-		52AC8C25714E0CDF656976B90CC28EAA /* DPInjectionPropertyDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionPropertyDescriptor.m; path = Pod/Classes/DPInjectionPropertyDescriptor.m; sourceTree = "<group>"; };
+		32EB2A7CB2D6B603716039432EC69CF1 /* DPRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPRegistry.h; path = Pod/Classes/DPRegistry.h; sourceTree = "<group>"; };
+		3465A0F7C0A33810A69A06963591A5E0 /* Depend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Depend.xcconfig; sourceTree = "<group>"; };
+		35314B83D88B6B57376069033D076B45 /* rangeSliderThumb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderThumb@3x.png"; path = "Resources/rangeSliderThumb@3x.png"; sourceTree = "<group>"; };
+		36559D124C760A6B9861189D12CE33CE /* rangeSliderTrackRange@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderTrackRange@3x.png"; path = "Resources/rangeSliderTrackRange@3x.png"; sourceTree = "<group>"; };
+		3803036AA32B487BFB4C5EBC2B5C73E6 /* liblibjpeg.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = liblibjpeg.a; path = ios/liblibjpeg.a; sourceTree = "<group>"; };
+		3CF3708333E933B5D7CBEC0B4F6917F8 /* MARKRangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MARKRangeSlider.xcconfig; sourceTree = "<group>"; };
+		3F9C1B65E203FF221D8A1F4756FA71D8 /* MARKRangeSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MARKRangeSlider.m; path = Source/MARKRangeSlider.m; sourceTree = "<group>"; };
+		4C9D7CC4FAEFBAF08069BD2071B6A2ED /* LLARingSpinnerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLARingSpinnerView.xcconfig; sourceTree = "<group>"; };
 		56739F7D028A58365ABE644BE51569F4 /* Pods-PicfindTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicfindTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		602EEE58993160D954D3516167643E2D /* MARKRangeSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MARKRangeSlider.m; path = Source/MARKRangeSlider.m; sourceTree = "<group>"; };
-		61D443386B3C3F727D31C812F0E7F908 /* DPInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjector.h; path = Pod/Classes/DPInjector.h; sourceTree = "<group>"; };
+		587CCB3B83F13A35251825ECBD11601C /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		614B257813E00A5E1BCAC96C5EAD8CFD /* MARKRangeSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MARKRangeSlider-prefix.pch"; sourceTree = "<group>"; };
 		626F649E0446EC2150DE82D41DF3E6F0 /* Pods-PicfindTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicfindTests-resources.sh"; sourceTree = "<group>"; };
-		634DCC28773704267A7F2C3A86795184 /* NSDate+Escort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Escort.h"; path = "NSDate-Escort/NSDate+Escort.h"; sourceTree = "<group>"; };
-		695F69A732857404E217D4A3633549D0 /* rangeSliderThumb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderThumb@3x.png"; path = "Resources/rangeSliderThumb@3x.png"; sourceTree = "<group>"; };
-		6B9E70D564D94686B61D9C63D72A7C91 /* LLARingSpinnerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLARingSpinnerView.h; path = LLARingSpinnerView/LLARingSpinnerView.h; sourceTree = "<group>"; };
+		674DFD81F8319B8F5F02DEB33F1835FF /* DPInjectionDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionDescriptor.h; path = Pod/Classes/DPInjectionDescriptor.h; sourceTree = "<group>"; };
+		6BD0057B7945DB5CFDAA128F21830E7A /* Depend-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Depend-prefix.pch"; sourceTree = "<group>"; };
 		6CDFF2FD1D52FBD59E04E359C156AC38 /* Pods-Picfind-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Picfind-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6D20B99D842A34FC2F26D0A9C4FBDA46 /* liblibjpeg.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = liblibjpeg.a; path = ios/liblibjpeg.a; sourceTree = "<group>"; };
 		6D3BEC2B561562AE9A145758E44C396F /* libPods-PicfindTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PicfindTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D4D8926E523F6F7333B53A7AE1809D1 /* Pods-Picfind-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Picfind-acknowledgements.plist"; sourceTree = "<group>"; };
-		6FE0F8F12D6360700F5B149847BA5FA0 /* LLARingSpinnerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLARingSpinnerView.xcconfig; sourceTree = "<group>"; };
+		6ECBDFC95729B168E49BD9FDF31D4406 /* MARKRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MARKRangeSlider-dummy.m"; sourceTree = "<group>"; };
+		6EEB749AFF4CB1906C7F4CD7C9FBAF68 /* rangeSliderThumb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderThumb@2x.png"; path = "Resources/rangeSliderThumb@2x.png"; sourceTree = "<group>"; };
 		73B5D015F920CD76E68F6BB9E8240A33 /* libNSDate-Escort.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNSDate-Escort.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C23F03CA9F664D21397770D545585BC /* Answers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Answers.framework; path = iOS/Answers.framework; sourceTree = "<group>"; };
 		7F79ACD206D7284CF469DA6B24AFACE9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		80BB1D1340B814F8F83D5663E9B22FF1 /* Pods-Picfind-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Picfind-dummy.m"; sourceTree = "<group>"; };
-		83696945AB118CCCF8D4FE6043A3A869 /* rangeSliderTrackRange.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = rangeSliderTrackRange.png; path = Resources/rangeSliderTrackRange.png; sourceTree = "<group>"; };
-		86D04D6EF4C2F743754A4BA869B0A7D1 /* NSDate-Escort-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate-Escort-dummy.m"; sourceTree = "<group>"; };
-		877F263A35E1CD14BFE878D516F90351 /* DPCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPCache.m; path = Pod/Classes/DPCache.m; sourceTree = "<group>"; };
+		83A31EE3FC67B8ACD55B93887198E5C6 /* rangeSliderTrack@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderTrack@3x.png"; path = "Resources/rangeSliderTrack@3x.png"; sourceTree = "<group>"; };
+		85F551F45083637F692882D58A53669A /* DPCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPCache.h; path = Pod/Classes/DPCache.h; sourceTree = "<group>"; };
+		8768920D52E5706BC1E52195E0B02E4D /* DPInjectionPropertyDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionPropertyDescriptor.m; path = Pod/Classes/DPInjectionPropertyDescriptor.m; sourceTree = "<group>"; };
 		88675D13D68AB47AE2B2E580CA3B801A /* Pods-PicfindTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicfindTests-frameworks.sh"; sourceTree = "<group>"; };
-		88841FE385AAC6D001F7E98F691AF1CC /* MARKRangeSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MARKRangeSlider-dummy.m"; sourceTree = "<group>"; };
-		8B4CE2F7C0D74D3AB6A8893F160EC4EE /* LLARingSpinnerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LLARingSpinnerView-dummy.m"; sourceTree = "<group>"; };
-		8DF3EE73C662232BDC36A61D38A52B34 /* LLARingSpinnerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLARingSpinnerView-prefix.pch"; sourceTree = "<group>"; };
-		9056530425BA4ADA3E18BCA58928E1A0 /* LLARingSpinnerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLARingSpinnerView.m; path = LLARingSpinnerView/LLARingSpinnerView.m; sourceTree = "<group>"; };
-		9225106B19884A2F16D5FB0380E5A51D /* NSDate-Escort.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSDate-Escort.xcconfig"; sourceTree = "<group>"; };
+		8A06E88D164C5B61E31E383E1BCF0E19 /* NSDate-Escort-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate-Escort-prefix.pch"; sourceTree = "<group>"; };
 		95FA9D6C62076D7840475E09238EED1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		97EFB2AE0390F5D7E66ECF2566D16F58 /* rangeSliderTrackRange@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderTrackRange@2x.png"; path = "Resources/rangeSliderTrackRange@2x.png"; sourceTree = "<group>"; };
+		97FFA0E81DBF7D22A9EB6DC74E3D0C48 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = "<group>"; };
 		98C67FBF2AFA6E11819355DCB3446E11 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
 		9AF27D9139964B63410C681F120FE339 /* Pods-Picfind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Picfind.release.xcconfig"; sourceTree = "<group>"; };
 		9C9A01B402498CF0974189039C28B6B9 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9E18B3E36BC33F56E9FDEED2043B6A39 /* Depend.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Depend.xcconfig; sourceTree = "<group>"; };
-		A831E0BC2B6D3A85386D34EF5EB9A9FE /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ios/opencv2.framework; sourceTree = "<group>"; };
-		AA6C80F7626BEF9B431E80231FCD5279 /* rangeSliderTrack@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderTrack@3x.png"; path = "Resources/rangeSliderTrack@3x.png"; sourceTree = "<group>"; };
+		9EF892429FDE02D4B0BDBC15B8E9B49A /* NSDate-Escort.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "NSDate-Escort.xcconfig"; sourceTree = "<group>"; };
+		A80A8F9B239E9CFF844C469B2AD9594D /* MARKRangeSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MARKRangeSlider.h; path = Source/MARKRangeSlider.h; sourceTree = "<group>"; };
+		A8C0B7D387DDBB41188645FCFC28B512 /* LLARingSpinnerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLARingSpinnerView.m; path = LLARingSpinnerView/LLARingSpinnerView.m; sourceTree = "<group>"; };
 		AD68EE27A3AD8A8DB10302811DA065FE /* Pods-Picfind-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Picfind-resources.sh"; sourceTree = "<group>"; };
 		B0BF21F3AA3995AC0B220DC236B1AB06 /* MARKRangeSlider.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARKRangeSlider.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		B51D8BC1E8D78110A483685609D0F70E /* rangeSliderThumb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderThumb@2x.png"; path = "Resources/rangeSliderThumb@2x.png"; sourceTree = "<group>"; };
+		B300F623724E4833651F66AC04F759D8 /* LLARingSpinnerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LLARingSpinnerView-dummy.m"; sourceTree = "<group>"; };
 		B5E6307266A76651567B02A7577D2615 /* libDepend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDepend.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B86ADD76A470E4843B1163E7CD11A729 /* DPCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPCache.m; path = Pod/Classes/DPCache.m; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C669889D9CE92019D9F89672CE9AB3F4 /* rangeSliderThumb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = rangeSliderThumb.png; path = Resources/rangeSliderThumb.png; sourceTree = "<group>"; };
+		C0A6252316E687F35A32C3448D581255 /* DPInjectionPropertyDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionPropertyDescriptor.h; path = Pod/Classes/DPInjectionPropertyDescriptor.h; sourceTree = "<group>"; };
+		C2B31AB220535705DF8D552FAF092A8B /* rangeSliderTrackRange.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = rangeSliderTrackRange.png; path = Resources/rangeSliderTrackRange.png; sourceTree = "<group>"; };
+		C5AD24871B32099B1C0E4AABF79F4928 /* rangeSliderThumb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = rangeSliderThumb.png; path = Resources/rangeSliderThumb.png; sourceTree = "<group>"; };
 		C7D21B7B06DCF1FE88FA02356016D193 /* libPods-Picfind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picfind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA6365AB9535E40298F70BD3A081A2F5 /* NSDate-Escort-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate-Escort-prefix.pch"; sourceTree = "<group>"; };
+		CC4B307E70E959E0C350102D90B683EC /* Depend-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Depend-dummy.m"; sourceTree = "<group>"; };
+		CEAABD2E7795CE7E9CD55F975F9C3A82 /* DPInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjector.m; path = Pod/Classes/DPInjector.m; sourceTree = "<group>"; };
+		D00817E2129BCAE568B7DAF40C1EE3F5 /* DPImplementationKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPImplementationKey.m; path = Pod/Classes/DPImplementationKey.m; sourceTree = "<group>"; };
+		D20137391F3204B766B3F40F7E9D7035 /* DPInjectionDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPInjectionDescriptor.m; path = Pod/Classes/DPInjectionDescriptor.m; sourceTree = "<group>"; };
 		DB0AA1CE971FBA49BBF93E694FE4BB78 /* libLLARingSpinnerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLARingSpinnerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2787AC8D7302DF792A94A8F135EA9E8 /* DPInjectionDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPInjectionDescriptor.h; path = Pod/Classes/DPInjectionDescriptor.h; sourceTree = "<group>"; };
-		E610D12817E62768B6FDC2290ECF9293 /* rangeSliderTrackRange@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderTrackRange@3x.png"; path = "Resources/rangeSliderTrackRange@3x.png"; sourceTree = "<group>"; };
-		EAC1EEAC676125C172845147B5476F64 /* DPImplementationKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPImplementationKey.h; path = Pod/Classes/DPImplementationKey.h; sourceTree = "<group>"; };
-		EAC90BC09050451FDAF1D6EF16910E6B /* rangeSliderTrack@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderTrack@2x.png"; path = "Resources/rangeSliderTrack@2x.png"; sourceTree = "<group>"; };
+		DDE360BDD6654C9676DB22482DF3D40A /* DPRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DPRegistry.m; path = Pod/Classes/DPRegistry.m; sourceTree = "<group>"; };
+		DE5A6FF53A71CB94AA32A530B809FC5B /* LLARingSpinnerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLARingSpinnerView-prefix.pch"; sourceTree = "<group>"; };
+		DEFD14245EB4FF2BCCB58F3E1AF31F33 /* NSDate+Escort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Escort.h"; path = "NSDate-Escort/NSDate+Escort.h"; sourceTree = "<group>"; };
+		DF4C8B6D5D61A61879B100FBFC6A3DF2 /* rangeSliderTrackRange@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rangeSliderTrackRange@2x.png"; path = "Resources/rangeSliderTrackRange@2x.png"; sourceTree = "<group>"; };
 		EB9F11981E703C9EE2CFA9CB2620BE1B /* Pods-PicfindTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PicfindTests-dummy.m"; sourceTree = "<group>"; };
-		FCFED69B70EDE01B8D073D2C45E3C58C /* MARKRangeSlider.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MARKRangeSlider.xcconfig; sourceTree = "<group>"; };
+		F2C7AA25F6FD688F0DD0B756CC0B4DD6 /* rangeSliderTrack.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = rangeSliderTrack.png; path = Resources/rangeSliderTrack.png; sourceTree = "<group>"; };
+		F6A7200AAC04CC090BF206579BD8686B /* NSDate+Escort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Escort.m"; path = "NSDate-Escort/NSDate+Escort.m"; sourceTree = "<group>"; };
+		FA00F5FFB7A1B8E7872935EFDE3D09DB /* DPImplementationKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DPImplementationKey.h; path = Pod/Classes/DPImplementationKey.h; sourceTree = "<group>"; };
 		FD6E54B54BB6889A741BCC81225459EB /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD4B6EBEEF7EE03F1D86FD7227C21EE /* LLARingSpinnerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLARingSpinnerView.h; path = LLARingSpinnerView/LLARingSpinnerView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,34 +237,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D1BFEEAD309359DA42472D2A3D6E7CC /* LLARingSpinnerView */ = {
+		0B755F0B6CE441E579E42F068ED7CB48 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6B9E70D564D94686B61D9C63D72A7C91 /* LLARingSpinnerView.h */,
-				9056530425BA4ADA3E18BCA58928E1A0 /* LLARingSpinnerView.m */,
-				FF09D5F8CCBF276CC239204E8D4539CC /* Support Files */,
+				9EF892429FDE02D4B0BDBC15B8E9B49A /* NSDate-Escort.xcconfig */,
+				2EE6C5AA4F1104BB0E7D9D64CF3142B7 /* NSDate-Escort-dummy.m */,
+				8A06E88D164C5B61E31E383E1BCF0E19 /* NSDate-Escort-prefix.pch */,
 			);
-			path = LLARingSpinnerView;
-			sourceTree = "<group>";
-		};
-		0D443C339924C39E2F45B867B858779F /* Depend */ = {
-			isa = PBXGroup;
-			children = (
-				451E8564E0CC359A14190470B490D02F /* DPCache.h */,
-				877F263A35E1CD14BFE878D516F90351 /* DPCache.m */,
-				EAC1EEAC676125C172845147B5476F64 /* DPImplementationKey.h */,
-				4B4B1F0BB8F69430049AF1473A5569F3 /* DPImplementationKey.m */,
-				E2787AC8D7302DF792A94A8F135EA9E8 /* DPInjectionDescriptor.h */,
-				061010EA050AC3B316431027BAC4F476 /* DPInjectionDescriptor.m */,
-				3008D6D2E5359E201728ACF6CFEAC24C /* DPInjectionPropertyDescriptor.h */,
-				52AC8C25714E0CDF656976B90CC28EAA /* DPInjectionPropertyDescriptor.m */,
-				61D443386B3C3F727D31C812F0E7F908 /* DPInjector.h */,
-				2055A97B6A4295E454E38DCD29F7DBB4 /* DPInjector.m */,
-				136EAB628239B1280312725248857D86 /* DPRegistry.h */,
-				398EB71E8B74471A76074DF540E567EE /* DPRegistry.m */,
-				D0E71C406CBB1994A7EBDA2C57CA0C52 /* Support Files */,
-			);
-			path = Depend;
+			name = "Support Files";
+			path = "../Target Support Files/NSDate-Escort";
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -273,31 +256,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2718914452A87A82795B77E245E17635 /* Support Files */ = {
+		1992440F54F04F08902467DCADF3A441 /* OpenCV */ = {
 			isa = PBXGroup;
 			children = (
-				FCFED69B70EDE01B8D073D2C45E3C58C /* MARKRangeSlider.xcconfig */,
-				88841FE385AAC6D001F7E98F691AF1CC /* MARKRangeSlider-dummy.m */,
-				3A156C8F16E4AE36B0DB5E2EAF8B663E /* MARKRangeSlider-prefix.pch */,
+				6994A45E24423A27CDA1CF0F5F59F79B /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MARKRangeSlider";
-			sourceTree = "<group>";
-		};
-		27EE54AA0904693C9D9A13C971433F9A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C669889D9CE92019D9F89672CE9AB3F4 /* rangeSliderThumb.png */,
-				B51D8BC1E8D78110A483685609D0F70E /* rangeSliderThumb@2x.png */,
-				695F69A732857404E217D4A3633549D0 /* rangeSliderThumb@3x.png */,
-				1BF0CBE77E476926628AA667235F2D50 /* rangeSliderTrack.png */,
-				EAC90BC09050451FDAF1D6EF16910E6B /* rangeSliderTrack@2x.png */,
-				AA6C80F7626BEF9B431E80231FCD5279 /* rangeSliderTrack@3x.png */,
-				83696945AB118CCCF8D4FE6043A3A869 /* rangeSliderTrackRange.png */,
-				97EFB2AE0390F5D7E66ECF2566D16F58 /* rangeSliderTrackRange@2x.png */,
-				E610D12817E62768B6FDC2290ECF9293 /* rangeSliderTrackRange@3x.png */,
-			);
-			name = Resources;
+			path = OpenCV;
 			sourceTree = "<group>";
 		};
 		29AEE597220FF8A8F1F73158085EFAE8 /* Pods-PicfindTests */ = {
@@ -315,16 +279,23 @@
 			path = "Target Support Files/Pods-PicfindTests";
 			sourceTree = "<group>";
 		};
-		3D8BBA1D6340E6FE0451FFCDF4A036A8 /* Pods */ = {
+		33C8AD5956C28D67A7801F6DA0AD9BDE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0D443C339924C39E2F45B867B858779F /* Depend */,
-				0D1BFEEAD309359DA42472D2A3D6E7CC /* LLARingSpinnerView */,
-				E10DE1927D455248067B4E158FFD9DCC /* MARKRangeSlider */,
-				B38C7E877ACCD43C0AC817734249652D /* NSDate-Escort */,
-				9C6DE85644EEEA5DD910B55B9823A4F7 /* OpenCV */,
+				4C9D7CC4FAEFBAF08069BD2071B6A2ED /* LLARingSpinnerView.xcconfig */,
+				B300F623724E4833651F66AC04F759D8 /* LLARingSpinnerView-dummy.m */,
+				DE5A6FF53A71CB94AA32A530B809FC5B /* LLARingSpinnerView-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/LLARingSpinnerView";
+			sourceTree = "<group>";
+		};
+		3D50A2A72A0135A314AA15FA093E0783 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				587CCB3B83F13A35251825ECBD11601C /* Fabric.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3D9D88C35348A63063BE06672F019C01 /* Targets Support Files */ = {
@@ -336,11 +307,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6433DE98D5176B829F0278F8F4BF9683 /* Frameworks */ = {
+		432914F9B80F41ABFE44E64E939E4D47 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6D20B99D842A34FC2F26D0A9C4FBDA46 /* liblibjpeg.a */,
-				A831E0BC2B6D3A85386D34EF5EB9A9FE /* opencv2.framework */,
+				7C23F03CA9F664D21397770D545585BC /* Answers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BB153743CC42199CBFD618552EA62D9 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				3D50A2A72A0135A314AA15FA093E0783 /* Frameworks */,
+			);
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+		53DB7ECB26127ABCDD39C7D532F26D14 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CF3708333E933B5D7CBEC0B4F6917F8 /* MARKRangeSlider.xcconfig */,
+				6ECBDFC95729B168E49BD9FDF31D4406 /* MARKRangeSlider-dummy.m */,
+				614B257813E00A5E1BCAC96C5EAD8CFD /* MARKRangeSlider-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MARKRangeSlider";
+			sourceTree = "<group>";
+		};
+		6133B33A196FFD9F50B043F3832EEBFD /* Answers */ = {
+			isa = PBXGroup;
+			children = (
+				432914F9B80F41ABFE44E64E939E4D47 /* Frameworks */,
+			);
+			path = Answers;
+			sourceTree = "<group>";
+		};
+		6994A45E24423A27CDA1CF0F5F59F79B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3803036AA32B487BFB4C5EBC2B5C73E6 /* liblibjpeg.a */,
+				97FFA0E81DBF7D22A9EB6DC74E3D0C48 /* opencv2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -350,7 +356,7 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				3D8BBA1D6340E6FE0451FFCDF4A036A8 /* Pods */,
+				BF085BDBD21F56EFC932D8B3BFF78202 /* Pods */,
 				8EF5F3BF51B7C155CE48A862BE7BCEB5 /* Products */,
 				3D9D88C35348A63063BE06672F019C01 /* Targets Support Files */,
 			);
@@ -371,12 +377,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C6DE85644EEEA5DD910B55B9823A4F7 /* OpenCV */ = {
+		93B6121CF82871ADC164CD11FED97EAA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6433DE98D5176B829F0278F8F4BF9683 /* Frameworks */,
+				C5AD24871B32099B1C0E4AABF79F4928 /* rangeSliderThumb.png */,
+				6EEB749AFF4CB1906C7F4CD7C9FBAF68 /* rangeSliderThumb@2x.png */,
+				35314B83D88B6B57376069033D076B45 /* rangeSliderThumb@3x.png */,
+				F2C7AA25F6FD688F0DD0B756CC0B4DD6 /* rangeSliderTrack.png */,
+				12377C4CCDF303878DA798DDFB2A04B2 /* rangeSliderTrack@2x.png */,
+				83A31EE3FC67B8ACD55B93887198E5C6 /* rangeSliderTrack@3x.png */,
+				C2B31AB220535705DF8D552FAF092A8B /* rangeSliderTrackRange.png */,
+				DF4C8B6D5D61A61879B100FBFC6A3DF2 /* rangeSliderTrackRange@2x.png */,
+				36559D124C760A6B9861189D12CE33CE /* rangeSliderTrackRange@3x.png */,
 			);
-			path = OpenCV;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		ADC3CBDF6F315EECE14E8B7E583A2AF9 /* Pods-Picfind */ = {
@@ -394,36 +408,48 @@
 			path = "Target Support Files/Pods-Picfind";
 			sourceTree = "<group>";
 		};
-		B38C7E877ACCD43C0AC817734249652D /* NSDate-Escort */ = {
+		BF085BDBD21F56EFC932D8B3BFF78202 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				634DCC28773704267A7F2C3A86795184 /* NSDate+Escort.h */,
-				395114DF482E428E936B7C7EE2C77F23 /* NSDate+Escort.m */,
-				F1D86F65C9DF5FBAD56E0DB69AC23F1D /* Support Files */,
+				6133B33A196FFD9F50B043F3832EEBFD /* Answers */,
+				DAB40BE7ECBE3658A0F6FE61D742E23B /* Depend */,
+				4BB153743CC42199CBFD618552EA62D9 /* Fabric */,
+				D124E4B1F4D6D921A1CB72755E0979F5 /* LLARingSpinnerView */,
+				F557BE96D51CED114AA9D1539C1FD5D5 /* MARKRangeSlider */,
+				F9A246B9AEA3BF638F9BED7AD38B3A01 /* NSDate-Escort */,
+				1992440F54F04F08902467DCADF3A441 /* OpenCV */,
 			);
-			path = "NSDate-Escort";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		D0E71C406CBB1994A7EBDA2C57CA0C52 /* Support Files */ = {
+		D124E4B1F4D6D921A1CB72755E0979F5 /* LLARingSpinnerView */ = {
 			isa = PBXGroup;
 			children = (
-				9E18B3E36BC33F56E9FDEED2043B6A39 /* Depend.xcconfig */,
-				2F68E373D60A2FD79FB7F93E079EA3A3 /* Depend-dummy.m */,
-				32D8C254055694FFCDEC2710212CC5FC /* Depend-prefix.pch */,
+				FDD4B6EBEEF7EE03F1D86FD7227C21EE /* LLARingSpinnerView.h */,
+				A8C0B7D387DDBB41188645FCFC28B512 /* LLARingSpinnerView.m */,
+				33C8AD5956C28D67A7801F6DA0AD9BDE /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Depend";
+			path = LLARingSpinnerView;
 			sourceTree = "<group>";
 		};
-		E10DE1927D455248067B4E158FFD9DCC /* MARKRangeSlider */ = {
+		DAB40BE7ECBE3658A0F6FE61D742E23B /* Depend */ = {
 			isa = PBXGroup;
 			children = (
-				3C1CE9127E8A103F756F178AD2A5E565 /* MARKRangeSlider.h */,
-				602EEE58993160D954D3516167643E2D /* MARKRangeSlider.m */,
-				27EE54AA0904693C9D9A13C971433F9A /* Resources */,
-				2718914452A87A82795B77E245E17635 /* Support Files */,
+				85F551F45083637F692882D58A53669A /* DPCache.h */,
+				B86ADD76A470E4843B1163E7CD11A729 /* DPCache.m */,
+				FA00F5FFB7A1B8E7872935EFDE3D09DB /* DPImplementationKey.h */,
+				D00817E2129BCAE568B7DAF40C1EE3F5 /* DPImplementationKey.m */,
+				674DFD81F8319B8F5F02DEB33F1835FF /* DPInjectionDescriptor.h */,
+				D20137391F3204B766B3F40F7E9D7035 /* DPInjectionDescriptor.m */,
+				C0A6252316E687F35A32C3448D581255 /* DPInjectionPropertyDescriptor.h */,
+				8768920D52E5706BC1E52195E0B02E4D /* DPInjectionPropertyDescriptor.m */,
+				1055D7A483867633A31E0AD44DF65838 /* DPInjector.h */,
+				CEAABD2E7795CE7E9CD55F975F9C3A82 /* DPInjector.m */,
+				32EB2A7CB2D6B603716039432EC69CF1 /* DPRegistry.h */,
+				DDE360BDD6654C9676DB22482DF3D40A /* DPRegistry.m */,
+				FB596D0B40D91826BE8CFC93A95C41FB /* Support Files */,
 			);
-			path = MARKRangeSlider;
+			path = Depend;
 			sourceTree = "<group>";
 		};
 		E35B3E289DB984DA75A774080D293670 /* iOS */ = {
@@ -436,26 +462,36 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F1D86F65C9DF5FBAD56E0DB69AC23F1D /* Support Files */ = {
+		F557BE96D51CED114AA9D1539C1FD5D5 /* MARKRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
-				9225106B19884A2F16D5FB0380E5A51D /* NSDate-Escort.xcconfig */,
-				86D04D6EF4C2F743754A4BA869B0A7D1 /* NSDate-Escort-dummy.m */,
-				CA6365AB9535E40298F70BD3A081A2F5 /* NSDate-Escort-prefix.pch */,
+				A80A8F9B239E9CFF844C469B2AD9594D /* MARKRangeSlider.h */,
+				3F9C1B65E203FF221D8A1F4756FA71D8 /* MARKRangeSlider.m */,
+				93B6121CF82871ADC164CD11FED97EAA /* Resources */,
+				53DB7ECB26127ABCDD39C7D532F26D14 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/NSDate-Escort";
+			path = MARKRangeSlider;
 			sourceTree = "<group>";
 		};
-		FF09D5F8CCBF276CC239204E8D4539CC /* Support Files */ = {
+		F9A246B9AEA3BF638F9BED7AD38B3A01 /* NSDate-Escort */ = {
 			isa = PBXGroup;
 			children = (
-				6FE0F8F12D6360700F5B149847BA5FA0 /* LLARingSpinnerView.xcconfig */,
-				8B4CE2F7C0D74D3AB6A8893F160EC4EE /* LLARingSpinnerView-dummy.m */,
-				8DF3EE73C662232BDC36A61D38A52B34 /* LLARingSpinnerView-prefix.pch */,
+				DEFD14245EB4FF2BCCB58F3E1AF31F33 /* NSDate+Escort.h */,
+				F6A7200AAC04CC090BF206579BD8686B /* NSDate+Escort.m */,
+				0B755F0B6CE441E579E42F068ED7CB48 /* Support Files */,
+			);
+			path = "NSDate-Escort";
+			sourceTree = "<group>";
+		};
+		FB596D0B40D91826BE8CFC93A95C41FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3465A0F7C0A33810A69A06963591A5E0 /* Depend.xcconfig */,
+				CC4B307E70E959E0C350102D90B683EC /* Depend-dummy.m */,
+				6BD0057B7945DB5CFDAA128F21830E7A /* Depend-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/LLARingSpinnerView";
+			path = "../Target Support Files/Depend";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -833,7 +869,7 @@
 		};
 		15540B1AC03588A018BF5707FC94D43C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FE0F8F12D6360700F5B149847BA5FA0 /* LLARingSpinnerView.xcconfig */;
+			baseConfigurationReference = 4C9D7CC4FAEFBAF08069BD2071B6A2ED /* LLARingSpinnerView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/LLARingSpinnerView/LLARingSpinnerView-prefix.pch";
@@ -851,7 +887,7 @@
 		};
 		183C939DEAA67DB8C1DD08DD18F33697 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E18B3E36BC33F56E9FDEED2043B6A39 /* Depend.xcconfig */;
+			baseConfigurationReference = 3465A0F7C0A33810A69A06963591A5E0 /* Depend.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = Depend;
@@ -863,7 +899,7 @@
 		};
 		3A0FA54C902CCA3808899AB5754C5E00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCFED69B70EDE01B8D073D2C45E3C58C /* MARKRangeSlider.xcconfig */;
+			baseConfigurationReference = 3CF3708333E933B5D7CBEC0B4F6917F8 /* MARKRangeSlider.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = MARKRangeSlider;
@@ -875,7 +911,7 @@
 		};
 		48BF7617625D0C7628AE6BD4162C62CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCFED69B70EDE01B8D073D2C45E3C58C /* MARKRangeSlider.xcconfig */;
+			baseConfigurationReference = 3CF3708333E933B5D7CBEC0B4F6917F8 /* MARKRangeSlider.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = MARKRangeSlider;
@@ -887,7 +923,7 @@
 		};
 		4B7C62AAA3DE840A71F5A34369A0B000 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E18B3E36BC33F56E9FDEED2043B6A39 /* Depend.xcconfig */;
+			baseConfigurationReference = 3465A0F7C0A33810A69A06963591A5E0 /* Depend.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = Depend;
@@ -899,7 +935,7 @@
 		};
 		4D0CC95123965D7A10379C79E4454E4C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E18B3E36BC33F56E9FDEED2043B6A39 /* Depend.xcconfig */;
+			baseConfigurationReference = 3465A0F7C0A33810A69A06963591A5E0 /* Depend.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Depend/Depend-prefix.pch";
@@ -917,7 +953,7 @@
 		};
 		638C0204D903982297DAF16CFAF9BACC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCFED69B70EDE01B8D073D2C45E3C58C /* MARKRangeSlider.xcconfig */;
+			baseConfigurationReference = 3CF3708333E933B5D7CBEC0B4F6917F8 /* MARKRangeSlider.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MARKRangeSlider/MARKRangeSlider-prefix.pch";
@@ -1025,7 +1061,7 @@
 		};
 		B11918C8F07F6F1100F63E45EFA8A2BB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9225106B19884A2F16D5FB0380E5A51D /* NSDate-Escort.xcconfig */;
+			baseConfigurationReference = 9EF892429FDE02D4B0BDBC15B8E9B49A /* NSDate-Escort.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/NSDate-Escort/NSDate-Escort-prefix.pch";
@@ -1043,7 +1079,7 @@
 		};
 		BE2F314CE01C523A45EF32DB191E15F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FE0F8F12D6360700F5B149847BA5FA0 /* LLARingSpinnerView.xcconfig */;
+			baseConfigurationReference = 4C9D7CC4FAEFBAF08069BD2071B6A2ED /* LLARingSpinnerView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/LLARingSpinnerView/LLARingSpinnerView-prefix.pch";
@@ -1095,7 +1131,7 @@
 		};
 		D832E59B6074C94CB027B9021AA7CB2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCFED69B70EDE01B8D073D2C45E3C58C /* MARKRangeSlider.xcconfig */;
+			baseConfigurationReference = 3CF3708333E933B5D7CBEC0B4F6917F8 /* MARKRangeSlider.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/MARKRangeSlider/MARKRangeSlider-prefix.pch";
@@ -1113,7 +1149,7 @@
 		};
 		F4CC3702EEAD88C7BE38C1DAD0975E2A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E18B3E36BC33F56E9FDEED2043B6A39 /* Depend.xcconfig */;
+			baseConfigurationReference = 3465A0F7C0A33810A69A06963591A5E0 /* Depend.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Depend/Depend-prefix.pch";
@@ -1131,7 +1167,7 @@
 		};
 		FA3F33391121BE99BACBCD5BFCEE616F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9225106B19884A2F16D5FB0380E5A51D /* NSDate-Escort.xcconfig */;
+			baseConfigurationReference = 9EF892429FDE02D4B0BDBC15B8E9B49A /* NSDate-Escort.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/NSDate-Escort/NSDate-Escort-prefix.pch";

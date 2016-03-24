@@ -13,6 +13,7 @@
 #import "UIViewController+NotificationShow.h"
 #import "DYPFilterFactory.h"
 #import "DYPQuote.h"
+#import <Answers/Answers.h>
 
 @interface DYPPeriodFilterViewController ()
 
@@ -103,6 +104,7 @@
     if (error) {
         [self showNotificationWithType:SHNotificationViewTypeError withMessage:error.localizedDescription];
     } else {
+        [Answers logCustomEventWithName:[self title] customAttributes:nil];
         [self.delegate source:self didCreateFilter:periodFilter];
         [self.navigationController popViewControllerAnimated:YES];
     }

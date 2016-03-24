@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYPResultsViewController">
             <connections>
                 <outlet property="collectionView" destination="MIo-wV-MPF" id="Yhr-d8-e4k"/>
+                <outlet property="noResultsView" destination="3cg-jN-aB6" id="h0Q-YO-xzt"/>
                 <outlet property="view" destination="iN0-l3-epB" id="5UR-Mc-WyW"/>
             </connections>
         </placeholder>
@@ -26,11 +27,41 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cg-jN-aB6">
+                    <rect key="frame" x="40" y="138" width="240" height="228"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="X" translatesAutoresizingMaskIntoConstraints="NO" id="5bH-Xq-Otp">
+                            <rect key="frame" x="60" y="8" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="Wsi-YZ-1Hf"/>
+                                <constraint firstAttribute="width" constant="120" id="yck-wj-8zU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Results." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmN-Sl-TOj">
+                            <rect key="frame" x="0.0" y="158" width="240" height="18"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JmN-Sl-TOj" firstAttribute="top" secondItem="5bH-Xq-Otp" secondAttribute="bottom" constant="30" id="E2m-c2-H0D"/>
+                        <constraint firstAttribute="width" constant="240" id="HPX-D2-Czp"/>
+                        <constraint firstItem="JmN-Sl-TOj" firstAttribute="leading" secondItem="3cg-jN-aB6" secondAttribute="leading" id="NQL-aA-1Nd"/>
+                        <constraint firstAttribute="trailing" secondItem="JmN-Sl-TOj" secondAttribute="trailing" id="Ohq-q2-Yae"/>
+                        <constraint firstItem="5bH-Xq-Otp" firstAttribute="centerX" secondItem="3cg-jN-aB6" secondAttribute="centerX" id="V9p-Ya-8yy"/>
+                        <constraint firstItem="5bH-Xq-Otp" firstAttribute="top" secondItem="3cg-jN-aB6" secondAttribute="top" constant="8" id="Zcb-Vr-dfE"/>
+                        <constraint firstAttribute="height" constant="228" id="aYF-UP-LtS"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="MIo-wV-MPF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RGh-xi-3Ib"/>
+                <constraint firstItem="3cg-jN-aB6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TLp-MG-Ieg"/>
                 <constraint firstAttribute="trailing" secondItem="MIo-wV-MPF" secondAttribute="trailing" id="aGn-T7-tHa"/>
+                <constraint firstItem="3cg-jN-aB6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cwJ-eH-7jU"/>
                 <constraint firstAttribute="bottom" secondItem="MIo-wV-MPF" secondAttribute="bottom" id="tiJ-gz-k3x"/>
                 <constraint firstItem="MIo-wV-MPF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wJu-Ig-0XM"/>
             </constraints>
@@ -39,4 +70,7 @@
             <point key="canvasLocation" x="149" y="464"/>
         </view>
     </objects>
+    <resources>
+        <image name="X" width="75" height="75"/>
+    </resources>
 </document>

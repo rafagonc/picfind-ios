@@ -11,6 +11,7 @@
 #import "DYPFilterFactory.h"
 #import "DYPLuminosityRangeCell.h"
 #import "DYPQuote.h"
+#import <Answers/Answers.h>
 
 @interface DYPLuminosityFilterViewController () <DYPLuminosityRangeCellDelegate>
 
@@ -81,6 +82,7 @@
 
 #pragma mark - actions
 -(void)applyAction:(UIBarButtonItem *)item {
+    [Answers logCustomEventWithName:[self title] customAttributes:nil];
     id<DYPLuminosityFilter> lum = [self.filterFactory luminosityFilterWithInitialValue:self.initialValue andFinalValue:self.finalValue];
     [self.delegate source:self didCreateFilter:lum];
     [self.navigationController popToRootViewControllerAnimated:YES];

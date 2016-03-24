@@ -36,7 +36,10 @@
 #import "DYPHelpViewController.h"
 #import "DYPLuminosityFilter.h"
 #import "DYPImageViewController.h"
+#import "DYPAdImpl.h"
+#import "DYPAd.h"
 #import <AdColony/AdColony.h>
+#import <Answers/Answers.h>
 
 #define kVelocityFastString @"fast"
 #define kVelocitySlowString @"slow"
@@ -59,6 +62,7 @@
 @property (strong, nonatomic) id<DYPNameFilter> appliableNameFilter;
 
 #pragma mark - injected
+@property (setter=injected:,readonly) id<DYPAd> ad;
 @property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
 @property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
 @property (setter=injected_nav:,readonly) id<DYPCustomizer> navigationBarCustomizer;
@@ -230,13 +234,15 @@
 
 #pragma mark - actions
 -(IBAction)searchAction:(id)sender {
-    [AdColony playVideoAdForZone:@"vz84659a7599c24beb88" withDelegate:nil];
     if (self.appliedFilters.count == 0) {
         [self showNotificationWithType:SHNotificationViewTypeError withMessage:@"Apply some filters before searching"];
         return;
     }
-    DYPResultsViewController *results = [[DYPResultsViewController alloc] initWithCollection:self.appliedFilters];
-    [self.navigationController pushViewController:results animated:YES];
+    [self.ad showAdOnViewController:self withCallback:^{
+        [Answers logCustomEventWithName:@"Searched" customAttributes:nil];
+        DYPResultsViewController *results = [[DYPResultsViewController alloc] initWithCollection:self.appliedFilters];
+        [self.navigationController pushViewController:results animated:YES];
+    }];
 }
 -(IBAction)helpAction:(id)sender {
     DYPHelpViewController *help = [[DYPHelpViewController alloc] init];

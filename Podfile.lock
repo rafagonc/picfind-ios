@@ -1,19 +1,26 @@
 PODS:
+  - Answers (1.2.0):
+    - Fabric (~> 1.6.3)
   - Depend (0.1.3)
+  - Fabric (1.6.7)
   - LLARingSpinnerView (0.1.3)
   - MARKRangeSlider (1.0.1)
   - NSDate-Escort (1.7.0)
   - OpenCV (2.4.12.3)
 
 DEPENDENCIES:
+  - Answers
   - Depend
+  - Fabric
   - LLARingSpinnerView
   - MARKRangeSlider
   - NSDate-Escort
   - OpenCV (~> 2.4)
 
 SPEC CHECKSUMS:
+  Answers: f47bc44937ab00fe5a119b16df28e1d1aeadcf84
   Depend: 3626f36923415485bedcfad4ae21f07151727aad
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   LLARingSpinnerView: d5f9057460e97989aff1c52a247c6acb62b8d883
   MARKRangeSlider: dbf0878b03e921b52e4ef1e7766c1a8affb0c577
   NSDate-Escort: 3469fefab423c094108c2e864416b61b6ac0edbc

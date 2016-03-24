@@ -23,9 +23,12 @@
 #pragma mark - ui
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) RGNavigationBarProgressView * progressView;
+@property (weak, nonatomic) IBOutlet UIView *noResultsView;
 
 #pragma mark - properties
 @property (weak, nonatomic) DYPFilterCollection *collection;
+@property (assign, nonatomic) BOOL empty;
+@property (assign, nonatomic) BOOL loading;
 
 #pragma mark - injected
 @property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
@@ -78,13 +81,19 @@
 #pragma mark - methods
 -(void)start {
     __weak typeof(self) welf = self;
+    self.empty = NO;
     [self startFullLoading];
+    self.loading = YES;
+    self.noResultsView.hidden = YES;
     [self.view bringSubviewToFront:self.progressView];
     [self.search assetsWithFilterCollection:self.collection callback:^(NSArray<id<DYPAssetProtocol>> *assets) {
         [welf.datasource setData:assets];
         [welf.collectionView reloadData];
         [welf stopFullLoading];
         [welf.progressView stop];
+        [welf.noResultsView setHidden:[assets count] > 0];
+        [welf setEmpty:assets.count == 0];
+        [welf setLoading:NO];
     } progress:^(CGFloat progress) {
         [welf.progressView setPercentage:progress];
     }];
@@ -92,8 +101,12 @@
 
 #pragma mark - actions
 -(void)addAction:(UIBarButtonItem *)item {
-    DYPCreateNameViewController *create = [[DYPCreateNameViewController alloc] initWithAssets:(id<NSCollection>)self.datasource.data];
-    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:create] animated:YES completion:nil];
+    if (!self.empty && !self.loading) {
+        DYPCreateNameViewController *create = [[DYPCreateNameViewController alloc] initWithAssets:(id<NSCollection>)self.datasource.data];
+        [self presentViewController:[[UINavigationController alloc] initWithRootViewController:create] animated:YES completion:nil];
+    } else {
+        [[[UIAlertView alloc] initWithTitle:@"No photos!" message:@"You can't create an album with no photos" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
+    }
 }
 
 #pragma mark - dealloc

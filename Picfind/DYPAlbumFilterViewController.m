@@ -15,6 +15,7 @@
 #import "UIViewController+NotificationShow.h"
 #import "DYPValidation.h"
 #import "DYPQuote.h"
+#import <Answers/Answers.h>
 
 @interface DYPAlbumFilterViewController () <DYPAlbumTableViewDatasourceDelegate>
 
@@ -82,6 +83,7 @@
 -(void)applyAction:(UIBarButtonItem *)item {
     NSError *error;
     if ([self.albumValidator validate:self.albums error:&error]) {
+        [Answers logCustomEventWithName:[self title] customAttributes:nil];
         id<DYPAlbumFilter> album = [self.filterFactory albumFilterForAlbums:self.albums];
         [self.delegate source:self didCreateFilter:album];
         [self.navigationController popToRootViewControllerAnimated:YES];

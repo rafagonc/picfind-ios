@@ -12,6 +12,7 @@
 #import "UIViewController+NotificationShow.h"
 #import "DYPQuote.h"
 #import "UIColor+DYP.h"
+#import <Answers/Answers.h>
 
 @interface DYPFavoriteFilterViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -91,6 +92,7 @@
 #pragma mark - action
 -(void)applyAction:(UIBarButtonItem *)item {
     if (self.type > 0) {
+        [Answers logCustomEventWithName:[self title] customAttributes:nil];
         [self.delegate source:self didCreateFilter:[self.filterFactory favoriteFilterWithType:self.type]];
         [self.navigationController popToRootViewControllerAnimated:YES];
     } else {

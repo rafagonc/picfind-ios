@@ -12,6 +12,7 @@
 #import "UIViewController+NotificationShow.h"
 #import "DYPFilterFactory.h"
 #import "DYPFaceCountFilter.h"
+#import <Answers/Answers.h>
 
 @interface DYPFaceCountFilterViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -93,6 +94,7 @@
 #pragma mark - action
 -(void)applyAction:(UIBarButtonItem *)item {
     if (self.countSelected) {
+        [Answers logCustomEventWithName:[self title] customAttributes:nil];
         if ([self.countSelected integerValue] != 0) {
             [self.delegate source:self didCreateFilter:[self.filterFactory faceCountFilterWithCount:[self.countSelected integerValue]]];
         }

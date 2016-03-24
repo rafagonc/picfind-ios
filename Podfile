@@ -5,6 +5,8 @@
 
 target 'Picfind' do
 
+pod 'Answers'
+pod 'Fabric'
 pod 'OpenCV', '~> 2.4'
 pod 'Depend'
 pod 'NSDate-Escort'

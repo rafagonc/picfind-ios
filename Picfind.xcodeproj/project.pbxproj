@@ -76,6 +76,7 @@
 		2A91CE8C1CA260F800BFF4D6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A91CE8B1CA260F800BFF4D6 /* AdSupport.framework */; };
 		2A91CE8E1CA2611200BFF4D6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A91CE8D1CA2611200BFF4D6 /* MediaPlayer.framework */; };
 		2A91CE901CA2612300BFF4D6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A91CE8F1CA2612300BFF4D6 /* CoreTelephony.framework */; };
+		2A91CE931CA39D2A00BFF4D6 /* DYPAdImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A91CE921CA39D2A00BFF4D6 /* DYPAdImpl.m */; };
 		2A943F971C90E86D00C4796A /* DYPPhotoLibaryValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */; };
 		2A943FB11C9DFE9A00C4796A /* DYPAlbumFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FB01C9DFE9A00C4796A /* DYPAlbumFilterImpl.m */; };
 		2A943FBA1C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A943FB91C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m */; };
@@ -101,44 +102,6 @@
 		2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8A81C7BFB6E0034B7D1 /* DYPImageMatConverter.mm */; };
 		2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8AA1C7BFB6E0034B7D1 /* DYPMatImageConverter.mm */; };
 		2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8AC1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm */; };
-		2ADBB8E11C7BFD550034B7D1 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8B61C7BFD550034B7D1 /* CMakeLists.txt */; };
-		2ADBB8E21C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8B81C7BFD550034B7D1 /* haarcascade_eye.xml */; };
-		2ADBB8E31C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8B91C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml */; };
-		2ADBB8E41C7BFD550034B7D1 /* haarcascade_frontalcatface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8BA1C7BFD550034B7D1 /* haarcascade_frontalcatface.xml */; };
-		2ADBB8E51C7BFD550034B7D1 /* haarcascade_frontalcatface_extended.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8BB1C7BFD550034B7D1 /* haarcascade_frontalcatface_extended.xml */; };
-		2ADBB8E61C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8BC1C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml */; };
-		2ADBB8E71C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8BD1C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml */; };
-		2ADBB8E81C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8BE1C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml */; };
-		2ADBB8E91C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8BF1C7BFD550034B7D1 /* haarcascade_frontalface_default.xml */; };
-		2ADBB8EA1C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C01C7BFD550034B7D1 /* haarcascade_fullbody.xml */; };
-		2ADBB8EB1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C11C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml */; };
-		2ADBB8EC1C7BFD550034B7D1 /* haarcascade_licence_plate_rus_16stages.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C21C7BFD550034B7D1 /* haarcascade_licence_plate_rus_16stages.xml */; };
-		2ADBB8ED1C7BFD550034B7D1 /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C31C7BFD550034B7D1 /* haarcascade_lowerbody.xml */; };
-		2ADBB8EE1C7BFD550034B7D1 /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C41C7BFD550034B7D1 /* haarcascade_profileface.xml */; };
-		2ADBB8EF1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C51C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml */; };
-		2ADBB8F01C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C61C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml */; };
-		2ADBB8F11C7BFD550034B7D1 /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C71C7BFD550034B7D1 /* haarcascade_smile.xml */; };
-		2ADBB8F21C7BFD550034B7D1 /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8C81C7BFD550034B7D1 /* haarcascade_upperbody.xml */; };
-		2ADBB8F31C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8CA1C7BFD550034B7D1 /* haarcascade_eye.xml */; };
-		2ADBB8F41C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8CB1C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml */; };
-		2ADBB8F51C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8CC1C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml */; };
-		2ADBB8F61C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8CD1C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml */; };
-		2ADBB8F71C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8CE1C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml */; };
-		2ADBB8F81C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8CF1C7BFD550034B7D1 /* haarcascade_frontalface_default.xml */; };
-		2ADBB8F91C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8D01C7BFD550034B7D1 /* haarcascade_fullbody.xml */; };
-		2ADBB8FA1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8D11C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml */; };
-		2ADBB8FB1C7BFD550034B7D1 /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8D21C7BFD550034B7D1 /* haarcascade_lowerbody.xml */; };
-		2ADBB8FC1C7BFD550034B7D1 /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8D31C7BFD550034B7D1 /* haarcascade_profileface.xml */; };
-		2ADBB8FD1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8D41C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml */; };
-		2ADBB8FE1C7BFD550034B7D1 /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8D51C7BFD550034B7D1 /* haarcascade_smile.xml */; };
-		2ADBB8FF1C7BFD550034B7D1 /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8D61C7BFD550034B7D1 /* haarcascade_upperbody.xml */; };
-		2ADBB9001C7BFD550034B7D1 /* hogcascade_pedestrians.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8D81C7BFD550034B7D1 /* hogcascade_pedestrians.xml */; };
-		2ADBB9011C7BFD550034B7D1 /* lbpcascade_frontalcatface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8DA1C7BFD550034B7D1 /* lbpcascade_frontalcatface.xml */; };
-		2ADBB9021C7BFD550034B7D1 /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8DB1C7BFD550034B7D1 /* lbpcascade_frontalface.xml */; };
-		2ADBB9031C7BFD550034B7D1 /* lbpcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8DC1C7BFD550034B7D1 /* lbpcascade_profileface.xml */; };
-		2ADBB9041C7BFD550034B7D1 /* lbpcascade_silverware.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8DD1C7BFD550034B7D1 /* lbpcascade_silverware.xml */; };
-		2ADBB9051C7BFD550034B7D1 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8DE1C7BFD550034B7D1 /* readme.txt */; };
-		2ADBB9061C7BFD550034B7D1 /* trainingfaces_24-24.vec in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8E01C7BFD550034B7D1 /* trainingfaces_24-24.vec */; };
 		2ADBB90B1C7BFD920034B7D1 /* DYPTFaceRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9071C7BFD920034B7D1 /* DYPTFaceRecognizer.m */; };
 		2ADBB90C1C7BFD920034B7D1 /* DYPTDetectFaceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9081C7BFD920034B7D1 /* DYPTDetectFaceTest.m */; };
 		2ADBB90D1C7BFD920034B7D1 /* DYPTImageMatConversion.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9091C7BFD920034B7D1 /* DYPTImageMatConversion.mm */; };
@@ -313,6 +276,9 @@
 		2A91CE8B1CA260F800BFF4D6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		2A91CE8D1CA2611200BFF4D6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2A91CE8F1CA2612300BFF4D6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2A91CE911CA39D2A00BFF4D6 /* DYPAdImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAdImpl.h; sourceTree = "<group>"; };
+		2A91CE921CA39D2A00BFF4D6 /* DYPAdImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAdImpl.m; sourceTree = "<group>"; };
+		2A91CE941CA39D3300BFF4D6 /* DYPAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAd.h; sourceTree = "<group>"; };
 		2A943F951C90E86D00C4796A /* DYPPhotoLibaryValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPPhotoLibaryValidator.h; sourceTree = "<group>"; };
 		2A943F961C90E86D00C4796A /* DYPPhotoLibaryValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPPhotoLibaryValidator.m; sourceTree = "<group>"; };
 		2A943FAF1C9DFE9A00C4796A /* DYPAlbumFilterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAlbumFilterImpl.h; sourceTree = "<group>"; };
@@ -367,44 +333,6 @@
 		2ADBB8AA1C7BFB6E0034B7D1 /* DYPMatImageConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPMatImageConverter.mm; sourceTree = "<group>"; };
 		2ADBB8AB1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNumberArrayVectorConverter.h; sourceTree = "<group>"; };
 		2ADBB8AC1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPNumberArrayVectorConverter.mm; sourceTree = "<group>"; };
-		2ADBB8B61C7BFD550034B7D1 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
-		2ADBB8B81C7BFD550034B7D1 /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
-		2ADBB8B91C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
-		2ADBB8BA1C7BFD550034B7D1 /* haarcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface.xml; sourceTree = "<group>"; };
-		2ADBB8BB1C7BFD550034B7D1 /* haarcascade_frontalcatface_extended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface_extended.xml; sourceTree = "<group>"; };
-		2ADBB8BC1C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
-		2ADBB8BD1C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
-		2ADBB8BE1C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
-		2ADBB8BF1C7BFD550034B7D1 /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
-		2ADBB8C01C7BFD550034B7D1 /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
-		2ADBB8C11C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
-		2ADBB8C21C7BFD550034B7D1 /* haarcascade_licence_plate_rus_16stages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_licence_plate_rus_16stages.xml; sourceTree = "<group>"; };
-		2ADBB8C31C7BFD550034B7D1 /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
-		2ADBB8C41C7BFD550034B7D1 /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
-		2ADBB8C51C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
-		2ADBB8C61C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_russian_plate_number.xml; sourceTree = "<group>"; };
-		2ADBB8C71C7BFD550034B7D1 /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
-		2ADBB8C81C7BFD550034B7D1 /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
-		2ADBB8CA1C7BFD550034B7D1 /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
-		2ADBB8CB1C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
-		2ADBB8CC1C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
-		2ADBB8CD1C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
-		2ADBB8CE1C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
-		2ADBB8CF1C7BFD550034B7D1 /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
-		2ADBB8D01C7BFD550034B7D1 /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
-		2ADBB8D11C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
-		2ADBB8D21C7BFD550034B7D1 /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
-		2ADBB8D31C7BFD550034B7D1 /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
-		2ADBB8D41C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
-		2ADBB8D51C7BFD550034B7D1 /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
-		2ADBB8D61C7BFD550034B7D1 /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
-		2ADBB8D81C7BFD550034B7D1 /* hogcascade_pedestrians.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hogcascade_pedestrians.xml; sourceTree = "<group>"; };
-		2ADBB8DA1C7BFD550034B7D1 /* lbpcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalcatface.xml; sourceTree = "<group>"; };
-		2ADBB8DB1C7BFD550034B7D1 /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
-		2ADBB8DC1C7BFD550034B7D1 /* lbpcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_profileface.xml; sourceTree = "<group>"; };
-		2ADBB8DD1C7BFD550034B7D1 /* lbpcascade_silverware.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_silverware.xml; sourceTree = "<group>"; };
-		2ADBB8DE1C7BFD550034B7D1 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		2ADBB8E01C7BFD550034B7D1 /* trainingfaces_24-24.vec */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trainingfaces_24-24.vec"; sourceTree = "<group>"; };
 		2ADBB9071C7BFD920034B7D1 /* DYPTFaceRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPTFaceRecognizer.m; sourceTree = "<group>"; };
 		2ADBB9081C7BFD920034B7D1 /* DYPTDetectFaceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPTDetectFaceTest.m; sourceTree = "<group>"; };
 		2ADBB9091C7BFD920034B7D1 /* DYPTImageMatConversion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPTImageMatConversion.mm; sourceTree = "<group>"; };
@@ -1044,6 +972,32 @@
 			name = "Share ";
 			sourceTree = "<group>";
 		};
+		2A91CE951CA39D3700BFF4D6 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE941CA39D3300BFF4D6 /* DYPAd.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		2A91CE961CA39D3D00BFF4D6 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE911CA39D2A00BFF4D6 /* DYPAdImpl.h */,
+				2A91CE921CA39D2A00BFF4D6 /* DYPAdImpl.m */,
+			);
+			name = Concrete;
+			sourceTree = "<group>";
+		};
+		2A91CE971CA3A02B00BFF4D6 /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				2A91CE961CA39D3D00BFF4D6 /* Concrete */,
+				2A91CE951CA39D3700BFF4D6 /* Abstract */,
+			);
+			name = Ad;
+			sourceTree = "<group>";
+		};
 		2A943F981C90E87100C4796A /* Photo Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -1320,7 +1274,6 @@
 			isa = PBXGroup;
 			children = (
 				2A91CE771CA25EBD00BFF4D6 /* AdColony.framework */,
-				2ADBB8B51C7BFD550034B7D1 /* data */,
 				2ADBB87B1C7BF8B20034B7D1 /* AppDelegate.h */,
 				2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */,
 				2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */,
@@ -1378,6 +1331,7 @@
 				2A46890E1C853B3600BD2D3A /* Cropper */,
 				2A91CE611CA10B3800BFF4D6 /* Help */,
 				2A91CE681CA2537700BFF4D6 /* Share */,
+				2A91CE971CA3A02B00BFF4D6 /* Ad */,
 			);
 			name = "General Classes";
 			sourceTree = "<group>";
@@ -1448,91 +1402,6 @@
 				2ADBB91B1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm */,
 			);
 			name = Recognizer;
-			sourceTree = "<group>";
-		};
-		2ADBB8B51C7BFD550034B7D1 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				2ADBB8B61C7BFD550034B7D1 /* CMakeLists.txt */,
-				2ADBB8B71C7BFD550034B7D1 /* haarcascades */,
-				2ADBB8C91C7BFD550034B7D1 /* haarcascades_cuda */,
-				2ADBB8D71C7BFD550034B7D1 /* hogcascades */,
-				2ADBB8D91C7BFD550034B7D1 /* lbpcascades */,
-				2ADBB8DE1C7BFD550034B7D1 /* readme.txt */,
-				2ADBB8DF1C7BFD550034B7D1 /* vec_files */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		2ADBB8B71C7BFD550034B7D1 /* haarcascades */ = {
-			isa = PBXGroup;
-			children = (
-				2ADBB8B81C7BFD550034B7D1 /* haarcascade_eye.xml */,
-				2ADBB8B91C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml */,
-				2ADBB8BA1C7BFD550034B7D1 /* haarcascade_frontalcatface.xml */,
-				2ADBB8BB1C7BFD550034B7D1 /* haarcascade_frontalcatface_extended.xml */,
-				2ADBB8BC1C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml */,
-				2ADBB8BD1C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml */,
-				2ADBB8BE1C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml */,
-				2ADBB8BF1C7BFD550034B7D1 /* haarcascade_frontalface_default.xml */,
-				2ADBB8C01C7BFD550034B7D1 /* haarcascade_fullbody.xml */,
-				2ADBB8C11C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml */,
-				2ADBB8C21C7BFD550034B7D1 /* haarcascade_licence_plate_rus_16stages.xml */,
-				2ADBB8C31C7BFD550034B7D1 /* haarcascade_lowerbody.xml */,
-				2ADBB8C41C7BFD550034B7D1 /* haarcascade_profileface.xml */,
-				2ADBB8C51C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml */,
-				2ADBB8C61C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml */,
-				2ADBB8C71C7BFD550034B7D1 /* haarcascade_smile.xml */,
-				2ADBB8C81C7BFD550034B7D1 /* haarcascade_upperbody.xml */,
-			);
-			path = haarcascades;
-			sourceTree = "<group>";
-		};
-		2ADBB8C91C7BFD550034B7D1 /* haarcascades_cuda */ = {
-			isa = PBXGroup;
-			children = (
-				2ADBB8CA1C7BFD550034B7D1 /* haarcascade_eye.xml */,
-				2ADBB8CB1C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml */,
-				2ADBB8CC1C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml */,
-				2ADBB8CD1C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml */,
-				2ADBB8CE1C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml */,
-				2ADBB8CF1C7BFD550034B7D1 /* haarcascade_frontalface_default.xml */,
-				2ADBB8D01C7BFD550034B7D1 /* haarcascade_fullbody.xml */,
-				2ADBB8D11C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml */,
-				2ADBB8D21C7BFD550034B7D1 /* haarcascade_lowerbody.xml */,
-				2ADBB8D31C7BFD550034B7D1 /* haarcascade_profileface.xml */,
-				2ADBB8D41C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml */,
-				2ADBB8D51C7BFD550034B7D1 /* haarcascade_smile.xml */,
-				2ADBB8D61C7BFD550034B7D1 /* haarcascade_upperbody.xml */,
-			);
-			path = haarcascades_cuda;
-			sourceTree = "<group>";
-		};
-		2ADBB8D71C7BFD550034B7D1 /* hogcascades */ = {
-			isa = PBXGroup;
-			children = (
-				2ADBB8D81C7BFD550034B7D1 /* hogcascade_pedestrians.xml */,
-			);
-			path = hogcascades;
-			sourceTree = "<group>";
-		};
-		2ADBB8D91C7BFD550034B7D1 /* lbpcascades */ = {
-			isa = PBXGroup;
-			children = (
-				2ADBB8DA1C7BFD550034B7D1 /* lbpcascade_frontalcatface.xml */,
-				2ADBB8DB1C7BFD550034B7D1 /* lbpcascade_frontalface.xml */,
-				2ADBB8DC1C7BFD550034B7D1 /* lbpcascade_profileface.xml */,
-				2ADBB8DD1C7BFD550034B7D1 /* lbpcascade_silverware.xml */,
-			);
-			path = lbpcascades;
-			sourceTree = "<group>";
-		};
-		2ADBB8DF1C7BFD550034B7D1 /* vec_files */ = {
-			isa = PBXGroup;
-			children = (
-				2ADBB8E01C7BFD550034B7D1 /* trainingfaces_24-24.vec */,
-			);
-			path = vec_files;
 			sourceTree = "<group>";
 		};
 		2ADBB9161C7BFEAC0034B7D1 /* Photos View Controller */ = {
@@ -1994,6 +1863,7 @@
 				2ADBB8731C7BF8B20034B7D1 /* Resources */,
 				0CCEB6B79B8DBBA8D93CC616 /* Embed Pods Frameworks */,
 				056CB271BF1159DCE7DA31D5 /* Copy Pods Resources */,
+				2A91CE981CA3AB6100BFF4D6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -2068,71 +1938,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ADBB8F11C7BFD550034B7D1 /* haarcascade_smile.xml in Resources */,
 				2A943FF81C9F8A5F00C4796A /* DYPFaceCountFilterViewController.xib in Resources */,
-				2ADBB8FC1C7BFD550034B7D1 /* haarcascade_profileface.xml in Resources */,
 				2A4F81901C8D1704004FE9DA /* DYPImageViewController.xib in Resources */,
-				2ADBB8E51C7BFD550034B7D1 /* haarcascade_frontalcatface_extended.xml in Resources */,
 				2A4F81CA1C90C2A9004FE9DA /* DYPCreateNameViewController.xib in Resources */,
-				2ADBB8F91C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */,
-				2ADBB8F81C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
 				2A943FDA1C9E0D1800C4796A /* DYPAlbumCell.xib in Resources */,
 				2A1116CB1C7D4D2A00A45955 /* DYPPeriodFilterViewController.xib in Resources */,
-				2ADBB9031C7BFD550034B7D1 /* lbpcascade_profileface.xml in Resources */,
-				2ADBB8E31C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 				4421B3231C7F464800673C4F /* DYPMapCell.xib in Resources */,
-				2ADBB8FD1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */,
 				4421B30F1C7E406100673C4F /* SHNotificationView.xib in Resources */,
 				2A943FC21C9E02CF00C4796A /* DYPAlbumFilterViewController.xib in Resources */,
-				2ADBB8F01C7BFD550034B7D1 /* haarcascade_russian_plate_number.xml in Resources */,
-				2ADBB8F31C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */,
 				4421B2F11C7E2BB100673C4F /* DYPDateCell.xib in Resources */,
 				2A1116B01C7C0DAF00A45955 /* DYPAssetCell.xib in Resources */,
-				2ADBB8E61C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */,
 				2A91CE591CA106B700BFF4D6 /* DYPHelpViewController.xib in Resources */,
-				2ADBB8E91C7BFD550034B7D1 /* haarcascade_frontalface_default.xml in Resources */,
-				2ADBB9021C7BFD550034B7D1 /* lbpcascade_frontalface.xml in Resources */,
-				2ADBB9011C7BFD550034B7D1 /* lbpcascade_frontalcatface.xml in Resources */,
 				2A91CE511CA0F26300BFF4D6 /* DYPLuminosityRangeCell.xib in Resources */,
-				2ADBB8E21C7BFD550034B7D1 /* haarcascade_eye.xml in Resources */,
 				2ADBB8881C7BF8B20034B7D1 /* LaunchScreen.storyboard in Resources */,
-				2ADBB8FE1C7BFD550034B7D1 /* haarcascade_smile.xml in Resources */,
 				2A4F81D01C90C3C1004FE9DA /* DYPNameCell.xib in Resources */,
-				2ADBB9001C7BFD550034B7D1 /* hogcascade_pedestrians.xml in Resources */,
-				2ADBB8E41C7BFD550034B7D1 /* haarcascade_frontalcatface.xml in Resources */,
-				2ADBB8F51C7BFD550034B7D1 /* haarcascade_frontalface_alt.xml in Resources */,
 				2ADBB9151C7BFEA90034B7D1 /* DYPPhotosViewController.xib in Resources */,
-				2ADBB8E71C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */,
-				2ADBB8EF1C7BFD550034B7D1 /* haarcascade_righteye_2splits.xml in Resources */,
-				2ADBB8EC1C7BFD550034B7D1 /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
-				2ADBB8F41C7BFD550034B7D1 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
-				2ADBB8EE1C7BFD550034B7D1 /* haarcascade_profileface.xml in Resources */,
-				2ADBB8F21C7BFD550034B7D1 /* haarcascade_upperbody.xml in Resources */,
 				4421B35E1C809A5800673C4F /* quotes.json in Resources */,
-				2ADBB8FF1C7BFD550034B7D1 /* haarcascade_upperbody.xml in Resources */,
-				2ADBB8FA1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */,
 				2A91CE431CA0ECA800BFF4D6 /* DYPLuminosityFilterViewController.xib in Resources */,
 				2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */,
 				2A1116B91C7D431D00A45955 /* DYPFilterCell.xib in Resources */,
-				2ADBB8F61C7BFD550034B7D1 /* haarcascade_frontalface_alt2.xml in Resources */,
-				2ADBB9051C7BFD550034B7D1 /* readme.txt in Resources */,
 				4421B36B1C80BE1600673C4F /* DYPLiveScanViewController.xib in Resources */,
 				2A1116EB1C8386D800A45955 /* DYPResultsViewController.xib in Resources */,
-				2ADBB8EB1C7BFD550034B7D1 /* haarcascade_lefteye_2splits.xml in Resources */,
-				2ADBB9041C7BFD550034B7D1 /* lbpcascade_silverware.xml in Resources */,
 				2A1116D11C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.xib in Resources */,
-				2ADBB9061C7BFD550034B7D1 /* trainingfaces_24-24.vec in Resources */,
-				2ADBB8E81C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				2A1116BF1C7D47AA00A45955 /* DYPPhotoCollectionCell.xib in Resources */,
 				4421B32E1C7F467000673C4F /* DYPRangeCell.xib in Resources */,
-				2ADBB8FB1C7BFD550034B7D1 /* haarcascade_lowerbody.xml in Resources */,
 				4421B3341C7F468000673C4F /* DYPMapSearchCell.xib in Resources */,
 				2A943FEB1C9F7D0E00C4796A /* DYPFavoriteFilterViewController.xib in Resources */,
-				2ADBB8E11C7BFD550034B7D1 /* CMakeLists.txt in Resources */,
 				2A1116C51C7D4D1600A45955 /* DYPLocationFilterViewController.xib in Resources */,
-				2ADBB8ED1C7BFD550034B7D1 /* haarcascade_lowerbody.xml in Resources */,
-				2ADBB8F71C7BFD550034B7D1 /* haarcascade_frontalface_alt_tree.xml in Resources */,
-				2ADBB8EA1C7BFD550034B7D1 /* haarcascade_fullbody.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2192,6 +2024,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		2A91CE981CA3AB6100BFF4D6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 76e47874fee50525b5ac109ed1491685447840f4 fdec0e74c15919b5c2f3ac05894255eab5c497f19080efce3a7bd33751d54efa";
+		};
 		2D483AF9FE9547DCC0059524 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2246,6 +2091,7 @@
 			files = (
 				4421B3211C7F464100673C4F /* DYPMapCell.m in Sources */,
 				2A943FE21C9F7A7300C4796A /* DYPFavoriteFilterImpl.m in Sources */,
+				2A91CE931CA39D2A00BFF4D6 /* DYPAdImpl.m in Sources */,
 				2A1116CA1C7D4D2A00A45955 /* DYPPeriodFilterViewController.m in Sources */,
 				2A91CE571CA106A100BFF4D6 /* DYPHelpViewController.m in Sources */,
 				4421B3331C7F468000673C4F /* DYPMapSearchCell.m in Sources */,
