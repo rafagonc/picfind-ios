@@ -11,6 +11,10 @@
 
 @interface DYPPriorityAssetSearchImpl ()
 
+#pragma mark - properties
+@property (nonatomic,assign) BOOL keepSearching;
+
+#pragma mark - injceted
 @property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
 
 @end
@@ -39,11 +43,14 @@
 }
 -(void)_assetsWithFilterCollection:(NSArray *)collection andResult:(NSArray *)result callback:(void(^)(NSArray <id<DYPAssetProtocol>> * assets))callback progress:(void(^)(CGFloat progress))progress_callback {
     if ([collection count] == 0) callback(result);
+    __weak typeof(self) welf = self;
+    self.keepSearching = YES;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         NSMutableArray *assets = [[NSMutableArray alloc] init];
         NSInteger result_count = [result count];
         [result enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             @autoreleasepool {
+                if (welf.keepSearching == NO) *stop = YES;
                 id<DYPAssetProtocol> asset = (id<DYPAssetProtocol>)obj;
                 __block NSUInteger count = 0;
                 for (id<DYPFilter> filter in collection)
@@ -66,6 +73,9 @@
         }];
         
     });
+}
+-(void)stop {
+    self.keepSearching = NO;
 }
 
 @end
