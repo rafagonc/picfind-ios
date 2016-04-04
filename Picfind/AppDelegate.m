@@ -13,10 +13,14 @@
 #import <AdColony/AdColony.h>
 #import <Fabric/Fabric.h>
 #import <Answers/Answers.h>
+#import "DYPNoAdPurchase.h"
 
 @import Photos;
+@import StoreKit;
 
-@interface AppDelegate ()
+@interface AppDelegate () <SKPaymentTransactionObserver>
+
+@property (setter=injected:) id<DYPNoAdPurchase> no_ad_purchase;
 
 @end
 
@@ -29,6 +33,8 @@
                          zoneIDs:@[@"vz84659a7599c24beb88"]
                         delegate:nil
                          logging:YES];
+    
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
     
     [DPInjector inject];
     [DYPDepedencyInjector registerImplementations];
@@ -44,6 +50,28 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+#pragma mark - payment
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions {
+    SKPaymentTransaction *transaction = transactions.firstObject;
+    switch (transaction.transactionState) {
+        case SKPaymentTransactionStateFailed:
+            
+            break;
+        case SKPaymentTransactionStateDeferred:
+            
+            break;
+        case SKPaymentTransactionStateRestored:
+            
+            break;
+        case SKPaymentTransactionStatePurchased:
+            [self.no_ad_purchase persistCompletedPurchase:transaction];
+            break;
+        case SKPaymentTransactionStatePurchasing:
+            
+            break;
+    }
 }
 
 @end

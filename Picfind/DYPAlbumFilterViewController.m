@@ -27,11 +27,11 @@
 @property (nonatomic,strong) id<NSCollection> albums;
 
 #pragma mark - injected
-@property (setter=injected_collection:,readonly) id<DYPTableViewDatasource> datasource;
-@property (setter=injected:,readonly) id<DYPCollectionDataAccessObject> colletionDataAccessObject;
-@property (setter=injected_album:,readonly) id<DYPValidation> albumValidator;
-@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
-@property (setter=injected:,readonly) id<DYPQuote> quote;
+@property (setter=injected_collection:) id<DYPTableViewDatasource> datasource;
+@property (setter=injected:)id<DYPCollectionDataAccessObject> colletionDataAccessObject;
+@property (setter=injected_album:) id<DYPValidation> albumValidator;
+@property (setter=injected:)id<DYPFilterFactory> filterFactory;
+@property (setter=injected:)id<DYPQuote> quote;
 
 @end
 

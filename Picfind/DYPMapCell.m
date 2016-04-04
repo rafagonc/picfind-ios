@@ -21,8 +21,8 @@
 @property (nonatomic,strong) DYPLocation *annon;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPLocationManager> locationManager;
-@property (setter=injected:,readonly) id<DYPMapViewDatasource> mapDatasource;
+@property (setter=injected:)id<DYPLocationManager> locationManager;
+@property (setter=injected:)id<DYPMapViewDatasource> mapDatasource;
 
 @end
 

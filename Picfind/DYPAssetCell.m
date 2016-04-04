@@ -22,10 +22,10 @@
 -(void)setAsset:(id<DYPAssetProtocol>)asset {
     _asset = asset;
     [self.activityIndicator startAnimating];
-        [asset fetchImage:^(UIImage *image, NSDictionary *data) {
-            self.photoImageView.image = image;
-            [self.activityIndicator stopAnimating];
-        }];
+    [asset fetchImage:^(UIImage *image, NSDictionary *data) {
+        self.photoImageView.image = image;
+        [self.activityIndicator stopAnimating];
+    }];
 }
 
 @end

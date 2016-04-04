@@ -15,7 +15,7 @@
 @property (nonatomic,assign) BOOL keepSearching;
 
 #pragma mark - injceted
-@property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
+@property (setter=injected:) id<DYPAssetDataAccessObject> assetDataAccessObject;
 
 @end
 
@@ -57,11 +57,13 @@
                     [filter analyze:asset isElegible:^{
                         count++;
                         if (count == [collection count]) {
+                            [asset setSearchIndex:idx];
                             [assets addObject:asset];
                         }
                     }];
                 dispatch_sync(dispatch_get_main_queue(), ^{
                     progress_callback((CGFloat)idx/result_count);
+//                    callback(assets);
                 });
                 if (result.count == idx + 1) {
                     dispatch_sync(dispatch_get_main_queue(), ^{

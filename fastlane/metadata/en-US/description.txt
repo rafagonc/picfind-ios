@@ -1,0 +1,17 @@
+Do you have a big camera roll? Do you have trouble finding that specific photo you wanna show your friend? Picfind offers you a diverse search engine to explore and search your big camera roll. 
+
+You can search by:
+
+- Location
+- Period
+- Number Of Faces
+- Luminosity
+- Album
+- Favorites
+- Name
+
+By using this filters you can limit the results and find whatever you want.
+
+Rafael Goncalves
+
+https://github.com/rafagonc

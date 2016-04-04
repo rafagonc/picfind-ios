@@ -21,8 +21,8 @@
 @property (nonatomic,weak) IBOutlet UILabel *quoteLabel;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPQuote> quote;
-@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
+@property (setter=injected:)id<DYPQuote> quote;
+@property (setter=injected:)id<DYPFilterFactory> filterFactory;
 
 #pragma mark - properties
 @property (nonatomic,strong) NSArray * countArray;

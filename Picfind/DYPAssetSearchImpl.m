@@ -17,7 +17,7 @@
 @property (nonatomic,assign) BOOL keepSearching;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
+@property (setter=injected:)id<DYPAssetDataAccessObject> assetDataAccessObject;
 
 @end
 

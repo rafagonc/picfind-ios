@@ -42,6 +42,8 @@
 #import "DYPShareFactoryImpl.h"
 #import "DYPAd.h"
 #import "DYPAdImpl.h"
+#import "DYPNoAdPurchase.h"
+#import "DYPNoAdPurchaseImpl.h"
 
 @implementation DYPDepedencyInjector
 
@@ -78,6 +80,7 @@
     [[DPRegistry sharedRegistry] registerImplementation:[DYPLocationFilterMapDatasource class] forProtocol:@protocol(DYPMapViewDatasource) context:nil];
     
     //othres
+    [[DPRegistry sharedRegistry] registerImplementation:[DYPNoAdPurchaseImpl class] forProtocol:@protocol(DYPNoAdPurchase) context:nil];
     [[DPRegistry sharedRegistry] registerImplementation:[DYPQuoteImpl class] forProtocol:@protocol(DYPQuote) context:nil];
     [[DPRegistry sharedRegistry] registerImplementation:[DYPPriorityAssetSearchImpl class] forProtocol:@protocol(DYPAssetSearch) context:nil];
     [[DPRegistry sharedRegistry] registerImplementation:[DYPHelpAttributedStringImpl class] forProtocol:@protocol(DYPHelpAttributedString) context:nil];

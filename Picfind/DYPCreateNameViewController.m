@@ -24,8 +24,8 @@
 @property (nonatomic,strong) id<NSCollection> assets;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
-@property (setter=injected:,readonly) id<DYPCollectionDataAccessObject> collectionDataAccessObject;
+@property (setter=injected:)id<DYPAssetDataAccessObject> assetDataAccessObject;
+@property (setter=injected:)id<DYPCollectionDataAccessObject> collectionDataAccessObject;
 @property (setter=injected_nav:,readonly) id<DYPCustomizer> navigationBarCustomizer;
 
 @end

@@ -24,8 +24,8 @@
 @property (nonatomic,assign) CGFloat finalValue;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
-@property (setter=injected:,readonly) id<DYPQuote> quote;
+@property (setter=injected:)id<DYPFilterFactory> filterFactory;
+@property (setter=injected:)id<DYPQuote> quote;
 
 @end
 

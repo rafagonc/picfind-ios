@@ -22,7 +22,7 @@
 
 #pragma mark - getters and setters
 -(void)setData:(NSArray *)data {
-    _assets = data;
+    _assets = [data sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"searchIndex" ascending:YES]]];
 }
 -(NSArray *)data {
     return self.assets;

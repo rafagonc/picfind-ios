@@ -36,7 +36,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 #pragma mark - injceted
-@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
+@property (setter=injected:)id<DYPFilterFactory> filterFactory;
 
 @end
 

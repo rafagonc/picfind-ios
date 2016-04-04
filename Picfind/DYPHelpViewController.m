@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *helpButton;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPHelpAttributedString> help;
+@property (setter=injected:)id<DYPHelpAttributedString> help;
 
 @end
 

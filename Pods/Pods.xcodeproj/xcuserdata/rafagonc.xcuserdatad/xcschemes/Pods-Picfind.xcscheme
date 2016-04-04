@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7D6E3E5363CA9218B21F8F1F'
+               BlueprintIdentifier = 'E9425926D1F0A987448392BC'
                BlueprintName = 'Pods-Picfind'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-Picfind.a'>

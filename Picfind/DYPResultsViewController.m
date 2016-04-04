@@ -31,8 +31,8 @@
 @property (assign, nonatomic) BOOL loading;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPAssetDataAccessObject> assetDataAccessObject;
-@property (setter=injected:,readonly) id<DYPAssetSearch> search;
+@property (setter=injected:)id<DYPAssetDataAccessObject> assetDataAccessObject;
+@property (setter=injected:)id<DYPAssetSearch> search;
 @property (setter=injected_asset:,readonly) id<DYPCollectionViewDatasourceProtocol> datasource;
 
 @end

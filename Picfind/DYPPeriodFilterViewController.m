@@ -27,10 +27,10 @@
 @property (nonatomic,strong) id<DYPPeriodFilter> periodFilter;
  
 #pragma mark - injected
-@property (setter=injected_period:,readonly) id<DYPValidation> periodValidator;
-@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
-@property (setter=injected:,readonly) id<DYPQuote> quote;
-@property (setter=injected_photo:,readonly) id<DYPValidation> photoValidator;
+@property (setter=injected_period:) id<DYPValidation> periodValidator;
+@property (setter=injected:) id<DYPFilterFactory> filterFactory;
+@property (setter=injected:) id<DYPQuote> quote;
+@property (setter=injected_photo:) id<DYPValidation> photoValidator;
 
 @end
 

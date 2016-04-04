@@ -33,10 +33,10 @@
 @property (nonatomic,strong) id<DYPLocationFilter> locationFilter;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPQuote> quote;
-@property (setter=injected:,readonly) id<DYPFilterFactory> filterFactory;
-@property (setter=injected_location:,readonly) id<DYPValidation> locationValidator;
-@property (setter=injected_photo:,readonly) id<DYPValidation> photoValidator;
+@property (setter=injected:)id<DYPQuote> quote;
+@property (setter=injected:)id<DYPFilterFactory> filterFactory;
+@property (setter=injected_location:) id<DYPValidation> locationValidator;
+@property (setter=injected_photo:) id<DYPValidation> photoValidator;
 
 @end
 

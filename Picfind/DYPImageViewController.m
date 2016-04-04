@@ -22,7 +22,7 @@
 @property (strong, nonatomic) id<DYPShare> share;
 
 #pragma mark - injected
-@property (setter=injected:,readonly) id<DYPShareFactory> shareFactory;
+@property (setter=injected:)id<DYPShareFactory> shareFactory;
 
 @end
 
