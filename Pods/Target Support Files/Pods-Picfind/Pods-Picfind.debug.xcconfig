@@ -1,7 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Answers/iOS" "${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/OpenCV/ios"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Answers/iOS" "${PODS_ROOT}/Fabric/iOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Answers" "${PODS_ROOT}/Headers/Public/Depend" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/LLARingSpinnerView" "${PODS_ROOT}/Headers/Public/MARKRangeSlider" "${PODS_ROOT}/Headers/Public/NSDate-Escort" "${PODS_ROOT}/Headers/Public/OpenCV"
-LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/OpenCV/ios"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Answers" -isystem "${PODS_ROOT}/Headers/Public/Depend" -isystem "${PODS_ROOT}/Headers/Public/Fabric" -isystem "${PODS_ROOT}/Headers/Public/LLARingSpinnerView" -isystem "${PODS_ROOT}/Headers/Public/MARKRangeSlider" -isystem "${PODS_ROOT}/Headers/Public/NSDate-Escort" -isystem "${PODS_ROOT}/Headers/Public/OpenCV"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Depend" -l"LLARingSpinnerView" -l"MARKRangeSlider" -l"NSDate-Escort" -l"c++" -l"libjpeg" -l"stdc++" -l"z" -framework "AVFoundation" -framework "Accelerate" -framework "Answers" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreMedia" -framework "CoreVideo" -framework "Fabric" -framework "Foundation" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration" -framework "UIKit" -framework "opencv2"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Answers" "${PODS_ROOT}/Headers/Public/Depend" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/LLARingSpinnerView" "${PODS_ROOT}/Headers/Public/MARKRangeSlider" "${PODS_ROOT}/Headers/Public/NSDate-Escort"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Depend" "$PODS_CONFIGURATION_BUILD_DIR/LLARingSpinnerView" "$PODS_CONFIGURATION_BUILD_DIR/MARKRangeSlider" "$PODS_CONFIGURATION_BUILD_DIR/NSDate-Escort"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Answers" -isystem "${PODS_ROOT}/Headers/Public/Depend" -isystem "${PODS_ROOT}/Headers/Public/Fabric" -isystem "${PODS_ROOT}/Headers/Public/LLARingSpinnerView" -isystem "${PODS_ROOT}/Headers/Public/MARKRangeSlider" -isystem "${PODS_ROOT}/Headers/Public/NSDate-Escort"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Depend" -l"LLARingSpinnerView" -l"MARKRangeSlider" -l"NSDate-Escort" -l"c++" -l"z" -framework "Answers" -framework "CoreGraphics" -framework "Fabric" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}/Pods

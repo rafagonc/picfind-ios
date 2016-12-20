@@ -102,9 +102,6 @@
 		2ADBB87D1C7BF8B20034B7D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB87C1C7BF8B20034B7D1 /* AppDelegate.m */; };
 		2ADBB8851C7BF8B20034B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8841C7BF8B20034B7D1 /* Assets.xcassets */; };
 		2ADBB8881C7BF8B20034B7D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB8861C7BF8B20034B7D1 /* LaunchScreen.storyboard */; };
-		2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8A81C7BFB6E0034B7D1 /* DYPImageMatConverter.mm */; };
-		2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8AA1C7BFB6E0034B7D1 /* DYPMatImageConverter.mm */; };
-		2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB8AC1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm */; };
 		2ADBB90B1C7BFD920034B7D1 /* DYPTFaceRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9071C7BFD920034B7D1 /* DYPTFaceRecognizer.m */; };
 		2ADBB90C1C7BFD920034B7D1 /* DYPTDetectFaceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9081C7BFD920034B7D1 /* DYPTDetectFaceTest.m */; };
 		2ADBB90D1C7BFD920034B7D1 /* DYPTImageMatConversion.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9091C7BFD920034B7D1 /* DYPTImageMatConversion.mm */; };
@@ -113,9 +110,9 @@
 		2ADBB9141C7BFEA90034B7D1 /* DYPPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9121C7BFEA90034B7D1 /* DYPPhotosViewController.m */; };
 		2ADBB9151C7BFEA90034B7D1 /* DYPPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ADBB9131C7BFEA90034B7D1 /* DYPPhotosViewController.xib */; };
 		2ADBB9191C7BFF580034B7D1 /* DYPFaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9181C7BFF580034B7D1 /* DYPFaceDetector.mm */; };
-		2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB91B1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm */; };
 		2ADBB9251C7C01ED0034B7D1 /* DYPDepedencyInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9241C7C01ED0034B7D1 /* DYPDepedencyInjector.m */; };
 		2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */; };
+		30DFEDBD90BFE21D19B6A1EF /* libPods-PicfindTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E88FCEC575A1B717DC420 /* libPods-PicfindTests.a */; };
 		4421B2EE1C7E2B9F00673C4F /* DYPDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2ED1C7E2B9F00673C4F /* DYPDateCell.m */; };
 		4421B2F11C7E2BB100673C4F /* DYPDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B2F01C7E2BB100673C4F /* DYPDateCell.xib */; };
 		4421B2F71C7E2F5A00673C4F /* DYPPeriodFilterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B2F61C7E2F5A00673C4F /* DYPPeriodFilterImpl.m */; };
@@ -141,8 +138,7 @@
 		4421B3611C809B8E00673C4F /* DYPQuoteImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3601C809B8E00673C4F /* DYPQuoteImpl.m */; };
 		4421B3681C80BE0700673C4F /* DYPLiveScanViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4421B3671C80BE0700673C4F /* DYPLiveScanViewController.mm */; };
 		4421B36B1C80BE1600673C4F /* DYPLiveScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4421B36A1C80BE1600673C4F /* DYPLiveScanViewController.xib */; };
-		49439DC3E9D5D1509965862A /* libPods-PicfindTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */; };
-		5F6025BF4BEC8840A676A8F0 /* libPods-Picfind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15363EF1C4928D68283B2555 /* libPods-Picfind.a */; };
+		EE1B1738B690EE45ADC96096 /* libPods-Picfind.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D88D7780C9D46FACD21456 /* libPods-Picfind.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,8 +152,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PicfindTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		15363EF1C4928D68283B2555 /* libPods-Picfind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picfind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A11167F1C7C02B000A45955 /* DYPAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetCell.h; sourceTree = "<group>"; };
 		2A1116801C7C02B000A45955 /* DYPAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAssetCell.m; sourceTree = "<group>"; };
 		2A1116871C7C030700A45955 /* UITextField+DoneButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DoneButton.h"; sourceTree = "<group>"; };
@@ -336,12 +330,6 @@
 		2ADBB8891C7BF8B20034B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ADBB88E1C7BF8B20034B7D1 /* PicfindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicfindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADBB8941C7BF8B20034B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2ADBB8A71C7BFB6E0034B7D1 /* DYPImageMatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPImageMatConverter.h; sourceTree = "<group>"; };
-		2ADBB8A81C7BFB6E0034B7D1 /* DYPImageMatConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPImageMatConverter.mm; sourceTree = "<group>"; };
-		2ADBB8A91C7BFB6E0034B7D1 /* DYPMatImageConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPMatImageConverter.h; sourceTree = "<group>"; };
-		2ADBB8AA1C7BFB6E0034B7D1 /* DYPMatImageConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPMatImageConverter.mm; sourceTree = "<group>"; };
-		2ADBB8AB1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPNumberArrayVectorConverter.h; sourceTree = "<group>"; };
-		2ADBB8AC1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPNumberArrayVectorConverter.mm; sourceTree = "<group>"; };
 		2ADBB9071C7BFD920034B7D1 /* DYPTFaceRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPTFaceRecognizer.m; sourceTree = "<group>"; };
 		2ADBB9081C7BFD920034B7D1 /* DYPTDetectFaceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPTDetectFaceTest.m; sourceTree = "<group>"; };
 		2ADBB9091C7BFD920034B7D1 /* DYPTImageMatConversion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPTImageMatConversion.mm; sourceTree = "<group>"; };
@@ -352,14 +340,13 @@
 		2ADBB9131C7BFEA90034B7D1 /* DYPPhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPPhotosViewController.xib; sourceTree = "<group>"; };
 		2ADBB9171C7BFF580034B7D1 /* DYPFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceDetector.h; sourceTree = "<group>"; };
 		2ADBB9181C7BFF580034B7D1 /* DYPFaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPFaceDetector.mm; sourceTree = "<group>"; };
-		2ADBB91A1C7BFF5E0034B7D1 /* DYPFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPFaceRecognizer.h; sourceTree = "<group>"; };
-		2ADBB91B1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPFaceRecognizer.mm; sourceTree = "<group>"; };
 		2ADBB9201C7C009D0034B7D1 /* DYPAssetProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetProtocol.h; sourceTree = "<group>"; };
 		2ADBB9231C7C01ED0034B7D1 /* DYPDepedencyInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPDepedencyInjector.h; sourceTree = "<group>"; };
 		2ADBB9241C7C01ED0034B7D1 /* DYPDepedencyInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPDepedencyInjector.m; sourceTree = "<group>"; };
 		2ADBB9271C7C02320034B7D1 /* DYPCollectionViewDatasourceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPCollectionViewDatasourceProtocol.h; sourceTree = "<group>"; };
 		2ADBB9281C7C023D0034B7D1 /* DYPAssetDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDatasource.h; sourceTree = "<group>"; };
 		2ADBB9291C7C023D0034B7D1 /* DYPAssetDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPAssetDatasource.m; sourceTree = "<group>"; };
+		3C1B869A2B8B18E370A754D2 /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
 		4421B2E21C7CD07100673C4F /* DYPAssetDatasourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPAssetDatasourceDelegate.h; sourceTree = "<group>"; };
 		4421B2EC1C7E2B9F00673C4F /* DYPDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPDateCell.h; sourceTree = "<group>"; };
 		4421B2ED1C7E2B9F00673C4F /* DYPDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYPDateCell.m; sourceTree = "<group>"; };
@@ -413,10 +400,11 @@
 		4421B3661C80BE0700673C4F /* DYPLiveScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYPLiveScanViewController.h; sourceTree = "<group>"; };
 		4421B3671C80BE0700673C4F /* DYPLiveScanViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DYPLiveScanViewController.mm; sourceTree = "<group>"; };
 		4421B36A1C80BE1600673C4F /* DYPLiveScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYPLiveScanViewController.xib; sourceTree = "<group>"; };
-		7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.debug.xcconfig"; sourceTree = "<group>"; };
-		C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
-		FB61C256B4C34B2F41CFF8D8 /* Pods-Picfind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.release.xcconfig"; sourceTree = "<group>"; };
+		615A02ADF5EF1C12416B7D61 /* Pods-Picfind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picfind.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picfind/Pods-Picfind.release.xcconfig"; sourceTree = "<group>"; };
+		636E88FCEC575A1B717DC420 /* libPods-PicfindTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PicfindTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D88D7780C9D46FACD21456 /* libPods-Picfind.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Picfind.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D5C7CE2ECC18C76D7A48FA /* Pods-PicfindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.release.xcconfig"; sourceTree = "<group>"; };
+		DCCF99FC582B554169EC7F6C /* Pods-PicfindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicfindTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -438,8 +426,8 @@
 				2A91CE7A1CA260A400BFF4D6 /* SystemConfiguration.framework in Frameworks */,
 				2A1116D61C7D506A00A45955 /* CoreLocation.framework in Frameworks */,
 				2A1116D41C7D506600A45955 /* MapKit.framework in Frameworks */,
-				5F6025BF4BEC8840A676A8F0 /* libPods-Picfind.a in Frameworks */,
 				2A91CE781CA25EBD00BFF4D6 /* AdColony.framework in Frameworks */,
+				EE1B1738B690EE45ADC96096 /* libPods-Picfind.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,13 +435,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49439DC3E9D5D1509965862A /* libPods-PicfindTests.a in Frameworks */,
+				30DFEDBD90BFE21D19B6A1EF /* libPods-PicfindTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CA719E3F1D9A7F68214CABA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C1B869A2B8B18E370A754D2 /* Pods-Picfind.debug.xcconfig */,
+				615A02ADF5EF1C12416B7D61 /* Pods-Picfind.release.xcconfig */,
+				DCCF99FC582B554169EC7F6C /* Pods-PicfindTests.debug.xcconfig */,
+				A6D5C7CE2ECC18C76D7A48FA /* Pods-PicfindTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		28F72CBBE8E39EC1910BA646 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -471,8 +470,8 @@
 				2A91CE791CA260A400BFF4D6 /* SystemConfiguration.framework */,
 				2A1116D51C7D506A00A45955 /* CoreLocation.framework */,
 				2A1116D31C7D506600A45955 /* MapKit.framework */,
-				15363EF1C4928D68283B2555 /* libPods-Picfind.a */,
-				0B0CCC037FE9F408F63F1A8C /* libPods-PicfindTests.a */,
+				80D88D7780C9D46FACD21456 /* libPods-Picfind.a */,
+				636E88FCEC575A1B717DC420 /* libPods-PicfindTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1271,8 +1270,8 @@
 				2ADBB8771C7BF8B20034B7D1 /* Picfind */,
 				2ADBB8911C7BF8B20034B7D1 /* PicfindTests */,
 				2ADBB8761C7BF8B20034B7D1 /* Products */,
-				8574AE5B95E2C9B5FC61D3F2 /* Pods */,
 				28F72CBBE8E39EC1910BA646 /* Frameworks */,
+				1CA719E3F1D9A7F68214CABA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1359,9 +1358,7 @@
 			isa = PBXGroup;
 			children = (
 				2A1116D71C7D508F00A45955 /* Customizer */,
-				2ADBB8B41C7BFB990034B7D1 /* Recognizer */,
 				2ADBB8B31C7BFB950034B7D1 /* Detector */,
-				2ADBB8B21C7BFB8D0034B7D1 /* Conversion */,
 				4421B31A1C7E448600673C4F /* Location Manager */,
 				4421B3621C809B9000673C4F /* Quote */,
 				2A46890E1C853B3600BD2D3A /* Cropper */,
@@ -1410,19 +1407,6 @@
 			name = "Custom Views";
 			sourceTree = "<group>";
 		};
-		2ADBB8B21C7BFB8D0034B7D1 /* Conversion */ = {
-			isa = PBXGroup;
-			children = (
-				2ADBB8A71C7BFB6E0034B7D1 /* DYPImageMatConverter.h */,
-				2ADBB8AA1C7BFB6E0034B7D1 /* DYPMatImageConverter.mm */,
-				2ADBB8AB1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.h */,
-				2ADBB8AC1C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm */,
-				2ADBB8A91C7BFB6E0034B7D1 /* DYPMatImageConverter.h */,
-				2ADBB8A81C7BFB6E0034B7D1 /* DYPImageMatConverter.mm */,
-			);
-			name = Conversion;
-			sourceTree = "<group>";
-		};
 		2ADBB8B31C7BFB950034B7D1 /* Detector */ = {
 			isa = PBXGroup;
 			children = (
@@ -1430,15 +1414,6 @@
 				2ADBB9181C7BFF580034B7D1 /* DYPFaceDetector.mm */,
 			);
 			name = Detector;
-			sourceTree = "<group>";
-		};
-		2ADBB8B41C7BFB990034B7D1 /* Recognizer */ = {
-			isa = PBXGroup;
-			children = (
-				2ADBB91A1C7BFF5E0034B7D1 /* DYPFaceRecognizer.h */,
-				2ADBB91B1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm */,
-			);
-			name = Recognizer;
 			sourceTree = "<group>";
 		};
 		2ADBB9161C7BFEAC0034B7D1 /* Photos View Controller */ = {
@@ -1878,17 +1853,6 @@
 			name = "Live Scan View Controller";
 			sourceTree = "<group>";
 		};
-		8574AE5B95E2C9B5FC61D3F2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */,
-				FB61C256B4C34B2F41CFF8D8 /* Pods-Picfind.release.xcconfig */,
-				7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */,
-				C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1896,13 +1860,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ADBB8971C7BF8B20034B7D1 /* Build configuration list for PBXNativeTarget "Picfind" */;
 			buildPhases = (
-				12E82B3871FE62B3353E0EB7 /* Check Pods Manifest.lock */,
+				554A78D1C24DED78CCCC7511 /* [CP] Check Pods Manifest.lock */,
 				2ADBB8711C7BF8B20034B7D1 /* Sources */,
 				2ADBB8721C7BF8B20034B7D1 /* Frameworks */,
 				2ADBB8731C7BF8B20034B7D1 /* Resources */,
-				0CCEB6B79B8DBBA8D93CC616 /* Embed Pods Frameworks */,
-				056CB271BF1159DCE7DA31D5 /* Copy Pods Resources */,
 				2A91CE981CA3AB6100BFF4D6 /* ShellScript */,
+				38296FE773142EDC1DC17B1C /* [CP] Embed Pods Frameworks */,
+				666BBFDC40295FA100B968B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1917,12 +1881,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ADBB89A1C7BF8B20034B7D1 /* Build configuration list for PBXNativeTarget "PicfindTests" */;
 			buildPhases = (
-				3D50B44896BDE463DD45C24D /* Check Pods Manifest.lock */,
+				8141ADA3679BD40B840A3CE5 /* [CP] Check Pods Manifest.lock */,
 				2ADBB88A1C7BF8B20034B7D1 /* Sources */,
 				2ADBB88B1C7BF8B20034B7D1 /* Frameworks */,
 				2ADBB88C1C7BF8B20034B7D1 /* Resources */,
-				64301AEB1C94E75B357B6EB8 /* Embed Pods Frameworks */,
-				2D483AF9FE9547DCC0059524 /* Copy Pods Resources */,
+				B1547C0FA99D3F26FAE95DD1 /* [CP] Embed Pods Frameworks */,
+				639E679DD88419BB87931AB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2019,51 +1983,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		056CB271BF1159DCE7DA31D5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picfind/Pods-Picfind-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0CCEB6B79B8DBBA8D93CC616 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picfind/Pods-Picfind-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		12E82B3871FE62B3353E0EB7 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		2A91CE981CA3AB6100BFF4D6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2077,29 +1996,29 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 76e47874fee50525b5ac109ed1491685447840f4 fdec0e74c15919b5c2f3ac05894255eab5c497f19080efce3a7bd33751d54efa";
 		};
-		2D483AF9FE9547DCC0059524 /* Copy Pods Resources */ = {
+		38296FE773142EDC1DC17B1C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picfind/Pods-Picfind-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3D50B44896BDE463DD45C24D /* Check Pods Manifest.lock */ = {
+		554A78D1C24DED78CCCC7511 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2107,14 +2026,59 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		64301AEB1C94E75B357B6EB8 /* Embed Pods Frameworks */ = {
+		639E679DD88419BB87931AB0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicfindTests/Pods-PicfindTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		666BBFDC40295FA100B968B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picfind/Pods-Picfind-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8141ADA3679BD40B840A3CE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1547C0FA99D3F26FAE95DD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2136,13 +2100,11 @@
 				2A91CE571CA106A100BFF4D6 /* DYPHelpViewController.m in Sources */,
 				4421B3331C7F468000673C4F /* DYPMapSearchCell.m in Sources */,
 				2A1116F21C8395CA00A45955 /* UIViewController+Loading.m in Sources */,
-				2ADBB91C1C7BFF5E0034B7D1 /* DYPFaceRecognizer.mm in Sources */,
 				2A943FFC1C9FA61100C4796A /* RGNavigationBarProgressView.m in Sources */,
 				2ADBB92A1C7C023D0034B7D1 /* DYPAssetDatasource.m in Sources */,
 				2A943FE91C9F7D0300C4796A /* DYPFavoriteFilterViewController.m in Sources */,
 				2A91CE321CA0DACA00BFF4D6 /* DYPPriorityAssetSearchImpl.m in Sources */,
 				2A91CE641CA2536100BFF4D6 /* DYPFacebookShareImpl.m in Sources */,
-				2ADBB8B11C7BFB6E0034B7D1 /* DYPNumberArrayVectorConverter.mm in Sources */,
 				2A91CE3E1CA0EB0600BFF4D6 /* UIImage+RoundedCorner.m in Sources */,
 				2A943FB11C9DFE9A00C4796A /* DYPAlbumFilterImpl.m in Sources */,
 				2A1116891C7C030700A45955 /* UITextField+DoneButton.m in Sources */,
@@ -2178,7 +2140,6 @@
 				2A1116E21C83818500A45955 /* DYPAssetSearchImpl.m in Sources */,
 				2A4689111C853E6500BD2D3A /* UIImage+Crop.m in Sources */,
 				2A91CE3D1CA0EB0600BFF4D6 /* UIImage+Resize.m in Sources */,
-				2ADBB8B01C7BFB6E0034B7D1 /* DYPMatImageConverter.mm in Sources */,
 				2A943FBA1C9E008800C4796A /* DYPCollectionDataAccessObjectImpl.m in Sources */,
 				2A1116811C7C02B000A45955 /* DYPAssetCell.m in Sources */,
 				2A1116A21C7C083100A45955 /* DYPAssetDataAccessObjectImpl.m in Sources */,
@@ -2200,7 +2161,6 @@
 				2A943FD71C9E083800C4796A /* DYPAlbumCell.m in Sources */,
 				2A4F818E1C8D16F9004FE9DA /* DYPImageViewController.m in Sources */,
 				2A1116DC1C7D50B100A45955 /* DYPNavigationBarCustomizer.m in Sources */,
-				2ADBB8AF1C7BFB6E0034B7D1 /* DYPImageMatConverter.mm in Sources */,
 				2A943FC01C9E02C600C4796A /* DYPAlbumFilterViewController.m in Sources */,
 				2A1116D01C7D4D9100A45955 /* DYPStartFaceRecognitionViewController.m in Sources */,
 				2A27FC131CB1C8400067F9A4 /* DYPNoAdPurchaseImpl.m in Sources */,
@@ -2335,7 +2295,7 @@
 		};
 		2ADBB8981C7BF8B20034B7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5079CDDD78BFE586919A831 /* Pods-Picfind.debug.xcconfig */;
+			baseConfigurationReference = 3C1B869A2B8B18E370A754D2 /* Pods-Picfind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2356,7 +2316,7 @@
 		};
 		2ADBB8991C7BF8B20034B7D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB61C256B4C34B2F41CFF8D8 /* Pods-Picfind.release.xcconfig */;
+			baseConfigurationReference = 615A02ADF5EF1C12416B7D61 /* Pods-Picfind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2377,7 +2337,7 @@
 		};
 		2ADBB89B1C7BF8B20034B7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ACEE5CF26E352831E2CB4C4 /* Pods-PicfindTests.debug.xcconfig */;
+			baseConfigurationReference = DCCF99FC582B554169EC7F6C /* Pods-PicfindTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREFIX_HEADER = Picfind/global.pch;
@@ -2392,7 +2352,7 @@
 		};
 		2ADBB89C1C7BF8B20034B7D1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7FB143FC0E2ED78683FB386 /* Pods-PicfindTests.release.xcconfig */;
+			baseConfigurationReference = A6D5C7CE2ECC18C76D7A48FA /* Pods-PicfindTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREFIX_HEADER = Picfind/global.pch;

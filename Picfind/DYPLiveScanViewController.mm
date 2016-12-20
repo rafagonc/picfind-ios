@@ -7,13 +7,10 @@
 //
 
 #ifdef __cplusplus
-#import <opencv2/highgui/cap_ios.h>
 #endif
 
 #import "DYPLiveScanViewController.h"
 #import "DYPFaceDetector.h"
-#import "DYPMatImageConverter.h"
-#import "DYPImageMatConverter.h"
 #import "DYPFaceRecognizerFilter.h"
 #import "DYPFilterFactory.h"
 #import "DYPFaceCropper.h"
@@ -26,7 +23,6 @@
 }
 
 #pragma mark - properties
-@property (nonatomic,strong) CvVideoCamera *camera;
 @property (nonatomic,strong) DYPFaceDetector * faceDetector;
 @property (nonatomic,strong) NSTimer *timer;
 

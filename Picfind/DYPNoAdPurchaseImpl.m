@@ -68,9 +68,9 @@ static NSString *const DYPNoAdPurchasedKey = @"DYPNoAdPurchasedKey";
 #pragma mark - prod request delegate
 -(void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response {
     self.product = response.products.firstObject;
-    SKMutablePayment *mPayment = [SKMutablePayment paymentWithProduct:self.product];
-    mPayment.quantity = 1;
-    [[SKPaymentQueue defaultQueue] addPayment:mPayment];
+//    SKMutablePayment *mPayment = [SKMutablePayment paymentWithProduct:self.product];
+//    mPayment.quantity = 1;
+//    [[SKPaymentQueue defaultQueue] addPayment:mPayment];
 }
 
 #pragma mark - persisting
