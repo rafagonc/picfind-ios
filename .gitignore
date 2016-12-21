@@ -5,7 +5,7 @@
 ## Build generated
 build/
 DerivedData
-Pods/OpenCV/**/*
+Pods/OpenCV/*
 
 ## Various settings
 *.pbxuser
